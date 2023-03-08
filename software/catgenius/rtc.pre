@@ -3310,7 +3310,7 @@ extern int vsscanf(const char *, const char *, va_list);
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
 
-# 179 "D:\git\gibby\catgenius\software\catgenius\..\common\../common/catgenie120.h"
+# 192 "D:\git\gibby\catgenius\software\catgenius\..\common\../common/catgenie120.h"
 unsigned char catgenie_init (void) ;
 void catgenie_work (void) ;
 
@@ -3326,7 +3326,8 @@ unsigned char repeat);
 void set_LED_Locked (unsigned char pattern,
 unsigned char repeat);
 void set_Beeper (unsigned char pattern,
-unsigned char repeat) ;
+unsigned char repeat);
+void key_Beep (unsigned char beeps);
 
 
 void set_Bowl (unsigned char mode);

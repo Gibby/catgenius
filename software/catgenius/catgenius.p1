@@ -2542,8 +2542,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 "191 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic.h
 [v ___timeout `b  1 e@260 ]
 "22 D:\git\gibby\catgenius\software\catgenius\../common/cmdline.h
-[v F3229 `(i  0 tf2`i`**uc ]
-[s S263 `uc -> 8 `i `*F3229 1 ]
+[v F3228 `(i  0 tf2`i`**uc ]
+[s S263 `uc -> 8 `i `*F3228 1 ]
 [n S263 command cmd function ]
 "53 D:\git\gibby\catgenius\software\catgenius\catgenius.c
 [v _commands `CS263  -> 0 `x e ]
@@ -2554,10 +2554,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 "61 D:\git\gibby\catgenius\software\catgenius\catgenius.c
 [v _PORTB_old `uc  1 s ]
 [p mainexit ]
-"179 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
+"192 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
 [v _catgenie_init `(uc  0 ef ]
-"11 D:\git\gibby\catgenius\software\catgenius\../common/serial.h
-[v _serial_init `(v  0 ef1`ul ]
+"12 D:\git\gibby\catgenius\software\catgenius\../common/serial.h
+[v _serial_init `(v  0 ef2`ul`uc ]
 "207 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\stdio.h
 [v _printf `(i  0 ev`*Cuc ]
 "25 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
@@ -2566,7 +2566,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _rtc_init `(v  0 ef1`Cuc ]
 "12 D:\git\gibby\catgenius\software\catgenius\../common/catsensor.h
 [v _catsensor_init `(v  0 ef ]
-"12 D:\git\gibby\catgenius\software\catgenius\../common/water.h
+"30 D:\git\gibby\catgenius\software\catgenius\../common/water.h
 [v _water_init `(v  0 ef ]
 "13 D:\git\gibby\catgenius\software\catgenius\userinterface.h
 [v _userinterface_init `(v  0 ef1`uc ]
@@ -2580,9 +2580,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _rtc_work `(v  0 ef ]
 "13 D:\git\gibby\catgenius\software\catgenius\../common/catsensor.h
 [v _catsensor_work `(v  0 ef ]
-"13 D:\git\gibby\catgenius\software\catgenius\../common/water.h
+"31 D:\git\gibby\catgenius\software\catgenius\../common/water.h
 [v _water_work `(v  0 ef ]
-"180 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
+"193 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
 [v _catgenie_work `(v  0 ef ]
 "14 D:\git\gibby\catgenius\software\catgenius\userinterface.h
 [v _userinterface_work `(v  0 ef ]
@@ -2596,9 +2596,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _catsensor_isr_timer `(v  0 ef ]
 "17 D:\git\gibby\catgenius\software\catgenius\../common/catsensor.h
 [v _catsensor_isr_input `(v  0 ef ]
-"13 D:\git\gibby\catgenius\software\catgenius\../common/serial.h
-[v _serial_rx_isr `(v  0 ef ]
 "14 D:\git\gibby\catgenius\software\catgenius\../common/serial.h
+[v _serial_rx_isr `(v  0 ef ]
+"15 D:\git\gibby\catgenius\software\catgenius\../common/serial.h
 [v _serial_tx_isr `(v  0 ef ]
 [p f _printf 8388608 ]
 [; ;pic16f1939.h: 141: volatile unsigned char INDF0 @ 0x000;
@@ -4912,30 +4912,31 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdio.h: 202: extern int vsscanf(const char *, const char *, va_list);
 [; ;stdio.h: 206: extern int sprintf(char *, const char *, ...);
 [; ;stdio.h: 207: extern int printf(const char *, ...);
-[; ;catgenie120.h: 179: unsigned char catgenie_init (void) ;
-[; ;catgenie120.h: 180: void catgenie_work (void) ;
-[; ;catgenie120.h: 183: void set_LED (unsigned char led,
-[; ;catgenie120.h: 184: unsigned char on);
-[; ;catgenie120.h: 185: void set_LED_Cat (unsigned char pattern,
-[; ;catgenie120.h: 186: unsigned char repeat);
-[; ;catgenie120.h: 187: void set_LED_Error (unsigned char pattern,
-[; ;catgenie120.h: 188: unsigned char repeat);
-[; ;catgenie120.h: 189: void set_LED_Cartridge (unsigned char pattern,
-[; ;catgenie120.h: 190: unsigned char repeat);
-[; ;catgenie120.h: 191: void set_LED_Locked (unsigned char pattern,
-[; ;catgenie120.h: 192: unsigned char repeat);
-[; ;catgenie120.h: 193: void set_Beeper (unsigned char pattern,
-[; ;catgenie120.h: 194: unsigned char repeat) ;
-[; ;catgenie120.h: 197: void set_Bowl (unsigned char mode);
-[; ;catgenie120.h: 198: unsigned char get_Bowl (void);
-[; ;catgenie120.h: 199: void set_Arm (unsigned char mode);
-[; ;catgenie120.h: 200: unsigned char get_Arm (void);
-[; ;catgenie120.h: 201: void set_Dosage (unsigned char on);
-[; ;catgenie120.h: 202: unsigned char get_Dosage (void);
-[; ;catgenie120.h: 203: void set_Pump (unsigned char on);
-[; ;catgenie120.h: 204: unsigned char get_Pump (void);
-[; ;catgenie120.h: 205: void set_Dryer (unsigned char on);
-[; ;catgenie120.h: 206: unsigned char get_Dryer (void);
+[; ;catgenie120.h: 192: unsigned char catgenie_init (void) ;
+[; ;catgenie120.h: 193: void catgenie_work (void) ;
+[; ;catgenie120.h: 196: void set_LED (unsigned char led,
+[; ;catgenie120.h: 197: unsigned char on);
+[; ;catgenie120.h: 198: void set_LED_Cat (unsigned char pattern,
+[; ;catgenie120.h: 199: unsigned char repeat);
+[; ;catgenie120.h: 200: void set_LED_Error (unsigned char pattern,
+[; ;catgenie120.h: 201: unsigned char repeat);
+[; ;catgenie120.h: 202: void set_LED_Cartridge (unsigned char pattern,
+[; ;catgenie120.h: 203: unsigned char repeat);
+[; ;catgenie120.h: 204: void set_LED_Locked (unsigned char pattern,
+[; ;catgenie120.h: 205: unsigned char repeat);
+[; ;catgenie120.h: 206: void set_Beeper (unsigned char pattern,
+[; ;catgenie120.h: 207: unsigned char repeat);
+[; ;catgenie120.h: 208: void key_Beep (unsigned char beeps);
+[; ;catgenie120.h: 211: void set_Bowl (unsigned char mode);
+[; ;catgenie120.h: 212: unsigned char get_Bowl (void);
+[; ;catgenie120.h: 213: void set_Arm (unsigned char mode);
+[; ;catgenie120.h: 214: unsigned char get_Arm (void);
+[; ;catgenie120.h: 215: void set_Dosage (unsigned char on);
+[; ;catgenie120.h: 216: unsigned char get_Dosage (void);
+[; ;catgenie120.h: 217: void set_Pump (unsigned char on);
+[; ;catgenie120.h: 218: unsigned char get_Pump (void);
+[; ;catgenie120.h: 219: void set_Dryer (unsigned char on);
+[; ;catgenie120.h: 220: unsigned char get_Dryer (void);
 [; ;timer.h: 19: struct timer {
 [; ;timer.h: 20: unsigned short timer1 ;
 [; ;timer.h: 21: unsigned long overflows ;
@@ -4967,12 +4968,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;rtc.h: 23: void incminutes (void) ;
 [; ;rtc.h: 24: void inchours (void) ;
 [; ;rtc.h: 25: void incweekday (void) ;
-[; ;serial.h: 11: void serial_init (unsigned long bitrate);
-[; ;serial.h: 12: void serial_term (void);
-[; ;serial.h: 13: void serial_rx_isr (void);
-[; ;serial.h: 14: void serial_tx_isr (void);
-[; ;serial.h: 15: void putch (unsigned char c);
-[; ;serial.h: 16: unsigned char readch (char *ch);
+[; ;serial.h: 11: void serial_init (unsigned long bitrate,
+[; ;serial.h: 12: unsigned char flow);
+[; ;serial.h: 13: void serial_term (void);
+[; ;serial.h: 14: void serial_rx_isr (void);
+[; ;serial.h: 15: void serial_tx_isr (void);
+[; ;serial.h: 16: void putch (unsigned char c);
+[; ;serial.h: 17: unsigned char readch (char *ch);
 [; ;i2c.h: 15: void i2c_init (void) ;
 [; ;i2c.h: 16: void i2c_work (void) ;
 [; ;i2c.h: 18: void i2c_start (void) ;
@@ -4985,14 +4987,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;catsensor.h: 13: void catsensor_work (void) ;
 [; ;catsensor.h: 16: void catsensor_isr_timer (void) ;
 [; ;catsensor.h: 17: void catsensor_isr_input (void) ;
-[; ;water.h: 12: void water_init (void) ;
-[; ;water.h: 13: void water_work (void) ;
-[; ;water.h: 16: unsigned int water_reflectionquality (void) ;
-[; ;water.h: 17: unsigned char water_lightguidedirty (void) ;
-[; ;water.h: 18: unsigned char water_detected (void) ;
-[; ;water.h: 19: unsigned char water_filling (void) ;
-[; ;water.h: 21: void water_fill (unsigned char fill) ;
-[; ;water.h: 22: void water_ledalwayson (unsigned char on) ;
+[; ;water.h: 30: void water_init (void) ;
+[; ;water.h: 31: void water_work (void) ;
+[; ;water.h: 34: unsigned char water_detected (void) ;
+[; ;water.h: 35: unsigned char water_filling (void) ;
+[; ;water.h: 37: void water_fill (unsigned char fill) ;
+[; ;water.h: 38: void water_ledalwayson (unsigned char on) ;
 [; ;cmdline.h: 20: struct command {
 [; ;cmdline.h: 21: char cmd[(8)];
 [; ;cmdline.h: 22: int (*function)(int argc, char* argv[]);
@@ -5054,7 +5054,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 "57
--> -> 0 `i `*F3229
+-> -> 0 `i `*F3228
 ..
 ..
 ]
@@ -5079,245 +5079,247 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;catgenius.c: 80: flags = catgenie_init();
 "80
 [e = _flags ( _catgenie_init ..  ]
-[; ;catgenius.c: 89: serial_init(19200UL);
+[; ;catgenius.c: 89: serial_init(19200UL, 0);
 "89
-[e ( _serial_init (1 -> 19200 `ul ]
-[; ;catgenius.c: 91: printf("\n*** CatGenius ***\n");
-"91
-[e ( _printf :s 1C ]
-[; ;catgenius.c: 92: if (!nPOR) {
+[e ( _serial_init (2 , -> 19200 `ul -> -> 0 `i `uc ]
+[; ;catgenius.c: 92: printf("\n*** CatGenius ***\n");
 "92
+[e ( _printf :s 1C ]
+[; ;catgenius.c: 93: if (!nPOR) {
+"93
 [e $ ! ! _nPOR 266  ]
 {
-[; ;catgenius.c: 93: printf("Power-on reset\n");
-"93
-[e ( _printf :s 2C ]
-[; ;catgenius.c: 94: flags |= (0x01 << 7);
-"94
-[e =| _flags -> << -> 1 `i -> 7 `i `uc ]
+[; ;catgenius.c: 95: printf("Power-on reset\n");
 "95
-}
-[; ;catgenius.c: 95: } else if (!nBOR) {
-[e $U 267  ]
-[e :U 266 ]
-[e $ ! ! _nBOR 268  ]
-{
-[; ;catgenius.c: 96: printf("Brown-out reset\n");
-"96
-[e ( _printf :s 3C ]
+[e ( _printf :s 2C ]
 [; ;catgenius.c: 97: flags |= (0x01 << 7);
 "97
 [e =| _flags -> << -> 1 `i -> 7 `i `uc ]
 "98
 }
-[; ;catgenius.c: 98: } else if (!__timeout)
+[; ;catgenius.c: 98: } else if (!nBOR) {
+[e $U 267  ]
+[e :U 266 ]
+[e $ ! ! _nBOR 268  ]
+{
+[; ;catgenius.c: 100: printf("Brown-out reset\n");
+"100
+[e ( _printf :s 3C ]
+[; ;catgenius.c: 102: flags |= (0x01 << 7);
+"102
+[e =| _flags -> << -> 1 `i -> 7 `i `uc ]
+"103
+}
+[; ;catgenius.c: 103: }
 [e $U 269  ]
+"106
 [e :U 268 ]
+[; ;catgenius.c: 106: else if (!__timeout)
 [e $ ! ! ___timeout 270  ]
-[; ;catgenius.c: 99: printf("Watchdog reset\n");
-"99
+[; ;catgenius.c: 107: printf("Watchdog reset\n");
+"107
 [e ( _printf :s 4C ]
 [e $U 271  ]
-"100
+"108
 [e :U 270 ]
-[; ;catgenius.c: 100: else if (!__powerdown)
+[; ;catgenius.c: 108: else if (!__powerdown)
 [e $ ! ! ___powerdown 272  ]
-[; ;catgenius.c: 101: printf("Pin reset (sleep)\n");
-"101
+[; ;catgenius.c: 109: printf("Pin reset (sleep)\n");
+"109
 [e ( _printf :s 5C ]
 [e $U 273  ]
-"102
+"110
 [e :U 272 ]
-[; ;catgenius.c: 102: else
-[; ;catgenius.c: 103: printf("Pin reset\n");
-"103
+[; ;catgenius.c: 110: else
+[; ;catgenius.c: 111: printf("Pin reset\n");
+"111
 [e ( _printf :s 6C ]
 [e :U 273 ]
 [e :U 271 ]
 [e :U 269 ]
 [e :U 267 ]
-[; ;catgenius.c: 104: nPOR = 1;
-"104
+[; ;catgenius.c: 117: nPOR = 1;
+"117
 [e = _nPOR -> -> 1 `i `b ]
-[; ;catgenius.c: 105: nBOR = 1;
-"105
+[; ;catgenius.c: 118: nBOR = 1;
+"118
 [e = _nBOR -> -> 1 `i `b ]
-[; ;catgenius.c: 107: if (flags & (0x01 << 0))
-"107
+[; ;catgenius.c: 120: if (flags & (0x01 << 0))
+"120
 [e $ ! != & -> _flags `i << -> 1 `i -> 0 `i -> 0 `i 274  ]
-[; ;catgenius.c: 108: printf("Start button held\n");
-"108
+[; ;catgenius.c: 121: printf("Start button held\n");
+"121
 [e ( _printf :s 7C ]
 [e :U 274 ]
-[; ;catgenius.c: 109: if (flags & (0x01 << 1))
-"109
+[; ;catgenius.c: 122: if (flags & (0x01 << 1))
+"122
 [e $ ! != & -> _flags `i << -> 1 `i -> 1 `i -> 0 `i 275  ]
-[; ;catgenius.c: 110: printf("Setup button held\n");
-"110
+[; ;catgenius.c: 123: printf("Setup button held\n");
+"123
 [e ( _printf :s 8C ]
 [e :U 275 ]
-[; ;catgenius.c: 113: timer_init();
-"113
+[; ;catgenius.c: 126: timer_init();
+"126
 [e ( _timer_init ..  ]
-[; ;catgenius.c: 116: rtc_init(flags);
-"116
-[e ( _rtc_init (1 _flags ]
-[; ;catgenius.c: 119: catsensor_init();
-"119
-[e ( _catsensor_init ..  ]
-[; ;catgenius.c: 122: water_init();
-"122
-[e ( _water_init ..  ]
-[; ;catgenius.c: 125: userinterface_init(flags);
-"125
-[e ( _userinterface_init (1 _flags ]
-[; ;catgenius.c: 129: cmdline_init();
+[; ;catgenius.c: 129: rtc_init(flags);
 "129
+[e ( _rtc_init (1 _flags ]
+[; ;catgenius.c: 132: catsensor_init();
+"132
+[e ( _catsensor_init ..  ]
+[; ;catgenius.c: 135: water_init();
+"135
+[e ( _water_init ..  ]
+[; ;catgenius.c: 138: userinterface_init(flags);
+"138
+[e ( _userinterface_init (1 _flags ]
+[; ;catgenius.c: 142: cmdline_init();
+"142
 [e ( _cmdline_init ..  ]
-[; ;catgenius.c: 133: litterlanguage_init(flags);
-"133
+[; ;catgenius.c: 146: litterlanguage_init(flags);
+"146
 [e ( _litterlanguage_init (1 _flags ]
-[; ;catgenius.c: 136: interrupt_init();
-"136
+[; ;catgenius.c: 149: interrupt_init();
+"149
 [e ( _interrupt_init ..  ]
-[; ;catgenius.c: 139: for(;;){
-"139
+[; ;catgenius.c: 152: for(;;){
+"152
 {
 [e :U 276 ]
 {
-[; ;catgenius.c: 140: rtc_work();
-"140
+[; ;catgenius.c: 153: rtc_work();
+"153
 [e ( _rtc_work ..  ]
-[; ;catgenius.c: 141: catsensor_work();
-"141
+[; ;catgenius.c: 154: catsensor_work();
+"154
 [e ( _catsensor_work ..  ]
-[; ;catgenius.c: 142: water_work();
-"142
+[; ;catgenius.c: 155: water_work();
+"155
 [e ( _water_work ..  ]
-[; ;catgenius.c: 143: catgenie_work();
-"143
+[; ;catgenius.c: 156: catgenie_work();
+"156
 [e ( _catgenie_work ..  ]
-[; ;catgenius.c: 144: userinterface_work();
-"144
+[; ;catgenius.c: 157: userinterface_work();
+"157
 [e ( _userinterface_work ..  ]
-[; ;catgenius.c: 146: cmdline_work();
-"146
+[; ;catgenius.c: 159: cmdline_work();
+"159
 [e ( _cmdline_work ..  ]
-[; ;catgenius.c: 148: litterlanguage_work();
-"148
+[; ;catgenius.c: 161: litterlanguage_work();
+"161
 [e ( _litterlanguage_work ..  ]
-"152
+"165
 }
-[; ;catgenius.c: 152: }
+[; ;catgenius.c: 165: }
 [e $U 276  ]
 [e :U 277 ]
 }
-[; ;catgenius.c: 153: }
-"153
+[; ;catgenius.c: 166: }
+"166
 [e :UE 265 ]
 }
-"161
+"174
 [v _interrupt_init `(v  1 sf ]
 {
-[; ;catgenius.c: 160: static void interrupt_init (void)
-[; ;catgenius.c: 161: {
+[; ;catgenius.c: 173: static void interrupt_init (void)
+[; ;catgenius.c: 174: {
 [e :U _interrupt_init ]
 [f ]
-[; ;catgenius.c: 162: PORTB_old = PORTB;
-"162
+[; ;catgenius.c: 175: PORTB_old = PORTB;
+"175
 [e = _PORTB_old _PORTB ]
-[; ;catgenius.c: 165: PEIE = 1;
-"165
+[; ;catgenius.c: 178: PEIE = 1;
+"178
 [e = _PEIE -> -> 1 `i `b ]
-[; ;catgenius.c: 168: GIE = 1;
-"168
+[; ;catgenius.c: 181: GIE = 1;
+"181
 [e = _GIE -> -> 1 `i `b ]
-[; ;catgenius.c: 169: }
-"169
+[; ;catgenius.c: 182: }
+"182
 [e :UE 279 ]
 }
-"172
-[v F3276 `(v  1 tf ]
-[v _isr `IF3276  1 s ]
+"185
+[v F3275 `(v  1 tf ]
+[v _isr `IF3275  1 s ]
 {
-[; ;catgenius.c: 171: static void interrupt isr (void)
-[; ;catgenius.c: 172: {
+[; ;catgenius.c: 184: static void interrupt isr (void)
+[; ;catgenius.c: 185: {
 [e :U _isr ]
 [f ]
-"173
+"186
 [v _temp `uc  1 a ]
-[; ;catgenius.c: 173: unsigned char temp;
-[; ;catgenius.c: 176: if (TMR1IF) {
-"176
+[; ;catgenius.c: 186: unsigned char temp;
+[; ;catgenius.c: 189: if (TMR1IF) {
+"189
 [e $ ! _TMR1IF 281  ]
 {
-[; ;catgenius.c: 178: TMR1IF = 0;
-"178
+[; ;catgenius.c: 191: TMR1IF = 0;
+"191
 [e = _TMR1IF -> -> 0 `i `b ]
-[; ;catgenius.c: 180: timer_isr();
-"180
+[; ;catgenius.c: 193: timer_isr();
+"193
 [e ( _timer_isr ..  ]
-"181
+"194
 }
 [e :U 281 ]
-[; ;catgenius.c: 181: }
-[; ;catgenius.c: 183: if (TMR2IF) {
-"183
+[; ;catgenius.c: 194: }
+[; ;catgenius.c: 196: if (TMR2IF) {
+"196
 [e $ ! _TMR2IF 282  ]
 {
-[; ;catgenius.c: 185: TMR2IF = 0;
-"185
+[; ;catgenius.c: 198: TMR2IF = 0;
+"198
 [e = _TMR2IF -> -> 0 `i `b ]
-[; ;catgenius.c: 187: catsensor_isr_timer();
-"187
+[; ;catgenius.c: 200: catsensor_isr_timer();
+"200
 [e ( _catsensor_isr_timer ..  ]
-"188
+"201
 }
 [e :U 282 ]
-[; ;catgenius.c: 188: }
-[; ;catgenius.c: 193: if (IOCIF) {
-"193
+[; ;catgenius.c: 201: }
+[; ;catgenius.c: 206: if (IOCIF) {
+"206
 [e $ ! _IOCIF 283  ]
 {
-[; ;catgenius.c: 196: temp = PORTB ^ PORTB_old;
-"196
+[; ;catgenius.c: 209: temp = PORTB ^ PORTB_old;
+"209
 [e = _temp -> ^ -> _PORTB `i -> _PORTB_old `i `uc ]
-[; ;catgenius.c: 201: IOCBF = 0;
-"201
+[; ;catgenius.c: 214: IOCBF = 0;
+"214
 [e = _IOCBF -> -> 0 `i `uc ]
-[; ;catgenius.c: 202: IOCIF = 0;
-"202
+[; ;catgenius.c: 215: IOCIF = 0;
+"215
 [e = _IOCIF -> -> 0 `i `b ]
-[; ;catgenius.c: 205: if (temp & (1U << (4)))
-"205
+[; ;catgenius.c: 218: if (temp & (1U << (4)))
+"218
 [e $ ! != & -> _temp `ui << -> 1 `ui -> 4 `i -> -> 0 `i `ui 284  ]
-[; ;catgenius.c: 206: catsensor_isr_input();
-"206
+[; ;catgenius.c: 219: catsensor_isr_input();
+"219
 [e ( _catsensor_isr_input ..  ]
 [e :U 284 ]
-[; ;catgenius.c: 208: PORTB_old = PORTB ;
-"208
+[; ;catgenius.c: 221: PORTB_old = PORTB ;
+"221
 [e = _PORTB_old _PORTB ]
-"209
+"222
 }
 [e :U 283 ]
-[; ;catgenius.c: 209: }
-[; ;catgenius.c: 211: if (RCIF)
-"211
+[; ;catgenius.c: 222: }
+[; ;catgenius.c: 224: if (RCIF)
+"224
 [e $ ! _RCIF 285  ]
-[; ;catgenius.c: 212: serial_rx_isr();
-"212
+[; ;catgenius.c: 225: serial_rx_isr();
+"225
 [e ( _serial_rx_isr ..  ]
 [e :U 285 ]
-[; ;catgenius.c: 213: if (TXIF)
-"213
+[; ;catgenius.c: 226: if (TXIF)
+"226
 [e $ ! _TXIF 286  ]
-[; ;catgenius.c: 214: serial_tx_isr();
-"214
+[; ;catgenius.c: 227: serial_tx_isr();
+"227
 [e ( _serial_tx_isr ..  ]
 [e :U 286 ]
-[; ;catgenius.c: 215: }
-"215
+[; ;catgenius.c: 228: }
+"228
 [e :UE 280 ]
 }
 [a 3C 66 114 111 119 110 45 111 117 116 32 114 101 115 101 116 10 0 ]

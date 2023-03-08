@@ -3246,7 +3246,7 @@ unsigned char __resetbits @ 32;
 bit __powerdown @ ((unsigned)&__resetbits*8)+3;
 bit __timeout @ ((unsigned)&__resetbits*8)+4;
 
-# 179 "D:\git\gibby\catgenius\software\catgenius\..\common\../common/catgenie120.h"
+# 192 "D:\git\gibby\catgenius\software\catgenius\..\common\../common/catgenie120.h"
 unsigned char catgenie_init (void) ;
 void catgenie_work (void) ;
 
@@ -3262,7 +3262,8 @@ unsigned char repeat);
 void set_LED_Locked (unsigned char pattern,
 unsigned char repeat);
 void set_Beeper (unsigned char pattern,
-unsigned char repeat) ;
+unsigned char repeat);
+void key_Beep (unsigned char beeps);
 
 
 void set_Bowl (unsigned char mode);
@@ -3276,13 +3277,11 @@ unsigned char get_Pump (void);
 void set_Dryer (unsigned char on);
 unsigned char get_Dryer (void);
 
-# 12 "D:\git\gibby\catgenius\software\catgenius\..\common\water.h"
+# 30 "D:\git\gibby\catgenius\software\catgenius\..\common\water.h"
 void water_init (void) ;
 void water_work (void) ;
 
 
-unsigned int water_reflectionquality (void) ;
-unsigned char water_lightguidedirty (void) ;
 unsigned char water_detected (void) ;
 unsigned char water_filling (void) ;
 
@@ -3324,22 +3323,22 @@ void delay (unsigned long * const delay) ;
 
 void microdelay (unsigned short const delay_us) ;
 
-# 16 "D:\git\gibby\catgenius\software\catgenius\..\common\water.c"
-extern void watersensor_event (unsigned char detected);
+# 17 "D:\git\gibby\catgenius\software\catgenius\..\common\water.c"
+extern void waterdetection_event (unsigned char detected);
+extern void watersensor_event (unsigned int reflectionquality);
 
-# 79
+# 65
 static struct timer sensortimer = {0x0000, 0x00000000};
 static unsigned char state = 0;
 static unsigned char hysteresis = 0;
-static unsigned int reflectionquality = 0;
 static bit filling = 0;
 static bit detected = 0;
 static bit ledalwayson = 0;
 
-# 97
+# 82
 void water_init (void)
 
-# 104
+# 89
 {
 
 unsigned char mask = (1U << (1));
@@ -3371,8 +3370,11 @@ ADCON1bits.ADPREF = 0;
 
 void water_work (void)
 
-# 140
+# 125
 {
+static unsigned int cur_reflectionquality = 0;
+static unsigned int old_reflectionquality = 0;
+
 switch (state) {
 default:
 state = 0;
@@ -3386,7 +3388,7 @@ settimeout(&sensortimer, (((((4UL * (1000UL * ((1000UL)))))/4)/8)/1000));
 
 state = 1;
 
-# 156
+# 144
 break;
 case 1:
 if (!timeoutexpired(&sensortimer))
@@ -3400,24 +3402,29 @@ case 2:
 if (ADCON0bits.nDONE)
 break;
 
-reflectionquality = ADRES;
+cur_reflectionquality = ADRES;
 
-# 177
+# 165
 if (!filling && !ledalwayson)
 LATB &= ~(1U << (2));
 
-if (reflectionquality <= (503 - ((520)-(503)))) {
+if (cur_reflectionquality <= (503 - ((520)-(503)))) {
 if ((hysteresis > 0) &&
 (!--hysteresis && detected)) {
 detected = 0;
-watersensor_event(detected);
+waterdetection_event(detected);
 }
 } else {
 if ((hysteresis < 8) &&
 (++hysteresis >= 8) && !detected) {
 detected = 1;
-watersensor_event(detected);
+waterdetection_event(detected);
 }
+}
+
+if (cur_reflectionquality != old_reflectionquality) {
+watersensor_event(cur_reflectionquality);
+old_reflectionquality = cur_reflectionquality;
 }
 
 settimeout(&sensortimer, (((((4UL * (1000UL * ((1000UL)))))/4)/8)/4));
@@ -3438,20 +3445,6 @@ return (detected);
 void water_ledalwayson (unsigned char on)
 {
 ledalwayson = on;
-}
-
-
-
-unsigned int water_reflectionquality (void)
-{
-return (reflectionquality);
-}
-
-
-
-unsigned char water_lightguidedirty (void)
-{
-return (reflectionquality >= 414)?1:0;
 }
 
 

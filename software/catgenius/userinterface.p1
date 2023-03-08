@@ -2588,7 +2588,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "81 D:\git\gibby\catgenius\software\catgenius\userinterface.c
 [v _update_display `(v  0 sf ]
 "40 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
-[v F3146 `*CS261  1 t ]
+[v F3148 `*CS261  1 t ]
 "40 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
 [v _timeoutexpired `(uc  0 ef1`C*CS261 ]
 "90 D:\git\gibby\catgenius\software\catgenius\userinterface.c
@@ -2602,7 +2602,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "58 D:\git\gibby\catgenius\software\catgenius\litterlanguage.h
 [v _litterlanguage_running `(uc  0 ef ]
 "36 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
-[v F3140 `*S261  1 t ]
+[v F3142 `*S261  1 t ]
 "36 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
 [v _timeoutnow `(v  0 ef1`C*S261 ]
 "86 D:\git\gibby\catgenius\software\catgenius\userinterface.c
@@ -2611,8 +2611,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _setup_short `(v  0 sf ]
 "88 D:\git\gibby\catgenius\software\catgenius\userinterface.c
 [v _both_short `(v  0 sf ]
-"194 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
-[v _set_Beeper `(v  0 ef2`uc`uc ]
+"208 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
+[v _key_Beep `(v  0 ef1`uc ]
 "87 D:\git\gibby\catgenius\software\catgenius\userinterface.c
 [v _start_long `(v  0 sf ]
 "85 D:\git\gibby\catgenius\software\catgenius\userinterface.c
@@ -2620,33 +2620,35 @@ Version 3.2 HI-TECH Software Intermediate Code
 "89 D:\git\gibby\catgenius\software\catgenius\userinterface.c
 [v _both_long `(v  0 sf ]
 "38 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
-[v F3143 `*S261  1 t ]
+[v F3145 `*S261  1 t ]
 "38 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
 [v _timeoutnever `(v  0 ef1`C*S261 ]
 "83 D:\git\gibby\catgenius\software\catgenius\userinterface.c
 [v _process_button `(v  0 sf2`uc`uc ]
 "30 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
-[v F3132 `*S261  1 t ]
+[v F3134 `*S261  1 t ]
 "31 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
 [v _settimeout `(v  0 ef2`C*S261`Cul ]
 "61 D:\git\gibby\catgenius\software\catgenius\litterlanguage.h
 [v _litterlanguage_stop `(v  0 ef ]
 "59 D:\git\gibby\catgenius\software\catgenius\litterlanguage.h
 [v _litterlanguage_pause `(v  0 ef1`uc ]
-"188 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
+"207 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
+[v _set_Beeper `(v  0 ef2`uc`uc ]
+"201 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
 [v _set_LED_Error `(v  0 ef2`uc`uc ]
-"190 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
+"203 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
 [v _set_LED_Cartridge `(v  0 ef2`uc`uc ]
-"184 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
+"197 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
 [v _set_LED `(v  0 ef2`uc`uc ]
-"186 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
+"199 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
 [v _set_LED_Cat `(v  0 ef2`uc`uc ]
-"192 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
+"205 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
 [v _set_LED_Locked `(v  0 ef2`uc`uc ]
 "60 D:\git\gibby\catgenius\software\catgenius\litterlanguage.h
 [v _litterlanguage_paused `(uc  0 ef ]
 "33 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
-[v F3136 `*S261  1 t ]
+[v F3138 `*S261  1 t ]
 "34 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
 [v _postponetimeout `(v  0 ef2`C*S261`Cul ]
 [p f _printf 8651776 ]
@@ -4953,30 +4955,31 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdio.h: 202: extern int vsscanf(const char *, const char *, va_list);
 [; ;stdio.h: 206: extern int sprintf(char *, const char *, ...);
 [; ;stdio.h: 207: extern int printf(const char *, ...);
-[; ;catgenie120.h: 179: unsigned char catgenie_init (void) ;
-[; ;catgenie120.h: 180: void catgenie_work (void) ;
-[; ;catgenie120.h: 183: void set_LED (unsigned char led,
-[; ;catgenie120.h: 184: unsigned char on);
-[; ;catgenie120.h: 185: void set_LED_Cat (unsigned char pattern,
-[; ;catgenie120.h: 186: unsigned char repeat);
-[; ;catgenie120.h: 187: void set_LED_Error (unsigned char pattern,
-[; ;catgenie120.h: 188: unsigned char repeat);
-[; ;catgenie120.h: 189: void set_LED_Cartridge (unsigned char pattern,
-[; ;catgenie120.h: 190: unsigned char repeat);
-[; ;catgenie120.h: 191: void set_LED_Locked (unsigned char pattern,
-[; ;catgenie120.h: 192: unsigned char repeat);
-[; ;catgenie120.h: 193: void set_Beeper (unsigned char pattern,
-[; ;catgenie120.h: 194: unsigned char repeat) ;
-[; ;catgenie120.h: 197: void set_Bowl (unsigned char mode);
-[; ;catgenie120.h: 198: unsigned char get_Bowl (void);
-[; ;catgenie120.h: 199: void set_Arm (unsigned char mode);
-[; ;catgenie120.h: 200: unsigned char get_Arm (void);
-[; ;catgenie120.h: 201: void set_Dosage (unsigned char on);
-[; ;catgenie120.h: 202: unsigned char get_Dosage (void);
-[; ;catgenie120.h: 203: void set_Pump (unsigned char on);
-[; ;catgenie120.h: 204: unsigned char get_Pump (void);
-[; ;catgenie120.h: 205: void set_Dryer (unsigned char on);
-[; ;catgenie120.h: 206: unsigned char get_Dryer (void);
+[; ;catgenie120.h: 192: unsigned char catgenie_init (void) ;
+[; ;catgenie120.h: 193: void catgenie_work (void) ;
+[; ;catgenie120.h: 196: void set_LED (unsigned char led,
+[; ;catgenie120.h: 197: unsigned char on);
+[; ;catgenie120.h: 198: void set_LED_Cat (unsigned char pattern,
+[; ;catgenie120.h: 199: unsigned char repeat);
+[; ;catgenie120.h: 200: void set_LED_Error (unsigned char pattern,
+[; ;catgenie120.h: 201: unsigned char repeat);
+[; ;catgenie120.h: 202: void set_LED_Cartridge (unsigned char pattern,
+[; ;catgenie120.h: 203: unsigned char repeat);
+[; ;catgenie120.h: 204: void set_LED_Locked (unsigned char pattern,
+[; ;catgenie120.h: 205: unsigned char repeat);
+[; ;catgenie120.h: 206: void set_Beeper (unsigned char pattern,
+[; ;catgenie120.h: 207: unsigned char repeat);
+[; ;catgenie120.h: 208: void key_Beep (unsigned char beeps);
+[; ;catgenie120.h: 211: void set_Bowl (unsigned char mode);
+[; ;catgenie120.h: 212: unsigned char get_Bowl (void);
+[; ;catgenie120.h: 213: void set_Arm (unsigned char mode);
+[; ;catgenie120.h: 214: unsigned char get_Arm (void);
+[; ;catgenie120.h: 215: void set_Dosage (unsigned char on);
+[; ;catgenie120.h: 216: unsigned char get_Dosage (void);
+[; ;catgenie120.h: 217: void set_Pump (unsigned char on);
+[; ;catgenie120.h: 218: unsigned char get_Pump (void);
+[; ;catgenie120.h: 219: void set_Dryer (unsigned char on);
+[; ;catgenie120.h: 220: unsigned char get_Dryer (void);
 [; ;userinterface.h: 13: void userinterface_init (unsigned char flags) ;
 [; ;userinterface.h: 14: void userinterface_work (void) ;
 [; ;timer.h: 19: struct timer {
@@ -5432,9 +5435,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;userinterface.c: 225: case (0x01 << 0):
 "225
 [e :U 293 ]
-[; ;userinterface.c: 226: set_Beeper(0x05, 0);
+[; ;userinterface.c: 226: key_Beep(2);
 "226
-[e ( _set_Beeper (2 , -> -> 5 `i `uc -> -> 0 `i `uc ]
+[e ( _key_Beep (1 -> -> 2 `i `uc ]
 [; ;userinterface.c: 227: start_long();
 "227
 [e ( _start_long ..  ]
@@ -5447,9 +5450,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;userinterface.c: 231: case (0x01 << 1):
 "231
 [e :U 294 ]
-[; ;userinterface.c: 232: set_Beeper(0x05, 0);
+[; ;userinterface.c: 232: key_Beep(2);
 "232
-[e ( _set_Beeper (2 , -> -> 5 `i `uc -> -> 0 `i `uc ]
+[e ( _key_Beep (1 -> -> 2 `i `uc ]
 [; ;userinterface.c: 233: setup_long();
 "233
 [e ( _setup_long ..  ]
@@ -5462,9 +5465,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;userinterface.c: 237: case ((0x01 << 0) | (0x01 << 1)):
 "237
 [e :U 295 ]
-[; ;userinterface.c: 238: set_Beeper(0x05, 0);
+[; ;userinterface.c: 238: key_Beep(2);
 "238
-[e ( _set_Beeper (2 , -> -> 5 `i `uc -> -> 0 `i `uc ]
+[e ( _key_Beep (1 -> -> 2 `i `uc ]
 [; ;userinterface.c: 239: both_long();
 "239
 [e ( _both_long ..  ]
@@ -5822,9 +5825,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;userinterface.c: 393: if (!locked)
 "393
 [e $ ! ! _locked 332  ]
-[; ;userinterface.c: 394: set_Beeper(0x01, 0);
+[; ;userinterface.c: 394: key_Beep(1);
 "394
-[e ( _set_Beeper (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
+[e ( _key_Beep (1 -> -> 1 `i `uc ]
 [e :U 332 ]
 [; ;userinterface.c: 396: settimeout(&holdtimeout, (2 * ((((4UL * (1000UL * ((1000UL)))))/4)/8)));
 "396

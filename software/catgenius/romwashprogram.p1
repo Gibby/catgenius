@@ -2556,7 +2556,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "205 D:\git\gibby\catgenius\software\catgenius\romwashprogram.c
 [v _washprogram `CS260  -> 0 `x e ]
 "14 D:\git\gibby\catgenius\software\catgenius\romwashprogram.h
-[v F3060 `*S260  1 t ]
+[v F3062 `*S260  1 t ]
 [; ;pic16f1939.h: 141: volatile unsigned char INDF0 @ 0x000;
 [; ;pic16f1939.h: 145: volatile unsigned char INDF1 @ 0x001;
 [; ;pic16f1939.h: 149: volatile unsigned char PCL @ 0x002;
@@ -4827,30 +4827,31 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 189: unsigned char __resetbits @ 32;
 [; ;pic.h: 190: bit __powerdown @ ((unsigned)&__resetbits*8)+3;
 [; ;pic.h: 191: bit __timeout @ ((unsigned)&__resetbits*8)+4;
-[; ;catgenie120.h: 179: unsigned char catgenie_init (void) ;
-[; ;catgenie120.h: 180: void catgenie_work (void) ;
-[; ;catgenie120.h: 183: void set_LED (unsigned char led,
-[; ;catgenie120.h: 184: unsigned char on);
-[; ;catgenie120.h: 185: void set_LED_Cat (unsigned char pattern,
-[; ;catgenie120.h: 186: unsigned char repeat);
-[; ;catgenie120.h: 187: void set_LED_Error (unsigned char pattern,
-[; ;catgenie120.h: 188: unsigned char repeat);
-[; ;catgenie120.h: 189: void set_LED_Cartridge (unsigned char pattern,
-[; ;catgenie120.h: 190: unsigned char repeat);
-[; ;catgenie120.h: 191: void set_LED_Locked (unsigned char pattern,
-[; ;catgenie120.h: 192: unsigned char repeat);
-[; ;catgenie120.h: 193: void set_Beeper (unsigned char pattern,
-[; ;catgenie120.h: 194: unsigned char repeat) ;
-[; ;catgenie120.h: 197: void set_Bowl (unsigned char mode);
-[; ;catgenie120.h: 198: unsigned char get_Bowl (void);
-[; ;catgenie120.h: 199: void set_Arm (unsigned char mode);
-[; ;catgenie120.h: 200: unsigned char get_Arm (void);
-[; ;catgenie120.h: 201: void set_Dosage (unsigned char on);
-[; ;catgenie120.h: 202: unsigned char get_Dosage (void);
-[; ;catgenie120.h: 203: void set_Pump (unsigned char on);
-[; ;catgenie120.h: 204: unsigned char get_Pump (void);
-[; ;catgenie120.h: 205: void set_Dryer (unsigned char on);
-[; ;catgenie120.h: 206: unsigned char get_Dryer (void);
+[; ;catgenie120.h: 192: unsigned char catgenie_init (void) ;
+[; ;catgenie120.h: 193: void catgenie_work (void) ;
+[; ;catgenie120.h: 196: void set_LED (unsigned char led,
+[; ;catgenie120.h: 197: unsigned char on);
+[; ;catgenie120.h: 198: void set_LED_Cat (unsigned char pattern,
+[; ;catgenie120.h: 199: unsigned char repeat);
+[; ;catgenie120.h: 200: void set_LED_Error (unsigned char pattern,
+[; ;catgenie120.h: 201: unsigned char repeat);
+[; ;catgenie120.h: 202: void set_LED_Cartridge (unsigned char pattern,
+[; ;catgenie120.h: 203: unsigned char repeat);
+[; ;catgenie120.h: 204: void set_LED_Locked (unsigned char pattern,
+[; ;catgenie120.h: 205: unsigned char repeat);
+[; ;catgenie120.h: 206: void set_Beeper (unsigned char pattern,
+[; ;catgenie120.h: 207: unsigned char repeat);
+[; ;catgenie120.h: 208: void key_Beep (unsigned char beeps);
+[; ;catgenie120.h: 211: void set_Bowl (unsigned char mode);
+[; ;catgenie120.h: 212: unsigned char get_Bowl (void);
+[; ;catgenie120.h: 213: void set_Arm (unsigned char mode);
+[; ;catgenie120.h: 214: unsigned char get_Arm (void);
+[; ;catgenie120.h: 215: void set_Dosage (unsigned char on);
+[; ;catgenie120.h: 216: unsigned char get_Dosage (void);
+[; ;catgenie120.h: 217: void set_Pump (unsigned char on);
+[; ;catgenie120.h: 218: unsigned char get_Pump (void);
+[; ;catgenie120.h: 219: void set_Dryer (unsigned char on);
+[; ;catgenie120.h: 220: unsigned char get_Dryer (void);
 [; ;romwashprogram.h: 13: void romwashprogram_reqins (struct instruction const * address) ;
 [; ;romwashprogram.h: 14: unsigned char romwashprogram_getins (struct instruction * const instruction) ;
 [; ;litterlanguage.h: 46: struct instruction {
@@ -6462,7 +6463,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;romwashprogram.c: 340: {
 [e :U _romwashprogram_getins ]
 "339
-[v F3091 `*S260  1 t ]
+[v F3093 `*S260  1 t ]
 "340
 [v _instruction `C*S260  1 r1 ]
 [f ]

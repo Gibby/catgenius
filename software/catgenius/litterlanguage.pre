@@ -3342,7 +3342,7 @@ extern char * strichr(const char *, int);
 extern char * strrchr(const char *, int);
 extern char * strrichr(const char *, int);
 
-# 179 "D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h"
+# 192 "D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h"
 unsigned char catgenie_init (void) ;
 void catgenie_work (void) ;
 
@@ -3358,7 +3358,8 @@ unsigned char repeat);
 void set_LED_Locked (unsigned char pattern,
 unsigned char repeat);
 void set_Beeper (unsigned char pattern,
-unsigned char repeat) ;
+unsigned char repeat);
+void key_Beep (unsigned char beeps);
 
 
 void set_Bowl (unsigned char mode);
@@ -3429,13 +3430,11 @@ void delay (unsigned long * const delay) ;
 
 void microdelay (unsigned short const delay_us) ;
 
-# 12 "D:\git\gibby\catgenius\software\catgenius\../common/water.h"
+# 30 "D:\git\gibby\catgenius\software\catgenius\../common/water.h"
 void water_init (void) ;
 void water_work (void) ;
 
 
-unsigned int water_reflectionquality (void) ;
-unsigned char water_lightguidedirty (void) ;
 unsigned char water_detected (void) ;
 unsigned char water_filling (void) ;
 
@@ -3784,7 +3783,7 @@ error_flood = 0;
 }
 
 
-void watersensor_event (unsigned char detected)
+void waterdetection_event (unsigned char detected)
 
 # 388
 {
@@ -3815,15 +3814,23 @@ litterlanguage_event(5, error_flood);
 
 
 
-void heatsensor_event (unsigned char detected)
+void watersensor_event (unsigned int reflectionquality)
 
 # 423
 {
-error_overheat = detected;
+}
+
+
+
+void heatsensor_event (unsigned char detected)
+
+# 435
+{
+error_overheat = detected ? 1 : 0;
 litterlanguage_event(3, error_overheat);
 }
 
-# 434
+# 446
 static void litterlanguage_cleanup (unsigned char wet)
 {
 extern const struct instruction cleanupprogram[];

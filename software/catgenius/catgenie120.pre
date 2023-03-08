@@ -3246,7 +3246,7 @@ unsigned char __resetbits @ 32;
 bit __powerdown @ ((unsigned)&__resetbits*8)+3;
 bit __timeout @ ((unsigned)&__resetbits*8)+4;
 
-# 179 "D:\git\gibby\catgenius\software\catgenius\..\common\../common/catgenie120.h"
+# 192 "D:\git\gibby\catgenius\software\catgenius\..\common\../common/catgenie120.h"
 unsigned char catgenie_init (void) ;
 void catgenie_work (void) ;
 
@@ -3262,7 +3262,8 @@ unsigned char repeat);
 void set_LED_Locked (unsigned char pattern,
 unsigned char repeat);
 void set_Beeper (unsigned char pattern,
-unsigned char repeat) ;
+unsigned char repeat);
+void key_Beep (unsigned char beeps);
 
 
 void set_Bowl (unsigned char mode);
@@ -3316,47 +3317,47 @@ extern void heatsensor_event (unsigned char detected);
 extern void startbutton_event (unsigned char up);
 extern void setupbutton_event (unsigned char up);
 
-# 48
+# 50
 static unsigned char PORTB_old;
+static bit heat_old = 0;
+static unsigned char beep_bits = 0;
 
 struct debouncer {
 struct timer timer;
-unsigned long timeout;
-unsigned char state;
+unsigned char state : 1;
+unsigned port_bit : 3;
 volatile char *port;
-unsigned char port_mask;
 void (*handler)(unsigned char);
 };
-static struct debouncer debouncers[3] = {
-{{0xFFFF, 0xFFFFFFFF}, (((((4UL * (1000UL * ((1000UL)))))/4)/8)/20), 0, &PORTB, (1U << (0)), startbutton_event},
-{{0xFFFF, 0xFFFFFFFF}, (((((4UL * (1000UL * ((1000UL)))))/4)/8)/20), 0, &PORTB, (1U << (5)), setupbutton_event},
-{{0xFFFF, 0xFFFFFFFF}, (((((4UL * (1000UL * ((1000UL)))))/4)/8)/20), 0, &PORTB, (1U << (1)), heatsensor_event}
+static struct debouncer debouncers[2] = {
+{{0xFFFF, 0xFFFFFFFF}, 0, (0), &PORTB, startbutton_event},
+{{0xFFFF, 0xFFFFFFFF}, 0, (5), &PORTB, setupbutton_event}
 };
 
 struct pacer {
 struct timer timer;
-
-unsigned char mask;
 unsigned char pattern;
-unsigned char repeat;
+unsigned pattern_bit : 3;
+unsigned repeat : 1;
+unsigned port_bit : 3;
 volatile char *port;
-unsigned char port_mask;
 };
-static struct pacer pacers[5] = {
-{{0x0000, 0x00000000}, 0x01, 0x00, 0, &LATC, (1U << (1))},
-{{0x0000, 0x00000000}, 0x01, 0x00, 0, &LATC, (1U << (0))},
-{{0x0000, 0x00000000}, 0x01, 0x00, 0, &LATE, (1U << (2))},
-{{0x0000, 0x00000000}, 0x01, 0x00, 0, &LATE, (1U << (0))},
-{{0x0000, 0x00000000}, 0x01, 0x00, 0, &LATE, (1U << (1))}
+static struct pacer pacers[6] = {
+{{0x0000, 0x00000000}, 0x00, 0x1, 0, 0, &beep_bits},
+{{0x0000, 0x00000000}, 0x00, 0x1, 0, 1, &beep_bits},
+{{0x0000, 0x00000000}, 0x00, 0x1, 0, (0), &LATC},
+{{0x0000, 0x00000000}, 0x00, 0x1, 0, (2), &LATE},
+{{0x0000, 0x00000000}, 0x00, 0x1, 0, (0), &LATE},
+{{0x0000, 0x00000000}, 0x00, 0x1, 0, (1), &LATE}
 };
 
-# 86
+# 88
 static void set_pacer (unsigned char pacer, unsigned char pattern, unsigned char repeat);
 
-# 93
+# 95
 unsigned char catgenie_init (void)
 
-# 100
+# 102
 {
 unsigned char temp ;
 
@@ -3364,59 +3365,59 @@ unsigned char temp ;
 
 nWPUEN = 0;
 
-# 111
+# 113
 TRISA = (1U << (0)) |
 (1U << (4)) |
 (1U << (1));
 PORTA = 0x00;
 
-# 121
+# 123
 ANSELA = (1U << (1));
 
-# 131
-TRISB = (1U << (0)) |
+# 133
+TRISB = (1U << ((0))) |
 (1U << (3)) |
 (1U << (1)) |
 (1U << (4)) |
-(1U << (5)) |
+(1U << ((5))) |
 (1U << (6)) |
 (1U << (7)) ;
 PORTB = 0x00;
 
-# 144
+# 146
 ANSELB = 0;
 
 WPUB = ~(1U << (3));
 
-# 153
+# 155
 IOCBP = (1U << (4));
 IOCBN = (1U << (4));
 IOCBF = 0;
 IOCIF = 0;
 
-# 162
+# 164
 IOCIE = 1;
 
 
-PORTB_old = (1U << (0)) |
-(1U << (5)) |
+PORTB_old = (1U << ((0))) |
+(1U << ((5))) |
 (1U << (1)) ;
 
-# 172
+# 174
 TRISC = (1U << (3)) |
 (1U << (4)) |
 (1U << (7)) ;
 
 PORTC = 0x00;
 
-# 181
+# 183
 TRISD = 0;
 PORTD = 0;
 
 
 ANSELD = 0;
 
-# 191
+# 193
 TRISE = 0x00;
 PORTE = 0x00;
 
@@ -3431,17 +3432,17 @@ _delay((unsigned long)((100)*((4UL * (1000UL * ((1000UL))))/4000.0)));
 _delay((unsigned long)((100)*((4UL * (1000UL * ((1000UL))))/4000.0)));
 
 
-for (temp = 0; temp < 3; temp++) {
-unsigned char tempmask = debouncers[temp].port_mask;
+for (temp = 0; temp < 2; temp++) {
+unsigned char mask = 1 << debouncers[temp].port_bit;
 
-debouncers[temp].state = *debouncers[temp].port & tempmask;
+debouncers[temp].state = *debouncers[temp].port & mask;
 }
 
 
 temp = 0;
-if (!(PORTB & (1U << (0))))
+if (!(PORTB & (1U << ((0)))))
 temp |= (0x01 << 0);
-if (!(PORTB & (1U << (5))))
+if (!(PORTB & (1U << ((5)))))
 temp |= (0x01 << 1);
 
 return temp;
@@ -3451,31 +3452,32 @@ return temp;
 
 void catgenie_work (void)
 
-# 230
+# 232
 {
 unsigned char temp = 0;
 unsigned char status;
 
 
+temp = PORTB & (1U << (1));
+if (temp != heat_old) {
+heatsensor_event(temp);
+heat_old = temp;
+}
+
+
 status = PORTB;
 temp = status ^ PORTB_old;
 PORTB_old = status;
-if (temp & (1U << (0)))
-settimeout(&debouncers[0].timer,
-debouncers[0].timeout);
-if (temp & (1U << (5)))
-settimeout(&debouncers[1].timer,
-debouncers[1].timeout);
-if (temp & (1U << (1)))
-
-settimeout(&debouncers[2].timer,
-debouncers[2].timeout);
+if (temp & (1U << ((0))))
+settimeout(&debouncers[0].timer, (((((4UL * (1000UL * ((1000UL)))))/4)/8)/20));
+if (temp & (1U << ((5))))
+settimeout(&debouncers[1].timer, (((((4UL * (1000UL * ((1000UL)))))/4)/8)/20));
 
 
-for (temp = 0; temp < 3; temp++)
+for (temp = 0; temp < 2; temp++)
 if (timeoutexpired(&debouncers[temp].timer)) {
 unsigned char tempstate = *debouncers[temp].port;
-tempstate &= debouncers[temp].port_mask;
+tempstate &= 1 << debouncers[temp].port_bit;
 
 if (tempstate != debouncers[temp].state) {
 
@@ -3486,25 +3488,30 @@ timeoutnever(&debouncers[temp].timer);
 }
 
 
-for (temp = 0; temp < 5; temp++)
+for (temp = 0; temp < 6; temp++)
 if (timeoutexpired(&pacers[temp].timer)) {
-unsigned char tempmask = pacers[temp].mask;
+unsigned char mask = 1 << pacers[temp].pattern_bit;
 
 
 settimeout(&pacers[temp].timer, (((((4UL * (1000UL * ((1000UL)))))/4)/8)/8));
 
-if (pacers[temp].pattern & tempmask)
-*pacers[temp].port |= pacers[temp].port_mask;
+if (pacers[temp].pattern & mask)
+*pacers[temp].port |= (1 << pacers[temp].port_bit);
 else
-*pacers[temp].port &= ~pacers[temp].port_mask;
+*pacers[temp].port &= ~(1 << pacers[temp].port_bit);
 
-if (!(pacers[temp].mask <<= 1)) {
-pacers[temp].mask = 1;
+if (!++pacers[temp].pattern_bit) {
 
 if (!pacers[temp].repeat)
 pacers[temp].pattern = 0;
 }
 }
+
+
+if (beep_bits)
+LATC |= (1U << (1));
+else
+LATC &= ~(1U << (1));
 }
 
 
@@ -3542,31 +3549,42 @@ else
 
 void set_LED_Error (unsigned char pattern, unsigned char repeat)
 {
-set_pacer(1, pattern, repeat);
+set_pacer(2, pattern, repeat);
 }
 
 
 void set_LED_Locked (unsigned char pattern, unsigned char repeat)
 {
-set_pacer(2, pattern, repeat);
+set_pacer(3, pattern, repeat);
 }
 
 
 void set_LED_Cartridge (unsigned char pattern, unsigned char repeat)
 {
-set_pacer(3, pattern, repeat);
+set_pacer(4, pattern, repeat);
 }
 
 
 void set_LED_Cat (unsigned char pattern, unsigned char repeat)
 {
-set_pacer(4, pattern, repeat);
+set_pacer(5, pattern, repeat);
 }
 
 
 void set_Beeper (unsigned char pattern, unsigned char repeat)
 {
-set_pacer(0, pattern, repeat);
+set_pacer(1, pattern, repeat);
+}
+
+
+void key_Beep (unsigned char beeps)
+{
+unsigned char pattern[] = {0x00, 0x01, 0x05, 0x15, 0x55};
+
+if (beeps > 4)
+return;
+
+set_pacer(0, pattern[beeps], 0);
 }
 
 
@@ -3676,7 +3694,7 @@ unsigned char get_Dryer (void)
 return (LATD & (1U << (2)));
 }
 
-# 459
+# 478
 static void set_pacer (unsigned char pacer, unsigned char pattern, unsigned char repeat)
 {
 if( repeat &&
@@ -3687,7 +3705,7 @@ return;
 
 timeoutnow(&pacers[pacer].timer);
 
-pacers[pacer].mask = 0x01;
+pacers[pacer].pattern_bit = 0x0;
 
 pacers[pacer].pattern = pattern;
 

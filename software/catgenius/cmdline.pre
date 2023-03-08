@@ -3342,7 +3342,7 @@ extern char * strichr(const char *, int);
 extern char * strrchr(const char *, int);
 extern char * strrichr(const char *, int);
 
-# 179 "D:\git\gibby\catgenius\software\catgenius\..\common\../common/catgenie120.h"
+# 192 "D:\git\gibby\catgenius\software\catgenius\..\common\../common/catgenie120.h"
 unsigned char catgenie_init (void) ;
 void catgenie_work (void) ;
 
@@ -3358,7 +3358,8 @@ unsigned char repeat);
 void set_LED_Locked (unsigned char pattern,
 unsigned char repeat);
 void set_Beeper (unsigned char pattern,
-unsigned char repeat) ;
+unsigned char repeat);
+void key_Beep (unsigned char beeps);
 
 
 void set_Bowl (unsigned char mode);
@@ -3387,7 +3388,8 @@ int echo (int argc, char* argv[]) ;
 int help (int argc, char* argv[]) ;
 
 # 11 "D:\git\gibby\catgenius\software\catgenius\..\common\serial.h"
-void serial_init (unsigned long bitrate);
+void serial_init (unsigned long bitrate,
+unsigned char flow);
 void serial_term (void);
 void serial_rx_isr (void);
 void serial_tx_isr (void);

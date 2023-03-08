@@ -2541,45 +2541,49 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v ___powerdown `b  1 e@259 ]
 "191 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic.h
 [v ___timeout `b  1 e@260 ]
-"48 D:\git\gibby\catgenius\software\catgenius\..\common\catgenie120.c
+"50 D:\git\gibby\catgenius\software\catgenius\..\common\catgenie120.c
 [v _PORTB_old `uc  1 s ]
+"51 D:\git\gibby\catgenius\software\catgenius\..\common\catgenie120.c
+[v _heat_old `b  1 s ]
+"52 D:\git\gibby\catgenius\software\catgenius\..\common\catgenie120.c
+[v _beep_bits `uc  1 s ]
 [s S260 `us 1 `ul 1 ]
 [n S260 timer timer1 overflows ]
-"56 D:\git\gibby\catgenius\software\catgenius\..\common\catgenie120.c
-[v F3109 `(v  0 tf1`uc ]
-[s S261 `S260 1 `ul 1 `uc 1 `*Vuc 1 `uc 1 `*F3109 1 ]
-[n S261 debouncer timer timeout state port port_mask handler ]
-"58 D:\git\gibby\catgenius\software\catgenius\..\common\catgenie120.c
-[v _debouncers `S261  -> 3 `i s ]
+"59 D:\git\gibby\catgenius\software\catgenius\..\common\catgenie120.c
+[v F3112 `(v  0 tf1`uc ]
+[s S261 `S260 1 :1 `uc 1 :3 `uc 1 `*Vuc 1 `*F3112 1 ]
+[n S261 debouncer timer state port_bit port handler ]
+"61 D:\git\gibby\catgenius\software\catgenius\..\common\catgenie120.c
+[v _debouncers `S261  -> 2 `i s ]
 "16 D:\git\gibby\catgenius\software\catgenius\..\common\catgenie120.c
 [v _startbutton_event `(v  0 ef1`uc ]
 "17 D:\git\gibby\catgenius\software\catgenius\..\common\catgenie120.c
 [v _setupbutton_event `(v  0 ef1`uc ]
-"15 D:\git\gibby\catgenius\software\catgenius\..\common\catgenie120.c
-[v _heatsensor_event `(v  0 ef1`uc ]
-[s S262 `S260 1 `uc 1 `uc 1 `uc 1 `*Vuc 1 `uc 1 ]
-[n S262 pacer timer mask pattern repeat port port_mask ]
-"73 D:\git\gibby\catgenius\software\catgenius\..\common\catgenie120.c
-[v _pacers `S262  -> 5 `i s ]
+[s S262 `S260 1 `uc 1 :3 `uc 1 :1 `uc 1 :3 `uc 1 `*Vuc 1 ]
+[n S262 pacer timer pattern pattern_bit repeat port_bit port ]
+"74 D:\git\gibby\catgenius\software\catgenius\..\common\catgenie120.c
+[v _pacers `S262  -> 6 `i s ]
 "154 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic.h
 [v __delay `(v  0 ef1`ul ]
 [p i __delay ]
+"15 D:\git\gibby\catgenius\software\catgenius\..\common\catgenie120.c
+[v _heatsensor_event `(v  0 ef1`uc ]
 "30 D:\git\gibby\catgenius\software\catgenius\..\common\timer.h
-[v F3064 `*S260  1 t ]
+[v F3066 `*S260  1 t ]
 "31 D:\git\gibby\catgenius\software\catgenius\..\common\timer.h
 [v _settimeout `(v  0 ef2`C*S260`Cul ]
 "40 D:\git\gibby\catgenius\software\catgenius\..\common\timer.h
-[v F3078 `*CS260  1 t ]
+[v F3080 `*CS260  1 t ]
 "40 D:\git\gibby\catgenius\software\catgenius\..\common\timer.h
 [v _timeoutexpired `(uc  0 ef1`C*CS260 ]
 "38 D:\git\gibby\catgenius\software\catgenius\..\common\timer.h
-[v F3075 `*S260  1 t ]
+[v F3077 `*S260  1 t ]
 "38 D:\git\gibby\catgenius\software\catgenius\..\common\timer.h
 [v _timeoutnever `(v  0 ef1`C*S260 ]
-"86 D:\git\gibby\catgenius\software\catgenius\..\common\catgenie120.c
+"88 D:\git\gibby\catgenius\software\catgenius\..\common\catgenie120.c
 [v _set_pacer `(v  0 sf3`uc`uc`uc ]
 "36 D:\git\gibby\catgenius\software\catgenius\..\common\timer.h
-[v F3072 `*S260  1 t ]
+[v F3074 `*S260  1 t ]
 "36 D:\git\gibby\catgenius\software\catgenius\..\common\timer.h
 [v _timeoutnow `(v  0 ef1`C*S260 ]
 [; ;pic16f1939.h: 141: volatile unsigned char INDF0 @ 0x000;
@@ -4852,30 +4856,31 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 189: unsigned char __resetbits @ 32;
 [; ;pic.h: 190: bit __powerdown @ ((unsigned)&__resetbits*8)+3;
 [; ;pic.h: 191: bit __timeout @ ((unsigned)&__resetbits*8)+4;
-[; ;catgenie120.h: 179: unsigned char catgenie_init (void) ;
-[; ;catgenie120.h: 180: void catgenie_work (void) ;
-[; ;catgenie120.h: 183: void set_LED (unsigned char led,
-[; ;catgenie120.h: 184: unsigned char on);
-[; ;catgenie120.h: 185: void set_LED_Cat (unsigned char pattern,
-[; ;catgenie120.h: 186: unsigned char repeat);
-[; ;catgenie120.h: 187: void set_LED_Error (unsigned char pattern,
-[; ;catgenie120.h: 188: unsigned char repeat);
-[; ;catgenie120.h: 189: void set_LED_Cartridge (unsigned char pattern,
-[; ;catgenie120.h: 190: unsigned char repeat);
-[; ;catgenie120.h: 191: void set_LED_Locked (unsigned char pattern,
-[; ;catgenie120.h: 192: unsigned char repeat);
-[; ;catgenie120.h: 193: void set_Beeper (unsigned char pattern,
-[; ;catgenie120.h: 194: unsigned char repeat) ;
-[; ;catgenie120.h: 197: void set_Bowl (unsigned char mode);
-[; ;catgenie120.h: 198: unsigned char get_Bowl (void);
-[; ;catgenie120.h: 199: void set_Arm (unsigned char mode);
-[; ;catgenie120.h: 200: unsigned char get_Arm (void);
-[; ;catgenie120.h: 201: void set_Dosage (unsigned char on);
-[; ;catgenie120.h: 202: unsigned char get_Dosage (void);
-[; ;catgenie120.h: 203: void set_Pump (unsigned char on);
-[; ;catgenie120.h: 204: unsigned char get_Pump (void);
-[; ;catgenie120.h: 205: void set_Dryer (unsigned char on);
-[; ;catgenie120.h: 206: unsigned char get_Dryer (void);
+[; ;catgenie120.h: 192: unsigned char catgenie_init (void) ;
+[; ;catgenie120.h: 193: void catgenie_work (void) ;
+[; ;catgenie120.h: 196: void set_LED (unsigned char led,
+[; ;catgenie120.h: 197: unsigned char on);
+[; ;catgenie120.h: 198: void set_LED_Cat (unsigned char pattern,
+[; ;catgenie120.h: 199: unsigned char repeat);
+[; ;catgenie120.h: 200: void set_LED_Error (unsigned char pattern,
+[; ;catgenie120.h: 201: unsigned char repeat);
+[; ;catgenie120.h: 202: void set_LED_Cartridge (unsigned char pattern,
+[; ;catgenie120.h: 203: unsigned char repeat);
+[; ;catgenie120.h: 204: void set_LED_Locked (unsigned char pattern,
+[; ;catgenie120.h: 205: unsigned char repeat);
+[; ;catgenie120.h: 206: void set_Beeper (unsigned char pattern,
+[; ;catgenie120.h: 207: unsigned char repeat);
+[; ;catgenie120.h: 208: void key_Beep (unsigned char beeps);
+[; ;catgenie120.h: 211: void set_Bowl (unsigned char mode);
+[; ;catgenie120.h: 212: unsigned char get_Bowl (void);
+[; ;catgenie120.h: 213: void set_Arm (unsigned char mode);
+[; ;catgenie120.h: 214: unsigned char get_Arm (void);
+[; ;catgenie120.h: 215: void set_Dosage (unsigned char on);
+[; ;catgenie120.h: 216: unsigned char get_Dosage (void);
+[; ;catgenie120.h: 217: void set_Pump (unsigned char on);
+[; ;catgenie120.h: 218: unsigned char get_Pump (void);
+[; ;catgenie120.h: 219: void set_Dryer (unsigned char on);
+[; ;catgenie120.h: 220: unsigned char get_Dryer (void);
 [; ;timer.h: 19: struct timer {
 [; ;timer.h: 20: unsigned short timer1 ;
 [; ;timer.h: 21: unsigned long overflows ;
@@ -4898,92 +4903,70 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;catgenie120.c: 15: extern void heatsensor_event (unsigned char detected);
 [; ;catgenie120.c: 16: extern void startbutton_event (unsigned char up);
 [; ;catgenie120.c: 17: extern void setupbutton_event (unsigned char up);
-[; ;catgenie120.c: 48: static unsigned char PORTB_old;
-[; ;catgenie120.c: 50: struct debouncer {
-[; ;catgenie120.c: 51: struct timer timer;
-[; ;catgenie120.c: 52: unsigned long timeout;
-[; ;catgenie120.c: 53: unsigned char state;
-[; ;catgenie120.c: 54: volatile char *port;
-[; ;catgenie120.c: 55: unsigned char port_mask;
-[; ;catgenie120.c: 56: void (*handler)(unsigned char);
-[; ;catgenie120.c: 57: };
-"58 D:\git\gibby\catgenius\software\catgenius\..\common\catgenie120.c
+[; ;catgenie120.c: 50: static unsigned char PORTB_old;
+"51 D:\git\gibby\catgenius\software\catgenius\..\common\catgenie120.c
+[i _heat_old
+-> 0 `i
+]
+[; ;catgenie120.c: 51: static bit heat_old = 0;
+"52
+[i _beep_bits
+-> -> 0 `i `uc
+]
+[; ;catgenie120.c: 52: static unsigned char beep_bits = 0;
+[; ;catgenie120.c: 54: struct debouncer {
+[; ;catgenie120.c: 55: struct timer timer;
+[; ;catgenie120.c: 56: unsigned char state : 1;
+[; ;catgenie120.c: 57: unsigned port_bit : 3;
+[; ;catgenie120.c: 58: volatile char *port;
+[; ;catgenie120.c: 59: void (*handler)(unsigned char);
+[; ;catgenie120.c: 60: };
+"61
 [i _debouncers
 :U ..
 :U ..
 :U ..
 :U ..
-"59
+"62
 -> -> 65535 `ui `us
 -> -1 `ul
 ..
 ..
-/ / / * -> 4 `ul * -> 1000 `ul -> 1000 `ul -> -> -> 4 `i `l `ul -> -> -> 8 `i `l `ul -> -> -> 20 `i `l `ul
+-> -> 0 `i `uc
 -> -> 0 `i `uc
 &U _PORTB
--> << -> 1 `ui -> 0 `i `uc
 &U _startbutton_event
 ..
 :U ..
 :U ..
 :U ..
-"60
+"63
 -> -> 65535 `ui `us
 -> -1 `ul
 ..
 ..
-/ / / * -> 4 `ul * -> 1000 `ul -> 1000 `ul -> -> -> 4 `i `l `ul -> -> -> 8 `i `l `ul -> -> -> 20 `i `l `ul
 -> -> 0 `i `uc
+-> -> 5 `i `uc
 &U _PORTB
--> << -> 1 `ui -> 5 `i `uc
 &U _setupbutton_event
-..
-:U ..
-:U ..
-:U ..
-"61
--> -> 65535 `ui `us
--> -1 `ul
-..
-..
-/ / / * -> 4 `ul * -> 1000 `ul -> 1000 `ul -> -> -> 4 `i `l `ul -> -> -> 8 `i `l `ul -> -> -> 20 `i `l `ul
--> -> 0 `i `uc
-&U _PORTB
--> << -> 1 `ui -> 1 `i `uc
-&U _heatsensor_event
 ..
 ..
 ]
-[; ;catgenie120.c: 58: static struct debouncer debouncers[3] = {
-[; ;catgenie120.c: 59: {{0xFFFF, 0xFFFFFFFF}, (((((4UL * (1000UL * ((1000UL)))))/4)/8)/20), 0, &PORTB, (1U << (0)), startbutton_event},
-[; ;catgenie120.c: 60: {{0xFFFF, 0xFFFFFFFF}, (((((4UL * (1000UL * ((1000UL)))))/4)/8)/20), 0, &PORTB, (1U << (5)), setupbutton_event},
-[; ;catgenie120.c: 61: {{0xFFFF, 0xFFFFFFFF}, (((((4UL * (1000UL * ((1000UL)))))/4)/8)/20), 0, &PORTB, (1U << (1)), heatsensor_event}
-[; ;catgenie120.c: 62: };
-[; ;catgenie120.c: 64: struct pacer {
-[; ;catgenie120.c: 65: struct timer timer;
-[; ;catgenie120.c: 67: unsigned char mask;
+[; ;catgenie120.c: 61: static struct debouncer debouncers[2] = {
+[; ;catgenie120.c: 62: {{0xFFFF, 0xFFFFFFFF}, 0, (0), &PORTB, startbutton_event},
+[; ;catgenie120.c: 63: {{0xFFFF, 0xFFFFFFFF}, 0, (5), &PORTB, setupbutton_event}
+[; ;catgenie120.c: 64: };
+[; ;catgenie120.c: 66: struct pacer {
+[; ;catgenie120.c: 67: struct timer timer;
 [; ;catgenie120.c: 68: unsigned char pattern;
-[; ;catgenie120.c: 69: unsigned char repeat;
-[; ;catgenie120.c: 70: volatile char *port;
-[; ;catgenie120.c: 71: unsigned char port_mask;
-[; ;catgenie120.c: 72: };
-"73
+[; ;catgenie120.c: 69: unsigned pattern_bit : 3;
+[; ;catgenie120.c: 70: unsigned repeat : 1;
+[; ;catgenie120.c: 71: unsigned port_bit : 3;
+[; ;catgenie120.c: 72: volatile char *port;
+[; ;catgenie120.c: 73: };
+"74
 [i _pacers
 :U ..
-:U ..
-:U ..
-:U ..
-"74
--> -> 0 `i `us
--> -> -> 0 `i `l `ul
-..
-..
--> -> 1 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
-&U _LATC
--> << -> 1 `ui -> 1 `i `uc
-..
 :U ..
 :U ..
 :U ..
@@ -4992,11 +4975,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> -> 0 `i `l `ul
 ..
 ..
+-> -> 0 `i `uc
 -> -> 1 `i `uc
 -> -> 0 `i `uc
 -> -> 0 `i `uc
-&U _LATC
--> << -> 1 `ui -> 0 `i `uc
+-> &U _beep_bits `*Vuc
 ..
 :U ..
 :U ..
@@ -5006,11 +4989,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> -> 0 `i `l `ul
 ..
 ..
+-> -> 0 `i `uc
 -> -> 1 `i `uc
 -> -> 0 `i `uc
--> -> 0 `i `uc
-&U _LATE
--> << -> 1 `ui -> 2 `i `uc
+-> -> 1 `i `uc
+-> &U _beep_bits `*Vuc
 ..
 :U ..
 :U ..
@@ -5020,11 +5003,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> -> 0 `i `l `ul
 ..
 ..
+-> -> 0 `i `uc
 -> -> 1 `i `uc
 -> -> 0 `i `uc
 -> -> 0 `i `uc
-&U _LATE
--> << -> 1 `ui -> 0 `i `uc
+&U _LATC
 ..
 :U ..
 :U ..
@@ -5034,877 +5017,960 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> -> 0 `i `l `ul
 ..
 ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+&U _LATE
+..
+:U ..
+:U ..
+:U ..
+"79
+-> -> 0 `i `us
+-> -> -> 0 `i `l `ul
+..
+..
+-> -> 0 `i `uc
 -> -> 1 `i `uc
 -> -> 0 `i `uc
 -> -> 0 `i `uc
 &U _LATE
--> << -> 1 `ui -> 1 `i `uc
+..
+:U ..
+:U ..
+:U ..
+"80
+-> -> 0 `i `us
+-> -> -> 0 `i `l `ul
+..
+..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+&U _LATE
 ..
 ..
 ]
-[; ;catgenie120.c: 73: static struct pacer pacers[5] = {
-[; ;catgenie120.c: 74: {{0x0000, 0x00000000}, 0x01, 0x00, 0, &LATC, (1U << (1))},
-[; ;catgenie120.c: 75: {{0x0000, 0x00000000}, 0x01, 0x00, 0, &LATC, (1U << (0))},
-[; ;catgenie120.c: 76: {{0x0000, 0x00000000}, 0x01, 0x00, 0, &LATE, (1U << (2))},
-[; ;catgenie120.c: 77: {{0x0000, 0x00000000}, 0x01, 0x00, 0, &LATE, (1U << (0))},
-[; ;catgenie120.c: 78: {{0x0000, 0x00000000}, 0x01, 0x00, 0, &LATE, (1U << (1))}
-[; ;catgenie120.c: 79: };
-[; ;catgenie120.c: 86: static void set_pacer (unsigned char pacer, unsigned char pattern, unsigned char repeat);
-"100
+[; ;catgenie120.c: 74: static struct pacer pacers[6] = {
+[; ;catgenie120.c: 75: {{0x0000, 0x00000000}, 0x00, 0x1, 0, 0, &beep_bits},
+[; ;catgenie120.c: 76: {{0x0000, 0x00000000}, 0x00, 0x1, 0, 1, &beep_bits},
+[; ;catgenie120.c: 77: {{0x0000, 0x00000000}, 0x00, 0x1, 0, (0), &LATC},
+[; ;catgenie120.c: 78: {{0x0000, 0x00000000}, 0x00, 0x1, 0, (2), &LATE},
+[; ;catgenie120.c: 79: {{0x0000, 0x00000000}, 0x00, 0x1, 0, (0), &LATE},
+[; ;catgenie120.c: 80: {{0x0000, 0x00000000}, 0x00, 0x1, 0, (1), &LATE}
+[; ;catgenie120.c: 81: };
+[; ;catgenie120.c: 88: static void set_pacer (unsigned char pacer, unsigned char pattern, unsigned char repeat);
+"102
 [v _catgenie_init `(uc  1 ef ]
 {
-[; ;catgenie120.c: 93: unsigned char catgenie_init (void)
-[; ;catgenie120.c: 100: {
+[; ;catgenie120.c: 95: unsigned char catgenie_init (void)
+[; ;catgenie120.c: 102: {
 [e :U _catgenie_init ]
 [f ]
-"101
+"103
 [v _temp `uc  1 a ]
-[; ;catgenie120.c: 101: unsigned char temp ;
-[; ;catgenie120.c: 105: nWPUEN = 0;
-"105
+[; ;catgenie120.c: 103: unsigned char temp ;
+[; ;catgenie120.c: 107: nWPUEN = 0;
+"107
 [e = _nWPUEN -> -> 0 `i `b ]
-[; ;catgenie120.c: 111: TRISA = (1U << (0)) |
-[; ;catgenie120.c: 112: (1U << (4)) |
-[; ;catgenie120.c: 113: (1U << (1));
-"113
+[; ;catgenie120.c: 113: TRISA = (1U << (0)) |
+[; ;catgenie120.c: 114: (1U << (4)) |
+[; ;catgenie120.c: 115: (1U << (1));
+"115
 [e = _TRISA -> | | << -> 1 `ui -> 0 `i << -> 1 `ui -> 4 `i << -> 1 `ui -> 1 `i `uc ]
-[; ;catgenie120.c: 114: PORTA = 0x00;
-"114
+[; ;catgenie120.c: 116: PORTA = 0x00;
+"116
 [e = _PORTA -> -> 0 `i `uc ]
-[; ;catgenie120.c: 121: ANSELA = (1U << (1));
-"121
+[; ;catgenie120.c: 123: ANSELA = (1U << (1));
+"123
 [e = _ANSELA -> << -> 1 `ui -> 1 `i `uc ]
-[; ;catgenie120.c: 131: TRISB = (1U << (0)) |
-[; ;catgenie120.c: 132: (1U << (3)) |
-[; ;catgenie120.c: 133: (1U << (1)) |
-[; ;catgenie120.c: 134: (1U << (4)) |
-[; ;catgenie120.c: 135: (1U << (5)) |
-[; ;catgenie120.c: 136: (1U << (6)) |
-[; ;catgenie120.c: 137: (1U << (7)) ;
-"137
+[; ;catgenie120.c: 133: TRISB = (1U << ((0))) |
+[; ;catgenie120.c: 134: (1U << (3)) |
+[; ;catgenie120.c: 135: (1U << (1)) |
+[; ;catgenie120.c: 136: (1U << (4)) |
+[; ;catgenie120.c: 137: (1U << ((5))) |
+[; ;catgenie120.c: 138: (1U << (6)) |
+[; ;catgenie120.c: 139: (1U << (7)) ;
+"139
 [e = _TRISB -> | | | | | | << -> 1 `ui -> 0 `i << -> 1 `ui -> 3 `i << -> 1 `ui -> 1 `i << -> 1 `ui -> 4 `i << -> 1 `ui -> 5 `i << -> 1 `ui -> 6 `i << -> 1 `ui -> 7 `i `uc ]
-[; ;catgenie120.c: 138: PORTB = 0x00;
-"138
+[; ;catgenie120.c: 140: PORTB = 0x00;
+"140
 [e = _PORTB -> -> 0 `i `uc ]
-[; ;catgenie120.c: 144: ANSELB = 0;
-"144
-[e = _ANSELB -> -> 0 `i `uc ]
-[; ;catgenie120.c: 146: WPUB = ~(1U << (3));
+[; ;catgenie120.c: 146: ANSELB = 0;
 "146
+[e = _ANSELB -> -> 0 `i `uc ]
+[; ;catgenie120.c: 148: WPUB = ~(1U << (3));
+"148
 [e = _WPUB -> ~ << -> 1 `ui -> 3 `i `uc ]
-[; ;catgenie120.c: 153: IOCBP = (1U << (4));
-"153
-[e = _IOCBP -> << -> 1 `ui -> 4 `i `uc ]
-[; ;catgenie120.c: 154: IOCBN = (1U << (4));
-"154
-[e = _IOCBN -> << -> 1 `ui -> 4 `i `uc ]
-[; ;catgenie120.c: 155: IOCBF = 0;
+[; ;catgenie120.c: 155: IOCBP = (1U << (4));
 "155
-[e = _IOCBF -> -> 0 `i `uc ]
-[; ;catgenie120.c: 156: IOCIF = 0;
+[e = _IOCBP -> << -> 1 `ui -> 4 `i `uc ]
+[; ;catgenie120.c: 156: IOCBN = (1U << (4));
 "156
+[e = _IOCBN -> << -> 1 `ui -> 4 `i `uc ]
+[; ;catgenie120.c: 157: IOCBF = 0;
+"157
+[e = _IOCBF -> -> 0 `i `uc ]
+[; ;catgenie120.c: 158: IOCIF = 0;
+"158
 [e = _IOCIF -> -> 0 `i `b ]
-[; ;catgenie120.c: 162: IOCIE = 1;
-"162
+[; ;catgenie120.c: 164: IOCIE = 1;
+"164
 [e = _IOCIE -> -> 1 `i `b ]
-[; ;catgenie120.c: 165: PORTB_old = (1U << (0)) |
-[; ;catgenie120.c: 166: (1U << (5)) |
-[; ;catgenie120.c: 167: (1U << (1)) ;
-"167
+[; ;catgenie120.c: 167: PORTB_old = (1U << ((0))) |
+[; ;catgenie120.c: 168: (1U << ((5))) |
+[; ;catgenie120.c: 169: (1U << (1)) ;
+"169
 [e = _PORTB_old -> | | << -> 1 `ui -> 0 `i << -> 1 `ui -> 5 `i << -> 1 `ui -> 1 `i `uc ]
-[; ;catgenie120.c: 172: TRISC = (1U << (3)) |
-[; ;catgenie120.c: 173: (1U << (4)) |
-[; ;catgenie120.c: 174: (1U << (7)) ;
-"174
-[e = _TRISC -> | | << -> 1 `ui -> 3 `i << -> 1 `ui -> 4 `i << -> 1 `ui -> 7 `i `uc ]
-[; ;catgenie120.c: 176: PORTC = 0x00;
+[; ;catgenie120.c: 174: TRISC = (1U << (3)) |
+[; ;catgenie120.c: 175: (1U << (4)) |
+[; ;catgenie120.c: 176: (1U << (7)) ;
 "176
+[e = _TRISC -> | | << -> 1 `ui -> 3 `i << -> 1 `ui -> 4 `i << -> 1 `ui -> 7 `i `uc ]
+[; ;catgenie120.c: 178: PORTC = 0x00;
+"178
 [e = _PORTC -> -> 0 `i `uc ]
-[; ;catgenie120.c: 181: TRISD = 0;
-"181
+[; ;catgenie120.c: 183: TRISD = 0;
+"183
 [e = _TRISD -> -> 0 `i `uc ]
-[; ;catgenie120.c: 182: PORTD = 0;
-"182
+[; ;catgenie120.c: 184: PORTD = 0;
+"184
 [e = _PORTD -> -> 0 `i `uc ]
-[; ;catgenie120.c: 185: ANSELD = 0;
-"185
+[; ;catgenie120.c: 187: ANSELD = 0;
+"187
 [e = _ANSELD -> -> 0 `i `uc ]
-[; ;catgenie120.c: 191: TRISE = 0x00;
-"191
+[; ;catgenie120.c: 193: TRISE = 0x00;
+"193
 [e = _TRISE -> -> 0 `i `uc ]
-[; ;catgenie120.c: 192: PORTE = 0x00;
-"192
+[; ;catgenie120.c: 194: PORTE = 0x00;
+"194
 [e = _PORTE -> -> 0 `i `uc ]
-[; ;catgenie120.c: 195: ANSELE = 0;
-"195
-[e = _ANSELE -> -> 0 `i `uc ]
-[; ;catgenie120.c: 197: WPUE = 0x00;
+[; ;catgenie120.c: 197: ANSELE = 0;
 "197
+[e = _ANSELE -> -> 0 `i `uc ]
+[; ;catgenie120.c: 199: WPUE = 0x00;
+"199
 [e = _WPUE -> -> 0 `i `uc ]
-[; ;catgenie120.c: 201: _delay((unsigned long)((100)*((4UL * (1000UL * ((1000UL))))/4000.0)));
-"201
+[; ;catgenie120.c: 203: _delay((unsigned long)((100)*((4UL * (1000UL * ((1000UL))))/4000.0)));
+"203
 [e ( __delay (1 -> * -> -> 100 `i `d / -> * -> 4 `ul * -> 1000 `ul -> 1000 `ul `d .4000.0 `ul ]
-[; ;catgenie120.c: 202: _delay((unsigned long)((100)*((4UL * (1000UL * ((1000UL))))/4000.0)));
-"202
+[; ;catgenie120.c: 204: _delay((unsigned long)((100)*((4UL * (1000UL * ((1000UL))))/4000.0)));
+"204
 [e ( __delay (1 -> * -> -> 100 `i `d / -> * -> 4 `ul * -> 1000 `ul -> 1000 `ul `d .4000.0 `ul ]
-[; ;catgenie120.c: 205: for (temp = 0; temp < 3; temp++) {
-"205
+[; ;catgenie120.c: 207: for (temp = 0; temp < 2; temp++) {
+"207
 {
 [e = _temp -> -> 0 `i `uc ]
-[e $ < -> _temp `i -> 3 `i 264  ]
+[e $ < -> _temp `i -> 2 `i 264  ]
 [e $U 265  ]
 [e :U 264 ]
 {
-"206
-[v _tempmask `uc  1 a ]
-[; ;catgenie120.c: 206: unsigned char tempmask = debouncers[temp].port_mask;
-[e = _tempmask . *U + &U _debouncers * -> _temp `ux -> -> # *U &U _debouncers `ui `ux 4 ]
-[; ;catgenie120.c: 208: debouncers[temp].state = *debouncers[temp].port & tempmask;
 "208
-[e = . *U + &U _debouncers * -> _temp `ux -> -> # *U &U _debouncers `ui `ux 2 -> & -> *U . *U + &U _debouncers * -> _temp `ux -> -> # *U &U _debouncers `ui `ux 3 `i -> _tempmask `i `uc ]
-"209
+[v _mask `uc  1 a ]
+[; ;catgenie120.c: 208: unsigned char mask = 1 << debouncers[temp].port_bit;
+[e = _mask -> << -> 1 `i . *U + &U _debouncers * -> _temp `ux -> -> # *U &U _debouncers `ui `ux 2 `uc ]
+[; ;catgenie120.c: 210: debouncers[temp].state = *debouncers[temp].port & mask;
+"210
+[e = . *U + &U _debouncers * -> _temp `ux -> -> # *U &U _debouncers `ui `ux 1 -> & -> *U . *U + &U _debouncers * -> _temp `ux -> -> # *U &U _debouncers `ui `ux 3 `i -> _mask `i `uc ]
+"211
 }
-"205
+"207
 [e ++ _temp -> -> 1 `i `uc ]
-[e $ < -> _temp `i -> 3 `i 264  ]
+[e $ < -> _temp `i -> 2 `i 264  ]
 [e :U 265 ]
-"209
+"211
 }
-[; ;catgenie120.c: 209: }
-[; ;catgenie120.c: 212: temp = 0;
-"212
-[e = _temp -> -> 0 `i `uc ]
-[; ;catgenie120.c: 213: if (!(PORTB & (1U << (0))))
-"213
-[e $ ! ! != & -> _PORTB `ui << -> 1 `ui -> 0 `i -> -> 0 `i `ui 267  ]
-[; ;catgenie120.c: 214: temp |= (0x01 << 0);
+[; ;catgenie120.c: 211: }
+[; ;catgenie120.c: 214: temp = 0;
 "214
+[e = _temp -> -> 0 `i `uc ]
+[; ;catgenie120.c: 215: if (!(PORTB & (1U << ((0)))))
+"215
+[e $ ! ! != & -> _PORTB `ui << -> 1 `ui -> 0 `i -> -> 0 `i `ui 267  ]
+[; ;catgenie120.c: 216: temp |= (0x01 << 0);
+"216
 [e =| _temp -> << -> 1 `i -> 0 `i `uc ]
 [e :U 267 ]
-[; ;catgenie120.c: 215: if (!(PORTB & (1U << (5))))
-"215
+[; ;catgenie120.c: 217: if (!(PORTB & (1U << ((5)))))
+"217
 [e $ ! ! != & -> _PORTB `ui << -> 1 `ui -> 5 `i -> -> 0 `i `ui 268  ]
-[; ;catgenie120.c: 216: temp |= (0x01 << 1);
-"216
+[; ;catgenie120.c: 218: temp |= (0x01 << 1);
+"218
 [e =| _temp -> << -> 1 `i -> 1 `i `uc ]
 [e :U 268 ]
-[; ;catgenie120.c: 218: return temp;
-"218
+[; ;catgenie120.c: 220: return temp;
+"220
 [e ) _temp ]
 [e $UE 263  ]
-[; ;catgenie120.c: 219: }
-"219
+[; ;catgenie120.c: 221: }
+"221
 [e :UE 263 ]
 }
-"230
+"232
 [v _catgenie_work `(v  1 ef ]
 {
-[; ;catgenie120.c: 223: void catgenie_work (void)
-[; ;catgenie120.c: 230: {
+[; ;catgenie120.c: 225: void catgenie_work (void)
+[; ;catgenie120.c: 232: {
 [e :U _catgenie_work ]
 [f ]
-"231
+"233
 [v _temp `uc  1 a ]
-[; ;catgenie120.c: 231: unsigned char temp = 0;
+[; ;catgenie120.c: 233: unsigned char temp = 0;
 [e = _temp -> -> 0 `i `uc ]
-"232
+"234
 [v _status `uc  1 a ]
-[; ;catgenie120.c: 232: unsigned char status;
-[; ;catgenie120.c: 235: status = PORTB;
-"235
-[e = _status _PORTB ]
-[; ;catgenie120.c: 236: temp = status ^ PORTB_old;
-"236
-[e = _temp -> ^ -> _status `i -> _PORTB_old `i `uc ]
-[; ;catgenie120.c: 237: PORTB_old = status;
+[; ;catgenie120.c: 234: unsigned char status;
+[; ;catgenie120.c: 237: temp = PORTB & (1U << (1));
 "237
-[e = _PORTB_old _status ]
-[; ;catgenie120.c: 238: if (temp & (1U << (0)))
+[e = _temp -> & -> _PORTB `ui << -> 1 `ui -> 1 `i `uc ]
+[; ;catgenie120.c: 238: if (temp != heat_old) {
 "238
-[e $ ! != & -> _temp `ui << -> 1 `ui -> 0 `i -> -> 0 `i `ui 270  ]
-[; ;catgenie120.c: 239: settimeout(&debouncers[0].timer,
-[; ;catgenie120.c: 240: debouncers[0].timeout);
+[e $ ! != -> _temp `i -> _heat_old `i 270  ]
+{
+[; ;catgenie120.c: 239: heatsensor_event(temp);
+"239
+[e ( _heatsensor_event (1 _temp ]
+[; ;catgenie120.c: 240: heat_old = temp;
 "240
-[e ( _settimeout (2 , -> &U . *U + &U _debouncers * -> -> -> 0 `i `ui `ux -> -> # *U &U _debouncers `ui `ux 0 `C*S260 . *U + &U _debouncers * -> -> -> 0 `i `ui `ux -> -> # *U &U _debouncers `ui `ux 1 ]
-[e :U 270 ]
-[; ;catgenie120.c: 241: if (temp & (1U << (5)))
+[e = _heat_old -> _temp `b ]
 "241
-[e $ ! != & -> _temp `ui << -> 1 `ui -> 5 `i -> -> 0 `i `ui 271  ]
-[; ;catgenie120.c: 242: settimeout(&debouncers[1].timer,
-[; ;catgenie120.c: 243: debouncers[1].timeout);
-"243
-[e ( _settimeout (2 , -> &U . *U + &U _debouncers * -> -> -> 1 `i `ui `ux -> -> # *U &U _debouncers `ui `ux 0 `C*S260 . *U + &U _debouncers * -> -> -> 1 `i `ui `ux -> -> # *U &U _debouncers `ui `ux 1 ]
-[e :U 271 ]
-[; ;catgenie120.c: 244: if (temp & (1U << (1)))
+}
+[e :U 270 ]
+[; ;catgenie120.c: 241: }
+[; ;catgenie120.c: 244: status = PORTB;
 "244
-[e $ ! != & -> _temp `ui << -> 1 `ui -> 1 `i -> -> 0 `i `ui 272  ]
-[; ;catgenie120.c: 246: settimeout(&debouncers[2].timer,
-[; ;catgenie120.c: 247: debouncers[2].timeout);
+[e = _status _PORTB ]
+[; ;catgenie120.c: 245: temp = status ^ PORTB_old;
+"245
+[e = _temp -> ^ -> _status `i -> _PORTB_old `i `uc ]
+[; ;catgenie120.c: 246: PORTB_old = status;
+"246
+[e = _PORTB_old _status ]
+[; ;catgenie120.c: 247: if (temp & (1U << ((0))))
 "247
-[e ( _settimeout (2 , -> &U . *U + &U _debouncers * -> -> -> 2 `i `ui `ux -> -> # *U &U _debouncers `ui `ux 0 `C*S260 . *U + &U _debouncers * -> -> -> 2 `i `ui `ux -> -> # *U &U _debouncers `ui `ux 1 ]
-[e :U 272 ]
-[; ;catgenie120.c: 250: for (temp = 0; temp < 3; temp++)
+[e $ ! != & -> _temp `ui << -> 1 `ui -> 0 `i -> -> 0 `i `ui 271  ]
+[; ;catgenie120.c: 248: settimeout(&debouncers[0].timer, (((((4UL * (1000UL * ((1000UL)))))/4)/8)/20));
+"248
+[e ( _settimeout (2 , -> &U . *U + &U _debouncers * -> -> -> 0 `i `ui `ux -> -> # *U &U _debouncers `ui `ux 0 `C*S260 / / / * -> 4 `ul * -> 1000 `ul -> 1000 `ul -> -> -> 4 `i `l `ul -> -> -> 8 `i `l `ul -> -> -> 20 `i `l `ul ]
+[e :U 271 ]
+[; ;catgenie120.c: 249: if (temp & (1U << ((5))))
+"249
+[e $ ! != & -> _temp `ui << -> 1 `ui -> 5 `i -> -> 0 `i `ui 272  ]
+[; ;catgenie120.c: 250: settimeout(&debouncers[1].timer, (((((4UL * (1000UL * ((1000UL)))))/4)/8)/20));
 "250
+[e ( _settimeout (2 , -> &U . *U + &U _debouncers * -> -> -> 1 `i `ui `ux -> -> # *U &U _debouncers `ui `ux 0 `C*S260 / / / * -> 4 `ul * -> 1000 `ul -> 1000 `ul -> -> -> 4 `i `l `ul -> -> -> 8 `i `l `ul -> -> -> 20 `i `l `ul ]
+[e :U 272 ]
+[; ;catgenie120.c: 253: for (temp = 0; temp < 2; temp++)
+"253
 {
 [e = _temp -> -> 0 `i `uc ]
-[e $ < -> _temp `i -> 3 `i 273  ]
+[e $ < -> _temp `i -> 2 `i 273  ]
 [e $U 274  ]
-"251
+"254
 [e :U 273 ]
-[; ;catgenie120.c: 251: if (timeoutexpired(&debouncers[temp].timer)) {
+[; ;catgenie120.c: 254: if (timeoutexpired(&debouncers[temp].timer)) {
 [e $ ! != -> ( _timeoutexpired (1 -> &U . *U + &U _debouncers * -> _temp `ux -> -> # *U &U _debouncers `ui `ux 0 `C*CS260 `i -> -> -> 0 `i `uc `i 276  ]
 {
-"252
-[v _tempstate `uc  1 a ]
-[; ;catgenie120.c: 252: unsigned char tempstate = *debouncers[temp].port;
-[e = _tempstate *U . *U + &U _debouncers * -> _temp `ux -> -> # *U &U _debouncers `ui `ux 3 ]
-[; ;catgenie120.c: 253: tempstate &= debouncers[temp].port_mask;
-"253
-[e =& _tempstate . *U + &U _debouncers * -> _temp `ux -> -> # *U &U _debouncers `ui `ux 4 ]
-[; ;catgenie120.c: 255: if (tempstate != debouncers[temp].state) {
 "255
-[e $ ! != -> _tempstate `i -> . *U + &U _debouncers * -> _temp `ux -> -> # *U &U _debouncers `ui `ux 2 `i 277  ]
-{
-[; ;catgenie120.c: 257: debouncers[temp].handler(tempstate);
-"257
-[e ( *U . *U + &U _debouncers * -> _temp `ux -> -> # *U &U _debouncers `ui `ux 5 (1 _tempstate ]
-[; ;catgenie120.c: 258: debouncers[temp].state = tempstate;
+[v _tempstate `uc  1 a ]
+[; ;catgenie120.c: 255: unsigned char tempstate = *debouncers[temp].port;
+[e = _tempstate *U . *U + &U _debouncers * -> _temp `ux -> -> # *U &U _debouncers `ui `ux 3 ]
+[; ;catgenie120.c: 256: tempstate &= 1 << debouncers[temp].port_bit;
+"256
+[e =& _tempstate -> << -> 1 `i . *U + &U _debouncers * -> _temp `ux -> -> # *U &U _debouncers `ui `ux 2 `uc ]
+[; ;catgenie120.c: 258: if (tempstate != debouncers[temp].state) {
 "258
-[e = . *U + &U _debouncers * -> _temp `ux -> -> # *U &U _debouncers `ui `ux 2 _tempstate ]
-"259
+[e $ ! != -> _tempstate `i -> . *U + &U _debouncers * -> _temp `ux -> -> # *U &U _debouncers `ui `ux 1 `i 277  ]
+{
+[; ;catgenie120.c: 260: debouncers[temp].handler(tempstate);
+"260
+[e ( *U . *U + &U _debouncers * -> _temp `ux -> -> # *U &U _debouncers `ui `ux 4 (1 _tempstate ]
+[; ;catgenie120.c: 261: debouncers[temp].state = tempstate;
+"261
+[e = . *U + &U _debouncers * -> _temp `ux -> -> # *U &U _debouncers `ui `ux 1 _tempstate ]
+"262
 }
 [e :U 277 ]
-[; ;catgenie120.c: 259: }
-[; ;catgenie120.c: 260: timeoutnever(&debouncers[temp].timer);
-"260
+[; ;catgenie120.c: 262: }
+[; ;catgenie120.c: 263: timeoutnever(&debouncers[temp].timer);
+"263
 [e ( _timeoutnever (1 -> &U . *U + &U _debouncers * -> _temp `ux -> -> # *U &U _debouncers `ui `ux 0 `C*S260 ]
-"261
+"264
 }
 [e :U 276 ]
-"250
+"253
 [e ++ _temp -> -> 1 `i `uc ]
-[e $ < -> _temp `i -> 3 `i 273  ]
+[e $ < -> _temp `i -> 2 `i 273  ]
 [e :U 274 ]
-"264
+"267
 }
-[; ;catgenie120.c: 261: }
-[; ;catgenie120.c: 264: for (temp = 0; temp < 5; temp++)
+[; ;catgenie120.c: 264: }
+[; ;catgenie120.c: 267: for (temp = 0; temp < 6; temp++)
 {
 [e = _temp -> -> 0 `i `uc ]
-[e $ < -> _temp `i -> 5 `i 278  ]
+[e $ < -> _temp `i -> 6 `i 278  ]
 [e $U 279  ]
-"265
+"268
 [e :U 278 ]
-[; ;catgenie120.c: 265: if (timeoutexpired(&pacers[temp].timer)) {
+[; ;catgenie120.c: 268: if (timeoutexpired(&pacers[temp].timer)) {
 [e $ ! != -> ( _timeoutexpired (1 -> &U . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 0 `C*CS260 `i -> -> -> 0 `i `uc `i 281  ]
 {
-"266
-[v _tempmask `uc  1 a ]
-[; ;catgenie120.c: 266: unsigned char tempmask = pacers[temp].mask;
-[e = _tempmask . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 1 ]
-[; ;catgenie120.c: 269: settimeout(&pacers[temp].timer, (((((4UL * (1000UL * ((1000UL)))))/4)/8)/8));
 "269
-[e ( _settimeout (2 , -> &U . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 0 `C*S260 / / / * -> 4 `ul * -> 1000 `ul -> 1000 `ul -> -> -> 4 `i `l `ul -> -> -> 8 `i `l `ul -> -> -> 8 `i `l `ul ]
-[; ;catgenie120.c: 271: if (pacers[temp].pattern & tempmask)
-"271
-[e $ ! != & -> . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 2 `i -> _tempmask `i -> 0 `i 282  ]
-[; ;catgenie120.c: 272: *pacers[temp].port |= pacers[temp].port_mask;
+[v _mask `uc  1 a ]
+[; ;catgenie120.c: 269: unsigned char mask = 1 << pacers[temp].pattern_bit;
+[e = _mask -> << -> 1 `i . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 2 `uc ]
+[; ;catgenie120.c: 272: settimeout(&pacers[temp].timer, (((((4UL * (1000UL * ((1000UL)))))/4)/8)/8));
 "272
-[e =| *U . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 4 . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 5 ]
-[e $U 283  ]
-"273
-[e :U 282 ]
-[; ;catgenie120.c: 273: else
-[; ;catgenie120.c: 274: *pacers[temp].port &= ~pacers[temp].port_mask;
+[e ( _settimeout (2 , -> &U . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 0 `C*S260 / / / * -> 4 `ul * -> 1000 `ul -> 1000 `ul -> -> -> 4 `i `l `ul -> -> -> 8 `i `l `ul -> -> -> 8 `i `l `ul ]
+[; ;catgenie120.c: 274: if (pacers[temp].pattern & mask)
 "274
-[e =& *U . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 4 -> ~ -> . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 5 `i `uc ]
-[e :U 283 ]
-[; ;catgenie120.c: 276: if (!(pacers[temp].mask <<= 1)) {
+[e $ ! != & -> . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 1 `i -> _mask `i -> 0 `i 282  ]
+[; ;catgenie120.c: 275: *pacers[temp].port |= (1 << pacers[temp].port_bit);
+"275
+[e =| *U . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 5 -> << -> 1 `i . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 4 `uc ]
+[e $U 283  ]
 "276
-[e $ ! ! != -> =<< . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 1 -> 1 `i `i -> -> -> 0 `i `uc `i 284  ]
-{
-[; ;catgenie120.c: 277: pacers[temp].mask = 1;
+[e :U 282 ]
+[; ;catgenie120.c: 276: else
+[; ;catgenie120.c: 277: *pacers[temp].port &= ~(1 << pacers[temp].port_bit);
 "277
-[e = . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 1 -> -> 1 `i `uc ]
-[; ;catgenie120.c: 279: if (!pacers[temp].repeat)
+[e =& *U . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 5 -> ~ << -> 1 `i . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 4 `uc ]
+[e :U 283 ]
+[; ;catgenie120.c: 279: if (!++pacers[temp].pattern_bit) {
 "279
-[e $ ! ! != -> . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 3 `i -> -> -> 0 `i `uc `i 285  ]
-[; ;catgenie120.c: 280: pacers[temp].pattern = 0;
-"280
-[e = . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 2 -> -> 0 `i `uc ]
-[e :U 285 ]
+[e $ ! ! != -> =+ . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 2 -> -> 1 `i `uc `i -> -> -> 0 `i `uc `i 284  ]
+{
+[; ;catgenie120.c: 281: if (!pacers[temp].repeat)
 "281
-}
-[e :U 284 ]
+[e $ ! ! != -> . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 3 `i -> -> -> 0 `i `uc `i 285  ]
+[; ;catgenie120.c: 282: pacers[temp].pattern = 0;
 "282
-}
-[e :U 281 ]
-"264
-[e ++ _temp -> -> 1 `i `uc ]
-[e $ < -> _temp `i -> 5 `i 278  ]
-[e :U 279 ]
+[e = . *U + &U _pacers * -> _temp `ux -> -> # *U &U _pacers `ui `ux 1 -> -> 0 `i `uc ]
+[e :U 285 ]
 "283
 }
-[; ;catgenie120.c: 281: }
-[; ;catgenie120.c: 282: }
+[e :U 284 ]
+"284
+}
+[e :U 281 ]
+"267
+[e ++ _temp -> -> 1 `i `uc ]
+[e $ < -> _temp `i -> 6 `i 278  ]
+[e :U 279 ]
+"287
+}
 [; ;catgenie120.c: 283: }
+[; ;catgenie120.c: 284: }
+[; ;catgenie120.c: 287: if (beep_bits)
+[e $ ! != -> _beep_bits `i -> -> -> 0 `i `uc `i 286  ]
+[; ;catgenie120.c: 288: LATC |= (1U << (1));
+"288
+[e =| _LATC -> << -> 1 `ui -> 1 `i `uc ]
+[e $U 287  ]
+"289
+[e :U 286 ]
+[; ;catgenie120.c: 289: else
+[; ;catgenie120.c: 290: LATC &= ~(1U << (1));
+"290
+[e =& _LATC -> ~ << -> 1 `ui -> 1 `i `uc ]
+[e :U 287 ]
+[; ;catgenie120.c: 291: }
+"291
 [e :UE 269 ]
 }
-"288
+"296
 [v _set_LED `(v  1 ef2`uc`uc ]
 {
-[; ;catgenie120.c: 287: void set_LED (unsigned char led, unsigned char on)
-[; ;catgenie120.c: 288: {
+[; ;catgenie120.c: 295: void set_LED (unsigned char led, unsigned char on)
+[; ;catgenie120.c: 296: {
 [e :U _set_LED ]
 [v _led `uc  1 r1 ]
 [v _on `uc  1 r2 ]
 [f ]
-"289
-[v _latch `*Vuc  1 a ]
-"290
-[v _mask `uc  1 a ]
-[; ;catgenie120.c: 289: volatile unsigned char *latch;
-[; ;catgenie120.c: 290: unsigned char mask;
-[; ;catgenie120.c: 291: switch(led) {
-"291
-[e $U 288  ]
-{
-[; ;catgenie120.c: 292: case 1:
-"292
-[e :U 289 ]
-[; ;catgenie120.c: 293: latch = &LATC;
-"293
-[e = _latch &U _LATC ]
-[; ;catgenie120.c: 294: mask = (1U << (5));
-"294
-[e = _mask -> << -> 1 `ui -> 5 `i `uc ]
-[; ;catgenie120.c: 295: break;
-"295
-[e $U 287  ]
-[; ;catgenie120.c: 296: case 2:
-"296
-[e :U 290 ]
-[; ;catgenie120.c: 297: latch = &LATA;
 "297
-[e = _latch &U _LATA ]
-[; ;catgenie120.c: 298: mask = (1U << (2));
+[v _latch `*Vuc  1 a ]
 "298
-[e = _mask -> << -> 1 `ui -> 2 `i `uc ]
-[; ;catgenie120.c: 299: break;
+[v _mask `uc  1 a ]
+[; ;catgenie120.c: 297: volatile unsigned char *latch;
+[; ;catgenie120.c: 298: unsigned char mask;
+[; ;catgenie120.c: 299: switch(led) {
 "299
-[e $U 287  ]
-[; ;catgenie120.c: 300: case 3:
+[e $U 290  ]
+{
+[; ;catgenie120.c: 300: case 1:
 "300
 [e :U 291 ]
-[; ;catgenie120.c: 301: latch = &LATA;
+[; ;catgenie120.c: 301: latch = &LATC;
 "301
-[e = _latch &U _LATA ]
-[; ;catgenie120.c: 302: mask = (1U << (3));
+[e = _latch &U _LATC ]
+[; ;catgenie120.c: 302: mask = (1U << (5));
 "302
-[e = _mask -> << -> 1 `ui -> 3 `i `uc ]
+[e = _mask -> << -> 1 `ui -> 5 `i `uc ]
 [; ;catgenie120.c: 303: break;
 "303
-[e $U 287  ]
-[; ;catgenie120.c: 304: case 4:
+[e $U 289  ]
+[; ;catgenie120.c: 304: case 2:
 "304
 [e :U 292 ]
 [; ;catgenie120.c: 305: latch = &LATA;
 "305
 [e = _latch &U _LATA ]
-[; ;catgenie120.c: 306: mask = (1U << (5));
+[; ;catgenie120.c: 306: mask = (1U << (2));
 "306
-[e = _mask -> << -> 1 `ui -> 5 `i `uc ]
+[e = _mask -> << -> 1 `ui -> 2 `i `uc ]
 [; ;catgenie120.c: 307: break;
 "307
-[e $U 287  ]
-[; ;catgenie120.c: 308: default:
+[e $U 289  ]
+[; ;catgenie120.c: 308: case 3:
 "308
 [e :U 293 ]
-[; ;catgenie120.c: 309: return;
+[; ;catgenie120.c: 309: latch = &LATA;
 "309
-[e $UE 286  ]
+[e = _latch &U _LATA ]
+[; ;catgenie120.c: 310: mask = (1U << (3));
 "310
-}
-[; ;catgenie120.c: 310: }
-[e $U 287  ]
-"291
-[e :U 288 ]
-[e [\ _led , $ -> -> 1 `i `uc 289
- , $ -> -> 2 `i `uc 290
- , $ -> -> 3 `i `uc 291
- , $ -> -> 4 `i `uc 292
- 293 ]
-"310
-[e :U 287 ]
-[; ;catgenie120.c: 311: if (on)
+[e = _mask -> << -> 1 `ui -> 3 `i `uc ]
+[; ;catgenie120.c: 311: break;
 "311
-[e $ ! != -> _on `i -> -> -> 0 `i `uc `i 294  ]
-[; ;catgenie120.c: 312: *latch |= mask;
+[e $U 289  ]
+[; ;catgenie120.c: 312: case 4:
 "312
-[e =| *U _latch _mask ]
-[e $U 295  ]
-"313
 [e :U 294 ]
-[; ;catgenie120.c: 313: else
-[; ;catgenie120.c: 314: *latch &= ~mask;
+[; ;catgenie120.c: 313: latch = &LATA;
+"313
+[e = _latch &U _LATA ]
+[; ;catgenie120.c: 314: mask = (1U << (5));
 "314
-[e =& *U _latch -> ~ -> _mask `i `uc ]
-[e :U 295 ]
-[; ;catgenie120.c: 315: }
+[e = _mask -> << -> 1 `ui -> 5 `i `uc ]
+[; ;catgenie120.c: 315: break;
 "315
-[e :UE 286 ]
+[e $U 289  ]
+[; ;catgenie120.c: 316: default:
+"316
+[e :U 295 ]
+[; ;catgenie120.c: 317: return;
+"317
+[e $UE 288  ]
+"318
 }
+[; ;catgenie120.c: 318: }
+[e $U 289  ]
+"299
+[e :U 290 ]
+[e [\ _led , $ -> -> 1 `i `uc 291
+ , $ -> -> 2 `i `uc 292
+ , $ -> -> 3 `i `uc 293
+ , $ -> -> 4 `i `uc 294
+ 295 ]
+"318
+[e :U 289 ]
+[; ;catgenie120.c: 319: if (on)
 "319
+[e $ ! != -> _on `i -> -> -> 0 `i `uc `i 296  ]
+[; ;catgenie120.c: 320: *latch |= mask;
+"320
+[e =| *U _latch _mask ]
+[e $U 297  ]
+"321
+[e :U 296 ]
+[; ;catgenie120.c: 321: else
+[; ;catgenie120.c: 322: *latch &= ~mask;
+"322
+[e =& *U _latch -> ~ -> _mask `i `uc ]
+[e :U 297 ]
+[; ;catgenie120.c: 323: }
+"323
+[e :UE 288 ]
+}
+"327
 [v _set_LED_Error `(v  1 ef2`uc`uc ]
 {
-[; ;catgenie120.c: 318: void set_LED_Error (unsigned char pattern, unsigned char repeat)
-[; ;catgenie120.c: 319: {
+[; ;catgenie120.c: 326: void set_LED_Error (unsigned char pattern, unsigned char repeat)
+[; ;catgenie120.c: 327: {
 [e :U _set_LED_Error ]
 [v _pattern `uc  1 r1 ]
 [v _repeat `uc  1 r2 ]
 [f ]
-[; ;catgenie120.c: 320: set_pacer(1, pattern, repeat);
-"320
-[e ( _set_pacer (3 , , -> -> 1 `i `uc _pattern _repeat ]
-[; ;catgenie120.c: 321: }
-"321
-[e :UE 296 ]
+[; ;catgenie120.c: 328: set_pacer(2, pattern, repeat);
+"328
+[e ( _set_pacer (3 , , -> -> 2 `i `uc _pattern _repeat ]
+[; ;catgenie120.c: 329: }
+"329
+[e :UE 298 ]
 }
-"325
+"333
 [v _set_LED_Locked `(v  1 ef2`uc`uc ]
 {
-[; ;catgenie120.c: 324: void set_LED_Locked (unsigned char pattern, unsigned char repeat)
-[; ;catgenie120.c: 325: {
+[; ;catgenie120.c: 332: void set_LED_Locked (unsigned char pattern, unsigned char repeat)
+[; ;catgenie120.c: 333: {
 [e :U _set_LED_Locked ]
 [v _pattern `uc  1 r1 ]
 [v _repeat `uc  1 r2 ]
 [f ]
-[; ;catgenie120.c: 326: set_pacer(2, pattern, repeat);
-"326
-[e ( _set_pacer (3 , , -> -> 2 `i `uc _pattern _repeat ]
-[; ;catgenie120.c: 327: }
-"327
-[e :UE 297 ]
+[; ;catgenie120.c: 334: set_pacer(3, pattern, repeat);
+"334
+[e ( _set_pacer (3 , , -> -> 3 `i `uc _pattern _repeat ]
+[; ;catgenie120.c: 335: }
+"335
+[e :UE 299 ]
 }
-"331
+"339
 [v _set_LED_Cartridge `(v  1 ef2`uc`uc ]
 {
-[; ;catgenie120.c: 330: void set_LED_Cartridge (unsigned char pattern, unsigned char repeat)
-[; ;catgenie120.c: 331: {
+[; ;catgenie120.c: 338: void set_LED_Cartridge (unsigned char pattern, unsigned char repeat)
+[; ;catgenie120.c: 339: {
 [e :U _set_LED_Cartridge ]
 [v _pattern `uc  1 r1 ]
 [v _repeat `uc  1 r2 ]
 [f ]
-[; ;catgenie120.c: 332: set_pacer(3, pattern, repeat);
-"332
-[e ( _set_pacer (3 , , -> -> 3 `i `uc _pattern _repeat ]
-[; ;catgenie120.c: 333: }
-"333
-[e :UE 298 ]
+[; ;catgenie120.c: 340: set_pacer(4, pattern, repeat);
+"340
+[e ( _set_pacer (3 , , -> -> 4 `i `uc _pattern _repeat ]
+[; ;catgenie120.c: 341: }
+"341
+[e :UE 300 ]
 }
-"337
+"345
 [v _set_LED_Cat `(v  1 ef2`uc`uc ]
 {
-[; ;catgenie120.c: 336: void set_LED_Cat (unsigned char pattern, unsigned char repeat)
-[; ;catgenie120.c: 337: {
+[; ;catgenie120.c: 344: void set_LED_Cat (unsigned char pattern, unsigned char repeat)
+[; ;catgenie120.c: 345: {
 [e :U _set_LED_Cat ]
 [v _pattern `uc  1 r1 ]
 [v _repeat `uc  1 r2 ]
 [f ]
-[; ;catgenie120.c: 338: set_pacer(4, pattern, repeat);
-"338
-[e ( _set_pacer (3 , , -> -> 4 `i `uc _pattern _repeat ]
-[; ;catgenie120.c: 339: }
-"339
-[e :UE 299 ]
+[; ;catgenie120.c: 346: set_pacer(5, pattern, repeat);
+"346
+[e ( _set_pacer (3 , , -> -> 5 `i `uc _pattern _repeat ]
+[; ;catgenie120.c: 347: }
+"347
+[e :UE 301 ]
 }
-"343
+"351
 [v _set_Beeper `(v  1 ef2`uc`uc ]
 {
-[; ;catgenie120.c: 342: void set_Beeper (unsigned char pattern, unsigned char repeat)
-[; ;catgenie120.c: 343: {
+[; ;catgenie120.c: 350: void set_Beeper (unsigned char pattern, unsigned char repeat)
+[; ;catgenie120.c: 351: {
 [e :U _set_Beeper ]
 [v _pattern `uc  1 r1 ]
 [v _repeat `uc  1 r2 ]
 [f ]
-[; ;catgenie120.c: 344: set_pacer(0, pattern, repeat);
-"344
-[e ( _set_pacer (3 , , -> -> 0 `i `uc _pattern _repeat ]
-[; ;catgenie120.c: 345: }
-"345
-[e :UE 300 ]
+[; ;catgenie120.c: 352: set_pacer(1, pattern, repeat);
+"352
+[e ( _set_pacer (3 , , -> -> 1 `i `uc _pattern _repeat ]
+[; ;catgenie120.c: 353: }
+"353
+[e :UE 302 ]
 }
-"349
+"357
+[v _key_Beep `(v  1 ef1`uc ]
+{
+[; ;catgenie120.c: 356: void key_Beep (unsigned char beeps)
+[; ;catgenie120.c: 357: {
+[e :U _key_Beep ]
+[v _beeps `uc  1 r1 ]
+[f ]
+"358
+[v F3155 `uc  -> 0 `x s ]
+[i F3155
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 5 `i `uc
+-> -> 21 `i `uc
+-> -> 85 `i `uc
+..
+]
+[v _pattern `uc  5  a ]
+[; ;catgenie120.c: 358: unsigned char pattern[] = {0x00, 0x01, 0x05, 0x15, 0x55};
+[e = _pattern F3155 ]
+[; ;catgenie120.c: 360: if (beeps > 4)
+"360
+[e $ ! > -> _beeps `i -> 4 `i 304  ]
+[; ;catgenie120.c: 361: return;
+"361
+[e $UE 303  ]
+[e :U 304 ]
+[; ;catgenie120.c: 363: set_pacer(0, pattern[beeps], 0);
+"363
+[e ( _set_pacer (3 , , -> -> 0 `i `uc *U + &U _pattern * -> _beeps `ux -> -> # *U &U _pattern `ui `ux -> -> 0 `i `uc ]
+[; ;catgenie120.c: 364: }
+"364
+[e :UE 303 ]
+}
+"368
 [v _set_Bowl `(v  1 ef1`uc ]
 {
-[; ;catgenie120.c: 348: void set_Bowl (unsigned char mode)
-[; ;catgenie120.c: 349: {
+[; ;catgenie120.c: 367: void set_Bowl (unsigned char mode)
+[; ;catgenie120.c: 368: {
 [e :U _set_Bowl ]
 [v _mode `uc  1 r1 ]
 [f ]
-[; ;catgenie120.c: 350: switch (mode) {
-"350
-[e $U 303  ]
+[; ;catgenie120.c: 369: switch (mode) {
+"369
+[e $U 307  ]
 {
-[; ;catgenie120.c: 351: default:
-"351
-[e :U 304 ]
-[; ;catgenie120.c: 352: case 0:
-"352
-[e :U 305 ]
-[; ;catgenie120.c: 353: LATD &= ~((1U << (4)) | (1U << (5)));
-"353
+[; ;catgenie120.c: 370: default:
+"370
+[e :U 308 ]
+[; ;catgenie120.c: 371: case 0:
+"371
+[e :U 309 ]
+[; ;catgenie120.c: 372: LATD &= ~((1U << (4)) | (1U << (5)));
+"372
 [e =& _LATD -> ~ | << -> 1 `ui -> 4 `i << -> 1 `ui -> 5 `i `uc ]
-[; ;catgenie120.c: 354: break;
-"354
-[e $U 302  ]
-[; ;catgenie120.c: 355: case 1:
-"355
-[e :U 306 ]
-[; ;catgenie120.c: 356: LATD |= (1U << (4));
-"356
+[; ;catgenie120.c: 373: break;
+"373
+[e $U 306  ]
+[; ;catgenie120.c: 374: case 1:
+"374
+[e :U 310 ]
+[; ;catgenie120.c: 375: LATD |= (1U << (4));
+"375
 [e =| _LATD -> << -> 1 `ui -> 4 `i `uc ]
-[; ;catgenie120.c: 357: LATD |= (1U << (5));
-"357
+[; ;catgenie120.c: 376: LATD |= (1U << (5));
+"376
 [e =| _LATD -> << -> 1 `ui -> 5 `i `uc ]
-[; ;catgenie120.c: 358: break;
-"358
-[e $U 302  ]
-[; ;catgenie120.c: 359: case 2:
-"359
-[e :U 307 ]
-[; ;catgenie120.c: 360: LATD &= ~(1U << (4));
-"360
+[; ;catgenie120.c: 377: break;
+"377
+[e $U 306  ]
+[; ;catgenie120.c: 378: case 2:
+"378
+[e :U 311 ]
+[; ;catgenie120.c: 379: LATD &= ~(1U << (4));
+"379
 [e =& _LATD -> ~ << -> 1 `ui -> 4 `i `uc ]
-[; ;catgenie120.c: 361: LATD |= (1U << (5));
-"361
+[; ;catgenie120.c: 380: LATD |= (1U << (5));
+"380
 [e =| _LATD -> << -> 1 `ui -> 5 `i `uc ]
-[; ;catgenie120.c: 362: break;
-"362
-[e $U 302  ]
-"363
+[; ;catgenie120.c: 381: break;
+"381
+[e $U 306  ]
+"382
 }
-[; ;catgenie120.c: 363: }
-[e $U 302  ]
-"350
-[e :U 303 ]
-[e [\ _mode , $ -> -> 0 `i `uc 305
- , $ -> -> 1 `i `uc 306
- , $ -> -> 2 `i `uc 307
- 304 ]
-"363
-[e :U 302 ]
-[; ;catgenie120.c: 364: }
-"364
-[e :UE 301 ]
+[; ;catgenie120.c: 382: }
+[e $U 306  ]
+"369
+[e :U 307 ]
+[e [\ _mode , $ -> -> 0 `i `uc 309
+ , $ -> -> 1 `i `uc 310
+ , $ -> -> 2 `i `uc 311
+ 308 ]
+"382
+[e :U 306 ]
+[; ;catgenie120.c: 383: }
+"383
+[e :UE 305 ]
 }
-"368
+"387
 [v _get_Bowl `(uc  1 ef ]
 {
-[; ;catgenie120.c: 367: unsigned char get_Bowl (void)
-[; ;catgenie120.c: 368: {
+[; ;catgenie120.c: 386: unsigned char get_Bowl (void)
+[; ;catgenie120.c: 387: {
 [e :U _get_Bowl ]
 [f ]
-[; ;catgenie120.c: 369: switch (LATD & ((1U << (4)) | (1U << (5)))) {
-"369
-[e $U 310  ]
+[; ;catgenie120.c: 388: switch (LATD & ((1U << (4)) | (1U << (5)))) {
+"388
+[e $U 314  ]
 {
-[; ;catgenie120.c: 370: case (1U << (5)):
-"370
-[e :U 311 ]
-[; ;catgenie120.c: 371: return (2);
-"371
+[; ;catgenie120.c: 389: case (1U << (5)):
+"389
+[e :U 315 ]
+[; ;catgenie120.c: 390: return (2);
+"390
 [e ) -> -> 2 `i `uc ]
-[e $UE 308  ]
-[; ;catgenie120.c: 372: case (1U << (5)) | (1U << (4)):
-"372
-[e :U 312 ]
-[; ;catgenie120.c: 373: return (1);
-"373
+[e $UE 312  ]
+[; ;catgenie120.c: 391: case (1U << (5)) | (1U << (4)):
+"391
+[e :U 316 ]
+[; ;catgenie120.c: 392: return (1);
+"392
 [e ) -> -> 1 `i `uc ]
-[e $UE 308  ]
-"374
+[e $UE 312  ]
+"393
 }
-[; ;catgenie120.c: 374: }
-[e $U 309  ]
-"369
-[e :U 310 ]
-[e [\ & -> _LATD `ui | << -> 1 `ui -> 4 `i << -> 1 `ui -> 5 `i , $ << -> 1 `ui -> 5 `i 311
- , $ | << -> 1 `ui -> 5 `i << -> 1 `ui -> 4 `i 312
- 309 ]
-"374
-[e :U 309 ]
-[; ;catgenie120.c: 375: return (0);
-"375
+[; ;catgenie120.c: 393: }
+[e $U 313  ]
+"388
+[e :U 314 ]
+[e [\ & -> _LATD `ui | << -> 1 `ui -> 4 `i << -> 1 `ui -> 5 `i , $ << -> 1 `ui -> 5 `i 315
+ , $ | << -> 1 `ui -> 5 `i << -> 1 `ui -> 4 `i 316
+ 313 ]
+"393
+[e :U 313 ]
+[; ;catgenie120.c: 394: return (0);
+"394
 [e ) -> -> 0 `i `uc ]
-[e $UE 308  ]
-[; ;catgenie120.c: 376: }
-"376
-[e :UE 308 ]
+[e $UE 312  ]
+[; ;catgenie120.c: 395: }
+"395
+[e :UE 312 ]
 }
-"380
+"399
 [v _set_Arm `(v  1 ef1`uc ]
 {
-[; ;catgenie120.c: 379: void set_Arm (unsigned char mode)
-[; ;catgenie120.c: 380: {
+[; ;catgenie120.c: 398: void set_Arm (unsigned char mode)
+[; ;catgenie120.c: 399: {
 [e :U _set_Arm ]
 [v _mode `uc  1 r1 ]
 [f ]
-[; ;catgenie120.c: 381: switch (mode) {
-"381
-[e $U 315  ]
+[; ;catgenie120.c: 400: switch (mode) {
+"400
+[e $U 319  ]
 {
-[; ;catgenie120.c: 382: default:
-"382
-[e :U 316 ]
-[; ;catgenie120.c: 383: case 0:
-"383
-[e :U 317 ]
-[; ;catgenie120.c: 384: LATD &= ~((1U << (6)) | (1U << (7)));
-"384
+[; ;catgenie120.c: 401: default:
+"401
+[e :U 320 ]
+[; ;catgenie120.c: 402: case 0:
+"402
+[e :U 321 ]
+[; ;catgenie120.c: 403: LATD &= ~((1U << (6)) | (1U << (7)));
+"403
 [e =& _LATD -> ~ | << -> 1 `ui -> 6 `i << -> 1 `ui -> 7 `i `uc ]
-[; ;catgenie120.c: 385: break;
-"385
-[e $U 314  ]
-[; ;catgenie120.c: 386: case 2:
-"386
-[e :U 318 ]
-[; ;catgenie120.c: 387: LATD &= ~(1U << (6));
-"387
+[; ;catgenie120.c: 404: break;
+"404
+[e $U 318  ]
+[; ;catgenie120.c: 405: case 2:
+"405
+[e :U 322 ]
+[; ;catgenie120.c: 406: LATD &= ~(1U << (6));
+"406
 [e =& _LATD -> ~ << -> 1 `ui -> 6 `i `uc ]
-[; ;catgenie120.c: 388: LATD |= (1U << (7));
-"388
+[; ;catgenie120.c: 407: LATD |= (1U << (7));
+"407
 [e =| _LATD -> << -> 1 `ui -> 7 `i `uc ]
-[; ;catgenie120.c: 389: break;
-"389
-[e $U 314  ]
-[; ;catgenie120.c: 390: case 1:
-"390
-[e :U 319 ]
-[; ;catgenie120.c: 391: LATD |= (1U << (6));
-"391
+[; ;catgenie120.c: 408: break;
+"408
+[e $U 318  ]
+[; ;catgenie120.c: 409: case 1:
+"409
+[e :U 323 ]
+[; ;catgenie120.c: 410: LATD |= (1U << (6));
+"410
 [e =| _LATD -> << -> 1 `ui -> 6 `i `uc ]
-[; ;catgenie120.c: 392: LATD |= (1U << (7));
-"392
+[; ;catgenie120.c: 411: LATD |= (1U << (7));
+"411
 [e =| _LATD -> << -> 1 `ui -> 7 `i `uc ]
-[; ;catgenie120.c: 393: break;
-"393
-[e $U 314  ]
-"394
+[; ;catgenie120.c: 412: break;
+"412
+[e $U 318  ]
+"413
 }
-[; ;catgenie120.c: 394: }
-[e $U 314  ]
-"381
-[e :U 315 ]
-[e [\ _mode , $ -> -> 0 `i `uc 317
- , $ -> -> 2 `i `uc 318
- , $ -> -> 1 `i `uc 319
- 316 ]
-"394
-[e :U 314 ]
-[; ;catgenie120.c: 395: }
-"395
-[e :UE 313 ]
+[; ;catgenie120.c: 413: }
+[e $U 318  ]
+"400
+[e :U 319 ]
+[e [\ _mode , $ -> -> 0 `i `uc 321
+ , $ -> -> 2 `i `uc 322
+ , $ -> -> 1 `i `uc 323
+ 320 ]
+"413
+[e :U 318 ]
+[; ;catgenie120.c: 414: }
+"414
+[e :UE 317 ]
 }
-"399
+"418
 [v _get_Arm `(uc  1 ef ]
 {
-[; ;catgenie120.c: 398: unsigned char get_Arm (void)
-[; ;catgenie120.c: 399: {
+[; ;catgenie120.c: 417: unsigned char get_Arm (void)
+[; ;catgenie120.c: 418: {
 [e :U _get_Arm ]
 [f ]
-[; ;catgenie120.c: 400: switch (LATD & ((1U << (6)) | (1U << (7)))) {
-"400
-[e $U 322  ]
+[; ;catgenie120.c: 419: switch (LATD & ((1U << (6)) | (1U << (7)))) {
+"419
+[e $U 326  ]
 {
-[; ;catgenie120.c: 401: case (1U << (7)):
-"401
-[e :U 323 ]
-[; ;catgenie120.c: 402: return (2);
-"402
+[; ;catgenie120.c: 420: case (1U << (7)):
+"420
+[e :U 327 ]
+[; ;catgenie120.c: 421: return (2);
+"421
 [e ) -> -> 2 `i `uc ]
-[e $UE 320  ]
-[; ;catgenie120.c: 403: case (1U << (7)) | (1U << (6)):
-"403
-[e :U 324 ]
-[; ;catgenie120.c: 404: return (1);
-"404
+[e $UE 324  ]
+[; ;catgenie120.c: 422: case (1U << (7)) | (1U << (6)):
+"422
+[e :U 328 ]
+[; ;catgenie120.c: 423: return (1);
+"423
 [e ) -> -> 1 `i `uc ]
-[e $UE 320  ]
-"405
+[e $UE 324  ]
+"424
 }
-[; ;catgenie120.c: 405: }
-[e $U 321  ]
-"400
-[e :U 322 ]
-[e [\ & -> _LATD `ui | << -> 1 `ui -> 6 `i << -> 1 `ui -> 7 `i , $ << -> 1 `ui -> 7 `i 323
- , $ | << -> 1 `ui -> 7 `i << -> 1 `ui -> 6 `i 324
- 321 ]
-"405
-[e :U 321 ]
-[; ;catgenie120.c: 406: return (0);
-"406
+[; ;catgenie120.c: 424: }
+[e $U 325  ]
+"419
+[e :U 326 ]
+[e [\ & -> _LATD `ui | << -> 1 `ui -> 6 `i << -> 1 `ui -> 7 `i , $ << -> 1 `ui -> 7 `i 327
+ , $ | << -> 1 `ui -> 7 `i << -> 1 `ui -> 6 `i 328
+ 325 ]
+"424
+[e :U 325 ]
+[; ;catgenie120.c: 425: return (0);
+"425
 [e ) -> -> 0 `i `uc ]
-[e $UE 320  ]
-[; ;catgenie120.c: 407: }
-"407
-[e :UE 320 ]
+[e $UE 324  ]
+[; ;catgenie120.c: 426: }
+"426
+[e :UE 324 ]
 }
-"411
+"430
 [v _set_Dosage `(v  1 ef1`uc ]
 {
-[; ;catgenie120.c: 410: void set_Dosage (unsigned char on)
-[; ;catgenie120.c: 411: {
+[; ;catgenie120.c: 429: void set_Dosage (unsigned char on)
+[; ;catgenie120.c: 430: {
 [e :U _set_Dosage ]
 [v _on `uc  1 r1 ]
 [f ]
-[; ;catgenie120.c: 412: if (on)
-"412
-[e $ ! != -> _on `i -> -> -> 0 `i `uc `i 326  ]
-[; ;catgenie120.c: 413: LATD |= (1U << (3));
-"413
+[; ;catgenie120.c: 431: if (on)
+"431
+[e $ ! != -> _on `i -> -> -> 0 `i `uc `i 330  ]
+[; ;catgenie120.c: 432: LATD |= (1U << (3));
+"432
 [e =| _LATD -> << -> 1 `ui -> 3 `i `uc ]
-[e $U 327  ]
-"414
-[e :U 326 ]
-[; ;catgenie120.c: 414: else
-[; ;catgenie120.c: 415: LATD &= ~(1U << (3));
-"415
+[e $U 331  ]
+"433
+[e :U 330 ]
+[; ;catgenie120.c: 433: else
+[; ;catgenie120.c: 434: LATD &= ~(1U << (3));
+"434
 [e =& _LATD -> ~ << -> 1 `ui -> 3 `i `uc ]
-[e :U 327 ]
-[; ;catgenie120.c: 416: }
-"416
-[e :UE 325 ]
+[e :U 331 ]
+[; ;catgenie120.c: 435: }
+"435
+[e :UE 329 ]
 }
-"420
+"439
 [v _get_Dosage `(uc  1 ef ]
 {
-[; ;catgenie120.c: 419: unsigned char get_Dosage (void)
-[; ;catgenie120.c: 420: {
+[; ;catgenie120.c: 438: unsigned char get_Dosage (void)
+[; ;catgenie120.c: 439: {
 [e :U _get_Dosage ]
 [f ]
-[; ;catgenie120.c: 421: return (LATD & (1U << (3)));
-"421
+[; ;catgenie120.c: 440: return (LATD & (1U << (3)));
+"440
 [e ) -> & -> _LATD `ui << -> 1 `ui -> 3 `i `uc ]
-[e $UE 328  ]
-[; ;catgenie120.c: 422: }
-"422
-[e :UE 328 ]
+[e $UE 332  ]
+[; ;catgenie120.c: 441: }
+"441
+[e :UE 332 ]
 }
-"426
+"445
 [v _set_Pump `(v  1 ef1`uc ]
 {
-[; ;catgenie120.c: 425: void set_Pump (unsigned char on)
-[; ;catgenie120.c: 426: {
+[; ;catgenie120.c: 444: void set_Pump (unsigned char on)
+[; ;catgenie120.c: 445: {
 [e :U _set_Pump ]
 [v _on `uc  1 r1 ]
 [f ]
-[; ;catgenie120.c: 427: if (on)
-"427
-[e $ ! != -> _on `i -> -> -> 0 `i `uc `i 330  ]
-[; ;catgenie120.c: 428: LATD |= (1U << (1));
-"428
-[e =| _LATD -> << -> 1 `ui -> 1 `i `uc ]
-[e $U 331  ]
-"429
-[e :U 330 ]
-[; ;catgenie120.c: 429: else
-[; ;catgenie120.c: 430: LATD &= ~(1U << (1));
-"430
-[e =& _LATD -> ~ << -> 1 `ui -> 1 `i `uc ]
-[e :U 331 ]
-[; ;catgenie120.c: 431: }
-"431
-[e :UE 329 ]
-}
-"435
-[v _get_Pump `(uc  1 ef ]
-{
-[; ;catgenie120.c: 434: unsigned char get_Pump (void)
-[; ;catgenie120.c: 435: {
-[e :U _get_Pump ]
-[f ]
-[; ;catgenie120.c: 436: return (LATD & (1U << (1)));
-"436
-[e ) -> & -> _LATD `ui << -> 1 `ui -> 1 `i `uc ]
-[e $UE 332  ]
-[; ;catgenie120.c: 437: }
-"437
-[e :UE 332 ]
-}
-"441
-[v _set_Dryer `(v  1 ef1`uc ]
-{
-[; ;catgenie120.c: 440: void set_Dryer (unsigned char on)
-[; ;catgenie120.c: 441: {
-[e :U _set_Dryer ]
-[v _on `uc  1 r1 ]
-[f ]
-[; ;catgenie120.c: 442: if (on)
-"442
-[e $ ! != -> _on `i -> -> -> 0 `i `uc `i 334  ]
-[; ;catgenie120.c: 443: LATD |= (1U << (2));
-"443
-[e =| _LATD -> << -> 1 `ui -> 2 `i `uc ]
-[e $U 335  ]
-"444
-[e :U 334 ]
-[; ;catgenie120.c: 444: else
-[; ;catgenie120.c: 445: LATD &= ~(1U << (2));
-"445
-[e =& _LATD -> ~ << -> 1 `ui -> 2 `i `uc ]
-[e :U 335 ]
-[; ;catgenie120.c: 446: }
+[; ;catgenie120.c: 446: if (on)
 "446
+[e $ ! != -> _on `i -> -> -> 0 `i `uc `i 334  ]
+[; ;catgenie120.c: 447: LATD |= (1U << (1));
+"447
+[e =| _LATD -> << -> 1 `ui -> 1 `i `uc ]
+[e $U 335  ]
+"448
+[e :U 334 ]
+[; ;catgenie120.c: 448: else
+[; ;catgenie120.c: 449: LATD &= ~(1U << (1));
+"449
+[e =& _LATD -> ~ << -> 1 `ui -> 1 `i `uc ]
+[e :U 335 ]
+[; ;catgenie120.c: 450: }
+"450
 [e :UE 333 ]
 }
-"450
-[v _get_Dryer `(uc  1 ef ]
+"454
+[v _get_Pump `(uc  1 ef ]
 {
-[; ;catgenie120.c: 449: unsigned char get_Dryer (void)
-[; ;catgenie120.c: 450: {
-[e :U _get_Dryer ]
+[; ;catgenie120.c: 453: unsigned char get_Pump (void)
+[; ;catgenie120.c: 454: {
+[e :U _get_Pump ]
 [f ]
-[; ;catgenie120.c: 451: return (LATD & (1U << (2)));
-"451
-[e ) -> & -> _LATD `ui << -> 1 `ui -> 2 `i `uc ]
+[; ;catgenie120.c: 455: return (LATD & (1U << (1)));
+"455
+[e ) -> & -> _LATD `ui << -> 1 `ui -> 1 `i `uc ]
 [e $UE 336  ]
-[; ;catgenie120.c: 452: }
-"452
+[; ;catgenie120.c: 456: }
+"456
 [e :UE 336 ]
 }
 "460
+[v _set_Dryer `(v  1 ef1`uc ]
+{
+[; ;catgenie120.c: 459: void set_Dryer (unsigned char on)
+[; ;catgenie120.c: 460: {
+[e :U _set_Dryer ]
+[v _on `uc  1 r1 ]
+[f ]
+[; ;catgenie120.c: 461: if (on)
+"461
+[e $ ! != -> _on `i -> -> -> 0 `i `uc `i 338  ]
+[; ;catgenie120.c: 462: LATD |= (1U << (2));
+"462
+[e =| _LATD -> << -> 1 `ui -> 2 `i `uc ]
+[e $U 339  ]
+"463
+[e :U 338 ]
+[; ;catgenie120.c: 463: else
+[; ;catgenie120.c: 464: LATD &= ~(1U << (2));
+"464
+[e =& _LATD -> ~ << -> 1 `ui -> 2 `i `uc ]
+[e :U 339 ]
+[; ;catgenie120.c: 465: }
+"465
+[e :UE 337 ]
+}
+"469
+[v _get_Dryer `(uc  1 ef ]
+{
+[; ;catgenie120.c: 468: unsigned char get_Dryer (void)
+[; ;catgenie120.c: 469: {
+[e :U _get_Dryer ]
+[f ]
+[; ;catgenie120.c: 470: return (LATD & (1U << (2)));
+"470
+[e ) -> & -> _LATD `ui << -> 1 `ui -> 2 `i `uc ]
+[e $UE 340  ]
+[; ;catgenie120.c: 471: }
+"471
+[e :UE 340 ]
+}
+"479
 [v _set_pacer `(v  1 sf3`uc`uc`uc ]
 {
-[; ;catgenie120.c: 459: static void set_pacer (unsigned char pacer, unsigned char pattern, unsigned char repeat)
-[; ;catgenie120.c: 460: {
+[; ;catgenie120.c: 478: static void set_pacer (unsigned char pacer, unsigned char pattern, unsigned char repeat)
+[; ;catgenie120.c: 479: {
 [e :U _set_pacer ]
 [v _pacer `uc  1 r1 ]
 [v _pattern `uc  1 r2 ]
 [v _repeat `uc  1 r3 ]
 [f ]
-[; ;catgenie120.c: 461: if( repeat &&
-[; ;catgenie120.c: 462: (pacers[pacer].pattern == pattern) &&
-[; ;catgenie120.c: 463: (pacers[pacer].repeat == repeat) )
-"463
-[e $ ! && && != -> _repeat `i -> -> -> 0 `i `uc `i == -> . *U + &U _pacers * -> _pacer `ux -> -> # *U &U _pacers `ui `ux 2 `i -> _pattern `i == -> . *U + &U _pacers * -> _pacer `ux -> -> # *U &U _pacers `ui `ux 3 `i -> _repeat `i 338  ]
-[; ;catgenie120.c: 464: return;
-"464
-[e $UE 337  ]
-[e :U 338 ]
-[; ;catgenie120.c: 467: timeoutnow(&pacers[pacer].timer);
-"467
+[; ;catgenie120.c: 480: if( repeat &&
+[; ;catgenie120.c: 481: (pacers[pacer].pattern == pattern) &&
+[; ;catgenie120.c: 482: (pacers[pacer].repeat == repeat) )
+"482
+[e $ ! && && != -> _repeat `i -> -> -> 0 `i `uc `i == -> . *U + &U _pacers * -> _pacer `ux -> -> # *U &U _pacers `ui `ux 1 `i -> _pattern `i == -> . *U + &U _pacers * -> _pacer `ux -> -> # *U &U _pacers `ui `ux 3 `i -> _repeat `i 342  ]
+[; ;catgenie120.c: 483: return;
+"483
+[e $UE 341  ]
+[e :U 342 ]
+[; ;catgenie120.c: 486: timeoutnow(&pacers[pacer].timer);
+"486
 [e ( _timeoutnow (1 -> &U . *U + &U _pacers * -> _pacer `ux -> -> # *U &U _pacers `ui `ux 0 `C*S260 ]
-[; ;catgenie120.c: 469: pacers[pacer].mask = 0x01;
-"469
-[e = . *U + &U _pacers * -> _pacer `ux -> -> # *U &U _pacers `ui `ux 1 -> -> 1 `i `uc ]
-[; ;catgenie120.c: 471: pacers[pacer].pattern = pattern;
-"471
-[e = . *U + &U _pacers * -> _pacer `ux -> -> # *U &U _pacers `ui `ux 2 _pattern ]
-[; ;catgenie120.c: 473: pacers[pacer].repeat = repeat;
-"473
+[; ;catgenie120.c: 488: pacers[pacer].pattern_bit = 0x0;
+"488
+[e = . *U + &U _pacers * -> _pacer `ux -> -> # *U &U _pacers `ui `ux 2 -> -> 0 `i `uc ]
+[; ;catgenie120.c: 490: pacers[pacer].pattern = pattern;
+"490
+[e = . *U + &U _pacers * -> _pacer `ux -> -> # *U &U _pacers `ui `ux 1 _pattern ]
+[; ;catgenie120.c: 492: pacers[pacer].repeat = repeat;
+"492
 [e = . *U + &U _pacers * -> _pacer `ux -> -> # *U &U _pacers `ui `ux 3 _repeat ]
-[; ;catgenie120.c: 474: }
-"474
-[e :UE 337 ]
+[; ;catgenie120.c: 493: }
+"493
+[e :UE 341 ]
 }

@@ -3314,7 +3314,7 @@ extern int vsscanf(const char *, const char *, va_list);
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
 
-# 179 "D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h"
+# 192 "D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h"
 unsigned char catgenie_init (void) ;
 void catgenie_work (void) ;
 
@@ -3330,7 +3330,8 @@ unsigned char repeat);
 void set_LED_Locked (unsigned char pattern,
 unsigned char repeat);
 void set_Beeper (unsigned char pattern,
-unsigned char repeat) ;
+unsigned char repeat);
+void key_Beep (unsigned char beeps);
 
 
 void set_Bowl (unsigned char mode);
@@ -3397,7 +3398,8 @@ void inchours (void) ;
 void incweekday (void) ;
 
 # 11 "D:\git\gibby\catgenius\software\catgenius\../common/serial.h"
-void serial_init (unsigned long bitrate);
+void serial_init (unsigned long bitrate,
+unsigned char flow);
 void serial_term (void);
 void serial_rx_isr (void);
 void serial_tx_isr (void);
@@ -3424,13 +3426,11 @@ void catsensor_work (void) ;
 void catsensor_isr_timer (void) ;
 void catsensor_isr_input (void) ;
 
-# 12 "D:\git\gibby\catgenius\software\catgenius\../common/water.h"
+# 30 "D:\git\gibby\catgenius\software\catgenius\../common/water.h"
 void water_init (void) ;
 void water_work (void) ;
 
 
-unsigned int water_reflectionquality (void) ;
-unsigned char water_lightguidedirty (void) ;
 unsigned char water_detected (void) ;
 unsigned char water_filling (void) ;
 
@@ -3502,21 +3502,31 @@ unsigned char flags;
 flags = catgenie_init();
 
 # 89
-serial_init(19200UL);
+serial_init(19200UL, 0);
+
 
 printf("\n*** CatGenius ***\n");
 if (!nPOR) {
+
 printf("Power-on reset\n");
+
 flags |= (0x01 << 7);
 } else if (!nBOR) {
+
 printf("Brown-out reset\n");
+
 flags |= (0x01 << 7);
-} else if (!__timeout)
+}
+
+
+else if (!__timeout)
 printf("Watchdog reset\n");
 else if (!__powerdown)
 printf("Pin reset (sleep)\n");
 else
 printf("Pin reset\n");
+
+# 117
 nPOR = 1;
 nBOR = 1;
 
@@ -3563,11 +3573,11 @@ cmdline_work();
 
 litterlanguage_work();
 
-# 152
+# 165
 }
 }
 
-# 160
+# 173
 static void interrupt_init (void)
 {
 PORTB_old = PORTB;

@@ -2583,25 +2583,25 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _eeprom_write `(uc  0 ef2`uc`uc ]
 "42 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\eeprom_routines.h
 [v _eeprom_read `(uc  0 ef1`uc ]
-"18 D:\git\gibby\catgenius\software\catgenius\../common/water.h
+"34 D:\git\gibby\catgenius\software\catgenius\../common/water.h
 [v _water_detected `(uc  0 ef ]
-"19 D:\git\gibby\catgenius\software\catgenius\../common/water.h
+"35 D:\git\gibby\catgenius\software\catgenius\../common/water.h
 [v _water_filling `(uc  0 ef ]
 "40 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
-[v F3248 `*CS262  1 t ]
+[v F3250 `*CS262  1 t ]
 "40 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
 [v _timeoutexpired `(uc  0 ef1`C*CS262 ]
 "22 D:\git\gibby\catgenius\software\catgenius\../common/rtc.h
 [v _printtime `(v  0 ef ]
 "21 D:\git\gibby\catgenius\software\catgenius\litterlanguage.c
 [v _litterlanguage_event `(v  0 ef2`uc`uc ]
-"204 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
+"218 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
 [v _get_Pump `(uc  0 ef ]
 "38 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
-[v F3245 `*S262  1 t ]
+[v F3247 `*S262  1 t ]
 "38 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
 [v _timeoutnever `(v  0 ef1`C*S262 ]
-"201 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
+"215 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
 [v _set_Dosage `(v  0 ef1`uc ]
 "68 D:\git\gibby\catgenius\software\catgenius\litterlanguage.c
 [v _req_instruction `(v  0 sf1`*CS261 ]
@@ -2611,42 +2611,42 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _exe_instruction `(v  0 sf ]
 "71 D:\git\gibby\catgenius\software\catgenius\litterlanguage.c
 [v _wait_instruction `(v  0 sf ]
-"198 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
+"212 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
 [v _get_Bowl `(uc  0 ef ]
-"197 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
+"211 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
 [v _set_Bowl `(v  0 ef1`uc ]
-"200 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
+"214 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
 [v _get_Arm `(uc  0 ef ]
-"199 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
+"213 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
 [v _set_Arm `(v  0 ef1`uc ]
-"21 D:\git\gibby\catgenius\software\catgenius\../common/water.h
+"37 D:\git\gibby\catgenius\software\catgenius\../common/water.h
 [v _water_fill `(v  0 ef1`uc ]
-"202 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
+"216 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
 [v _get_Dosage `(uc  0 ef ]
-"203 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
+"217 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
 [v _set_Pump `(v  0 ef1`uc ]
-"206 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
+"220 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
 [v _get_Dryer `(uc  0 ef ]
-"205 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
+"219 D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h
 [v _set_Dryer `(v  0 ef1`uc ]
 "44 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
-[v F3254 `*S262  1 t ]
+[v F3256 `*S262  1 t ]
 "44 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
 [v _gettimestamp `(v  0 ef1`C*S262 ]
 "46 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
-[v F3257 `*CS262  1 t ]
-"47 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
 [v F3259 `*CS262  1 t ]
+"47 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
+[v F3261 `*CS262  1 t ]
 "47 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
 [v _timestampdiff `(ul  0 ef2`C*CS262`C*CS262 ]
 "30 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
-[v F3234 `*S262  1 t ]
+[v F3236 `*S262  1 t ]
 "31 D:\git\gibby\catgenius\software\catgenius\../common/timer.h
 [v _settimeout `(v  0 ef2`C*S262`Cul ]
 "13 D:\git\gibby\catgenius\software\catgenius\romwashprogram.h
 [v _romwashprogram_reqins `(v  0 ef1`*CS261 ]
 "14 D:\git\gibby\catgenius\software\catgenius\romwashprogram.h
-[v F3224 `*S261  1 t ]
+[v F3226 `*S261  1 t ]
 "14 D:\git\gibby\catgenius\software\catgenius\romwashprogram.h
 [v _romwashprogram_getins `(uc  0 ef1`C*S261 ]
 "22 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\string.h
@@ -4981,30 +4981,31 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;string.h: 57: extern char * strichr(const char *, int);
 [; ;string.h: 58: extern char * strrchr(const char *, int);
 [; ;string.h: 59: extern char * strrichr(const char *, int);
-[; ;catgenie120.h: 179: unsigned char catgenie_init (void) ;
-[; ;catgenie120.h: 180: void catgenie_work (void) ;
-[; ;catgenie120.h: 183: void set_LED (unsigned char led,
-[; ;catgenie120.h: 184: unsigned char on);
-[; ;catgenie120.h: 185: void set_LED_Cat (unsigned char pattern,
-[; ;catgenie120.h: 186: unsigned char repeat);
-[; ;catgenie120.h: 187: void set_LED_Error (unsigned char pattern,
-[; ;catgenie120.h: 188: unsigned char repeat);
-[; ;catgenie120.h: 189: void set_LED_Cartridge (unsigned char pattern,
-[; ;catgenie120.h: 190: unsigned char repeat);
-[; ;catgenie120.h: 191: void set_LED_Locked (unsigned char pattern,
-[; ;catgenie120.h: 192: unsigned char repeat);
-[; ;catgenie120.h: 193: void set_Beeper (unsigned char pattern,
-[; ;catgenie120.h: 194: unsigned char repeat) ;
-[; ;catgenie120.h: 197: void set_Bowl (unsigned char mode);
-[; ;catgenie120.h: 198: unsigned char get_Bowl (void);
-[; ;catgenie120.h: 199: void set_Arm (unsigned char mode);
-[; ;catgenie120.h: 200: unsigned char get_Arm (void);
-[; ;catgenie120.h: 201: void set_Dosage (unsigned char on);
-[; ;catgenie120.h: 202: unsigned char get_Dosage (void);
-[; ;catgenie120.h: 203: void set_Pump (unsigned char on);
-[; ;catgenie120.h: 204: unsigned char get_Pump (void);
-[; ;catgenie120.h: 205: void set_Dryer (unsigned char on);
-[; ;catgenie120.h: 206: unsigned char get_Dryer (void);
+[; ;catgenie120.h: 192: unsigned char catgenie_init (void) ;
+[; ;catgenie120.h: 193: void catgenie_work (void) ;
+[; ;catgenie120.h: 196: void set_LED (unsigned char led,
+[; ;catgenie120.h: 197: unsigned char on);
+[; ;catgenie120.h: 198: void set_LED_Cat (unsigned char pattern,
+[; ;catgenie120.h: 199: unsigned char repeat);
+[; ;catgenie120.h: 200: void set_LED_Error (unsigned char pattern,
+[; ;catgenie120.h: 201: unsigned char repeat);
+[; ;catgenie120.h: 202: void set_LED_Cartridge (unsigned char pattern,
+[; ;catgenie120.h: 203: unsigned char repeat);
+[; ;catgenie120.h: 204: void set_LED_Locked (unsigned char pattern,
+[; ;catgenie120.h: 205: unsigned char repeat);
+[; ;catgenie120.h: 206: void set_Beeper (unsigned char pattern,
+[; ;catgenie120.h: 207: unsigned char repeat);
+[; ;catgenie120.h: 208: void key_Beep (unsigned char beeps);
+[; ;catgenie120.h: 211: void set_Bowl (unsigned char mode);
+[; ;catgenie120.h: 212: unsigned char get_Bowl (void);
+[; ;catgenie120.h: 213: void set_Arm (unsigned char mode);
+[; ;catgenie120.h: 214: unsigned char get_Arm (void);
+[; ;catgenie120.h: 215: void set_Dosage (unsigned char on);
+[; ;catgenie120.h: 216: unsigned char get_Dosage (void);
+[; ;catgenie120.h: 217: void set_Pump (unsigned char on);
+[; ;catgenie120.h: 218: unsigned char get_Pump (void);
+[; ;catgenie120.h: 219: void set_Dryer (unsigned char on);
+[; ;catgenie120.h: 220: unsigned char get_Dryer (void);
 [; ;litterlanguage.h: 46: struct instruction {
 [; ;litterlanguage.h: 47: unsigned char opcode;
 [; ;litterlanguage.h: 48: unsigned int operant;
@@ -5037,14 +5038,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;timer.h: 47: struct timer const * const late_p) ;
 [; ;timer.h: 49: void delay (unsigned long * const delay) ;
 [; ;timer.h: 51: void microdelay (unsigned short const delay_us) ;
-[; ;water.h: 12: void water_init (void) ;
-[; ;water.h: 13: void water_work (void) ;
-[; ;water.h: 16: unsigned int water_reflectionquality (void) ;
-[; ;water.h: 17: unsigned char water_lightguidedirty (void) ;
-[; ;water.h: 18: unsigned char water_detected (void) ;
-[; ;water.h: 19: unsigned char water_filling (void) ;
-[; ;water.h: 21: void water_fill (unsigned char fill) ;
-[; ;water.h: 22: void water_ledalwayson (unsigned char on) ;
+[; ;water.h: 30: void water_init (void) ;
+[; ;water.h: 31: void water_work (void) ;
+[; ;water.h: 34: unsigned char water_detected (void) ;
+[; ;water.h: 35: unsigned char water_filling (void) ;
+[; ;water.h: 37: void water_fill (unsigned char fill) ;
+[; ;water.h: 38: void water_ledalwayson (unsigned char on) ;
 [; ;rtc.h: 11: struct time {
 [; ;rtc.h: 12: unsigned char seconds;
 [; ;rtc.h: 13: unsigned char minutes;
@@ -5604,7 +5603,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "270
 [s S305 :2 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 `ul 1 `ul 1 `ul 1 `ul 1 ]
 [n S305 . bowl arm water pump dosage dryer wait fill drain autodose ]
-[v F3343 `S305  1 s context ]
+[v F3341 `S305  1 s context ]
 [; ;litterlanguage.c: 259: static struct {
 [; ;litterlanguage.c: 260: unsigned bowl : 2;
 [; ;litterlanguage.c: 261: unsigned arm : 2;
@@ -5636,37 +5635,37 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;litterlanguage.c: 277: struct timer timer_now;
 [; ;litterlanguage.c: 280: context.bowl = get_Bowl();
 "280
-[e = . F3343 0 ( _get_Bowl ..  ]
+[e = . F3341 0 ( _get_Bowl ..  ]
 [; ;litterlanguage.c: 281: set_Bowl(0);
 "281
 [e ( _set_Bowl (1 -> -> 0 `i `uc ]
 [; ;litterlanguage.c: 282: context.arm = get_Arm();
 "282
-[e = . F3343 1 ( _get_Arm ..  ]
+[e = . F3341 1 ( _get_Arm ..  ]
 [; ;litterlanguage.c: 283: set_Arm(0);
 "283
 [e ( _set_Arm (1 -> -> 0 `i `uc ]
 [; ;litterlanguage.c: 284: context.water = water_filling();
 "284
-[e = . F3343 2 ( _water_filling ..  ]
+[e = . F3341 2 ( _water_filling ..  ]
 [; ;litterlanguage.c: 285: water_fill(0);
 "285
 [e ( _water_fill (1 -> -> 0 `i `uc ]
 [; ;litterlanguage.c: 286: context.dosage = get_Dosage();
 "286
-[e = . F3343 4 ( _get_Dosage ..  ]
+[e = . F3341 4 ( _get_Dosage ..  ]
 [; ;litterlanguage.c: 287: set_Dosage(0);
 "287
 [e ( _set_Dosage (1 -> -> 0 `i `uc ]
 [; ;litterlanguage.c: 288: context.pump = get_Pump();
 "288
-[e = . F3343 3 ( _get_Pump ..  ]
+[e = . F3341 3 ( _get_Pump ..  ]
 [; ;litterlanguage.c: 289: set_Pump(0);
 "289
 [e ( _set_Pump (1 -> -> 0 `i `uc ]
 [; ;litterlanguage.c: 290: context.dryer = get_Dryer();
 "290
-[e = . F3343 5 ( _get_Dryer ..  ]
+[e = . F3341 5 ( _get_Dryer ..  ]
 [; ;litterlanguage.c: 291: set_Dryer(0);
 "291
 [e ( _set_Dryer (1 -> -> 0 `i `uc ]
@@ -5675,25 +5674,25 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e ( _gettimestamp (1 -> &U _timer_now `C*S262 ]
 [; ;litterlanguage.c: 297: context.wait = timestampdiff(&timer_waitins, &timer_now);
 "297
-[e = . F3343 6 ( _timestampdiff (2 , -> &U _timer_waitins `C*CS262 -> &U _timer_now `C*CS262 ]
+[e = . F3341 6 ( _timestampdiff (2 , -> &U _timer_waitins `C*CS262 -> &U _timer_now `C*CS262 ]
 [; ;litterlanguage.c: 298: timeoutnever(&timer_waitins);
 "298
 [e ( _timeoutnever (1 -> &U _timer_waitins `C*S262 ]
 [; ;litterlanguage.c: 299: context.fill = timestampdiff(&timer_fill, &timer_now);
 "299
-[e = . F3343 7 ( _timestampdiff (2 , -> &U _timer_fill `C*CS262 -> &U _timer_now `C*CS262 ]
+[e = . F3341 7 ( _timestampdiff (2 , -> &U _timer_fill `C*CS262 -> &U _timer_now `C*CS262 ]
 [; ;litterlanguage.c: 300: timeoutnever(&timer_fill);
 "300
 [e ( _timeoutnever (1 -> &U _timer_fill `C*S262 ]
 [; ;litterlanguage.c: 301: context.drain = timestampdiff(&timer_drain, &timer_now);
 "301
-[e = . F3343 8 ( _timestampdiff (2 , -> &U _timer_drain `C*CS262 -> &U _timer_now `C*CS262 ]
+[e = . F3341 8 ( _timestampdiff (2 , -> &U _timer_drain `C*CS262 -> &U _timer_now `C*CS262 ]
 [; ;litterlanguage.c: 302: timeoutnever(&timer_drain);
 "302
 [e ( _timeoutnever (1 -> &U _timer_drain `C*S262 ]
 [; ;litterlanguage.c: 303: context.autodose = timestampdiff(&timer_autodose, &timer_now);
 "303
-[e = . F3343 9 ( _timestampdiff (2 , -> &U _timer_autodose `C*CS262 -> &U _timer_now `C*CS262 ]
+[e = . F3341 9 ( _timestampdiff (2 , -> &U _timer_autodose `C*CS262 -> &U _timer_now `C*CS262 ]
 [; ;litterlanguage.c: 304: timeoutnever(&timer_autodose);
 "304
 [e ( _timeoutnever (1 -> &U _timer_autodose `C*S262 ]
@@ -5718,10 +5717,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e ( _printf :s 20C ]
 [; ;litterlanguage.c: 312: if (context.wait != 0xFFFFFFFF)
 "312
-[e $ ! != . F3343 6 -> -1 `ul 311  ]
+[e $ ! != . F3341 6 -> -1 `ul 311  ]
 [; ;litterlanguage.c: 313: settimeout(&timer_waitins, context.wait);
 "313
-[e ( _settimeout (2 , -> &U _timer_waitins `C*S262 . F3343 6 ]
+[e ( _settimeout (2 , -> &U _timer_waitins `C*S262 . F3341 6 ]
 [e :U 311 ]
 [; ;litterlanguage.c: 314: if (error_fill) {
 "314
@@ -5741,10 +5740,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;litterlanguage.c: 318: } else if (context.fill != 0xFFFFFFFF)
 [e $U 313  ]
 [e :U 312 ]
-[e $ ! != . F3343 7 -> -1 `ul 314  ]
+[e $ ! != . F3341 7 -> -1 `ul 314  ]
 [; ;litterlanguage.c: 319: settimeout(&timer_fill, context.fill);
 "319
-[e ( _settimeout (2 , -> &U _timer_fill `C*S262 . F3343 7 ]
+[e ( _settimeout (2 , -> &U _timer_fill `C*S262 . F3341 7 ]
 [e :U 314 ]
 "320
 [e :U 313 ]
@@ -5765,37 +5764,37 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;litterlanguage.c: 324: } else if (context.drain != 0xFFFFFFFF)
 [e $U 316  ]
 [e :U 315 ]
-[e $ ! != . F3343 8 -> -1 `ul 317  ]
+[e $ ! != . F3341 8 -> -1 `ul 317  ]
 [; ;litterlanguage.c: 325: settimeout(&timer_drain, context.drain);
 "325
-[e ( _settimeout (2 , -> &U _timer_drain `C*S262 . F3343 8 ]
+[e ( _settimeout (2 , -> &U _timer_drain `C*S262 . F3341 8 ]
 [e :U 317 ]
 "326
 [e :U 316 ]
 [; ;litterlanguage.c: 326: if (context.autodose != 0xFFFFFFFF)
-[e $ ! != . F3343 9 -> -1 `ul 318  ]
+[e $ ! != . F3341 9 -> -1 `ul 318  ]
 [; ;litterlanguage.c: 327: settimeout(&timer_autodose, context.autodose);
 "327
-[e ( _settimeout (2 , -> &U _timer_autodose `C*S262 . F3343 9 ]
+[e ( _settimeout (2 , -> &U _timer_autodose `C*S262 . F3341 9 ]
 [e :U 318 ]
 [; ;litterlanguage.c: 329: set_Bowl(context.bowl);
 "329
-[e ( _set_Bowl (1 . F3343 0 ]
+[e ( _set_Bowl (1 . F3341 0 ]
 [; ;litterlanguage.c: 330: set_Arm(context.arm);
 "330
-[e ( _set_Arm (1 . F3343 1 ]
+[e ( _set_Arm (1 . F3341 1 ]
 [; ;litterlanguage.c: 331: water_fill(context.water);
 "331
-[e ( _water_fill (1 . F3343 2 ]
+[e ( _water_fill (1 . F3341 2 ]
 [; ;litterlanguage.c: 332: set_Dosage(context.dosage);
 "332
-[e ( _set_Dosage (1 . F3343 4 ]
+[e ( _set_Dosage (1 . F3341 4 ]
 [; ;litterlanguage.c: 333: set_Pump(context.pump);
 "333
-[e ( _set_Pump (1 . F3343 3 ]
+[e ( _set_Pump (1 . F3341 3 ]
 [; ;litterlanguage.c: 334: set_Dryer(context.dryer);
 "334
-[e ( _set_Dryer (1 . F3343 5 ]
+[e ( _set_Dryer (1 . F3341 5 ]
 "335
 }
 [e :U 309 ]
@@ -5911,11 +5910,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :UE 320 ]
 }
 "388
-[v _watersensor_event `(v  1 ef1`uc ]
+[v _waterdetection_event `(v  1 ef1`uc ]
 {
-[; ;litterlanguage.c: 381: void watersensor_event (unsigned char detected)
+[; ;litterlanguage.c: 381: void waterdetection_event (unsigned char detected)
 [; ;litterlanguage.c: 388: {
-[e :U _watersensor_event ]
+[e :U _waterdetection_event ]
 [v _detected `uc  1 r1 ]
 [f ]
 [; ;litterlanguage.c: 389: printtime();
@@ -5995,727 +5994,739 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :UE 324 ]
 }
 "423
-[v _heatsensor_event `(v  1 ef1`uc ]
+[v _watersensor_event `(v  1 ef1`ui ]
 {
-[; ;litterlanguage.c: 416: void heatsensor_event (unsigned char detected)
+[; ;litterlanguage.c: 416: void watersensor_event (unsigned int reflectionquality)
 [; ;litterlanguage.c: 423: {
-[e :U _heatsensor_event ]
-[v _detected `uc  1 r1 ]
+[e :U _watersensor_event ]
+[v _reflectionquality `ui  1 r1 ]
 [f ]
-[; ;litterlanguage.c: 424: error_overheat = detected;
+[; ;litterlanguage.c: 424: }
 "424
-[e = _error_overheat -> _detected `b ]
-[; ;litterlanguage.c: 425: litterlanguage_event(3, error_overheat);
-"425
-[e ( _litterlanguage_event (2 , -> -> 3 `i `uc -> -> _error_overheat `i `uc ]
-[; ;litterlanguage.c: 426: }
-"426
 [e :UE 330 ]
 }
 "435
+[v _heatsensor_event `(v  1 ef1`uc ]
+{
+[; ;litterlanguage.c: 428: void heatsensor_event (unsigned char detected)
+[; ;litterlanguage.c: 435: {
+[e :U _heatsensor_event ]
+[v _detected `uc  1 r1 ]
+[f ]
+[; ;litterlanguage.c: 436: error_overheat = detected ? 1 : 0;
+"436
+[e = _error_overheat -> ? != -> _detected `i -> -> -> 0 `i `uc `i : -> 1 `i -> 0 `i `b ]
+[; ;litterlanguage.c: 437: litterlanguage_event(3, error_overheat);
+"437
+[e ( _litterlanguage_event (2 , -> -> 3 `i `uc -> -> _error_overheat `i `uc ]
+[; ;litterlanguage.c: 438: }
+"438
+[e :UE 331 ]
+}
+"447
 [v _litterlanguage_cleanup `(v  1 sf1`uc ]
 {
-[; ;litterlanguage.c: 434: static void litterlanguage_cleanup (unsigned char wet)
-[; ;litterlanguage.c: 435: {
+[; ;litterlanguage.c: 446: static void litterlanguage_cleanup (unsigned char wet)
+[; ;litterlanguage.c: 447: {
 [e :U _litterlanguage_cleanup ]
 [v _wet `uc  1 r1 ]
 [f ]
-"436
+"448
 [v _cleanupprogram `CS261  -> 0 `x e ]
-[; ;litterlanguage.c: 436: extern const struct instruction cleanupprogram[];
-[; ;litterlanguage.c: 437: if (ins_state == 0) {
-"437
-[e $ ! == -> _ins_state `i -> 0 `i 332  ]
-{
-[; ;litterlanguage.c: 438: printtime();
-"438
-[e ( _printtime ..  ]
-[; ;litterlanguage.c: 439: printf("Starting %s cleanup\n", wet?"wet":"dry");
-"439
-[e ( _printf , (. :s 28C ? != -> _wet `i -> -> -> 0 `i `uc `i : :s 29C :s 30C ]
-[; ;litterlanguage.c: 440: prg_source = 0;
-"440
-[e = _prg_source -> -> 0 `i `uc ]
-[; ;litterlanguage.c: 441: ins_pointer = &cleanupprogram[0];
-"441
-[e = _ins_pointer &U *U + &U _cleanupprogram * -> -> -> 0 `i `ui `ux -> -> # *U &U _cleanupprogram `ui `ux ]
-[; ;litterlanguage.c: 442: wet_program = wet;
-"442
-[e = _wet_program -> _wet `b ]
-[; ;litterlanguage.c: 443: ins_state = 1 ;
-"443
-[e = _ins_state -> -> 1 `i `uc ]
-"444
-}
-[e :U 332 ]
-[; ;litterlanguage.c: 444: }
-[; ;litterlanguage.c: 445: }
-"445
-[e :UE 331 ]
-}
+[; ;litterlanguage.c: 448: extern const struct instruction cleanupprogram[];
+[; ;litterlanguage.c: 449: if (ins_state == 0) {
 "449
+[e $ ! == -> _ins_state `i -> 0 `i 333  ]
+{
+[; ;litterlanguage.c: 450: printtime();
+"450
+[e ( _printtime ..  ]
+[; ;litterlanguage.c: 451: printf("Starting %s cleanup\n", wet?"wet":"dry");
+"451
+[e ( _printf , (. :s 28C ? != -> _wet `i -> -> -> 0 `i `uc `i : :s 29C :s 30C ]
+[; ;litterlanguage.c: 452: prg_source = 0;
+"452
+[e = _prg_source -> -> 0 `i `uc ]
+[; ;litterlanguage.c: 453: ins_pointer = &cleanupprogram[0];
+"453
+[e = _ins_pointer &U *U + &U _cleanupprogram * -> -> -> 0 `i `ui `ux -> -> # *U &U _cleanupprogram `ui `ux ]
+[; ;litterlanguage.c: 454: wet_program = wet;
+"454
+[e = _wet_program -> _wet `b ]
+[; ;litterlanguage.c: 455: ins_state = 1 ;
+"455
+[e = _ins_state -> -> 1 `i `uc ]
+"456
+}
+[e :U 333 ]
+[; ;litterlanguage.c: 456: }
+[; ;litterlanguage.c: 457: }
+"457
+[e :UE 332 ]
+}
+"461
 [v _req_instruction `(v  1 sf1`*CS261 ]
 {
-[; ;litterlanguage.c: 448: static void req_instruction (struct instruction const *instruction)
-[; ;litterlanguage.c: 449: {
+[; ;litterlanguage.c: 460: static void req_instruction (struct instruction const *instruction)
+[; ;litterlanguage.c: 461: {
 [e :U _req_instruction ]
 [v _instruction `*CS261  1 r1 ]
 [f ]
-[; ;litterlanguage.c: 450: switch (prg_source) {
-"450
-[e $U 335  ]
+[; ;litterlanguage.c: 462: switch (prg_source) {
+"462
+[e $U 336  ]
 {
-[; ;litterlanguage.c: 451: case 0:
-"451
-[e :U 336 ]
-[; ;litterlanguage.c: 452: romwashprogram_reqins(instruction);
-"452
+[; ;litterlanguage.c: 463: case 0:
+"463
+[e :U 337 ]
+[; ;litterlanguage.c: 464: romwashprogram_reqins(instruction);
+"464
 [e ( _romwashprogram_reqins (1 _instruction ]
-"453
+"465
 }
-[; ;litterlanguage.c: 453: }
-[e $U 334  ]
-"450
+[; ;litterlanguage.c: 465: }
+[e $U 335  ]
+"462
+[e :U 336 ]
+[e [\ _prg_source , $ -> -> 0 `i `uc 337
+ 335 ]
+"465
 [e :U 335 ]
-[e [\ _prg_source , $ -> -> 0 `i `uc 336
- 334 ]
-"453
-[e :U 334 ]
-[; ;litterlanguage.c: 454: }
-"454
-[e :UE 333 ]
+[; ;litterlanguage.c: 466: }
+"466
+[e :UE 334 ]
 }
-"457
+"469
 [v _get_instruction `(uc  1 sf1`*S261 ]
 {
-[; ;litterlanguage.c: 456: static unsigned char get_instruction (struct instruction *instruction)
-[; ;litterlanguage.c: 457: {
+[; ;litterlanguage.c: 468: static unsigned char get_instruction (struct instruction *instruction)
+[; ;litterlanguage.c: 469: {
 [e :U _get_instruction ]
 [v _instruction `*S261  1 r1 ]
 [f ]
-[; ;litterlanguage.c: 458: switch (prg_source) {
-"458
-[e $U 339  ]
+[; ;litterlanguage.c: 470: switch (prg_source) {
+"470
+[e $U 340  ]
 {
-[; ;litterlanguage.c: 459: default:
-"459
-[e :U 340 ]
-[; ;litterlanguage.c: 460: case 0:
-"460
+[; ;litterlanguage.c: 471: default:
+"471
 [e :U 341 ]
-[; ;litterlanguage.c: 461: return romwashprogram_getins(instruction);
-"461
+[; ;litterlanguage.c: 472: case 0:
+"472
+[e :U 342 ]
+[; ;litterlanguage.c: 473: return romwashprogram_getins(instruction);
+"473
 [e ) ( _romwashprogram_getins (1 -> _instruction `C*S261 ]
-[e $UE 337  ]
-"462
+[e $UE 338  ]
+"474
 }
-[; ;litterlanguage.c: 462: }
-[e $U 338  ]
-"458
+[; ;litterlanguage.c: 474: }
+[e $U 339  ]
+"470
+[e :U 340 ]
+[e [\ _prg_source , $ -> -> 0 `i `uc 342
+ 341 ]
+"474
 [e :U 339 ]
-[e [\ _prg_source , $ -> -> 0 `i `uc 341
- 340 ]
-"462
-[e :U 338 ]
-[; ;litterlanguage.c: 463: }
-"463
-[e :UE 337 ]
+[; ;litterlanguage.c: 475: }
+"475
+[e :UE 338 ]
 }
-"466
+"478
 [v _exe_instruction `(v  1 sf ]
 {
-[; ;litterlanguage.c: 465: static void exe_instruction (void)
-[; ;litterlanguage.c: 466: {
+[; ;litterlanguage.c: 477: static void exe_instruction (void)
+[; ;litterlanguage.c: 478: {
 [e :U _exe_instruction ]
 [f ]
-"467
-[v F3356 `*CS261  1 s ret_address ]
-"468
-[v _temp `ui  1 a ]
-[; ;litterlanguage.c: 467: static struct instruction const * ret_address;
-[; ;litterlanguage.c: 468: unsigned int temp;
-[; ;litterlanguage.c: 471: printtime();
-"471
-[e ( _printtime ..  ]
-[; ;litterlanguage.c: 472: printf("IP 0x%04X: ", ins_pointer);
-"472
-[e ( _printf , (. :s 31C _ins_pointer ]
-[; ;litterlanguage.c: 474: switch (cur_instruction.opcode) {
-"474
-[e $U 344  ]
-{
-[; ;litterlanguage.c: 475: case 0x01:
-"475
-[e :U 345 ]
-[; ;litterlanguage.c: 477: printf("INS_BOWL, %s", (cur_instruction.operant == 0)?"BOWL_STOP":((cur_instruction.operant == 1)?"BOWL_CW":"BOWL_CCW"));
-"477
-[e ( _printf , (. :s 32C ? == . _cur_instruction 1 -> -> 0 `i `ui : :s 33C ? == . _cur_instruction 1 -> -> 1 `i `ui : :s 34C :s 35C ]
-[; ;litterlanguage.c: 479: set_Bowl((unsigned char)cur_instruction.operant);
 "479
-[e ( _set_Bowl (1 -> . _cur_instruction 1 `uc ]
-[; ;litterlanguage.c: 480: ins_pointer++;
+[v F3356 `*CS261  1 s ret_address ]
 "480
-[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
-[; ;litterlanguage.c: 481: ins_state = 3;
-"481
-[e = _ins_state -> -> 3 `i `uc ]
-[; ;litterlanguage.c: 482: break;
-"482
-[e $U 343  ]
-[; ;litterlanguage.c: 483: case 0x02:
+[v _temp `ui  1 a ]
+[; ;litterlanguage.c: 479: static struct instruction const * ret_address;
+[; ;litterlanguage.c: 480: unsigned int temp;
+[; ;litterlanguage.c: 483: printtime();
 "483
-[e :U 346 ]
-[; ;litterlanguage.c: 485: printf("INS_ARM, %s", (cur_instruction.operant == 0)?"ARM_STOP":((cur_instruction.operant == 1)?"ARM_DOWN":"ARM_UP"));
-"485
-[e ( _printf , (. :s 36C ? == . _cur_instruction 1 -> -> 0 `i `ui : :s 37C ? == . _cur_instruction 1 -> -> 1 `i `ui : :s 38C :s 39C ]
-[; ;litterlanguage.c: 487: set_Arm((unsigned char)cur_instruction.operant);
+[e ( _printtime ..  ]
+[; ;litterlanguage.c: 484: printf("IP 0x%04X: ", ins_pointer);
+"484
+[e ( _printf , (. :s 31C _ins_pointer ]
+[; ;litterlanguage.c: 486: switch (cur_instruction.opcode) {
+"486
+[e $U 345  ]
+{
+[; ;litterlanguage.c: 487: case 0x01:
 "487
-[e ( _set_Arm (1 -> . _cur_instruction 1 `uc ]
-[; ;litterlanguage.c: 488: ins_pointer++;
-"488
-[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
-[; ;litterlanguage.c: 489: ins_state = 3;
+[e :U 346 ]
+[; ;litterlanguage.c: 489: printf("INS_BOWL, %s", (cur_instruction.operant == 0)?"BOWL_STOP":((cur_instruction.operant == 1)?"BOWL_CW":"BOWL_CCW"));
 "489
-[e = _ins_state -> -> 3 `i `uc ]
-[; ;litterlanguage.c: 490: break;
-"490
-[e $U 343  ]
-[; ;litterlanguage.c: 491: case 0x03:
+[e ( _printf , (. :s 32C ? == . _cur_instruction 1 -> -> 0 `i `ui : :s 33C ? == . _cur_instruction 1 -> -> 1 `i `ui : :s 34C :s 35C ]
+[; ;litterlanguage.c: 491: set_Bowl((unsigned char)cur_instruction.operant);
 "491
-[e :U 347 ]
-[; ;litterlanguage.c: 493: printf("INS_WATER, %s%s", cur_instruction.operant?"on":"off", wet_program?"":" (nop)");
+[e ( _set_Bowl (1 -> . _cur_instruction 1 `uc ]
+[; ;litterlanguage.c: 492: ins_pointer++;
+"492
+[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
+[; ;litterlanguage.c: 493: ins_state = 3;
 "493
-[e ( _printf , , (. :s 40C ? != . _cur_instruction 1 -> -> 0 `i `ui : :s 41C :s 42C ? _wet_program : :s 43C :s 44C ]
-[; ;litterlanguage.c: 495: if (wet_program)
+[e = _ins_state -> -> 3 `i `uc ]
+[; ;litterlanguage.c: 494: break;
+"494
+[e $U 344  ]
+[; ;litterlanguage.c: 495: case 0x02:
 "495
-[e $ ! _wet_program 348  ]
-[; ;litterlanguage.c: 496: if (cur_instruction.operant) {
-"496
-[e $ ! != . _cur_instruction 1 -> -> 0 `i `ui 349  ]
-{
-[; ;litterlanguage.c: 497: if (eeprom_read((3)) < 2)
+[e :U 347 ]
+[; ;litterlanguage.c: 497: printf("INS_ARM, %s", (cur_instruction.operant == 0)?"ARM_STOP":((cur_instruction.operant == 1)?"ARM_DOWN":"ARM_UP"));
 "497
-[e $ ! < -> ( _eeprom_read (1 -> -> 3 `i `uc `i -> 2 `i 350  ]
-[; ;litterlanguage.c: 498: eeprom_write((3), 2);
-"498
-[e ( _eeprom_write (2 , -> -> 3 `i `uc -> -> 2 `i `uc ]
-[e :U 350 ]
-[; ;litterlanguage.c: 500: if (!water_detected()) {
+[e ( _printf , (. :s 36C ? == . _cur_instruction 1 -> -> 0 `i `ui : :s 37C ? == . _cur_instruction 1 -> -> 1 `i `ui : :s 38C :s 39C ]
+[; ;litterlanguage.c: 499: set_Arm((unsigned char)cur_instruction.operant);
+"499
+[e ( _set_Arm (1 -> . _cur_instruction 1 `uc ]
+[; ;litterlanguage.c: 500: ins_pointer++;
 "500
-[e $ ! ! != -> ( _water_detected ..  `i -> -> -> 0 `i `uc `i 351  ]
-{
-[; ;litterlanguage.c: 502: printf(" Filling");
+[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
+[; ;litterlanguage.c: 501: ins_state = 3;
+"501
+[e = _ins_state -> -> 3 `i `uc ]
+[; ;litterlanguage.c: 502: break;
 "502
-[e ( _printf :s 45C ]
-[; ;litterlanguage.c: 504: water_fill(1);
-"504
-[e ( _water_fill (1 -> -> 1 `i `uc ]
-[; ;litterlanguage.c: 505: settimeout(&timer_fill, ((3*60+15)*((((4UL * (1000UL * ((1000UL)))))/4)/8)));
-"505
-[e ( _settimeout (2 , -> &U _timer_fill `C*S262 * -> -> + * -> 3 `i -> 60 `i -> 15 `i `l `ul / / * -> 4 `ul * -> 1000 `ul -> 1000 `ul -> -> -> 4 `i `l `ul -> -> -> 8 `i `l `ul ]
-"507
-}
-[; ;litterlanguage.c: 507: }
-[e $U 352  ]
-"509
-[e :U 351 ]
-[; ;litterlanguage.c: 509: else
-[; ;litterlanguage.c: 510: printf(" (skipped)");
-"510
-[e ( _printf :s 46C ]
-[e :U 352 ]
-"512
-}
-[; ;litterlanguage.c: 512: } else {
-[e $U 353  ]
-[e :U 349 ]
-{
-[; ;litterlanguage.c: 514: water_fill(0);
-"514
-[e ( _water_fill (1 -> -> 0 `i `uc ]
-[; ;litterlanguage.c: 515: timeoutnever(&timer_fill);
-"515
-[e ( _timeoutnever (1 -> &U _timer_fill `C*S262 ]
-"516
-}
-[e :U 353 ]
+[e $U 344  ]
+[; ;litterlanguage.c: 503: case 0x03:
+"503
 [e :U 348 ]
-[; ;litterlanguage.c: 516: }
-[; ;litterlanguage.c: 517: ins_pointer++;
+[; ;litterlanguage.c: 505: printf("INS_WATER, %s%s", cur_instruction.operant?"on":"off", wet_program?"":" (nop)");
+"505
+[e ( _printf , , (. :s 40C ? != . _cur_instruction 1 -> -> 0 `i `ui : :s 41C :s 42C ? _wet_program : :s 43C :s 44C ]
+[; ;litterlanguage.c: 507: if (wet_program)
+"507
+[e $ ! _wet_program 349  ]
+[; ;litterlanguage.c: 508: if (cur_instruction.operant) {
+"508
+[e $ ! != . _cur_instruction 1 -> -> 0 `i `ui 350  ]
+{
+[; ;litterlanguage.c: 509: if (eeprom_read((3)) < 2)
+"509
+[e $ ! < -> ( _eeprom_read (1 -> -> 3 `i `uc `i -> 2 `i 351  ]
+[; ;litterlanguage.c: 510: eeprom_write((3), 2);
+"510
+[e ( _eeprom_write (2 , -> -> 3 `i `uc -> -> 2 `i `uc ]
+[e :U 351 ]
+[; ;litterlanguage.c: 512: if (!water_detected()) {
+"512
+[e $ ! ! != -> ( _water_detected ..  `i -> -> -> 0 `i `uc `i 352  ]
+{
+[; ;litterlanguage.c: 514: printf(" Filling");
+"514
+[e ( _printf :s 45C ]
+[; ;litterlanguage.c: 516: water_fill(1);
+"516
+[e ( _water_fill (1 -> -> 1 `i `uc ]
+[; ;litterlanguage.c: 517: settimeout(&timer_fill, ((3*60+15)*((((4UL * (1000UL * ((1000UL)))))/4)/8)));
 "517
-[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
-[; ;litterlanguage.c: 518: ins_state = 3;
-"518
-[e = _ins_state -> -> 3 `i `uc ]
-[; ;litterlanguage.c: 519: break;
+[e ( _settimeout (2 , -> &U _timer_fill `C*S262 * -> -> + * -> 3 `i -> 60 `i -> 15 `i `l `ul / / * -> 4 `ul * -> 1000 `ul -> 1000 `ul -> -> -> 4 `i `l `ul -> -> -> 8 `i `l `ul ]
 "519
-[e $U 343  ]
-[; ;litterlanguage.c: 520: case 0x04:
-"520
-[e :U 354 ]
-[; ;litterlanguage.c: 522: printf("INS_PUMP, %s%s", cur_instruction.operant?"on":"off", wet_program?"":" (nop)");
+}
+[; ;litterlanguage.c: 519: }
+[e $U 353  ]
+"521
+[e :U 352 ]
+[; ;litterlanguage.c: 521: else
+[; ;litterlanguage.c: 522: printf(" (skipped)");
 "522
-[e ( _printf , , (. :s 47C ? != . _cur_instruction 1 -> -> 0 `i `ui : :s 48C :s 49C ? _wet_program : :s 50C :s 51C ]
-[; ;litterlanguage.c: 524: if (wet_program) {
+[e ( _printf :s 46C ]
+[e :U 353 ]
 "524
-[e $ ! _wet_program 355  ]
+}
+[; ;litterlanguage.c: 524: } else {
+[e $U 354  ]
+[e :U 350 ]
 {
-[; ;litterlanguage.c: 526: printf(" Draining");
+[; ;litterlanguage.c: 526: water_fill(0);
 "526
-[e ( _printf :s 52C ]
-[; ;litterlanguage.c: 528: set_Pump((unsigned char)cur_instruction.operant);
+[e ( _water_fill (1 -> -> 0 `i `uc ]
+[; ;litterlanguage.c: 527: timeoutnever(&timer_fill);
+"527
+[e ( _timeoutnever (1 -> &U _timer_fill `C*S262 ]
 "528
-[e ( _set_Pump (1 -> . _cur_instruction 1 `uc ]
+}
+[e :U 354 ]
+[e :U 349 ]
+[; ;litterlanguage.c: 528: }
+[; ;litterlanguage.c: 529: ins_pointer++;
 "529
-}
-[; ;litterlanguage.c: 529: }
-[e $U 356  ]
+[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
+[; ;litterlanguage.c: 530: ins_state = 3;
+"530
+[e = _ins_state -> -> 3 `i `uc ]
+[; ;litterlanguage.c: 531: break;
 "531
-[e :U 355 ]
-[; ;litterlanguage.c: 531: else
-[; ;litterlanguage.c: 532: printf(" (skipped)");
+[e $U 344  ]
+[; ;litterlanguage.c: 532: case 0x04:
 "532
-[e ( _printf :s 53C ]
-[e :U 356 ]
-[; ;litterlanguage.c: 534: ins_pointer++;
+[e :U 355 ]
+[; ;litterlanguage.c: 534: printf("INS_PUMP, %s%s", cur_instruction.operant?"on":"off", wet_program?"":" (nop)");
 "534
-[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
-[; ;litterlanguage.c: 535: ins_state = 3;
-"535
-[e = _ins_state -> -> 3 `i `uc ]
-[; ;litterlanguage.c: 536: break;
+[e ( _printf , , (. :s 47C ? != . _cur_instruction 1 -> -> 0 `i `ui : :s 48C :s 49C ? _wet_program : :s 50C :s 51C ]
+[; ;litterlanguage.c: 536: if (wet_program) {
 "536
-[e $U 343  ]
-[; ;litterlanguage.c: 537: case 0x05:
-"537
-[e :U 357 ]
-[; ;litterlanguage.c: 539: printf("INS_DRYER, %s%s", cur_instruction.operant?"on":"off", wet_program?"":" (nop)");
-"539
-[e ( _printf , , (. :s 54C ? != . _cur_instruction 1 -> -> 0 `i `ui : :s 55C :s 56C ? _wet_program : :s 57C :s 58C ]
-[; ;litterlanguage.c: 541: if (wet_program)
+[e $ ! _wet_program 356  ]
+{
+[; ;litterlanguage.c: 538: printf(" Draining");
+"538
+[e ( _printf :s 52C ]
+[; ;litterlanguage.c: 540: set_Pump((unsigned char)cur_instruction.operant);
+"540
+[e ( _set_Pump (1 -> . _cur_instruction 1 `uc ]
 "541
-[e $ ! _wet_program 358  ]
-[; ;litterlanguage.c: 542: set_Dryer((unsigned char)cur_instruction.operant);
-"542
-[e ( _set_Dryer (1 -> . _cur_instruction 1 `uc ]
-[e :U 358 ]
-[; ;litterlanguage.c: 543: ins_pointer++;
+}
+[; ;litterlanguage.c: 541: }
+[e $U 357  ]
 "543
-[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
-[; ;litterlanguage.c: 544: ins_state = 3;
+[e :U 356 ]
+[; ;litterlanguage.c: 543: else
+[; ;litterlanguage.c: 544: printf(" (skipped)");
 "544
-[e = _ins_state -> -> 3 `i `uc ]
-[; ;litterlanguage.c: 545: break;
-"545
-[e $U 343  ]
-[; ;litterlanguage.c: 546: case 0x07:
+[e ( _printf :s 53C ]
+[e :U 357 ]
+[; ;litterlanguage.c: 546: ins_pointer++;
 "546
-[e :U 359 ]
-[; ;litterlanguage.c: 548: printf("INS_WAITTIME, %ums", cur_instruction.operant);
+[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
+[; ;litterlanguage.c: 547: ins_state = 3;
+"547
+[e = _ins_state -> -> 3 `i `uc ]
+[; ;litterlanguage.c: 548: break;
 "548
-[e ( _printf , (. :s 59C . _cur_instruction 1 ]
-[; ;litterlanguage.c: 550: settimeout( &timer_waitins,
-[; ;litterlanguage.c: 551: (unsigned long)cur_instruction.operant * (((((4UL * (1000UL * ((1000UL)))))/4)/8)/1000) );
+[e $U 344  ]
+[; ;litterlanguage.c: 549: case 0x05:
+"549
+[e :U 358 ]
+[; ;litterlanguage.c: 551: printf("INS_DRYER, %s%s", cur_instruction.operant?"on":"off", wet_program?"":" (nop)");
 "551
-[e ( _settimeout (2 , -> &U _timer_waitins `C*S262 * -> . _cur_instruction 1 `ul / / / * -> 4 `ul * -> 1000 `ul -> 1000 `ul -> -> -> 4 `i `l `ul -> -> -> 8 `i `l `ul -> -> -> 1000 `i `l `ul ]
-[; ;litterlanguage.c: 552: ins_state = 5;
-"552
-[e = _ins_state -> -> 5 `i `uc ]
-[; ;litterlanguage.c: 553: break;
+[e ( _printf , , (. :s 54C ? != . _cur_instruction 1 -> -> 0 `i `ui : :s 55C :s 56C ? _wet_program : :s 57C :s 58C ]
+[; ;litterlanguage.c: 553: if (wet_program)
 "553
-[e $U 343  ]
-[; ;litterlanguage.c: 554: case 0x08:
+[e $ ! _wet_program 359  ]
+[; ;litterlanguage.c: 554: set_Dryer((unsigned char)cur_instruction.operant);
 "554
-[e :U 360 ]
-[; ;litterlanguage.c: 556: printf("INS_WAITWATER, %s%s", cur_instruction.operant?"high":"low", wet_program?"":" (nop)");
+[e ( _set_Dryer (1 -> . _cur_instruction 1 `uc ]
+[e :U 359 ]
+[; ;litterlanguage.c: 555: ins_pointer++;
+"555
+[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
+[; ;litterlanguage.c: 556: ins_state = 3;
 "556
-[e ( _printf , , (. :s 60C ? != . _cur_instruction 1 -> -> 0 `i `ui : :s 61C :s 62C ? _wet_program : :s 63C :s 64C ]
-[; ;litterlanguage.c: 558: if (wet_program) {
+[e = _ins_state -> -> 3 `i `uc ]
+[; ;litterlanguage.c: 557: break;
+"557
+[e $U 344  ]
+[; ;litterlanguage.c: 558: case 0x07:
 "558
-[e $ ! _wet_program 361  ]
-{
-[; ;litterlanguage.c: 559: if (!cur_instruction.operant)
-"559
-[e $ ! ! != . _cur_instruction 1 -> -> 0 `i `ui 362  ]
-[; ;litterlanguage.c: 561: settimeout(&timer_drain, ((0*60+10)*((((4UL * (1000UL * ((1000UL)))))/4)/8)));
-"561
-[e ( _settimeout (2 , -> &U _timer_drain `C*S262 * -> -> + * -> 0 `i -> 60 `i -> 10 `i `l `ul / / * -> 4 `ul * -> 1000 `ul -> 1000 `ul -> -> -> 4 `i `l `ul -> -> -> 8 `i `l `ul ]
-[e :U 362 ]
-[; ;litterlanguage.c: 562: ins_state = 5;
-"562
-[e = _ins_state -> -> 5 `i `uc ]
+[e :U 360 ]
+[; ;litterlanguage.c: 560: printf("INS_WAITTIME, %ums", cur_instruction.operant);
+"560
+[e ( _printf , (. :s 59C . _cur_instruction 1 ]
+[; ;litterlanguage.c: 562: settimeout( &timer_waitins,
+[; ;litterlanguage.c: 563: (unsigned long)cur_instruction.operant * (((((4UL * (1000UL * ((1000UL)))))/4)/8)/1000) );
 "563
-}
-[; ;litterlanguage.c: 563: } else {
-[e $U 363  ]
-[e :U 361 ]
-{
-[; ;litterlanguage.c: 564: ins_pointer++;
+[e ( _settimeout (2 , -> &U _timer_waitins `C*S262 * -> . _cur_instruction 1 `ul / / / * -> 4 `ul * -> 1000 `ul -> 1000 `ul -> -> -> 4 `i `l `ul -> -> -> 8 `i `l `ul -> -> -> 1000 `i `l `ul ]
+[; ;litterlanguage.c: 564: ins_state = 5;
 "564
-[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
-[; ;litterlanguage.c: 565: ins_state = 3;
-"565
-[e = _ins_state -> -> 3 `i `uc ]
-"566
-}
-[e :U 363 ]
-[; ;litterlanguage.c: 566: }
-[; ;litterlanguage.c: 567: break;
-"567
-[e $U 343  ]
-[; ;litterlanguage.c: 568: case 0x09:
-"568
-[e :U 364 ]
-[; ;litterlanguage.c: 570: printf("INS_WAITDOSAGE%s", wet_program?"":" (nop)");
-"570
-[e ( _printf , (. :s 65C ? _wet_program : :s 66C :s 67C ]
-[; ;litterlanguage.c: 572: if (wet_program)
-"572
-[e $ ! _wet_program 365  ]
-[; ;litterlanguage.c: 573: ins_state = 5;
-"573
 [e = _ins_state -> -> 5 `i `uc ]
-[e $U 366  ]
+[; ;litterlanguage.c: 565: break;
+"565
+[e $U 344  ]
+[; ;litterlanguage.c: 566: case 0x08:
+"566
+[e :U 361 ]
+[; ;litterlanguage.c: 568: printf("INS_WAITWATER, %s%s", cur_instruction.operant?"high":"low", wet_program?"":" (nop)");
+"568
+[e ( _printf , , (. :s 60C ? != . _cur_instruction 1 -> -> 0 `i `ui : :s 61C :s 62C ? _wet_program : :s 63C :s 64C ]
+[; ;litterlanguage.c: 570: if (wet_program) {
+"570
+[e $ ! _wet_program 362  ]
+{
+[; ;litterlanguage.c: 571: if (!cur_instruction.operant)
+"571
+[e $ ! ! != . _cur_instruction 1 -> -> 0 `i `ui 363  ]
+[; ;litterlanguage.c: 573: settimeout(&timer_drain, ((0*60+10)*((((4UL * (1000UL * ((1000UL)))))/4)/8)));
+"573
+[e ( _settimeout (2 , -> &U _timer_drain `C*S262 * -> -> + * -> 0 `i -> 60 `i -> 10 `i `l `ul / / * -> 4 `ul * -> 1000 `ul -> 1000 `ul -> -> -> 4 `i `l `ul -> -> -> 8 `i `l `ul ]
+[e :U 363 ]
+[; ;litterlanguage.c: 574: ins_state = 5;
 "574
-[e :U 365 ]
-[; ;litterlanguage.c: 574: else {
-{
-[; ;litterlanguage.c: 575: ins_pointer++;
+[e = _ins_state -> -> 5 `i `uc ]
 "575
-[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
-[; ;litterlanguage.c: 576: ins_state = 3;
-"576
-[e = _ins_state -> -> 3 `i `uc ]
-"577
 }
-[e :U 366 ]
-[; ;litterlanguage.c: 577: }
-[; ;litterlanguage.c: 578: break;
-"578
-[e $U 343  ]
-[; ;litterlanguage.c: 579: case 0x0A:
-"579
-[e :U 367 ]
-[; ;litterlanguage.c: 581: printf("INS_SKIPIFDRY, %u%s", cur_instruction.operant, wet_program?" (nop)":"");
-"581
-[e ( _printf , , (. :s 68C . _cur_instruction 1 ? _wet_program : :s 69C :s 70C ]
-[; ;litterlanguage.c: 583: if (!wet_program)
-"583
-[e $ ! ! _wet_program 368  ]
-[; ;litterlanguage.c: 584: ins_pointer += cur_instruction.operant + 1;
-"584
-[e =+ _ins_pointer * -> + . _cur_instruction 1 -> -> 1 `i `ui `ux -> -> # *U _ins_pointer `ui `ux ]
-[e $U 369  ]
-"585
-[e :U 368 ]
-[; ;litterlanguage.c: 585: else
-[; ;litterlanguage.c: 586: ins_pointer++;
-"586
-[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
-[e :U 369 ]
-[; ;litterlanguage.c: 587: ins_state = 3;
-"587
-[e = _ins_state -> -> 3 `i `uc ]
-[; ;litterlanguage.c: 588: break;
-"588
-[e $U 343  ]
-[; ;litterlanguage.c: 589: case 0x0B:
-"589
-[e :U 370 ]
-[; ;litterlanguage.c: 591: printf("INS_SKIPIFWET, %u%s", cur_instruction.operant, wet_program?"":" (nop)");
-"591
-[e ( _printf , , (. :s 71C . _cur_instruction 1 ? _wet_program : :s 72C :s 73C ]
-[; ;litterlanguage.c: 593: if (wet_program)
-"593
-[e $ ! _wet_program 371  ]
-[; ;litterlanguage.c: 594: ins_pointer += cur_instruction.operant + 1;
-"594
-[e =+ _ins_pointer * -> + . _cur_instruction 1 -> -> 1 `i `ui `ux -> -> # *U _ins_pointer `ui `ux ]
-[e $U 372  ]
-"595
-[e :U 371 ]
-[; ;litterlanguage.c: 595: else
-[; ;litterlanguage.c: 596: ins_pointer++;
-"596
-[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
-[e :U 372 ]
-[; ;litterlanguage.c: 597: ins_state = 3;
-"597
-[e = _ins_state -> -> 3 `i `uc ]
-[; ;litterlanguage.c: 598: break;
-"598
-[e $U 343  ]
-[; ;litterlanguage.c: 599: case 0x06:
-"599
-[e :U 373 ]
-[; ;litterlanguage.c: 601: printf("INS_AUTODOSE, %u.%uml%s", cur_instruction.operant/10, cur_instruction.operant%10, wet_program?"":" (nop)");
-"601
-[e ( _printf , , , (. :s 74C / . _cur_instruction 1 -> -> 10 `i `ui % . _cur_instruction 1 -> -> 10 `i `ui ? _wet_program : :s 75C :s 76C ]
-[; ;litterlanguage.c: 603: if (wet_program) {
-"603
-[e $ ! _wet_program 374  ]
+[; ;litterlanguage.c: 575: } else {
+[e $U 364  ]
+[e :U 362 ]
 {
-[; ;litterlanguage.c: 604: settimeout(&timer_autodose,
-[; ;litterlanguage.c: 605: (unsigned long)cur_instruction.operant * ((((4UL * (1000UL * ((1000UL)))))/4)/8) * (10 / 10));
-"605
-[e ( _settimeout (2 , -> &U _timer_autodose `C*S262 * * -> . _cur_instruction 1 `ul / / * -> 4 `ul * -> 1000 `ul -> 1000 `ul -> -> -> 4 `i `l `ul -> -> -> 8 `i `l `ul -> -> / -> 10 `i -> 10 `i `l `ul ]
-[; ;litterlanguage.c: 606: set_Dosage(1);
-"606
-[e ( _set_Dosage (1 -> -> 1 `i `uc ]
-"607
+[; ;litterlanguage.c: 576: ins_pointer++;
+"576
+[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
+[; ;litterlanguage.c: 577: ins_state = 3;
+"577
+[e = _ins_state -> -> 3 `i `uc ]
+"578
 }
-[e :U 374 ]
-[; ;litterlanguage.c: 607: }
+[e :U 364 ]
+[; ;litterlanguage.c: 578: }
+[; ;litterlanguage.c: 579: break;
+"579
+[e $U 344  ]
+[; ;litterlanguage.c: 580: case 0x09:
+"580
+[e :U 365 ]
+[; ;litterlanguage.c: 582: printf("INS_WAITDOSAGE%s", wet_program?"":" (nop)");
+"582
+[e ( _printf , (. :s 65C ? _wet_program : :s 66C :s 67C ]
+[; ;litterlanguage.c: 584: if (wet_program)
+"584
+[e $ ! _wet_program 366  ]
+[; ;litterlanguage.c: 585: ins_state = 5;
+"585
+[e = _ins_state -> -> 5 `i `uc ]
+[e $U 367  ]
+"586
+[e :U 366 ]
+[; ;litterlanguage.c: 586: else {
+{
+[; ;litterlanguage.c: 587: ins_pointer++;
+"587
+[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
+[; ;litterlanguage.c: 588: ins_state = 3;
+"588
+[e = _ins_state -> -> 3 `i `uc ]
+"589
+}
+[e :U 367 ]
+[; ;litterlanguage.c: 589: }
+[; ;litterlanguage.c: 590: break;
+"590
+[e $U 344  ]
+[; ;litterlanguage.c: 591: case 0x0A:
+"591
+[e :U 368 ]
+[; ;litterlanguage.c: 593: printf("INS_SKIPIFDRY, %u%s", cur_instruction.operant, wet_program?" (nop)":"");
+"593
+[e ( _printf , , (. :s 68C . _cur_instruction 1 ? _wet_program : :s 69C :s 70C ]
+[; ;litterlanguage.c: 595: if (!wet_program)
+"595
+[e $ ! ! _wet_program 369  ]
+[; ;litterlanguage.c: 596: ins_pointer += cur_instruction.operant + 1;
+"596
+[e =+ _ins_pointer * -> + . _cur_instruction 1 -> -> 1 `i `ui `ux -> -> # *U _ins_pointer `ui `ux ]
+[e $U 370  ]
+"597
+[e :U 369 ]
+[; ;litterlanguage.c: 597: else
+[; ;litterlanguage.c: 598: ins_pointer++;
+"598
+[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
+[e :U 370 ]
+[; ;litterlanguage.c: 599: ins_state = 3;
+"599
+[e = _ins_state -> -> 3 `i `uc ]
+[; ;litterlanguage.c: 600: break;
+"600
+[e $U 344  ]
+[; ;litterlanguage.c: 601: case 0x0B:
+"601
+[e :U 371 ]
+[; ;litterlanguage.c: 603: printf("INS_SKIPIFWET, %u%s", cur_instruction.operant, wet_program?"":" (nop)");
+"603
+[e ( _printf , , (. :s 71C . _cur_instruction 1 ? _wet_program : :s 72C :s 73C ]
+[; ;litterlanguage.c: 605: if (wet_program)
+"605
+[e $ ! _wet_program 372  ]
+[; ;litterlanguage.c: 606: ins_pointer += cur_instruction.operant + 1;
+"606
+[e =+ _ins_pointer * -> + . _cur_instruction 1 -> -> 1 `i `ui `ux -> -> # *U _ins_pointer `ui `ux ]
+[e $U 373  ]
+"607
+[e :U 372 ]
+[; ;litterlanguage.c: 607: else
 [; ;litterlanguage.c: 608: ins_pointer++;
 "608
 [e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
+[e :U 373 ]
 [; ;litterlanguage.c: 609: ins_state = 3;
 "609
 [e = _ins_state -> -> 3 `i `uc ]
 [; ;litterlanguage.c: 610: break;
 "610
-[e $U 343  ]
-[; ;litterlanguage.c: 611: case 0x0C:
+[e $U 344  ]
+[; ;litterlanguage.c: 611: case 0x06:
 "611
-[e :U 375 ]
-[; ;litterlanguage.c: 613: printf("INS_CALL, 0x%04X", cur_instruction.operant);
+[e :U 374 ]
+[; ;litterlanguage.c: 613: printf("INS_AUTODOSE, %u.%uml%s", cur_instruction.operant/10, cur_instruction.operant%10, wet_program?"":" (nop)");
 "613
-[e ( _printf , (. :s 77C . _cur_instruction 1 ]
-[; ;litterlanguage.c: 615: ret_address = ins_pointer + 1;
+[e ( _printf , , , (. :s 74C / . _cur_instruction 1 -> -> 10 `i `ui % . _cur_instruction 1 -> -> 10 `i `ui ? _wet_program : :s 75C :s 76C ]
+[; ;litterlanguage.c: 615: if (wet_program) {
 "615
-[e = F3356 + _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
-[; ;litterlanguage.c: 617: temp = 0x8000 | cur_instruction.operant;
+[e $ ! _wet_program 375  ]
+{
+[; ;litterlanguage.c: 616: settimeout(&timer_autodose,
+[; ;litterlanguage.c: 617: (unsigned long)cur_instruction.operant * ((((4UL * (1000UL * ((1000UL)))))/4)/8) * (10 / 10));
 "617
-[e = _temp | -> 32768 `ui . _cur_instruction 1 ]
-[; ;litterlanguage.c: 619: memcpy(&ins_pointer, &temp, sizeof(ins_pointer));
+[e ( _settimeout (2 , -> &U _timer_autodose `C*S262 * * -> . _cur_instruction 1 `ul / / * -> 4 `ul * -> 1000 `ul -> 1000 `ul -> -> -> 4 `i `l `ul -> -> -> 8 `i `l `ul -> -> / -> 10 `i -> 10 `i `l `ul ]
+[; ;litterlanguage.c: 618: set_Dosage(1);
+"618
+[e ( _set_Dosage (1 -> -> 1 `i `uc ]
 "619
-[e ( _memcpy (3 , , -> &U _ins_pointer `*v -> &U _temp `*Cv -> # _ins_pointer `ui ]
-[; ;litterlanguage.c: 620: ins_state = 3;
+}
+[e :U 375 ]
+[; ;litterlanguage.c: 619: }
+[; ;litterlanguage.c: 620: ins_pointer++;
 "620
-[e = _ins_state -> -> 3 `i `uc ]
-[; ;litterlanguage.c: 621: break;
+[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
+[; ;litterlanguage.c: 621: ins_state = 3;
 "621
-[e $U 343  ]
-[; ;litterlanguage.c: 622: case 0x0D:
-"622
-[e :U 376 ]
-[; ;litterlanguage.c: 624: printf("INS_RETURN, 0x%04X", ret_address);
-"624
-[e ( _printf , (. :s 78C F3356 ]
-[; ;litterlanguage.c: 626: ins_pointer = ret_address;
-"626
-[e = _ins_pointer F3356 ]
-[; ;litterlanguage.c: 627: ins_state = 3;
-"627
 [e = _ins_state -> -> 3 `i `uc ]
-[; ;litterlanguage.c: 628: break;
-"628
-[e $U 343  ]
-[; ;litterlanguage.c: 629: case 0x0E:
+[; ;litterlanguage.c: 622: break;
+"622
+[e $U 344  ]
+[; ;litterlanguage.c: 623: case 0x0C:
+"623
+[e :U 376 ]
+[; ;litterlanguage.c: 625: printf("INS_CALL, 0x%04X", cur_instruction.operant);
+"625
+[e ( _printf , (. :s 77C . _cur_instruction 1 ]
+[; ;litterlanguage.c: 627: ret_address = ins_pointer + 1;
+"627
+[e = F3356 + _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
+[; ;litterlanguage.c: 629: temp = 0x8000 | cur_instruction.operant;
 "629
-[e :U 377 ]
-[; ;litterlanguage.c: 631: printf("INS_END");
+[e = _temp | -> 32768 `ui . _cur_instruction 1 ]
+[; ;litterlanguage.c: 631: memcpy(&ins_pointer, &temp, sizeof(ins_pointer));
 "631
-[e ( _printf :s 79C ]
-[; ;litterlanguage.c: 633: eeprom_write((3), 0);
+[e ( _memcpy (3 , , -> &U _ins_pointer `*v -> &U _temp `*Cv -> # _ins_pointer `ui ]
+[; ;litterlanguage.c: 632: ins_state = 3;
+"632
+[e = _ins_state -> -> 3 `i `uc ]
+[; ;litterlanguage.c: 633: break;
 "633
-[e ( _eeprom_write (2 , -> -> 3 `i `uc -> -> 0 `i `uc ]
-[; ;litterlanguage.c: 634: litterlanguage_stop();
+[e $U 344  ]
+[; ;litterlanguage.c: 634: case 0x0D:
 "634
-[e ( _litterlanguage_stop ..  ]
-[; ;litterlanguage.c: 635: break;
-"635
-[e $U 343  ]
-[; ;litterlanguage.c: 636: case 0x00:
+[e :U 377 ]
+[; ;litterlanguage.c: 636: printf("INS_RETURN, 0x%04X", ret_address);
 "636
-[e :U 378 ]
-[; ;litterlanguage.c: 638: printf("INS_START, unexpected");
+[e ( _printf , (. :s 78C F3356 ]
+[; ;litterlanguage.c: 638: ins_pointer = ret_address;
 "638
-[e ( _printf :s 80C ]
-[; ;litterlanguage.c: 640: error_execution = 1;
+[e = _ins_pointer F3356 ]
+[; ;litterlanguage.c: 639: ins_state = 3;
+"639
+[e = _ins_state -> -> 3 `i `uc ]
+[; ;litterlanguage.c: 640: break;
 "640
-[e = _error_execution -> -> 1 `i `b ]
-[; ;litterlanguage.c: 641: litterlanguage_event(4, error_execution);
+[e $U 344  ]
+[; ;litterlanguage.c: 641: case 0x0E:
 "641
-[e ( _litterlanguage_event (2 , -> -> 4 `i `uc -> -> _error_execution `i `uc ]
-[; ;litterlanguage.c: 642: break;
-"642
-[e $U 343  ]
-[; ;litterlanguage.c: 643: default:
+[e :U 378 ]
+[; ;litterlanguage.c: 643: printf("INS_END");
 "643
-[e :U 379 ]
-[; ;litterlanguage.c: 646: printf("INS_unknown: 0x%X", cur_instruction.operant);
+[e ( _printf :s 79C ]
+[; ;litterlanguage.c: 645: eeprom_write((3), 0);
+"645
+[e ( _eeprom_write (2 , -> -> 3 `i `uc -> -> 0 `i `uc ]
+[; ;litterlanguage.c: 646: litterlanguage_stop();
 "646
-[e ( _printf , (. :s 81C . _cur_instruction 1 ]
-[; ;litterlanguage.c: 648: error_execution = 1;
+[e ( _litterlanguage_stop ..  ]
+[; ;litterlanguage.c: 647: break;
+"647
+[e $U 344  ]
+[; ;litterlanguage.c: 648: case 0x00:
 "648
-[e = _error_execution -> -> 1 `i `b ]
-[; ;litterlanguage.c: 649: litterlanguage_event(4, error_execution);
-"649
-[e ( _litterlanguage_event (2 , -> -> 4 `i `uc -> -> _error_execution `i `uc ]
-[; ;litterlanguage.c: 650: break;
+[e :U 379 ]
+[; ;litterlanguage.c: 650: printf("INS_START, unexpected");
 "650
-[e $U 343  ]
-"651
-}
-[; ;litterlanguage.c: 651: }
-[e $U 343  ]
-"474
-[e :U 344 ]
-[e [\ . _cur_instruction 0 , $ -> -> 1 `i `uc 345
- , $ -> -> 2 `i `uc 346
- , $ -> -> 3 `i `uc 347
- , $ -> -> 4 `i `uc 354
- , $ -> -> 5 `i `uc 357
- , $ -> -> 7 `i `uc 359
- , $ -> -> 8 `i `uc 360
- , $ -> -> 9 `i `uc 364
- , $ -> -> 10 `i `uc 367
- , $ -> -> 11 `i `uc 370
- , $ -> -> 6 `i `uc 373
- , $ -> -> 12 `i `uc 375
- , $ -> -> 13 `i `uc 376
- , $ -> -> 14 `i `uc 377
- , $ -> -> 0 `i `uc 378
- 379 ]
-"651
-[e :U 343 ]
-[; ;litterlanguage.c: 653: printf("\n");
+[e ( _printf :s 80C ]
+[; ;litterlanguage.c: 652: error_execution = 1;
+"652
+[e = _error_execution -> -> 1 `i `b ]
+[; ;litterlanguage.c: 653: litterlanguage_event(4, error_execution);
 "653
-[e ( _printf :s 82C ]
-[; ;litterlanguage.c: 655: }
+[e ( _litterlanguage_event (2 , -> -> 4 `i `uc -> -> _error_execution `i `uc ]
+[; ;litterlanguage.c: 654: break;
+"654
+[e $U 344  ]
+[; ;litterlanguage.c: 655: default:
 "655
-[e :UE 342 ]
-}
+[e :U 380 ]
+[; ;litterlanguage.c: 658: printf("INS_unknown: 0x%X", cur_instruction.operant);
 "658
+[e ( _printf , (. :s 81C . _cur_instruction 1 ]
+[; ;litterlanguage.c: 660: error_execution = 1;
+"660
+[e = _error_execution -> -> 1 `i `b ]
+[; ;litterlanguage.c: 661: litterlanguage_event(4, error_execution);
+"661
+[e ( _litterlanguage_event (2 , -> -> 4 `i `uc -> -> _error_execution `i `uc ]
+[; ;litterlanguage.c: 662: break;
+"662
+[e $U 344  ]
+"663
+}
+[; ;litterlanguage.c: 663: }
+[e $U 344  ]
+"486
+[e :U 345 ]
+[e [\ . _cur_instruction 0 , $ -> -> 1 `i `uc 346
+ , $ -> -> 2 `i `uc 347
+ , $ -> -> 3 `i `uc 348
+ , $ -> -> 4 `i `uc 355
+ , $ -> -> 5 `i `uc 358
+ , $ -> -> 7 `i `uc 360
+ , $ -> -> 8 `i `uc 361
+ , $ -> -> 9 `i `uc 365
+ , $ -> -> 10 `i `uc 368
+ , $ -> -> 11 `i `uc 371
+ , $ -> -> 6 `i `uc 374
+ , $ -> -> 12 `i `uc 376
+ , $ -> -> 13 `i `uc 377
+ , $ -> -> 14 `i `uc 378
+ , $ -> -> 0 `i `uc 379
+ 380 ]
+"663
+[e :U 344 ]
+[; ;litterlanguage.c: 665: printf("\n");
+"665
+[e ( _printf :s 82C ]
+[; ;litterlanguage.c: 667: }
+"667
+[e :UE 343 ]
+}
+"670
 [v _wait_instruction `(v  1 sf ]
 {
-[; ;litterlanguage.c: 657: static void wait_instruction (void)
-[; ;litterlanguage.c: 658: {
+[; ;litterlanguage.c: 669: static void wait_instruction (void)
+[; ;litterlanguage.c: 670: {
 [e :U _wait_instruction ]
 [f ]
-[; ;litterlanguage.c: 659: switch (cur_instruction.opcode) {
-"659
-[e $U 382  ]
-{
-[; ;litterlanguage.c: 660: case 0x07:
-"660
-[e :U 383 ]
-[; ;litterlanguage.c: 661: if (timeoutexpired(&timer_waitins)) {
-"661
-[e $ ! != -> ( _timeoutexpired (1 -> &U _timer_waitins `C*CS262 `i -> -> -> 0 `i `uc `i 384  ]
-{
-[; ;litterlanguage.c: 662: ins_pointer++;
-"662
-[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
-[; ;litterlanguage.c: 663: ins_state = 3;
-"663
-[e = _ins_state -> -> 3 `i `uc ]
-"664
-}
-[e :U 384 ]
-[; ;litterlanguage.c: 664: }
-[; ;litterlanguage.c: 665: break;
-"665
-[e $U 381  ]
-[; ;litterlanguage.c: 666: case 0x08:
-"666
-[e :U 385 ]
-[; ;litterlanguage.c: 667: if (cur_instruction.operant) {
-"667
-[e $ ! != . _cur_instruction 1 -> -> 0 `i `ui 386  ]
-{
-[; ;litterlanguage.c: 668: if (water_detected()) {
-"668
-[e $ ! != -> ( _water_detected ..  `i -> -> -> 0 `i `uc `i 387  ]
-{
-[; ;litterlanguage.c: 669: ins_pointer++;
-"669
-[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
-[; ;litterlanguage.c: 670: ins_state = 3;
-"670
-[e = _ins_state -> -> 3 `i `uc ]
+[; ;litterlanguage.c: 671: switch (cur_instruction.opcode) {
 "671
-}
-[e :U 387 ]
+[e $U 383  ]
+{
+[; ;litterlanguage.c: 672: case 0x07:
 "672
-}
-[; ;litterlanguage.c: 671: }
-[; ;litterlanguage.c: 672: } else {
-[e $U 388  ]
-[e :U 386 ]
-{
-[; ;litterlanguage.c: 673: if (!water_detected()) {
+[e :U 384 ]
+[; ;litterlanguage.c: 673: if (timeoutexpired(&timer_waitins)) {
 "673
-[e $ ! ! != -> ( _water_detected ..  `i -> -> -> 0 `i `uc `i 389  ]
+[e $ ! != -> ( _timeoutexpired (1 -> &U _timer_waitins `C*CS262 `i -> -> -> 0 `i `uc `i 385  ]
 {
-[; ;litterlanguage.c: 675: timeoutnever(&timer_drain);
-"675
-[e ( _timeoutnever (1 -> &U _timer_drain `C*S262 ]
-[; ;litterlanguage.c: 676: ins_pointer++;
-"676
+[; ;litterlanguage.c: 674: ins_pointer++;
+"674
 [e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
-[; ;litterlanguage.c: 677: ins_state = 3;
-"677
+[; ;litterlanguage.c: 675: ins_state = 3;
+"675
 [e = _ins_state -> -> 3 `i `uc ]
-"678
+"676
 }
-[e :U 389 ]
+[e :U 385 ]
+[; ;litterlanguage.c: 676: }
+[; ;litterlanguage.c: 677: break;
+"677
+[e $U 382  ]
+[; ;litterlanguage.c: 678: case 0x08:
+"678
+[e :U 386 ]
+[; ;litterlanguage.c: 679: if (cur_instruction.operant) {
 "679
+[e $ ! != . _cur_instruction 1 -> -> 0 `i `ui 387  ]
+{
+[; ;litterlanguage.c: 680: if (water_detected()) {
+"680
+[e $ ! != -> ( _water_detected ..  `i -> -> -> 0 `i `uc `i 388  ]
+{
+[; ;litterlanguage.c: 681: ins_pointer++;
+"681
+[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
+[; ;litterlanguage.c: 682: ins_state = 3;
+"682
+[e = _ins_state -> -> 3 `i `uc ]
+"683
 }
 [e :U 388 ]
-[; ;litterlanguage.c: 678: }
-[; ;litterlanguage.c: 679: }
-[; ;litterlanguage.c: 680: break;
-"680
-[e $U 381  ]
-[; ;litterlanguage.c: 681: case 0x09:
-"681
-[e :U 390 ]
-[; ;litterlanguage.c: 682: if (!get_Dosage()) {
-"682
-[e $ ! ! != -> ( _get_Dosage ..  `i -> -> -> 0 `i `uc `i 391  ]
-{
-[; ;litterlanguage.c: 683: ins_pointer++;
-"683
-[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
-[; ;litterlanguage.c: 684: ins_state = 3;
 "684
-[e = _ins_state -> -> 3 `i `uc ]
-"685
 }
-[e :U 391 ]
-[; ;litterlanguage.c: 685: }
-[; ;litterlanguage.c: 686: break;
-"686
-[e $U 381  ]
-[; ;litterlanguage.c: 687: default:
+[; ;litterlanguage.c: 683: }
+[; ;litterlanguage.c: 684: } else {
+[e $U 389  ]
+[e :U 387 ]
+{
+[; ;litterlanguage.c: 685: if (!water_detected()) {
+"685
+[e $ ! ! != -> ( _water_detected ..  `i -> -> -> 0 `i `uc `i 390  ]
+{
+[; ;litterlanguage.c: 687: timeoutnever(&timer_drain);
 "687
-[e :U 392 ]
+[e ( _timeoutnever (1 -> &U _timer_drain `C*S262 ]
 [; ;litterlanguage.c: 688: ins_pointer++;
 "688
 [e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
 [; ;litterlanguage.c: 689: ins_state = 3;
 "689
 [e = _ins_state -> -> 3 `i `uc ]
-[; ;litterlanguage.c: 690: break;
 "690
-[e $U 381  ]
+}
+[e :U 390 ]
 "691
 }
+[e :U 389 ]
+[; ;litterlanguage.c: 690: }
 [; ;litterlanguage.c: 691: }
-[e $U 381  ]
-"659
-[e :U 382 ]
-[e [\ . _cur_instruction 0 , $ -> -> 7 `i `uc 383
- , $ -> -> 8 `i `uc 385
- , $ -> -> 9 `i `uc 390
- 392 ]
-"691
-[e :U 381 ]
-[; ;litterlanguage.c: 692: }
+[; ;litterlanguage.c: 692: break;
 "692
-[e :UE 380 ]
+[e $U 382  ]
+[; ;litterlanguage.c: 693: case 0x09:
+"693
+[e :U 391 ]
+[; ;litterlanguage.c: 694: if (!get_Dosage()) {
+"694
+[e $ ! ! != -> ( _get_Dosage ..  `i -> -> -> 0 `i `uc `i 392  ]
+{
+[; ;litterlanguage.c: 695: ins_pointer++;
+"695
+[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
+[; ;litterlanguage.c: 696: ins_state = 3;
+"696
+[e = _ins_state -> -> 3 `i `uc ]
+"697
+}
+[e :U 392 ]
+[; ;litterlanguage.c: 697: }
+[; ;litterlanguage.c: 698: break;
+"698
+[e $U 382  ]
+[; ;litterlanguage.c: 699: default:
+"699
+[e :U 393 ]
+[; ;litterlanguage.c: 700: ins_pointer++;
+"700
+[e ++ _ins_pointer * -> -> 1 `i `x -> -> # *U _ins_pointer `i `x ]
+[; ;litterlanguage.c: 701: ins_state = 3;
+"701
+[e = _ins_state -> -> 3 `i `uc ]
+[; ;litterlanguage.c: 702: break;
+"702
+[e $U 382  ]
+"703
+}
+[; ;litterlanguage.c: 703: }
+[e $U 382  ]
+"671
+[e :U 383 ]
+[e [\ . _cur_instruction 0 , $ -> -> 7 `i `uc 384
+ , $ -> -> 8 `i `uc 386
+ , $ -> -> 9 `i `uc 391
+ 393 ]
+"703
+[e :U 382 ]
+[; ;litterlanguage.c: 704: }
+"704
+[e :UE 381 ]
 }
 [a 12C 100 114 121 0 ]
 [a 18C 100 114 121 0 ]

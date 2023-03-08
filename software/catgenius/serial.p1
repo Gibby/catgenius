@@ -4815,36 +4815,38 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 189: unsigned char __resetbits @ 32;
 [; ;pic.h: 190: bit __powerdown @ ((unsigned)&__resetbits*8)+3;
 [; ;pic.h: 191: bit __timeout @ ((unsigned)&__resetbits*8)+4;
-[; ;catgenie120.h: 179: unsigned char catgenie_init (void) ;
-[; ;catgenie120.h: 180: void catgenie_work (void) ;
-[; ;catgenie120.h: 183: void set_LED (unsigned char led,
-[; ;catgenie120.h: 184: unsigned char on);
-[; ;catgenie120.h: 185: void set_LED_Cat (unsigned char pattern,
-[; ;catgenie120.h: 186: unsigned char repeat);
-[; ;catgenie120.h: 187: void set_LED_Error (unsigned char pattern,
-[; ;catgenie120.h: 188: unsigned char repeat);
-[; ;catgenie120.h: 189: void set_LED_Cartridge (unsigned char pattern,
-[; ;catgenie120.h: 190: unsigned char repeat);
-[; ;catgenie120.h: 191: void set_LED_Locked (unsigned char pattern,
-[; ;catgenie120.h: 192: unsigned char repeat);
-[; ;catgenie120.h: 193: void set_Beeper (unsigned char pattern,
-[; ;catgenie120.h: 194: unsigned char repeat) ;
-[; ;catgenie120.h: 197: void set_Bowl (unsigned char mode);
-[; ;catgenie120.h: 198: unsigned char get_Bowl (void);
-[; ;catgenie120.h: 199: void set_Arm (unsigned char mode);
-[; ;catgenie120.h: 200: unsigned char get_Arm (void);
-[; ;catgenie120.h: 201: void set_Dosage (unsigned char on);
-[; ;catgenie120.h: 202: unsigned char get_Dosage (void);
-[; ;catgenie120.h: 203: void set_Pump (unsigned char on);
-[; ;catgenie120.h: 204: unsigned char get_Pump (void);
-[; ;catgenie120.h: 205: void set_Dryer (unsigned char on);
-[; ;catgenie120.h: 206: unsigned char get_Dryer (void);
-[; ;serial.h: 11: void serial_init (unsigned long bitrate);
-[; ;serial.h: 12: void serial_term (void);
-[; ;serial.h: 13: void serial_rx_isr (void);
-[; ;serial.h: 14: void serial_tx_isr (void);
-[; ;serial.h: 15: void putch (unsigned char c);
-[; ;serial.h: 16: unsigned char readch (char *ch);
+[; ;catgenie120.h: 192: unsigned char catgenie_init (void) ;
+[; ;catgenie120.h: 193: void catgenie_work (void) ;
+[; ;catgenie120.h: 196: void set_LED (unsigned char led,
+[; ;catgenie120.h: 197: unsigned char on);
+[; ;catgenie120.h: 198: void set_LED_Cat (unsigned char pattern,
+[; ;catgenie120.h: 199: unsigned char repeat);
+[; ;catgenie120.h: 200: void set_LED_Error (unsigned char pattern,
+[; ;catgenie120.h: 201: unsigned char repeat);
+[; ;catgenie120.h: 202: void set_LED_Cartridge (unsigned char pattern,
+[; ;catgenie120.h: 203: unsigned char repeat);
+[; ;catgenie120.h: 204: void set_LED_Locked (unsigned char pattern,
+[; ;catgenie120.h: 205: unsigned char repeat);
+[; ;catgenie120.h: 206: void set_Beeper (unsigned char pattern,
+[; ;catgenie120.h: 207: unsigned char repeat);
+[; ;catgenie120.h: 208: void key_Beep (unsigned char beeps);
+[; ;catgenie120.h: 211: void set_Bowl (unsigned char mode);
+[; ;catgenie120.h: 212: unsigned char get_Bowl (void);
+[; ;catgenie120.h: 213: void set_Arm (unsigned char mode);
+[; ;catgenie120.h: 214: unsigned char get_Arm (void);
+[; ;catgenie120.h: 215: void set_Dosage (unsigned char on);
+[; ;catgenie120.h: 216: unsigned char get_Dosage (void);
+[; ;catgenie120.h: 217: void set_Pump (unsigned char on);
+[; ;catgenie120.h: 218: unsigned char get_Pump (void);
+[; ;catgenie120.h: 219: void set_Dryer (unsigned char on);
+[; ;catgenie120.h: 220: unsigned char get_Dryer (void);
+[; ;serial.h: 11: void serial_init (unsigned long bitrate,
+[; ;serial.h: 12: unsigned char flow);
+[; ;serial.h: 13: void serial_term (void);
+[; ;serial.h: 14: void serial_rx_isr (void);
+[; ;serial.h: 15: void serial_tx_isr (void);
+[; ;serial.h: 16: void putch (unsigned char c);
+[; ;serial.h: 17: unsigned char readch (char *ch);
 [; ;serial.c: 20: struct queue {
 [; ;serial.c: 21: char buffer[8];
 [; ;serial.c: 22: unsigned head : 3;
@@ -4854,12 +4856,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;serial.c: 26: };
 [; ;serial.c: 29: struct queue rx;
 "37 D:\git\gibby\catgenius\software\catgenius\..\common\serial.c
-[v _serial_init `(v  1 ef1`ul ]
+[v _serial_init `(v  1 ef2`ul`uc ]
 {
-[; ;serial.c: 36: void serial_init(unsigned long bitrate)
+[; ;serial.c: 36: void serial_init(unsigned long bitrate, unsigned char flow)
 [; ;serial.c: 37: {
 [e :U _serial_init ]
 [v _bitrate `ul  1 r1 ]
+[v _flow `uc  1 r2 ]
 [f ]
 [; ;serial.c: 39: rx.head = 0;
 "39
@@ -4867,9 +4870,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;serial.c: 40: rx.tail = 0;
 "40
 [e = . _rx 2 -> -> 0 `i `uc ]
-[; ;serial.c: 41: rx.xon_enabled = 1;
+[; ;serial.c: 41: rx.xon_enabled = flow;
 "41
-[e = . _rx 3 -> -> 1 `i `uc ]
+[e = . _rx 3 _flow ]
 [; ;serial.c: 42: rx.xon_state = 1;
 "42
 [e = . _rx 4 -> -> 1 `i `uc ]

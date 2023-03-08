@@ -3246,7 +3246,7 @@ unsigned char __resetbits @ 32;
 bit __powerdown @ ((unsigned)&__resetbits*8)+3;
 bit __timeout @ ((unsigned)&__resetbits*8)+4;
 
-# 179 "D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h"
+# 192 "D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h"
 unsigned char catgenie_init (void) ;
 void catgenie_work (void) ;
 
@@ -3262,7 +3262,8 @@ unsigned char repeat);
 void set_LED_Locked (unsigned char pattern,
 unsigned char repeat);
 void set_Beeper (unsigned char pattern,
-unsigned char repeat) ;
+unsigned char repeat);
+void key_Beep (unsigned char beeps);
 
 
 void set_Bowl (unsigned char mode);

@@ -2543,30 +2543,30 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v ___timeout `b  1 e@260 ]
 [s S260 `us 1 `ul 1 ]
 [n S260 timer timer1 overflows ]
-"79 D:\git\gibby\catgenius\software\catgenius\..\common\water.c
+"65 D:\git\gibby\catgenius\software\catgenius\..\common\water.c
 [v _sensortimer `S260  1 s ]
-"80 D:\git\gibby\catgenius\software\catgenius\..\common\water.c
+"66 D:\git\gibby\catgenius\software\catgenius\..\common\water.c
 [v _state `uc  1 s ]
-"81 D:\git\gibby\catgenius\software\catgenius\..\common\water.c
+"67 D:\git\gibby\catgenius\software\catgenius\..\common\water.c
 [v _hysteresis `uc  1 s ]
-"82 D:\git\gibby\catgenius\software\catgenius\..\common\water.c
-[v _reflectionquality `ui  1 s ]
-"83 D:\git\gibby\catgenius\software\catgenius\..\common\water.c
+"68 D:\git\gibby\catgenius\software\catgenius\..\common\water.c
 [v _filling `b  1 s ]
-"84 D:\git\gibby\catgenius\software\catgenius\..\common\water.c
+"69 D:\git\gibby\catgenius\software\catgenius\..\common\water.c
 [v _detected `b  1 s ]
-"85 D:\git\gibby\catgenius\software\catgenius\..\common\water.c
+"70 D:\git\gibby\catgenius\software\catgenius\..\common\water.c
 [v _ledalwayson `b  1 s ]
 "40 D:\git\gibby\catgenius\software\catgenius\..\common\timer.h
-[v F3094 `*CS260  1 t ]
+[v F3092 `*CS260  1 t ]
 "40 D:\git\gibby\catgenius\software\catgenius\..\common\timer.h
 [v _timeoutexpired `(uc  0 ef1`C*CS260 ]
 "30 D:\git\gibby\catgenius\software\catgenius\..\common\timer.h
-[v F3080 `*S260  1 t ]
+[v F3078 `*S260  1 t ]
 "31 D:\git\gibby\catgenius\software\catgenius\..\common\timer.h
 [v _settimeout `(v  0 ef2`C*S260`Cul ]
-"16 D:\git\gibby\catgenius\software\catgenius\..\common\water.c
-[v _watersensor_event `(v  0 ef1`uc ]
+"17 D:\git\gibby\catgenius\software\catgenius\..\common\water.c
+[v _waterdetection_event `(v  0 ef1`uc ]
+"18 D:\git\gibby\catgenius\software\catgenius\..\common\water.c
+[v _watersensor_event `(v  0 ef1`ui ]
 [; ;pic16f1939.h: 141: volatile unsigned char INDF0 @ 0x000;
 [; ;pic16f1939.h: 145: volatile unsigned char INDF1 @ 0x001;
 [; ;pic16f1939.h: 149: volatile unsigned char PCL @ 0x002;
@@ -4837,38 +4837,37 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 189: unsigned char __resetbits @ 32;
 [; ;pic.h: 190: bit __powerdown @ ((unsigned)&__resetbits*8)+3;
 [; ;pic.h: 191: bit __timeout @ ((unsigned)&__resetbits*8)+4;
-[; ;catgenie120.h: 179: unsigned char catgenie_init (void) ;
-[; ;catgenie120.h: 180: void catgenie_work (void) ;
-[; ;catgenie120.h: 183: void set_LED (unsigned char led,
-[; ;catgenie120.h: 184: unsigned char on);
-[; ;catgenie120.h: 185: void set_LED_Cat (unsigned char pattern,
-[; ;catgenie120.h: 186: unsigned char repeat);
-[; ;catgenie120.h: 187: void set_LED_Error (unsigned char pattern,
-[; ;catgenie120.h: 188: unsigned char repeat);
-[; ;catgenie120.h: 189: void set_LED_Cartridge (unsigned char pattern,
-[; ;catgenie120.h: 190: unsigned char repeat);
-[; ;catgenie120.h: 191: void set_LED_Locked (unsigned char pattern,
-[; ;catgenie120.h: 192: unsigned char repeat);
-[; ;catgenie120.h: 193: void set_Beeper (unsigned char pattern,
-[; ;catgenie120.h: 194: unsigned char repeat) ;
-[; ;catgenie120.h: 197: void set_Bowl (unsigned char mode);
-[; ;catgenie120.h: 198: unsigned char get_Bowl (void);
-[; ;catgenie120.h: 199: void set_Arm (unsigned char mode);
-[; ;catgenie120.h: 200: unsigned char get_Arm (void);
-[; ;catgenie120.h: 201: void set_Dosage (unsigned char on);
-[; ;catgenie120.h: 202: unsigned char get_Dosage (void);
-[; ;catgenie120.h: 203: void set_Pump (unsigned char on);
-[; ;catgenie120.h: 204: unsigned char get_Pump (void);
-[; ;catgenie120.h: 205: void set_Dryer (unsigned char on);
-[; ;catgenie120.h: 206: unsigned char get_Dryer (void);
-[; ;water.h: 12: void water_init (void) ;
-[; ;water.h: 13: void water_work (void) ;
-[; ;water.h: 16: unsigned int water_reflectionquality (void) ;
-[; ;water.h: 17: unsigned char water_lightguidedirty (void) ;
-[; ;water.h: 18: unsigned char water_detected (void) ;
-[; ;water.h: 19: unsigned char water_filling (void) ;
-[; ;water.h: 21: void water_fill (unsigned char fill) ;
-[; ;water.h: 22: void water_ledalwayson (unsigned char on) ;
+[; ;catgenie120.h: 192: unsigned char catgenie_init (void) ;
+[; ;catgenie120.h: 193: void catgenie_work (void) ;
+[; ;catgenie120.h: 196: void set_LED (unsigned char led,
+[; ;catgenie120.h: 197: unsigned char on);
+[; ;catgenie120.h: 198: void set_LED_Cat (unsigned char pattern,
+[; ;catgenie120.h: 199: unsigned char repeat);
+[; ;catgenie120.h: 200: void set_LED_Error (unsigned char pattern,
+[; ;catgenie120.h: 201: unsigned char repeat);
+[; ;catgenie120.h: 202: void set_LED_Cartridge (unsigned char pattern,
+[; ;catgenie120.h: 203: unsigned char repeat);
+[; ;catgenie120.h: 204: void set_LED_Locked (unsigned char pattern,
+[; ;catgenie120.h: 205: unsigned char repeat);
+[; ;catgenie120.h: 206: void set_Beeper (unsigned char pattern,
+[; ;catgenie120.h: 207: unsigned char repeat);
+[; ;catgenie120.h: 208: void key_Beep (unsigned char beeps);
+[; ;catgenie120.h: 211: void set_Bowl (unsigned char mode);
+[; ;catgenie120.h: 212: unsigned char get_Bowl (void);
+[; ;catgenie120.h: 213: void set_Arm (unsigned char mode);
+[; ;catgenie120.h: 214: unsigned char get_Arm (void);
+[; ;catgenie120.h: 215: void set_Dosage (unsigned char on);
+[; ;catgenie120.h: 216: unsigned char get_Dosage (void);
+[; ;catgenie120.h: 217: void set_Pump (unsigned char on);
+[; ;catgenie120.h: 218: unsigned char get_Pump (void);
+[; ;catgenie120.h: 219: void set_Dryer (unsigned char on);
+[; ;catgenie120.h: 220: unsigned char get_Dryer (void);
+[; ;water.h: 30: void water_init (void) ;
+[; ;water.h: 31: void water_work (void) ;
+[; ;water.h: 34: unsigned char water_detected (void) ;
+[; ;water.h: 35: unsigned char water_filling (void) ;
+[; ;water.h: 37: void water_fill (unsigned char fill) ;
+[; ;water.h: 38: void water_ledalwayson (unsigned char on) ;
 [; ;timer.h: 19: struct timer {
 [; ;timer.h: 20: unsigned short timer1 ;
 [; ;timer.h: 21: unsigned long overflows ;
@@ -4888,8 +4887,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;timer.h: 47: struct timer const * const late_p) ;
 [; ;timer.h: 49: void delay (unsigned long * const delay) ;
 [; ;timer.h: 51: void microdelay (unsigned short const delay_us) ;
-[; ;water.c: 16: extern void watersensor_event (unsigned char detected);
-"79 D:\git\gibby\catgenius\software\catgenius\..\common\water.c
+[; ;water.c: 17: extern void waterdetection_event (unsigned char detected);
+[; ;water.c: 18: extern void watersensor_event (unsigned int reflectionquality);
+"65 D:\git\gibby\catgenius\software\catgenius\..\common\water.c
 [i _sensortimer
 :U ..
 :U ..
@@ -4898,346 +4898,337 @@ Version 3.2 HI-TECH Software Intermediate Code
 ..
 ..
 ]
-[; ;water.c: 79: static struct timer sensortimer = {0x0000, 0x00000000};
-"80
+[; ;water.c: 65: static struct timer sensortimer = {0x0000, 0x00000000};
+"66
 [i _state
 -> -> 0 `i `uc
 ]
-[; ;water.c: 80: static unsigned char state = 0;
-"81
+[; ;water.c: 66: static unsigned char state = 0;
+"67
 [i _hysteresis
 -> -> 0 `i `uc
 ]
-[; ;water.c: 81: static unsigned char hysteresis = 0;
-"82
-[i _reflectionquality
--> -> 0 `i `ui
-]
-[; ;water.c: 82: static unsigned int reflectionquality = 0;
-"83
+[; ;water.c: 67: static unsigned char hysteresis = 0;
+"68
 [i _filling
 -> 0 `i
 ]
-[; ;water.c: 83: static bit filling = 0;
-"84
+[; ;water.c: 68: static bit filling = 0;
+"69
 [i _detected
 -> 0 `i
 ]
-[; ;water.c: 84: static bit detected = 0;
-"85
+[; ;water.c: 69: static bit detected = 0;
+"70
 [i _ledalwayson
 -> 0 `i
 ]
-[; ;water.c: 85: static bit ledalwayson = 0;
-"104
+[; ;water.c: 70: static bit ledalwayson = 0;
+"89
 [v _water_init `(v  1 ef ]
 {
-[; ;water.c: 97: void water_init (void)
-[; ;water.c: 104: {
+[; ;water.c: 82: void water_init (void)
+[; ;water.c: 89: {
 [e :U _water_init ]
 [f ]
-"106
+"91
 [v _mask `uc  1 a ]
-[; ;water.c: 106: unsigned char mask = (1U << (1));
+[; ;water.c: 91: unsigned char mask = (1U << (1));
 [e = _mask -> << -> 1 `ui -> 1 `i `uc ]
-"107
+"92
 [v _channel `uc  1 a ]
-[; ;water.c: 107: unsigned char channel = 0;
+[; ;water.c: 92: unsigned char channel = 0;
 [e = _channel -> -> 0 `i `uc ]
-[; ;water.c: 110: while (!(mask & 0x01)) {
-"110
+[; ;water.c: 95: while (!(mask & 0x01)) {
+"95
 [e $U 262  ]
 [e :U 263 ]
 {
-[; ;water.c: 111: mask >>= 0x01;
-"111
+[; ;water.c: 96: mask >>= 0x01;
+"96
 [e =>> _mask -> 1 `i ]
-[; ;water.c: 112: channel ++;
-"112
+[; ;water.c: 97: channel ++;
+"97
 [e ++ _channel -> -> 1 `i `uc ]
-"113
+"98
 }
 [e :U 262 ]
-"110
+"95
 [e $ ! != & -> _mask `i -> 1 `i -> 0 `i 263  ]
 [e :U 264 ]
-[; ;water.c: 113: }
-[; ;water.c: 116: ADCON0bits.ADON = 1;
-"116
+[; ;water.c: 98: }
+[; ;water.c: 101: ADCON0bits.ADON = 1;
+"101
 [e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
-[; ;water.c: 118: ADCON0bits.CHS = channel;
-"118
+[; ;water.c: 103: ADCON0bits.CHS = channel;
+"103
 [e = . . _ADCON0bits 1 2 _channel ]
-[; ;water.c: 121: ADCON1bits.ADFM = 1;
-"121
+[; ;water.c: 106: ADCON1bits.ADFM = 1;
+"106
 [e = . . _ADCON1bits 0 7 -> -> 1 `i `uc ]
-[; ;water.c: 123: ADCON1bits.ADCS = 7;
-"123
+[; ;water.c: 108: ADCON1bits.ADCS = 7;
+"108
 [e = . . _ADCON1bits 1 2 -> -> 7 `i `uc ]
-[; ;water.c: 126: ADCON1bits.ADNREF = 0;
-"126
+[; ;water.c: 111: ADCON1bits.ADNREF = 0;
+"111
 [e = . . _ADCON1bits 0 2 -> -> 0 `i `uc ]
-[; ;water.c: 127: ADCON1bits.ADPREF = 0;
-"127
+[; ;water.c: 112: ADCON1bits.ADPREF = 0;
+"112
 [e = . . _ADCON1bits 1 0 -> -> 0 `i `uc ]
-[; ;water.c: 129: }
-"129
+[; ;water.c: 114: }
+"114
 [e :UE 261 ]
 }
-"140
+"125
 [v _water_work `(v  1 ef ]
 {
-[; ;water.c: 133: void water_work (void)
-[; ;water.c: 140: {
+[; ;water.c: 118: void water_work (void)
+[; ;water.c: 125: {
 [e :U _water_work ]
 [f ]
-[; ;water.c: 141: switch (state) {
-"141
+"126
+[v F3123 `ui  1 s cur_reflectionquality ]
+[i F3123
+-> -> 0 `i `ui
+]
+"127
+[v F3124 `ui  1 s old_reflectionquality ]
+[i F3124
+-> -> 0 `i `ui
+]
+[; ;water.c: 126: static unsigned int cur_reflectionquality = 0;
+[; ;water.c: 127: static unsigned int old_reflectionquality = 0;
+[; ;water.c: 129: switch (state) {
+"129
 [e $U 267  ]
 {
-[; ;water.c: 142: default:
-"142
+[; ;water.c: 130: default:
+"130
 [e :U 268 ]
-[; ;water.c: 143: state = 0;
-"143
+[; ;water.c: 131: state = 0;
+"131
 [e = _state -> -> 0 `i `uc ]
-[; ;water.c: 144: case 0:
-"144
+[; ;water.c: 132: case 0:
+"132
 [e :U 269 ]
-[; ;water.c: 145: if (!timeoutexpired(&sensortimer))
-"145
+[; ;water.c: 133: if (!timeoutexpired(&sensortimer))
+"133
 [e $ ! ! != -> ( _timeoutexpired (1 -> &U _sensortimer `C*CS260 `i -> -> -> 0 `i `uc `i 270  ]
-[; ;water.c: 146: break;
-"146
+[; ;water.c: 134: break;
+"134
 [e $U 266  ]
 [e :U 270 ]
-[; ;water.c: 148: LATB |= (1U << (2));
-"148
+[; ;water.c: 136: LATB |= (1U << (2));
+"136
 [e =| _LATB -> << -> 1 `ui -> 2 `i `uc ]
-[; ;water.c: 150: settimeout(&sensortimer, (((((4UL * (1000UL * ((1000UL)))))/4)/8)/1000));
-"150
+[; ;water.c: 138: settimeout(&sensortimer, (((((4UL * (1000UL * ((1000UL)))))/4)/8)/1000));
+"138
 [e ( _settimeout (2 , -> &U _sensortimer `C*S260 / / / * -> 4 `ul * -> 1000 `ul -> 1000 `ul -> -> -> 4 `i `l `ul -> -> -> 8 `i `l `ul -> -> -> 1000 `i `l `ul ]
-[; ;water.c: 152: state = 1;
-"152
+[; ;water.c: 140: state = 1;
+"140
 [e = _state -> -> 1 `i `uc ]
-[; ;water.c: 156: break;
-"156
+[; ;water.c: 144: break;
+"144
 [e $U 266  ]
-[; ;water.c: 157: case 1:
-"157
+[; ;water.c: 145: case 1:
+"145
 [e :U 271 ]
-[; ;water.c: 158: if (!timeoutexpired(&sensortimer))
-"158
+[; ;water.c: 146: if (!timeoutexpired(&sensortimer))
+"146
 [e $ ! ! != -> ( _timeoutexpired (1 -> &U _sensortimer `C*CS260 `i -> -> -> 0 `i `uc `i 272  ]
-[; ;water.c: 159: break;
-"159
+[; ;water.c: 147: break;
+"147
 [e $U 266  ]
 [e :U 272 ]
-[; ;water.c: 161: ADCON0bits.GO = 1;
-"161
+[; ;water.c: 149: ADCON0bits.GO = 1;
+"149
 [e = . . _ADCON0bits 2 1 -> -> 1 `i `uc ]
-[; ;water.c: 162: state = 2;
-"162
+[; ;water.c: 150: state = 2;
+"150
 [e = _state -> -> 2 `i `uc ]
-[; ;water.c: 163: break;
-"163
+[; ;water.c: 151: break;
+"151
 [e $U 266  ]
-[; ;water.c: 164: case 2:
-"164
+[; ;water.c: 152: case 2:
+"152
 [e :U 273 ]
-[; ;water.c: 166: if (ADCON0bits.nDONE)
-"166
+[; ;water.c: 154: if (ADCON0bits.nDONE)
+"154
 [e $ ! != -> . . _ADCON0bits 3 1 `i -> -> -> 0 `i `Vuc `i 274  ]
-[; ;water.c: 167: break;
-"167
+[; ;water.c: 155: break;
+"155
 [e $U 266  ]
 [e :U 274 ]
-[; ;water.c: 169: reflectionquality = ADRES;
-"169
-[e = _reflectionquality _ADRES ]
-[; ;water.c: 177: if (!filling && !ledalwayson)
-"177
+[; ;water.c: 157: cur_reflectionquality = ADRES;
+"157
+[e = F3123 _ADRES ]
+[; ;water.c: 165: if (!filling && !ledalwayson)
+"165
 [e $ ! && ! _filling ! _ledalwayson 275  ]
-[; ;water.c: 178: LATB &= ~(1U << (2));
-"178
+[; ;water.c: 166: LATB &= ~(1U << (2));
+"166
 [e =& _LATB -> ~ << -> 1 `ui -> 2 `i `uc ]
 [e :U 275 ]
-[; ;water.c: 180: if (reflectionquality <= (503 - ((520)-(503)))) {
-"180
-[e $ ! <= _reflectionquality -> - -> 503 `i - -> 520 `i -> 503 `i `ui 276  ]
+[; ;water.c: 168: if (cur_reflectionquality <= (503 - ((520)-(503)))) {
+"168
+[e $ ! <= F3123 -> - -> 503 `i - -> 520 `i -> 503 `i `ui 276  ]
 {
-[; ;water.c: 181: if ((hysteresis > 0) &&
-[; ;water.c: 182: (!--hysteresis && detected)) {
-"182
+[; ;water.c: 169: if ((hysteresis > 0) &&
+[; ;water.c: 170: (!--hysteresis && detected)) {
+"170
 [e $ ! && > -> _hysteresis `i -> 0 `i && ! != -> =- _hysteresis -> -> 1 `i `uc `i -> -> -> 0 `i `uc `i _detected 277  ]
 {
-[; ;water.c: 183: detected = 0;
-"183
+[; ;water.c: 171: detected = 0;
+"171
 [e = _detected -> -> 0 `i `b ]
-[; ;water.c: 184: watersensor_event(detected);
-"184
-[e ( _watersensor_event (1 -> -> _detected `i `uc ]
-"185
+[; ;water.c: 172: waterdetection_event(detected);
+"172
+[e ( _waterdetection_event (1 -> -> _detected `i `uc ]
+"173
 }
 [e :U 277 ]
-"186
+"174
 }
-[; ;water.c: 185: }
-[; ;water.c: 186: } else {
+[; ;water.c: 173: }
+[; ;water.c: 174: } else {
 [e $U 278  ]
 [e :U 276 ]
 {
-[; ;water.c: 187: if ((hysteresis < 8) &&
-[; ;water.c: 188: (++hysteresis >= 8) && !detected) {
-"188
+[; ;water.c: 175: if ((hysteresis < 8) &&
+[; ;water.c: 176: (++hysteresis >= 8) && !detected) {
+"176
 [e $ ! && && < -> _hysteresis `i -> 8 `i >= -> =+ _hysteresis -> -> 1 `i `uc `i -> 8 `i ! _detected 279  ]
 {
-[; ;water.c: 189: detected = 1;
-"189
+[; ;water.c: 177: detected = 1;
+"177
 [e = _detected -> -> 1 `i `b ]
-[; ;water.c: 190: watersensor_event(detected);
-"190
-[e ( _watersensor_event (1 -> -> _detected `i `uc ]
-"191
+[; ;water.c: 178: waterdetection_event(detected);
+"178
+[e ( _waterdetection_event (1 -> -> _detected `i `uc ]
+"179
 }
 [e :U 279 ]
-"192
+"180
 }
 [e :U 278 ]
-[; ;water.c: 191: }
-[; ;water.c: 192: }
-[; ;water.c: 194: settimeout(&sensortimer, (((((4UL * (1000UL * ((1000UL)))))/4)/8)/4));
-"194
-[e ( _settimeout (2 , -> &U _sensortimer `C*S260 / / / * -> 4 `ul * -> 1000 `ul -> 1000 `ul -> -> -> 4 `i `l `ul -> -> -> 8 `i `l `ul -> -> -> 4 `i `l `ul ]
-[; ;water.c: 195: state = 0;
-"195
-[e = _state -> -> 0 `i `uc ]
-[; ;water.c: 196: break;
-"196
-[e $U 266  ]
-"197
+[; ;water.c: 179: }
+[; ;water.c: 180: }
+[; ;water.c: 182: if (cur_reflectionquality != old_reflectionquality) {
+"182
+[e $ ! != F3123 F3124 280  ]
+{
+[; ;water.c: 183: watersensor_event(cur_reflectionquality);
+"183
+[e ( _watersensor_event (1 F3123 ]
+[; ;water.c: 184: old_reflectionquality = cur_reflectionquality;
+"184
+[e = F3124 F3123 ]
+"185
 }
-[; ;water.c: 197: }
+[e :U 280 ]
+[; ;water.c: 185: }
+[; ;water.c: 187: settimeout(&sensortimer, (((((4UL * (1000UL * ((1000UL)))))/4)/8)/4));
+"187
+[e ( _settimeout (2 , -> &U _sensortimer `C*S260 / / / * -> 4 `ul * -> 1000 `ul -> 1000 `ul -> -> -> 4 `i `l `ul -> -> -> 8 `i `l `ul -> -> -> 4 `i `l `ul ]
+[; ;water.c: 188: state = 0;
+"188
+[e = _state -> -> 0 `i `uc ]
+[; ;water.c: 189: break;
+"189
 [e $U 266  ]
-"141
+"190
+}
+[; ;water.c: 190: }
+[e $U 266  ]
+"129
 [e :U 267 ]
 [e [\ _state , $ -> -> 0 `i `uc 269
  , $ -> -> 1 `i `uc 271
  , $ -> -> 2 `i `uc 273
  268 ]
-"197
+"190
 [e :U 266 ]
-[; ;water.c: 198: }
-"198
+[; ;water.c: 191: }
+"191
 [e :UE 265 ]
 }
-"203
+"196
 [v _water_detected `(uc  1 ef ]
 {
-[; ;water.c: 202: unsigned char water_detected (void)
-[; ;water.c: 203: {
+[; ;water.c: 195: unsigned char water_detected (void)
+[; ;water.c: 196: {
 [e :U _water_detected ]
 [f ]
-[; ;water.c: 204: return (detected);
-"204
+[; ;water.c: 197: return (detected);
+"197
 [e ) -> -> _detected `i `uc ]
-[e $UE 280  ]
-[; ;water.c: 205: }
-"205
-[e :UE 280 ]
+[e $UE 281  ]
+[; ;water.c: 198: }
+"198
+[e :UE 281 ]
 }
-"210
+"203
 [v _water_ledalwayson `(v  1 ef1`uc ]
 {
-[; ;water.c: 209: void water_ledalwayson (unsigned char on)
-[; ;water.c: 210: {
+[; ;water.c: 202: void water_ledalwayson (unsigned char on)
+[; ;water.c: 203: {
 [e :U _water_ledalwayson ]
 [v _on `uc  1 r1 ]
 [f ]
-[; ;water.c: 211: ledalwayson = on;
-"211
+[; ;water.c: 204: ledalwayson = on;
+"204
 [e = _ledalwayson -> _on `b ]
-[; ;water.c: 212: }
-"212
-[e :UE 281 ]
-}
-"217
-[v _water_reflectionquality `(ui  1 ef ]
-{
-[; ;water.c: 216: unsigned int water_reflectionquality (void)
-[; ;water.c: 217: {
-[e :U _water_reflectionquality ]
-[f ]
-[; ;water.c: 218: return (reflectionquality);
-"218
-[e ) _reflectionquality ]
-[e $UE 282  ]
-[; ;water.c: 219: }
-"219
+[; ;water.c: 205: }
+"205
 [e :UE 282 ]
 }
-"224
-[v _water_lightguidedirty `(uc  1 ef ]
-{
-[; ;water.c: 223: unsigned char water_lightguidedirty (void)
-[; ;water.c: 224: {
-[e :U _water_lightguidedirty ]
-[f ]
-[; ;water.c: 225: return (reflectionquality >= 414)?1:0;
-"225
-[e ) -> ? >= _reflectionquality -> -> 414 `i `ui : -> 1 `i -> 0 `i `uc ]
-[e $UE 283  ]
-[; ;water.c: 226: }
-"226
-[e :UE 283 ]
-}
-"231
+"210
 [v _water_filling `(uc  1 ef ]
 {
-[; ;water.c: 230: unsigned char water_filling (void)
-[; ;water.c: 231: {
+[; ;water.c: 209: unsigned char water_filling (void)
+[; ;water.c: 210: {
 [e :U _water_filling ]
 [f ]
-[; ;water.c: 232: return (filling);
-"232
+[; ;water.c: 211: return (filling);
+"211
 [e ) -> -> _filling `i `uc ]
-[e $UE 284  ]
-[; ;water.c: 233: }
-"233
-[e :UE 284 ]
+[e $UE 283  ]
+[; ;water.c: 212: }
+"212
+[e :UE 283 ]
 }
-"238
+"217
 [v _water_fill `(v  1 ef1`uc ]
 {
-[; ;water.c: 237: void water_fill (unsigned char fill)
-[; ;water.c: 238: {
+[; ;water.c: 216: void water_fill (unsigned char fill)
+[; ;water.c: 217: {
 [e :U _water_fill ]
 [v _fill `uc  1 r1 ]
 [f ]
-[; ;water.c: 239: filling = fill;
-"239
+[; ;water.c: 218: filling = fill;
+"218
 [e = _filling -> _fill `b ]
-[; ;water.c: 241: if (filling) {
-"241
-[e $ ! _filling 286  ]
+[; ;water.c: 220: if (filling) {
+"220
+[e $ ! _filling 285  ]
 {
-[; ;water.c: 243: LATD |= (1U << (0));
-"243
+[; ;water.c: 222: LATD |= (1U << (0));
+"222
 [e =| _LATD -> << -> 1 `ui -> 0 `i `uc ]
-"244
+"223
 }
-[; ;water.c: 244: } else {
-[e $U 287  ]
-[e :U 286 ]
+[; ;water.c: 223: } else {
+[e $U 286  ]
+[e :U 285 ]
 {
-[; ;water.c: 246: LATD &= ~(1U << (0));
-"246
+[; ;water.c: 225: LATD &= ~(1U << (0));
+"225
 [e =& _LATD -> ~ << -> 1 `ui -> 0 `i `uc ]
-"247
+"226
 }
-[e :U 287 ]
-[; ;water.c: 247: }
-[; ;water.c: 248: }
-"248
-[e :UE 285 ]
+[e :U 286 ]
+[; ;water.c: 226: }
+[; ;water.c: 227: }
+"227
+[e :UE 284 ]
 }

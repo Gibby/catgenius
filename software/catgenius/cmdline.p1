@@ -2551,7 +2551,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _putch `(v  0 ef1`uc ]
 "42 D:\git\gibby\catgenius\software\catgenius\..\common\cmdline.c
 [v _proc_char `(v  0 sf1`uc ]
-"16 D:\git\gibby\catgenius\software\catgenius\..\common\serial.h
+"17 D:\git\gibby\catgenius\software\catgenius\..\common\serial.h
 [v _readch `(uc  0 ef1`*uc ]
 "43 D:\git\gibby\catgenius\software\catgenius\..\common\cmdline.c
 [v _proc_line `(v  0 sf1`*uc ]
@@ -2560,8 +2560,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 "44 D:\git\gibby\catgenius\software\catgenius\..\common\cmdline.c
 [v _cmd2index `(i  0 sf1`*uc ]
 "22 D:\git\gibby\catgenius\software\catgenius\..\common\cmdline.h
-[v F3206 `(i  0 tf2`i`**uc ]
-[s S261 `uc -> 8 `i `*F3206 1 ]
+[v F3208 `(i  0 tf2`i`**uc ]
+[s S261 `uc -> 8 `i `*F3208 1 ]
 [n S261 command cmd function ]
 "33 D:\git\gibby\catgenius\software\catgenius\..\common\cmdline.c
 [v _commands `CS261  -> 0 `x e ]
@@ -4897,30 +4897,31 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;string.h: 57: extern char * strichr(const char *, int);
 [; ;string.h: 58: extern char * strrchr(const char *, int);
 [; ;string.h: 59: extern char * strrichr(const char *, int);
-[; ;catgenie120.h: 179: unsigned char catgenie_init (void) ;
-[; ;catgenie120.h: 180: void catgenie_work (void) ;
-[; ;catgenie120.h: 183: void set_LED (unsigned char led,
-[; ;catgenie120.h: 184: unsigned char on);
-[; ;catgenie120.h: 185: void set_LED_Cat (unsigned char pattern,
-[; ;catgenie120.h: 186: unsigned char repeat);
-[; ;catgenie120.h: 187: void set_LED_Error (unsigned char pattern,
-[; ;catgenie120.h: 188: unsigned char repeat);
-[; ;catgenie120.h: 189: void set_LED_Cartridge (unsigned char pattern,
-[; ;catgenie120.h: 190: unsigned char repeat);
-[; ;catgenie120.h: 191: void set_LED_Locked (unsigned char pattern,
-[; ;catgenie120.h: 192: unsigned char repeat);
-[; ;catgenie120.h: 193: void set_Beeper (unsigned char pattern,
-[; ;catgenie120.h: 194: unsigned char repeat) ;
-[; ;catgenie120.h: 197: void set_Bowl (unsigned char mode);
-[; ;catgenie120.h: 198: unsigned char get_Bowl (void);
-[; ;catgenie120.h: 199: void set_Arm (unsigned char mode);
-[; ;catgenie120.h: 200: unsigned char get_Arm (void);
-[; ;catgenie120.h: 201: void set_Dosage (unsigned char on);
-[; ;catgenie120.h: 202: unsigned char get_Dosage (void);
-[; ;catgenie120.h: 203: void set_Pump (unsigned char on);
-[; ;catgenie120.h: 204: unsigned char get_Pump (void);
-[; ;catgenie120.h: 205: void set_Dryer (unsigned char on);
-[; ;catgenie120.h: 206: unsigned char get_Dryer (void);
+[; ;catgenie120.h: 192: unsigned char catgenie_init (void) ;
+[; ;catgenie120.h: 193: void catgenie_work (void) ;
+[; ;catgenie120.h: 196: void set_LED (unsigned char led,
+[; ;catgenie120.h: 197: unsigned char on);
+[; ;catgenie120.h: 198: void set_LED_Cat (unsigned char pattern,
+[; ;catgenie120.h: 199: unsigned char repeat);
+[; ;catgenie120.h: 200: void set_LED_Error (unsigned char pattern,
+[; ;catgenie120.h: 201: unsigned char repeat);
+[; ;catgenie120.h: 202: void set_LED_Cartridge (unsigned char pattern,
+[; ;catgenie120.h: 203: unsigned char repeat);
+[; ;catgenie120.h: 204: void set_LED_Locked (unsigned char pattern,
+[; ;catgenie120.h: 205: unsigned char repeat);
+[; ;catgenie120.h: 206: void set_Beeper (unsigned char pattern,
+[; ;catgenie120.h: 207: unsigned char repeat);
+[; ;catgenie120.h: 208: void key_Beep (unsigned char beeps);
+[; ;catgenie120.h: 211: void set_Bowl (unsigned char mode);
+[; ;catgenie120.h: 212: unsigned char get_Bowl (void);
+[; ;catgenie120.h: 213: void set_Arm (unsigned char mode);
+[; ;catgenie120.h: 214: unsigned char get_Arm (void);
+[; ;catgenie120.h: 215: void set_Dosage (unsigned char on);
+[; ;catgenie120.h: 216: unsigned char get_Dosage (void);
+[; ;catgenie120.h: 217: void set_Pump (unsigned char on);
+[; ;catgenie120.h: 218: unsigned char get_Pump (void);
+[; ;catgenie120.h: 219: void set_Dryer (unsigned char on);
+[; ;catgenie120.h: 220: unsigned char get_Dryer (void);
 [; ;cmdline.h: 20: struct command {
 [; ;cmdline.h: 21: char cmd[(8)];
 [; ;cmdline.h: 22: int (*function)(int argc, char* argv[]);
@@ -4929,12 +4930,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;cmdline.h: 27: void cmdline_work (void) ;
 [; ;cmdline.h: 30: int echo (int argc, char* argv[]) ;
 [; ;cmdline.h: 31: int help (int argc, char* argv[]) ;
-[; ;serial.h: 11: void serial_init (unsigned long bitrate);
-[; ;serial.h: 12: void serial_term (void);
-[; ;serial.h: 13: void serial_rx_isr (void);
-[; ;serial.h: 14: void serial_tx_isr (void);
-[; ;serial.h: 15: void putch (unsigned char c);
-[; ;serial.h: 16: unsigned char readch (char *ch);
+[; ;serial.h: 11: void serial_init (unsigned long bitrate,
+[; ;serial.h: 12: unsigned char flow);
+[; ;serial.h: 13: void serial_term (void);
+[; ;serial.h: 14: void serial_rx_isr (void);
+[; ;serial.h: 15: void serial_tx_isr (void);
+[; ;serial.h: 16: void putch (unsigned char c);
+[; ;serial.h: 17: unsigned char readch (char *ch);
 [; ;cmdline.c: 33: extern const struct command commands[];
 [; ;cmdline.c: 34: static char linebuffer[(20)];
 "35 D:\git\gibby\catgenius\software\catgenius\..\common\cmdline.c
@@ -5023,8 +5025,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _rxd `uc  1 r1 ]
 [f ]
 "93
-[v F3243 `uc  1 s curcolumn ]
-[i F3243
+[v F3246 `uc  1 s curcolumn ]
+[i F3246
 -> -> 0 `i `uc
 ]
 [; ;cmdline.c: 93: static unsigned char curcolumn = 0;
@@ -5034,14 +5036,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 {
 [; ;cmdline.c: 96: if (curcolumn < ((20)-1)) {
 "96
-[e $ ! < -> F3243 `i - -> 20 `i -> 1 `i 274  ]
+[e $ ! < -> F3246 `i - -> 20 `i -> 1 `i 274  ]
 {
 [; ;cmdline.c: 98: linebuffer[curcolumn] = rxd;
 "98
-[e = *U + &U _linebuffer * -> F3243 `ux -> -> # *U &U _linebuffer `ui `ux _rxd ]
+[e = *U + &U _linebuffer * -> F3246 `ux -> -> # *U &U _linebuffer `ui `ux _rxd ]
 [; ;cmdline.c: 99: curcolumn++;
 "99
-[e ++ F3243 -> -> 1 `i `uc ]
+[e ++ F3246 -> -> 1 `i `uc ]
 [; ;cmdline.c: 101: if (localecho)
 "101
 [e $ ! != -> _localecho `i -> -> -> 0 `i `uc `i 275  ]
@@ -5078,11 +5080,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 280 ]
 [; ;cmdline.c: 111: if (curcolumn) {
 "111
-[e $ ! != -> F3243 `i -> -> -> 0 `i `uc `i 281  ]
+[e $ ! != -> F3246 `i -> -> -> 0 `i `uc `i 281  ]
 {
 [; ;cmdline.c: 113: linebuffer[curcolumn] = 0;
 "113
-[e = *U + &U _linebuffer * -> F3243 `ux -> -> # *U &U _linebuffer `ui `ux -> -> 0 `i `uc ]
+[e = *U + &U _linebuffer * -> F3246 `ux -> -> # *U &U _linebuffer `ui `ux -> -> 0 `i `uc ]
 [; ;cmdline.c: 115: proc_line(linebuffer);
 "115
 [e ( _proc_line (1 &U _linebuffer ]
@@ -5092,7 +5094,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;cmdline.c: 116: }
 [; ;cmdline.c: 117: curcolumn = 0;
 "117
-[e = F3243 -> -> 0 `i `uc ]
+[e = F3246 -> -> 0 `i `uc ]
 [; ;cmdline.c: 119: if (localecho)
 "119
 [e $ ! != -> _localecho `i -> -> -> 0 `i `uc `i 282  ]
@@ -5109,11 +5111,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 {
 [; ;cmdline.c: 123: if (curcolumn) {
 "123
-[e $ ! != -> F3243 `i -> -> -> 0 `i `uc `i 285  ]
+[e $ ! != -> F3246 `i -> -> -> 0 `i `uc `i 285  ]
 {
 [; ;cmdline.c: 125: curcolumn--;
 "125
-[e -- F3243 -> -> 1 `i `uc ]
+[e -- F3246 -> -> 1 `i `uc ]
 [; ;cmdline.c: 127: if (localecho)
 "127
 [e $ ! != -> _localecho `i -> -> -> 0 `i `uc `i 286  ]
@@ -5338,8 +5340,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 }
 [e :U 311 ]
 "192
-[v F3252 `*F3206  1 t ]
-[e $ != . *U + &U _commands * -> -> _index `ui `ux -> -> # *U &U _commands `ui `ux 1 -> -> 0 `i `C*F3206 312  ]
+[v F3255 `*F3208  1 t ]
+[e $ != . *U + &U _commands * -> -> _index `ui `ux -> -> # *U &U _commands `ui `ux 1 -> -> 0 `i `C*F3208 312  ]
 [e :U 313 ]
 [; ;cmdline.c: 196: }
 [; ;cmdline.c: 198: return (-1);
@@ -5449,8 +5451,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 }
 [e :U 324 ]
 "229
-[v F3259 `*F3206  1 t ]
-[e $ != . *U + &U _commands * -> -> _index `ui `ux -> -> # *U &U _commands `ui `ux 1 -> -> 0 `i `C*F3206 325  ]
+[v F3262 `*F3208  1 t ]
+[e $ != . *U + &U _commands * -> -> _index `ui `ux -> -> # *U &U _commands `ui `ux 1 -> -> 0 `i `C*F3208 325  ]
 [e :U 326 ]
 [; ;cmdline.c: 232: }
 [; ;cmdline.c: 234: return (0);

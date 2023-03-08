@@ -3310,7 +3310,7 @@ extern int vsscanf(const char *, const char *, va_list);
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
 
-# 179 "D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h"
+# 192 "D:\git\gibby\catgenius\software\catgenius\../common/catgenie120.h"
 unsigned char catgenie_init (void) ;
 void catgenie_work (void) ;
 
@@ -3326,7 +3326,8 @@ unsigned char repeat);
 void set_LED_Locked (unsigned char pattern,
 unsigned char repeat);
 void set_Beeper (unsigned char pattern,
-unsigned char repeat) ;
+unsigned char repeat);
+void key_Beep (unsigned char beeps);
 
 
 void set_Bowl (unsigned char mode);
@@ -3573,19 +3574,19 @@ buttonmask_evt = 0;
 if (timeoutexpired(&holdtimeout)) {
 switch (buttonmask_cum & ((0x01 << 0) | (0x01 << 1))) {
 case (0x01 << 0):
-set_Beeper(0x05, 0);
+key_Beep(2);
 start_long();
 update = 1;
 break;
 
 case (0x01 << 1):
-set_Beeper(0x05, 0);
+key_Beep(2);
 setup_long();
 update = 1;
 break;
 
 case ((0x01 << 0) | (0x01 << 1)):
-set_Beeper(0x05, 0);
+key_Beep(2);
 both_long();
 update = 1;
 break;
@@ -3724,7 +3725,7 @@ return;
 
 if (down) {
 if (!locked)
-set_Beeper(0x01, 0);
+key_Beep(1);
 
 settimeout(&holdtimeout, (2 * ((((4UL * (1000UL * ((1000UL)))))/4)/8)));
 longhandled = 0;
