@@ -3641,7 +3641,7 @@ if (cat_detected)
 if (detected)
 timeoutnever(&cattimer);
 else
-settimeout(&cattimer, (4 * 60 * ((((4UL * (1000UL * ((1000UL)))))/4)/8)));
+settimeout(&cattimer, (1 * 60 * (60 * (((((4UL * (1000UL * ((1000UL)))))/4)/8)))));
 
 if ( (auto_mode == 5) ||
 (auto_mode == 6) ||
@@ -3678,38 +3678,12 @@ update_display();
 void litterlanguage_event (unsigned char event, unsigned char argument)
 {
 
-if ((event == 4) &&
-(argument)) {
-litterlanguage_stop();
-}
-
-if (((event == 1) ||
-(event == 2) ||
-(event == 3)) &&
-(argument)) {
-litterlanguage_pause(1);
-}
-
-
+# 356
 switch (event) {
 case 0:
 break;
-case 1:
-if (argument)
-set_Beeper(0x01, 1);
-break;
-case 2:
-if (argument)
-set_Beeper(0x05, 1);
-break;
-case 3:
-if (argument)
-set_Beeper(0x15, 1);
-break;
-case 4:
-break;
-case 5:
-break;
+
+# 375
 default:
 break;
 }

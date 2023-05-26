@@ -23,7 +23,7 @@
 
 #define HOLDTIME		(2 * SECOND)	/* Consider 2 second a long button press*/
 #define LEVEL_TIMEOUT		(5 * SECOND)	/* Show the level for 5 seconds */
-#define CAT_TIMEOUT		(4 * 60 * SECOND)
+#define CAT_TIMEOUT		(1 * 60 * MINUTE)
 
 #define PANEL_AUTOMODE		0	/* Display/button mode in normal operation */
 #define PANEL_CARTRIDGELEVEL	1	/* Display/button mode showing/altering cartridge level */
@@ -339,39 +339,39 @@ void catsensor_event (unsigned char detected)
 
 void litterlanguage_event (unsigned char event, unsigned char argument)
 {
-	/* Stop the washing program upon fatal errors */
-	if ((event == EVENT_ERR_EXECUTION) &&
-	    (argument)) {
-		litterlanguage_stop();
-	}
-	/* Pause the washing program upon non-fatal errors */
-	if (((event == EVENT_ERR_FILLING) ||
-	     (event == EVENT_ERR_DRAINING) ||
-	     (event == EVENT_ERR_OVERHEAT)) &&
-	    (argument)) {
-		litterlanguage_pause(1);
-	}
+	// /* Stop the washing program upon fatal errors */
+	// if ((event == EVENT_ERR_EXECUTION) &&
+	//     (argument)) {
+	// 	litterlanguage_stop();
+	// }
+	// /* Pause the washing program upon non-fatal errors */
+	// if (((event == EVENT_ERR_FILLING) ||
+	//      (event == EVENT_ERR_DRAINING) ||
+	//      (event == EVENT_ERR_OVERHEAT)) &&
+	//     (argument)) {
+	// 	litterlanguage_pause(1);
+	// }
 
 
 	switch (event) {
 	case EVENT_LEVEL_CHANGED:
 		break;
-	case EVENT_ERR_FILLING:
-		if (argument)
-			set_Beeper(0x01, 1);
-		break;
-	case EVENT_ERR_DRAINING:
-		if (argument)
-			set_Beeper(0x05, 1);
-		break;
-	case EVENT_ERR_OVERHEAT:
-		if (argument)
-			set_Beeper(0x15, 1);
-		break;
-	case EVENT_ERR_EXECUTION:
-		break;
-	case EVENT_ERR_FLOOD:
-		break;
+	// case EVENT_ERR_FILLING:
+	// 	if (argument)
+	// 		set_Beeper(0x01, 1);
+	// 	break;
+	// case EVENT_ERR_DRAINING:
+	// 	if (argument)
+	// 		set_Beeper(0x05, 1);
+	// 	break;
+	// case EVENT_ERR_OVERHEAT:
+	// 	if (argument)
+	// 		set_Beeper(0x15, 1);
+	// 	break;
+	// case EVENT_ERR_EXECUTION:
+	// 	break;
+	// case EVENT_ERR_FLOOD:
+	// 	break;
 	default:
 		break;
 	}

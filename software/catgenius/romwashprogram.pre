@@ -3381,8 +3381,10 @@ const struct instruction drain_dry[] = {
 {0x07, 10380},
 {0x02, 0},
 {0x01, 0},
-{0x06, 3},
+{0x03, 1},
+{0x06, 11},
 {0x09,0},
+{0x03, 0},
 {0x01, 2},
 {0x07, 4392},
 {0x02, 1},
@@ -3595,7 +3597,7 @@ const struct instruction washprogram[] = {
 {0x0E, 0}
 };
 
-# 334
+# 336
 void romwashprogram_reqins (struct instruction const * address)
 {
 ins_address = address;

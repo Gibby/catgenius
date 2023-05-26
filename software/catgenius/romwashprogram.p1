@@ -2549,11 +2549,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _drain `CS260  -> 0 `x e ]
 "54 D:\git\gibby\catgenius\software\catgenius\romwashprogram.c
 [v _drain_dry `CS260  -> 0 `x e ]
-"150 D:\git\gibby\catgenius\software\catgenius\romwashprogram.c
+"152 D:\git\gibby\catgenius\software\catgenius\romwashprogram.c
 [v _surface `CS260  -> 0 `x e ]
-"181 D:\git\gibby\catgenius\software\catgenius\romwashprogram.c
+"183 D:\git\gibby\catgenius\software\catgenius\romwashprogram.c
 [v _cleanupprogram `CS260  -> 0 `x e ]
-"205 D:\git\gibby\catgenius\software\catgenius\romwashprogram.c
+"207 D:\git\gibby\catgenius\software\catgenius\romwashprogram.c
 [v _washprogram `CS260  -> 0 `x e ]
 "14 D:\git\gibby\catgenius\software\catgenius\romwashprogram.h
 [v F3060 `*S260  1 t ]
@@ -5282,58 +5282,58 @@ Version 3.2 HI-TECH Software Intermediate Code
 ..
 :U ..
 "110
--> -> 6 `i `uc
--> -> 3 `i `ui
+-> -> 3 `i `uc
+-> -> 1 `i `ui
 ..
 :U ..
 "111
+-> -> 6 `i `uc
+-> -> 11 `i `ui
+..
+:U ..
+"112
 -> -> 9 `i `uc
 -> -> 0 `i `ui
 ..
 :U ..
-"112
--> -> 1 `i `uc
--> -> 2 `i `ui
-..
-:U ..
 "113
--> -> 7 `i `uc
--> -> 4392 `i `ui
+-> -> 3 `i `uc
+-> -> 0 `i `ui
 ..
 :U ..
 "114
--> -> 2 `i `uc
--> -> 1 `i `ui
+-> -> 1 `i `uc
+-> -> 2 `i `ui
 ..
 :U ..
 "115
 -> -> 7 `i `uc
--> -> 10803 `i `ui
+-> -> 4392 `i `ui
 ..
 :U ..
 "116
 -> -> 2 `i `uc
--> -> 0 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "117
 -> -> 7 `i `uc
--> -> 35245 `l `ui
+-> -> 10803 `i `ui
 ..
 :U ..
 "118
--> -> 1 `i `uc
--> -> 1 `i `ui
+-> -> 2 `i `uc
+-> -> 0 `i `ui
 ..
 :U ..
 "119
 -> -> 7 `i `uc
--> -> 35309 `l `ui
+-> -> 35245 `l `ui
 ..
 :U ..
 "120
 -> -> 1 `i `uc
--> -> 2 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "121
@@ -5343,130 +5343,140 @@ Version 3.2 HI-TECH Software Intermediate Code
 :U ..
 "122
 -> -> 1 `i `uc
--> -> 1 `i `ui
+-> -> 2 `i `ui
 ..
 :U ..
 "123
 -> -> 7 `i `uc
--> -> 35308 `l `ui
+-> -> 35309 `l `ui
 ..
 :U ..
 "124
 -> -> 1 `i `uc
--> -> 2 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "125
 -> -> 7 `i `uc
--> -> 35404 `l `ui
+-> -> 35308 `l `ui
 ..
 :U ..
 "126
--> -> 2 `i `uc
+-> -> 1 `i `uc
 -> -> 2 `i `ui
 ..
 :U ..
 "127
 -> -> 7 `i `uc
--> -> 11503 `i `ui
+-> -> 35404 `l `ui
 ..
 :U ..
 "128
 -> -> 2 `i `uc
--> -> 0 `i `ui
+-> -> 2 `i `ui
 ..
 :U ..
 "129
 -> -> 7 `i `uc
--> -> 2169 `i `ui
+-> -> 11503 `i `ui
 ..
 :U ..
 "130
 -> -> 2 `i `uc
--> -> 1 `i `ui
+-> -> 0 `i `ui
 ..
 :U ..
 "131
 -> -> 7 `i `uc
--> -> 11703 `i `ui
+-> -> 2169 `i `ui
 ..
 :U ..
 "132
 -> -> 2 `i `uc
--> -> 0 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "133
 -> -> 7 `i `uc
--> -> 45347 `l `ui
+-> -> 11703 `i `ui
 ..
 :U ..
 "134
--> -> 1 `i `uc
--> -> 1 `i `ui
+-> -> 2 `i `uc
+-> -> 0 `i `ui
 ..
 :U ..
 "135
 -> -> 7 `i `uc
--> -> 35309 `l `ui
+-> -> 45347 `l `ui
 ..
 :U ..
 "136
 -> -> 1 `i `uc
--> -> 2 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "137
 -> -> 7 `i `uc
--> -> 45411 `l `ui
+-> -> 35309 `l `ui
 ..
 :U ..
 "138
 -> -> 1 `i `uc
--> -> 1 `i `ui
+-> -> 2 `i `ui
 ..
 :U ..
 "139
 -> -> 7 `i `uc
--> -> 35309 `l `ui
+-> -> 45411 `l `ui
 ..
 :U ..
 "140
 -> -> 1 `i `uc
--> -> 2 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "141
 -> -> 7 `i `uc
--> -> 45411 `l `ui
+-> -> 35309 `l `ui
 ..
 :U ..
 "142
 -> -> 1 `i `uc
--> -> 1 `i `ui
+-> -> 2 `i `ui
 ..
 :U ..
 "143
 -> -> 7 `i `uc
--> -> 35308 `l `ui
+-> -> 45411 `l `ui
 ..
 :U ..
 "144
 -> -> 1 `i `uc
--> -> 2 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "145
 -> -> 7 `i `uc
--> -> 45411 `l `ui
+-> -> 35308 `l `ui
 ..
 :U ..
 "146
 -> -> 1 `i `uc
--> -> 1 `i `ui
+-> -> 2 `i `ui
 ..
 :U ..
 "147
+-> -> 7 `i `uc
+-> -> 45411 `l `ui
+..
+:U ..
+"148
+-> -> 1 `i `uc
+-> -> 1 `i `ui
+..
+:U ..
+"149
 -> -> 13 `i `uc
 -> -> 0 `i `ui
 ..
@@ -5528,952 +5538,954 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;romwashprogram.c: 107: {0x07, 10380},
 [; ;romwashprogram.c: 108: {0x02, 0},
 [; ;romwashprogram.c: 109: {0x01, 0},
-[; ;romwashprogram.c: 110: {0x06, 3},
-[; ;romwashprogram.c: 111: {0x09,0},
-[; ;romwashprogram.c: 112: {0x01, 2},
-[; ;romwashprogram.c: 113: {0x07, 4392},
-[; ;romwashprogram.c: 114: {0x02, 1},
-[; ;romwashprogram.c: 115: {0x07, 10803},
-[; ;romwashprogram.c: 116: {0x02, 0},
-[; ;romwashprogram.c: 117: {0x07, 35245},
-[; ;romwashprogram.c: 118: {0x01, 1},
-[; ;romwashprogram.c: 119: {0x07, 35309},
-[; ;romwashprogram.c: 120: {0x01, 2},
+[; ;romwashprogram.c: 110: {0x03, 1},
+[; ;romwashprogram.c: 111: {0x06, 11},
+[; ;romwashprogram.c: 112: {0x09,0},
+[; ;romwashprogram.c: 113: {0x03, 0},
+[; ;romwashprogram.c: 114: {0x01, 2},
+[; ;romwashprogram.c: 115: {0x07, 4392},
+[; ;romwashprogram.c: 116: {0x02, 1},
+[; ;romwashprogram.c: 117: {0x07, 10803},
+[; ;romwashprogram.c: 118: {0x02, 0},
+[; ;romwashprogram.c: 119: {0x07, 35245},
+[; ;romwashprogram.c: 120: {0x01, 1},
 [; ;romwashprogram.c: 121: {0x07, 35309},
-[; ;romwashprogram.c: 122: {0x01, 1},
-[; ;romwashprogram.c: 123: {0x07, 35308},
-[; ;romwashprogram.c: 124: {0x01, 2},
-[; ;romwashprogram.c: 125: {0x07, 35404},
-[; ;romwashprogram.c: 126: {0x02, 2},
-[; ;romwashprogram.c: 127: {0x07, 11503},
-[; ;romwashprogram.c: 128: {0x02, 0},
-[; ;romwashprogram.c: 129: {0x07, 2169},
-[; ;romwashprogram.c: 130: {0x02, 1},
-[; ;romwashprogram.c: 131: {0x07, 11703},
-[; ;romwashprogram.c: 132: {0x02, 0},
-[; ;romwashprogram.c: 133: {0x07, 45347},
-[; ;romwashprogram.c: 134: {0x01, 1},
-[; ;romwashprogram.c: 135: {0x07, 35309},
-[; ;romwashprogram.c: 136: {0x01, 2},
-[; ;romwashprogram.c: 137: {0x07, 45411},
-[; ;romwashprogram.c: 138: {0x01, 1},
-[; ;romwashprogram.c: 139: {0x07, 35309},
-[; ;romwashprogram.c: 140: {0x01, 2},
-[; ;romwashprogram.c: 141: {0x07, 45411},
-[; ;romwashprogram.c: 142: {0x01, 1},
-[; ;romwashprogram.c: 143: {0x07, 35308},
-[; ;romwashprogram.c: 144: {0x01, 2},
-[; ;romwashprogram.c: 145: {0x07, 45411},
-[; ;romwashprogram.c: 146: {0x01, 1},
-[; ;romwashprogram.c: 147: {0x0D, 0}
-[; ;romwashprogram.c: 148: };
-"150
+[; ;romwashprogram.c: 122: {0x01, 2},
+[; ;romwashprogram.c: 123: {0x07, 35309},
+[; ;romwashprogram.c: 124: {0x01, 1},
+[; ;romwashprogram.c: 125: {0x07, 35308},
+[; ;romwashprogram.c: 126: {0x01, 2},
+[; ;romwashprogram.c: 127: {0x07, 35404},
+[; ;romwashprogram.c: 128: {0x02, 2},
+[; ;romwashprogram.c: 129: {0x07, 11503},
+[; ;romwashprogram.c: 130: {0x02, 0},
+[; ;romwashprogram.c: 131: {0x07, 2169},
+[; ;romwashprogram.c: 132: {0x02, 1},
+[; ;romwashprogram.c: 133: {0x07, 11703},
+[; ;romwashprogram.c: 134: {0x02, 0},
+[; ;romwashprogram.c: 135: {0x07, 45347},
+[; ;romwashprogram.c: 136: {0x01, 1},
+[; ;romwashprogram.c: 137: {0x07, 35309},
+[; ;romwashprogram.c: 138: {0x01, 2},
+[; ;romwashprogram.c: 139: {0x07, 45411},
+[; ;romwashprogram.c: 140: {0x01, 1},
+[; ;romwashprogram.c: 141: {0x07, 35309},
+[; ;romwashprogram.c: 142: {0x01, 2},
+[; ;romwashprogram.c: 143: {0x07, 45411},
+[; ;romwashprogram.c: 144: {0x01, 1},
+[; ;romwashprogram.c: 145: {0x07, 35308},
+[; ;romwashprogram.c: 146: {0x01, 2},
+[; ;romwashprogram.c: 147: {0x07, 45411},
+[; ;romwashprogram.c: 148: {0x01, 1},
+[; ;romwashprogram.c: 149: {0x0D, 0}
+[; ;romwashprogram.c: 150: };
+"152
 [i _surface
 :U ..
 :U ..
-"151
+"153
 -> -> 7 `i `uc
 -> -> 35404 `l `ui
 ..
 :U ..
-"152
--> -> 2 `i `uc
--> -> 2 `i `ui
-..
-:U ..
-"153
--> -> 7 `i `uc
--> -> 300 `i `ui
-..
-:U ..
 "154
 -> -> 2 `i `uc
--> -> 0 `i `ui
+-> -> 2 `i `ui
 ..
 :U ..
 "155
 -> -> 7 `i `uc
--> -> 12203 `i `ui
+-> -> 300 `i `ui
 ..
 :U ..
 "156
 -> -> 2 `i `uc
--> -> 2 `i `ui
+-> -> 0 `i `ui
 ..
 :U ..
 "157
 -> -> 7 `i `uc
--> -> 300 `i `ui
+-> -> 12203 `i `ui
 ..
 :U ..
 "158
 -> -> 2 `i `uc
--> -> 0 `i `ui
+-> -> 2 `i `ui
 ..
 :U ..
 "159
 -> -> 7 `i `uc
--> -> 12203 `i `ui
+-> -> 300 `i `ui
 ..
 :U ..
 "160
 -> -> 2 `i `uc
--> -> 2 `i `ui
+-> -> 0 `i `ui
 ..
 :U ..
 "161
 -> -> 7 `i `uc
--> -> 300 `i `ui
+-> -> 12203 `i `ui
 ..
 :U ..
 "162
 -> -> 2 `i `uc
--> -> 0 `i `ui
+-> -> 2 `i `ui
 ..
 :U ..
 "163
 -> -> 7 `i `uc
--> -> 10203 `i `ui
+-> -> 300 `i `ui
 ..
 :U ..
 "164
 -> -> 2 `i `uc
--> -> 2 `i `ui
+-> -> 0 `i `ui
 ..
 :U ..
 "165
 -> -> 7 `i `uc
--> -> 300 `i `ui
+-> -> 10203 `i `ui
 ..
 :U ..
 "166
 -> -> 2 `i `uc
--> -> 0 `i `ui
+-> -> 2 `i `ui
 ..
 :U ..
 "167
 -> -> 7 `i `uc
--> -> 10202 `i `ui
+-> -> 300 `i `ui
 ..
 :U ..
 "168
 -> -> 2 `i `uc
--> -> 2 `i `ui
+-> -> 0 `i `ui
 ..
 :U ..
 "169
 -> -> 7 `i `uc
--> -> 9170 `i `ui
+-> -> 10202 `i `ui
 ..
 :U ..
 "170
 -> -> 2 `i `uc
--> -> 1 `i `ui
+-> -> 2 `i `ui
 ..
 :U ..
 "171
 -> -> 7 `i `uc
--> -> 6474 `i `ui
+-> -> 9170 `i `ui
 ..
 :U ..
 "172
--> -> 5 `i `uc
--> -> 0 `i `ui
-..
-:U ..
-"173
--> -> 2 `i `uc
--> -> 2 `i `ui
-..
-:U ..
-"174
--> -> 7 `i `uc
--> -> 18268 `i `ui
-..
-:U ..
-"175
 -> -> 2 `i `uc
 -> -> 1 `i `ui
 ..
 :U ..
+"173
+-> -> 7 `i `uc
+-> -> 6474 `i `ui
+..
+:U ..
+"174
+-> -> 5 `i `uc
+-> -> 0 `i `ui
+..
+:U ..
+"175
+-> -> 2 `i `uc
+-> -> 2 `i `ui
+..
+:U ..
 "176
 -> -> 7 `i `uc
--> -> 2832 `i `ui
+-> -> 18268 `i `ui
 ..
 :U ..
 "177
 -> -> 2 `i `uc
--> -> 0 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "178
+-> -> 7 `i `uc
+-> -> 2832 `i `ui
+..
+:U ..
+"179
+-> -> 2 `i `uc
+-> -> 0 `i `ui
+..
+:U ..
+"180
 -> -> 13 `i `uc
 -> -> 0 `i `ui
 ..
 ..
 ]
-[; ;romwashprogram.c: 150: const struct instruction surface[] = {
-[; ;romwashprogram.c: 151: {0x07, 35404},
-[; ;romwashprogram.c: 152: {0x02, 2},
-[; ;romwashprogram.c: 153: {0x07, 300},
-[; ;romwashprogram.c: 154: {0x02, 0},
-[; ;romwashprogram.c: 155: {0x07, 12203},
-[; ;romwashprogram.c: 156: {0x02, 2},
-[; ;romwashprogram.c: 157: {0x07, 300},
-[; ;romwashprogram.c: 158: {0x02, 0},
-[; ;romwashprogram.c: 159: {0x07, 12203},
-[; ;romwashprogram.c: 160: {0x02, 2},
-[; ;romwashprogram.c: 161: {0x07, 300},
-[; ;romwashprogram.c: 162: {0x02, 0},
-[; ;romwashprogram.c: 163: {0x07, 10203},
-[; ;romwashprogram.c: 164: {0x02, 2},
-[; ;romwashprogram.c: 165: {0x07, 300},
-[; ;romwashprogram.c: 166: {0x02, 0},
-[; ;romwashprogram.c: 167: {0x07, 10202},
-[; ;romwashprogram.c: 168: {0x02, 2},
-[; ;romwashprogram.c: 169: {0x07, 9170},
-[; ;romwashprogram.c: 170: {0x02, 1},
-[; ;romwashprogram.c: 171: {0x07, 6474},
-[; ;romwashprogram.c: 172: {0x05, 0},
-[; ;romwashprogram.c: 173: {0x02, 2},
-[; ;romwashprogram.c: 174: {0x07, 18268},
-[; ;romwashprogram.c: 175: {0x02, 1},
-[; ;romwashprogram.c: 176: {0x07, 2832},
-[; ;romwashprogram.c: 177: {0x02, 0},
-[; ;romwashprogram.c: 178: {0x0D, 0}
-[; ;romwashprogram.c: 179: };
-"181
+[; ;romwashprogram.c: 152: const struct instruction surface[] = {
+[; ;romwashprogram.c: 153: {0x07, 35404},
+[; ;romwashprogram.c: 154: {0x02, 2},
+[; ;romwashprogram.c: 155: {0x07, 300},
+[; ;romwashprogram.c: 156: {0x02, 0},
+[; ;romwashprogram.c: 157: {0x07, 12203},
+[; ;romwashprogram.c: 158: {0x02, 2},
+[; ;romwashprogram.c: 159: {0x07, 300},
+[; ;romwashprogram.c: 160: {0x02, 0},
+[; ;romwashprogram.c: 161: {0x07, 12203},
+[; ;romwashprogram.c: 162: {0x02, 2},
+[; ;romwashprogram.c: 163: {0x07, 300},
+[; ;romwashprogram.c: 164: {0x02, 0},
+[; ;romwashprogram.c: 165: {0x07, 10203},
+[; ;romwashprogram.c: 166: {0x02, 2},
+[; ;romwashprogram.c: 167: {0x07, 300},
+[; ;romwashprogram.c: 168: {0x02, 0},
+[; ;romwashprogram.c: 169: {0x07, 10202},
+[; ;romwashprogram.c: 170: {0x02, 2},
+[; ;romwashprogram.c: 171: {0x07, 9170},
+[; ;romwashprogram.c: 172: {0x02, 1},
+[; ;romwashprogram.c: 173: {0x07, 6474},
+[; ;romwashprogram.c: 174: {0x05, 0},
+[; ;romwashprogram.c: 175: {0x02, 2},
+[; ;romwashprogram.c: 176: {0x07, 18268},
+[; ;romwashprogram.c: 177: {0x02, 1},
+[; ;romwashprogram.c: 178: {0x07, 2832},
+[; ;romwashprogram.c: 179: {0x02, 0},
+[; ;romwashprogram.c: 180: {0x0D, 0}
+[; ;romwashprogram.c: 181: };
+"183
 [i _cleanupprogram
 :U ..
 :U ..
-"182
--> -> 0 `i `uc
 "184
+-> -> 0 `i `uc
+"186
 -> | | -> 14 `i -> 512 `i -> 1024 `i `ui
 ..
 :U ..
-"188
+"190
 -> -> 1 `i `uc
 -> -> 1 `i `ui
-..
-:U ..
-"189
--> -> 2 `i `uc
--> -> 1 `i `ui
-..
-:U ..
-"190
--> -> 7 `i `uc
--> -> 21769 `i `ui
 ..
 :U ..
 "191
 -> -> 2 `i `uc
--> -> 2 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "192
 -> -> 7 `i `uc
--> -> 932 `i `ui
+-> -> 21769 `i `ui
 ..
 :U ..
 "193
 -> -> 2 `i `uc
--> -> 0 `i `ui
+-> -> 2 `i `ui
 ..
 :U ..
 "194
+-> -> 7 `i `uc
+-> -> 932 `i `ui
+..
+:U ..
+"195
+-> -> 2 `i `uc
+-> -> 0 `i `ui
+..
+:U ..
+"196
 -> -> 10 `i `uc
 -> -> 1 `i `ui
 ..
 :U ..
-"196
+"198
 -> -> 12 `i `uc
 -> &U _drain_dry `ui
 ..
 :U ..
-"198
+"200
 -> -> 12 `i `uc
 -> &U _surface `ui
 ..
 :U ..
-"199
+"201
 -> -> 1 `i `uc
 -> -> 0 `i `ui
 ..
 :U ..
-"201
+"203
 -> -> 14 `i `uc
 -> -> 0 `i `ui
 ..
 ..
 ]
-[; ;romwashprogram.c: 181: const struct instruction cleanupprogram[] = {
-[; ;romwashprogram.c: 182: {0x00, 0x0E |
-[; ;romwashprogram.c: 183: 0x0200 |
-[; ;romwashprogram.c: 184: 0x0400 },
-[; ;romwashprogram.c: 188: {0x01, 1},
-[; ;romwashprogram.c: 189: {0x02, 1},
-[; ;romwashprogram.c: 190: {0x07, 21769},
-[; ;romwashprogram.c: 191: {0x02, 2},
-[; ;romwashprogram.c: 192: {0x07, 932},
-[; ;romwashprogram.c: 193: {0x02, 0},
-[; ;romwashprogram.c: 194: {0x0A, 1},
-[; ;romwashprogram.c: 196: {0x0C, (unsigned int)drain_dry},
-[; ;romwashprogram.c: 198: {0x0C, (unsigned int)surface},
-[; ;romwashprogram.c: 199: {0x01, 0},
-[; ;romwashprogram.c: 201: {0x0E, 0}
-[; ;romwashprogram.c: 202: };
-"205
+[; ;romwashprogram.c: 183: const struct instruction cleanupprogram[] = {
+[; ;romwashprogram.c: 184: {0x00, 0x0E |
+[; ;romwashprogram.c: 185: 0x0200 |
+[; ;romwashprogram.c: 186: 0x0400 },
+[; ;romwashprogram.c: 190: {0x01, 1},
+[; ;romwashprogram.c: 191: {0x02, 1},
+[; ;romwashprogram.c: 192: {0x07, 21769},
+[; ;romwashprogram.c: 193: {0x02, 2},
+[; ;romwashprogram.c: 194: {0x07, 932},
+[; ;romwashprogram.c: 195: {0x02, 0},
+[; ;romwashprogram.c: 196: {0x0A, 1},
+[; ;romwashprogram.c: 198: {0x0C, (unsigned int)drain_dry},
+[; ;romwashprogram.c: 200: {0x0C, (unsigned int)surface},
+[; ;romwashprogram.c: 201: {0x01, 0},
+[; ;romwashprogram.c: 203: {0x0E, 0}
+[; ;romwashprogram.c: 204: };
+"207
 [i _washprogram
 :U ..
 :U ..
-"206
--> -> 0 `i `uc
 "208
+-> -> 0 `i `uc
+"210
 -> | | -> 14 `i -> 512 `i -> 1024 `i `ui
 ..
 :U ..
-"212
+"214
 -> -> 1 `i `uc
 -> -> 2 `i `ui
-..
-:U ..
-"213
--> -> 2 `i `uc
--> -> 1 `i `ui
-..
-:U ..
-"214
--> -> 7 `i `uc
--> -> 13217 `i `ui
 ..
 :U ..
 "215
 -> -> 2 `i `uc
--> -> 0 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "216
 -> -> 7 `i `uc
--> -> 18141 `i `ui
+-> -> 13217 `i `ui
 ..
 :U ..
 "217
--> -> 1 `i `uc
--> -> 1 `i `ui
+-> -> 2 `i `uc
+-> -> 0 `i `ui
 ..
 :U ..
 "218
 -> -> 7 `i `uc
--> -> 6201 `i `ui
+-> -> 18141 `i `ui
 ..
 :U ..
 "219
 -> -> 1 `i `uc
--> -> 2 `i `ui
-..
-:U ..
-"220
--> -> 2 `i `uc
 -> -> 1 `i `ui
 ..
 :U ..
-"221
+"220
 -> -> 7 `i `uc
--> -> 5765 `i `ui
+-> -> 6201 `i `ui
+..
+:U ..
+"221
+-> -> 1 `i `uc
+-> -> 2 `i `ui
 ..
 :U ..
 "222
 -> -> 2 `i `uc
--> -> 2 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "223
 -> -> 7 `i `uc
--> -> 532 `i `ui
+-> -> 5765 `i `ui
 ..
 :U ..
 "224
 -> -> 2 `i `uc
--> -> 0 `i `ui
+-> -> 2 `i `ui
 ..
 :U ..
 "225
 -> -> 7 `i `uc
--> -> 25206 `i `ui
+-> -> 532 `i `ui
 ..
 :U ..
 "226
 -> -> 2 `i `uc
--> -> 2 `i `ui
+-> -> 0 `i `ui
 ..
 :U ..
 "227
 -> -> 7 `i `uc
--> -> 10671 `i `ui
+-> -> 25206 `i `ui
 ..
 :U ..
 "228
 -> -> 2 `i `uc
--> -> 1 `i `ui
+-> -> 2 `i `ui
 ..
 :U ..
 "229
 -> -> 7 `i `uc
--> -> 6602 `i `ui
+-> -> 10671 `i `ui
 ..
 :U ..
 "230
 -> -> 2 `i `uc
--> -> 2 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "231
 -> -> 7 `i `uc
--> -> 17204 `i `ui
+-> -> 6602 `i `ui
 ..
 :U ..
 "232
 -> -> 2 `i `uc
--> -> 1 `i `ui
+-> -> 2 `i `ui
 ..
 :U ..
 "233
 -> -> 7 `i `uc
--> -> 12703 `i `ui
+-> -> 17204 `i `ui
 ..
 :U ..
 "234
 -> -> 2 `i `uc
--> -> 0 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "235
 -> -> 7 `i `uc
--> -> 4701 `i `ui
+-> -> 12703 `i `ui
 ..
 :U ..
 "236
 -> -> 2 `i `uc
--> -> 1 `i `ui
+-> -> 0 `i `ui
 ..
 :U ..
 "237
 -> -> 7 `i `uc
--> -> 11203 `i `ui
+-> -> 4701 `i `ui
 ..
 :U ..
 "238
 -> -> 2 `i `uc
--> -> 2 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "239
 -> -> 7 `i `uc
--> -> 532 `i `ui
+-> -> 11203 `i `ui
 ..
 :U ..
 "240
 -> -> 2 `i `uc
--> -> 0 `i `ui
+-> -> 2 `i `ui
 ..
 :U ..
 "241
 -> -> 7 `i `uc
--> -> 25206 `i `ui
+-> -> 532 `i `ui
 ..
 :U ..
 "242
 -> -> 2 `i `uc
--> -> 2 `i `ui
+-> -> 0 `i `ui
 ..
 :U ..
 "243
 -> -> 7 `i `uc
--> -> 10671 `i `ui
+-> -> 25206 `i `ui
 ..
 :U ..
 "244
 -> -> 2 `i `uc
--> -> 1 `i `ui
+-> -> 2 `i `ui
 ..
 :U ..
 "245
 -> -> 7 `i `uc
--> -> 6601 `i `ui
+-> -> 10671 `i `ui
 ..
 :U ..
 "246
 -> -> 2 `i `uc
--> -> 2 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "247
 -> -> 7 `i `uc
--> -> 20141 `i `ui
+-> -> 6601 `i `ui
 ..
 :U ..
 "248
--> -> 1 `i `uc
--> -> 1 `i `ui
+-> -> 2 `i `uc
+-> -> 2 `i `ui
 ..
 :U ..
 "249
--> -> 2 `i `uc
--> -> 1 `i `ui
+-> -> 7 `i `uc
+-> -> 20141 `i `ui
 ..
 :U ..
 "250
--> -> 7 `i `uc
--> -> 21769 `i `ui
+-> -> 1 `i `uc
+-> -> 1 `i `ui
 ..
 :U ..
 "251
 -> -> 2 `i `uc
--> -> 2 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "252
 -> -> 7 `i `uc
--> -> 932 `i `ui
+-> -> 21769 `i `ui
 ..
 :U ..
 "253
 -> -> 2 `i `uc
--> -> 0 `i `ui
+-> -> 2 `i `ui
+..
+:U ..
+"254
+-> -> 7 `i `uc
+-> -> 932 `i `ui
 ..
 :U ..
 "255
+-> -> 2 `i `uc
+-> -> 0 `i `ui
+..
+:U ..
+"257
 -> -> 10 `i `uc
 -> -> 54 `i `ui
 ..
 :U ..
-"257
+"259
 -> -> 7 `i `uc
 -> -> 12108 `i `ui
 ..
 :U ..
-"258
+"260
 -> -> 1 `i `uc
 -> -> 2 `i `ui
-..
-:U ..
-"259
--> -> 2 `i `uc
--> -> 1 `i `ui
-..
-:U ..
-"260
--> -> 7 `i `uc
--> -> 3264 `i `ui
 ..
 :U ..
 "261
 -> -> 2 `i `uc
--> -> 2 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "262
 -> -> 7 `i `uc
--> -> 532 `i `ui
+-> -> 3264 `i `ui
 ..
 :U ..
 "263
 -> -> 2 `i `uc
--> -> 0 `i `ui
+-> -> 2 `i `ui
 ..
 :U ..
 "264
 -> -> 7 `i `uc
--> -> 24206 `i `ui
+-> -> 532 `i `ui
 ..
 :U ..
 "265
 -> -> 2 `i `uc
--> -> 2 `i `ui
+-> -> 0 `i `ui
 ..
 :U ..
 "266
 -> -> 7 `i `uc
--> -> 10571 `i `ui
+-> -> 24206 `i `ui
 ..
 :U ..
 "267
 -> -> 2 `i `uc
--> -> 1 `i `ui
+-> -> 2 `i `ui
 ..
 :U ..
 "268
 -> -> 7 `i `uc
--> -> 6602 `i `ui
+-> -> 10571 `i `ui
 ..
 :U ..
 "269
 -> -> 2 `i `uc
--> -> 2 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "270
 -> -> 7 `i `uc
--> -> 17141 `i `ui
+-> -> 6602 `i `ui
 ..
 :U ..
 "271
 -> -> 2 `i `uc
--> -> 0 `i `ui
+-> -> 2 `i `ui
+..
+:U ..
+"272
+-> -> 7 `i `uc
+-> -> 17141 `i `ui
 ..
 :U ..
 "273
--> -> 1 `i `uc
--> -> 0 `i `ui
-..
-:U ..
-"274
--> -> 8 `i `uc
+-> -> 2 `i `uc
 -> -> 0 `i `ui
 ..
 :U ..
 "275
+-> -> 1 `i `uc
+-> -> 0 `i `ui
+..
+:U ..
+"276
+-> -> 8 `i `uc
+-> -> 0 `i `ui
+..
+:U ..
+"277
 -> -> 3 `i `uc
 -> -> 1 `i `ui
 ..
 :U ..
-"276
--> -> 1 `i `uc
--> -> 1 `i `ui
-..
-:U ..
-"277
--> -> 7 `i `uc
--> -> 18768 `i `ui
-..
-:U ..
 "278
--> -> 2 `i `uc
+-> -> 1 `i `uc
 -> -> 1 `i `ui
 ..
 :U ..
 "279
 -> -> 7 `i `uc
--> -> 25206 `i `ui
+-> -> 18768 `i `ui
 ..
 :U ..
 "280
 -> -> 2 `i `uc
--> -> 2 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "281
 -> -> 7 `i `uc
--> -> 1132 `i `ui
+-> -> 25206 `i `ui
 ..
 :U ..
 "282
 -> -> 2 `i `uc
--> -> 0 `i `ui
+-> -> 2 `i `ui
 ..
 :U ..
 "283
+-> -> 7 `i `uc
+-> -> 1132 `i `ui
+..
+:U ..
+"284
+-> -> 2 `i `uc
+-> -> 0 `i `ui
+..
+:U ..
+"285
 -> -> 8 `i `uc
 -> -> 1 `i `ui
 ..
 :U ..
-"284
+"286
 -> -> 7 `i `uc
 -> -> 63582 `l `ui
 ..
 :U ..
-"286
+"288
 -> -> 12 `i `uc
 -> &U _drain `ui
 ..
 :U ..
-"288
+"290
 -> -> 3 `i `uc
 -> -> 1 `i `ui
 ..
 :U ..
-"289
+"291
 -> -> 7 `i `uc
 -> -> 55418 `l `ui
 ..
 :U ..
-"290
+"292
 -> -> 1 `i `uc
 -> -> 2 `i `ui
 ..
 :U ..
-"291
+"293
 -> -> 6 `i `uc
 -> -> 3 `i `ui
 ..
 :U ..
-"292
+"294
 -> -> 9 `i `uc
 -> -> 0 `i `ui
 ..
 :U ..
-"293
+"295
 -> -> 1 `i `uc
 -> -> 1 `i `ui
 ..
 :U ..
-"294
+"296
 -> -> 8 `i `uc
 -> -> 1 `i `ui
 ..
 :U ..
-"295
+"297
 -> -> 7 `i `uc
 -> -> 44002 `l `ui
 ..
 :U ..
-"297
+"299
 -> -> 12 `i `uc
 -> &U _drain `ui
 ..
 :U ..
-"299
--> -> 3 `i `uc
--> -> 1 `i `ui
-..
-:U ..
-"300
--> -> 7 `i `uc
--> -> 25502 `i `ui
-..
-:U ..
 "301
--> -> 2 `i `uc
+-> -> 3 `i `uc
 -> -> 1 `i `ui
 ..
 :U ..
 "302
 -> -> 7 `i `uc
--> -> 21205 `i `ui
+-> -> 25502 `i `ui
 ..
 :U ..
 "303
 -> -> 2 `i `uc
--> -> 2 `i `ui
+-> -> 1 `i `ui
 ..
 :U ..
 "304
+-> -> 7 `i `uc
+-> -> 21205 `i `ui
+..
+:U ..
+"305
+-> -> 2 `i `uc
+-> -> 2 `i `ui
+..
+:U ..
+"306
 -> -> 1 `i `uc
 -> -> 0 `i `ui
 ..
 :U ..
-"305
+"307
 -> -> 6 `i `uc
 -> -> 11 `i `ui
 ..
 :U ..
-"306
+"308
 -> -> 7 `i `uc
 -> -> 1132 `i `ui
 ..
 :U ..
-"307
+"309
 -> -> 2 `i `uc
 -> -> 0 `i `ui
 ..
 :U ..
-"308
+"310
 -> -> 9 `i `uc
 -> -> 0 `i `ui
 ..
 :U ..
-"309
+"311
 -> -> 1 `i `uc
 -> -> 2 `i `ui
 ..
 :U ..
-"310
+"312
 -> -> 7 `i `uc
 -> -> 5329 `i `ui
 ..
 :U ..
-"311
--> -> 1 `i `uc
--> -> 1 `i `ui
-..
-:U ..
-"312
--> -> 7 `i `uc
--> -> 55482 `l `ui
-..
-:U ..
 "313
--> -> 8 `i `uc
+-> -> 1 `i `uc
 -> -> 1 `i `ui
 ..
 :U ..
 "314
 -> -> 7 `i `uc
--> -> 39107 `l `ui
+-> -> 55482 `l `ui
+..
+:U ..
+"315
+-> -> 8 `i `uc
+-> -> 1 `i `ui
 ..
 :U ..
 "316
--> -> 12 `i `uc
--> &U _drain_dry `ui
+-> -> 7 `i `uc
+-> -> 39107 `l `ui
 ..
 :U ..
 "318
 -> -> 12 `i `uc
+-> &U _drain_dry `ui
+..
+:U ..
+"320
+-> -> 12 `i `uc
 -> &U _surface `ui
 ..
 :U ..
-"319
+"321
 -> -> 1 `i `uc
 -> -> 0 `i `ui
 ..
 :U ..
-"321
+"323
 -> -> 14 `i `uc
 -> -> 0 `i `ui
 ..
 ..
 ]
-[; ;romwashprogram.c: 205: const struct instruction washprogram[] = {
-[; ;romwashprogram.c: 206: {0x00, 0x0E |
-[; ;romwashprogram.c: 207: 0x0200 |
-[; ;romwashprogram.c: 208: 0x0400 },
-[; ;romwashprogram.c: 212: {0x01, 2},
-[; ;romwashprogram.c: 213: {0x02, 1},
-[; ;romwashprogram.c: 214: {0x07, 13217},
-[; ;romwashprogram.c: 215: {0x02, 0},
-[; ;romwashprogram.c: 216: {0x07, 18141},
-[; ;romwashprogram.c: 217: {0x01, 1},
-[; ;romwashprogram.c: 218: {0x07, 6201},
-[; ;romwashprogram.c: 219: {0x01, 2},
-[; ;romwashprogram.c: 220: {0x02, 1},
-[; ;romwashprogram.c: 221: {0x07, 5765},
-[; ;romwashprogram.c: 222: {0x02, 2},
-[; ;romwashprogram.c: 223: {0x07, 532},
-[; ;romwashprogram.c: 224: {0x02, 0},
-[; ;romwashprogram.c: 225: {0x07, 25206},
-[; ;romwashprogram.c: 226: {0x02, 2},
-[; ;romwashprogram.c: 227: {0x07, 10671},
-[; ;romwashprogram.c: 228: {0x02, 1},
-[; ;romwashprogram.c: 229: {0x07, 6602},
-[; ;romwashprogram.c: 230: {0x02, 2},
-[; ;romwashprogram.c: 231: {0x07, 17204},
-[; ;romwashprogram.c: 232: {0x02, 1},
-[; ;romwashprogram.c: 233: {0x07, 12703},
-[; ;romwashprogram.c: 234: {0x02, 0},
-[; ;romwashprogram.c: 235: {0x07, 4701},
-[; ;romwashprogram.c: 236: {0x02, 1},
-[; ;romwashprogram.c: 237: {0x07, 11203},
-[; ;romwashprogram.c: 238: {0x02, 2},
-[; ;romwashprogram.c: 239: {0x07, 532},
-[; ;romwashprogram.c: 240: {0x02, 0},
-[; ;romwashprogram.c: 241: {0x07, 25206},
-[; ;romwashprogram.c: 242: {0x02, 2},
-[; ;romwashprogram.c: 243: {0x07, 10671},
-[; ;romwashprogram.c: 244: {0x02, 1},
-[; ;romwashprogram.c: 245: {0x07, 6601},
-[; ;romwashprogram.c: 246: {0x02, 2},
-[; ;romwashprogram.c: 247: {0x07, 20141},
-[; ;romwashprogram.c: 248: {0x01, 1},
-[; ;romwashprogram.c: 249: {0x02, 1},
-[; ;romwashprogram.c: 250: {0x07, 21769},
-[; ;romwashprogram.c: 251: {0x02, 2},
-[; ;romwashprogram.c: 252: {0x07, 932},
-[; ;romwashprogram.c: 253: {0x02, 0},
-[; ;romwashprogram.c: 255: {0x0A, 54},
-[; ;romwashprogram.c: 257: {0x07, 12108},
-[; ;romwashprogram.c: 258: {0x01, 2},
-[; ;romwashprogram.c: 259: {0x02, 1},
-[; ;romwashprogram.c: 260: {0x07, 3264},
-[; ;romwashprogram.c: 261: {0x02, 2},
-[; ;romwashprogram.c: 262: {0x07, 532},
-[; ;romwashprogram.c: 263: {0x02, 0},
-[; ;romwashprogram.c: 264: {0x07, 24206},
-[; ;romwashprogram.c: 265: {0x02, 2},
-[; ;romwashprogram.c: 266: {0x07, 10571},
-[; ;romwashprogram.c: 267: {0x02, 1},
-[; ;romwashprogram.c: 268: {0x07, 6602},
-[; ;romwashprogram.c: 269: {0x02, 2},
-[; ;romwashprogram.c: 270: {0x07, 17141},
-[; ;romwashprogram.c: 271: {0x02, 0},
-[; ;romwashprogram.c: 273: {0x01, 0},
-[; ;romwashprogram.c: 274: {0x08, 0},
-[; ;romwashprogram.c: 275: {0x03, 1},
-[; ;romwashprogram.c: 276: {0x01, 1},
-[; ;romwashprogram.c: 277: {0x07, 18768},
-[; ;romwashprogram.c: 278: {0x02, 1},
-[; ;romwashprogram.c: 279: {0x07, 25206},
-[; ;romwashprogram.c: 280: {0x02, 2},
-[; ;romwashprogram.c: 281: {0x07, 1132},
-[; ;romwashprogram.c: 282: {0x02, 0},
-[; ;romwashprogram.c: 283: {0x08, 1},
-[; ;romwashprogram.c: 284: {0x07, 63582},
-[; ;romwashprogram.c: 286: {0x0C, (unsigned int)drain},
-[; ;romwashprogram.c: 288: {0x03, 1},
-[; ;romwashprogram.c: 289: {0x07, 55418},
-[; ;romwashprogram.c: 290: {0x01, 2},
-[; ;romwashprogram.c: 291: {0x06, 3},
-[; ;romwashprogram.c: 292: {0x09,0},
-[; ;romwashprogram.c: 293: {0x01, 1},
-[; ;romwashprogram.c: 294: {0x08, 1},
-[; ;romwashprogram.c: 295: {0x07, 44002},
-[; ;romwashprogram.c: 297: {0x0C, (unsigned int)drain},
-[; ;romwashprogram.c: 299: {0x03, 1},
-[; ;romwashprogram.c: 300: {0x07, 25502},
-[; ;romwashprogram.c: 301: {0x02, 1},
-[; ;romwashprogram.c: 302: {0x07, 21205},
-[; ;romwashprogram.c: 303: {0x02, 2},
-[; ;romwashprogram.c: 304: {0x01, 0},
-[; ;romwashprogram.c: 305: {0x06, 11},
-[; ;romwashprogram.c: 306: {0x07, 1132},
-[; ;romwashprogram.c: 307: {0x02, 0},
-[; ;romwashprogram.c: 308: {0x09,0},
-[; ;romwashprogram.c: 309: {0x01, 2},
-[; ;romwashprogram.c: 310: {0x07, 5329},
-[; ;romwashprogram.c: 311: {0x01, 1},
-[; ;romwashprogram.c: 312: {0x07, 55482},
-[; ;romwashprogram.c: 313: {0x08, 1},
-[; ;romwashprogram.c: 314: {0x07, 39107},
-[; ;romwashprogram.c: 316: {0x0C, (unsigned int)drain_dry},
-[; ;romwashprogram.c: 318: {0x0C, (unsigned int)surface},
-[; ;romwashprogram.c: 319: {0x01, 0},
-[; ;romwashprogram.c: 321: {0x0E, 0}
-[; ;romwashprogram.c: 322: };
-"335
+[; ;romwashprogram.c: 207: const struct instruction washprogram[] = {
+[; ;romwashprogram.c: 208: {0x00, 0x0E |
+[; ;romwashprogram.c: 209: 0x0200 |
+[; ;romwashprogram.c: 210: 0x0400 },
+[; ;romwashprogram.c: 214: {0x01, 2},
+[; ;romwashprogram.c: 215: {0x02, 1},
+[; ;romwashprogram.c: 216: {0x07, 13217},
+[; ;romwashprogram.c: 217: {0x02, 0},
+[; ;romwashprogram.c: 218: {0x07, 18141},
+[; ;romwashprogram.c: 219: {0x01, 1},
+[; ;romwashprogram.c: 220: {0x07, 6201},
+[; ;romwashprogram.c: 221: {0x01, 2},
+[; ;romwashprogram.c: 222: {0x02, 1},
+[; ;romwashprogram.c: 223: {0x07, 5765},
+[; ;romwashprogram.c: 224: {0x02, 2},
+[; ;romwashprogram.c: 225: {0x07, 532},
+[; ;romwashprogram.c: 226: {0x02, 0},
+[; ;romwashprogram.c: 227: {0x07, 25206},
+[; ;romwashprogram.c: 228: {0x02, 2},
+[; ;romwashprogram.c: 229: {0x07, 10671},
+[; ;romwashprogram.c: 230: {0x02, 1},
+[; ;romwashprogram.c: 231: {0x07, 6602},
+[; ;romwashprogram.c: 232: {0x02, 2},
+[; ;romwashprogram.c: 233: {0x07, 17204},
+[; ;romwashprogram.c: 234: {0x02, 1},
+[; ;romwashprogram.c: 235: {0x07, 12703},
+[; ;romwashprogram.c: 236: {0x02, 0},
+[; ;romwashprogram.c: 237: {0x07, 4701},
+[; ;romwashprogram.c: 238: {0x02, 1},
+[; ;romwashprogram.c: 239: {0x07, 11203},
+[; ;romwashprogram.c: 240: {0x02, 2},
+[; ;romwashprogram.c: 241: {0x07, 532},
+[; ;romwashprogram.c: 242: {0x02, 0},
+[; ;romwashprogram.c: 243: {0x07, 25206},
+[; ;romwashprogram.c: 244: {0x02, 2},
+[; ;romwashprogram.c: 245: {0x07, 10671},
+[; ;romwashprogram.c: 246: {0x02, 1},
+[; ;romwashprogram.c: 247: {0x07, 6601},
+[; ;romwashprogram.c: 248: {0x02, 2},
+[; ;romwashprogram.c: 249: {0x07, 20141},
+[; ;romwashprogram.c: 250: {0x01, 1},
+[; ;romwashprogram.c: 251: {0x02, 1},
+[; ;romwashprogram.c: 252: {0x07, 21769},
+[; ;romwashprogram.c: 253: {0x02, 2},
+[; ;romwashprogram.c: 254: {0x07, 932},
+[; ;romwashprogram.c: 255: {0x02, 0},
+[; ;romwashprogram.c: 257: {0x0A, 54},
+[; ;romwashprogram.c: 259: {0x07, 12108},
+[; ;romwashprogram.c: 260: {0x01, 2},
+[; ;romwashprogram.c: 261: {0x02, 1},
+[; ;romwashprogram.c: 262: {0x07, 3264},
+[; ;romwashprogram.c: 263: {0x02, 2},
+[; ;romwashprogram.c: 264: {0x07, 532},
+[; ;romwashprogram.c: 265: {0x02, 0},
+[; ;romwashprogram.c: 266: {0x07, 24206},
+[; ;romwashprogram.c: 267: {0x02, 2},
+[; ;romwashprogram.c: 268: {0x07, 10571},
+[; ;romwashprogram.c: 269: {0x02, 1},
+[; ;romwashprogram.c: 270: {0x07, 6602},
+[; ;romwashprogram.c: 271: {0x02, 2},
+[; ;romwashprogram.c: 272: {0x07, 17141},
+[; ;romwashprogram.c: 273: {0x02, 0},
+[; ;romwashprogram.c: 275: {0x01, 0},
+[; ;romwashprogram.c: 276: {0x08, 0},
+[; ;romwashprogram.c: 277: {0x03, 1},
+[; ;romwashprogram.c: 278: {0x01, 1},
+[; ;romwashprogram.c: 279: {0x07, 18768},
+[; ;romwashprogram.c: 280: {0x02, 1},
+[; ;romwashprogram.c: 281: {0x07, 25206},
+[; ;romwashprogram.c: 282: {0x02, 2},
+[; ;romwashprogram.c: 283: {0x07, 1132},
+[; ;romwashprogram.c: 284: {0x02, 0},
+[; ;romwashprogram.c: 285: {0x08, 1},
+[; ;romwashprogram.c: 286: {0x07, 63582},
+[; ;romwashprogram.c: 288: {0x0C, (unsigned int)drain},
+[; ;romwashprogram.c: 290: {0x03, 1},
+[; ;romwashprogram.c: 291: {0x07, 55418},
+[; ;romwashprogram.c: 292: {0x01, 2},
+[; ;romwashprogram.c: 293: {0x06, 3},
+[; ;romwashprogram.c: 294: {0x09,0},
+[; ;romwashprogram.c: 295: {0x01, 1},
+[; ;romwashprogram.c: 296: {0x08, 1},
+[; ;romwashprogram.c: 297: {0x07, 44002},
+[; ;romwashprogram.c: 299: {0x0C, (unsigned int)drain},
+[; ;romwashprogram.c: 301: {0x03, 1},
+[; ;romwashprogram.c: 302: {0x07, 25502},
+[; ;romwashprogram.c: 303: {0x02, 1},
+[; ;romwashprogram.c: 304: {0x07, 21205},
+[; ;romwashprogram.c: 305: {0x02, 2},
+[; ;romwashprogram.c: 306: {0x01, 0},
+[; ;romwashprogram.c: 307: {0x06, 11},
+[; ;romwashprogram.c: 308: {0x07, 1132},
+[; ;romwashprogram.c: 309: {0x02, 0},
+[; ;romwashprogram.c: 310: {0x09,0},
+[; ;romwashprogram.c: 311: {0x01, 2},
+[; ;romwashprogram.c: 312: {0x07, 5329},
+[; ;romwashprogram.c: 313: {0x01, 1},
+[; ;romwashprogram.c: 314: {0x07, 55482},
+[; ;romwashprogram.c: 315: {0x08, 1},
+[; ;romwashprogram.c: 316: {0x07, 39107},
+[; ;romwashprogram.c: 318: {0x0C, (unsigned int)drain_dry},
+[; ;romwashprogram.c: 320: {0x0C, (unsigned int)surface},
+[; ;romwashprogram.c: 321: {0x01, 0},
+[; ;romwashprogram.c: 323: {0x0E, 0}
+[; ;romwashprogram.c: 324: };
+"337
 [v _romwashprogram_reqins `(v  1 ef1`*CS260 ]
 {
-[; ;romwashprogram.c: 334: void romwashprogram_reqins (struct instruction const * address)
-[; ;romwashprogram.c: 335: {
+[; ;romwashprogram.c: 336: void romwashprogram_reqins (struct instruction const * address)
+[; ;romwashprogram.c: 337: {
 [e :U _romwashprogram_reqins ]
 [v _address `*CS260  1 r1 ]
 [f ]
-[; ;romwashprogram.c: 336: ins_address = address;
-"336
+[; ;romwashprogram.c: 338: ins_address = address;
+"338
 [e = _ins_address _address ]
-[; ;romwashprogram.c: 337: }
-"337
+[; ;romwashprogram.c: 339: }
+"339
 [e :UE 261 ]
 }
-"340
+"342
 [v _romwashprogram_getins `(uc  1 ef1`C*S260 ]
 {
-[; ;romwashprogram.c: 339: unsigned char romwashprogram_getins (struct instruction * const instruction)
-[; ;romwashprogram.c: 340: {
+[; ;romwashprogram.c: 341: unsigned char romwashprogram_getins (struct instruction * const instruction)
+[; ;romwashprogram.c: 342: {
 [e :U _romwashprogram_getins ]
-"339
+"341
 [v F3091 `*S260  1 t ]
-"340
+"342
 [v _instruction `C*S260  1 r1 ]
 [f ]
-[; ;romwashprogram.c: 341: *instruction = *ins_address;
-"341
-[e = *U _instruction *U _ins_address ]
-[; ;romwashprogram.c: 343: return 1;
+[; ;romwashprogram.c: 343: *instruction = *ins_address;
 "343
+[e = *U _instruction *U _ins_address ]
+[; ;romwashprogram.c: 345: return 1;
+"345
 [e ) -> -> 1 `i `uc ]
 [e $UE 262  ]
-[; ;romwashprogram.c: 344: }
-"344
+[; ;romwashprogram.c: 346: }
+"346
 [e :UE 262 ]
 }

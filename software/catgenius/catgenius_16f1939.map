@@ -28,7 +28,7 @@ Linker command line:
   -ACONFIG=08007h-08008h -pconfig=CONFIG -DCONFIG=2 -AIDLOC=08000h-08003h \
   -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/0F000h -peeprom_data=EEDATA \
   -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\chris\AppData\Local\Temp\s8uc.obj catgenius_16f1939.obj 
+  C:\Users\chris\AppData\Local\Temp\sh2c.obj catgenius_16f1939.obj 
 
 Object code version is 3.10
 
@@ -37,7 +37,7 @@ Machine type is 16F1939
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\chris\AppData\Local\Temp\s8uc.obj
+C:\Users\chris\AppData\Local\Temp\sh2c.obj
                 end_init                             50       50        3        8       0
                 init                                 4E       4E        2        8       0
                 reset_vec                             0        0        2        0       0
@@ -45,114 +45,113 @@ catgenius_16f1939.obj
                 functab                             100      100        D        2       0
                 intentry                              4        4       4A        8       0
                 config                             8007     8007        2    1000E       0
-                text3345                           2AEF     2AEF       27     55DE       0
-                text3344                           2993     2993       1C     5326       0
-                text3343                           2832     2832        C     5064       0
-                text3342                            10D      10D       D1        2       0
-                text3341                             FF       FF        1      1FE       0
-                text3339                           37A2     37A2        B     6F44       0
-                text3338                           37E2     37E2        F     6FC4       0
-                text3337                           2B16     2B16       28     562C       0
-                text3336                           3799     3799        9     6F32       0
-                text3335                           2C4D     2C4D       37     589A       0
-                text3334                           2A5F     2A5F       23     54BE       0
-                text3333                           377A     377A        6     6EF4       0
-                text3332                           3780     3780        6     6F00       0
-                text3331                           3766     3766        5     6ECC       0
-                text3330                           29AF     29AF       1C     535E       0
-                text3329                           288A     288A       11     5114       0
-                text3328                           3792     3792        7     6F24       0
-                text3327                           2A04     2A04       1E     5408       0
-                text3326                           2A82     2A82       24     5504       0
-                text3325                           2A22     2A22       1E     5444       0
-                text3324                           2AA6     2AA6       24     554C       0
-                text3323                           291B     291B       16     5236       0
-                text3322                           376B     376B        5     6ED6       0
-                text3321                           289B     289B       11     5136       0
-                text3320                           3770     3770        5     6EE0       0
-                text3319                           28AC     28AC       11     5158       0
-                text3318                           2DAA     2DAA       48     5B54       0
-                text3317                           1BF0     1BF0      13E     37E0       0
-                text3316                           3775     3775        5     6EEA       0
-                text3315                           37AD     37AD        B     6F5A       0
-                text3314                           295F     295F       1A     52BE       0
-                text3313                           2BC2     2BC2       2E     5784       0
-                text3312                           29CB     29CB       1C     5396       0
-                text3311                            1FF      1FF        1        2       0
-                text3310                           2DF2     2DF2       4E     5BE4       0
-                text3309                           2EE8     2EE8       5B     5DD0       0
-                text3308                           2B68     2B68       2D     56D0       0
-                text3307                           227E     227E       6C     44FC       0
-                text3306                           2C1E     2C1E       2F     583C       0
-                text3305                           1000     1000       53     167A       0
-                text3304                           2931     2931       16     5262       0
-                text3303                           2979     2979       1A     52F2       0
-                text3302                           2ACA     2ACA       25     5594       0
-                text3301                            945      945       47     128A       0
-                text3300                           2D2B     2D2B       3F     5A56       0
-                text3299                           2CBB     2CBB       38     5976       0
-                text3298                           207B     207B       63     40F6       0
-                text3297                             53       53       A0        8       0
-                text3296                           19FF     19FF       C7     33FE       0
-                text3295                           14A0     14A0      360     2940       0
-                text3294                           235B     235B       74     46B6       0
-                text3293                           28E0     28E0       13     51C0       0
-                text3292                           28F3     28F3       13     51E6       0
-                text3291                           20DE     20DE       65     41BC       0
-                text3290                           287A     287A       10     50F4       0
-                text3289                           23CF     23CF       77     479E       0
-                text3288                           2E40     2E40       4E     5C80       0
-                text3287                           29E7     29E7       1D     53CE       0
-                text3286                           37B8     37B8        E     6F70       0
-                text3285                           201B     201B       60     4036       0
-                text3284                           2B95     2B95       2D     572A       0
-                text3283                           2537     2537       7C     4A6E       0
-                text3282                           26BE     26BE       90     4D7C       0
-                text3281                           2906     2906       15     520C       0
-                text3280                           37F1     37F1        F     6FE2       0
-                text3279                           283E     283E        F     507C       0
-                text3278                           284D     284D        F     509A       0
-                text3277                           285C     285C        F     50B8       0
-                text3276                           286B     286B        F     50D6       0
-                text3275                           2FA1     2FA1       5F     5F42       0
-                text3274                           24BD     24BD       7A     497A       0
-                text3273                           2CF3     2CF3       38     59E6       0
-                text3272                           2D6A     2D6A       40     5AD4       0
-                text3271                           2E8E     2E8E       5A     5D1C       0
-                swtext4                            281E     281E       14     5000       0
-                text3270                            98C      98C      1B1     1318       0
-                text3269                           1AC6     1AC6      12A     358C       0
-                text3268                           2BF0     2BF0       2E     57E0       0
-                text3267                           25B3     25B3       7D     4B66       0
-                text3266                           2446     2446       77     488C       0
-                text3265                           2143     2143       69     4286       0
-                text3264                           188D     188D       B5     311A       0
-                text3263                           180C     180C       81     3018       0
-                text3262                           2630     2630       8E     4C60       0
-                text3261                           2A40     2A40       1F     5480       0
-                text3260                           1256     1256      24A     24AC       0
-                text3259                           22EA     22EA       71     45D4       0
-                text3258                           37C6     37C6        E     6F8C       0
-                text3257                           28BD     28BD       11     517A       0
-                text3256                           37D4     37D4        E     6FA8       0
-                text3255                           1942     1942       BD     3284       0
-                text3254                           1053     1053      203     20A6       0
-                text3253                            1DE      1DE       21        2       0
-                text3252                           2001     2001       1A     4002       0
-                text3251                           1D2E     1D2E      15E     3A5C       0
-                text3250                           21AC     21AC       69     4358       0
-                swtext3                            1800     1800        C     3000       0
-                text3249                           2215     2215       69     442A       0
+                text3319                           2B47     2B47       27     568E       0
+                text3318                           2A10     2A10       1C     5420       0
+                text3317                           284D     284D        C     509A       0
+                text3316                            10D      10D       D1        2       0
+                text3315                             FF       FF        1      1FE       0
+                text3313                           2837     2837        B     506E       0
+                text3312                           2883     2883        F     5106       0
+                text3311                           2B6E     2B6E       28     56DC       0
+                text3310                           37F7     37F7        9     6FEE       0
+                text3309                           2CA5     2CA5       37     594A       0
+                text3308                           2ADC     2ADC       23     55B8       0
+                text3307                           37D8     37D8        6     6FB0       0
+                text3306                           37DE     37DE        6     6FBC       0
+                text3305                           1800     1800        C     2940       0
+                text3304                           37C9     37C9        5     6F92       0
+                text3303                           2A2C     2A2C       1C     5458       0
+                text3302                           28ED     28ED       11     51DA       0
+                text3301                           37F0     37F0        7     6FE0       0
+                text3300                           2A81     2A81       1E     5502       0
+                text3299                           2AFF     2AFF       24     55FE       0
+                text3298                           2A9F     2A9F       1E     553E       0
+                text3297                           2B23     2B23       24     5646       0
+                text3296                           297E     297E       16     52FC       0
+                text3295                           37CE     37CE        5     6F9C       0
+                text3294                           28FE     28FE       11     51FC       0
+                text3293                           37D3     37D3        5     6FA6       0
+                text3292                           290F     290F       11     521E       0
+                text3291                           2E09     2E09       48     5C12       0
+                text3290                           1BF0     1BF0      13E     37E0       0
+                text3289                           2832     2832        5     5064       0
+                text3288                           2842     2842        B     5084       0
+                text3287                           29C2     29C2       1A     5384       0
+                text3286                           2C1A     2C1A       2E     5834       0
+                text3285                           2A48     2A48       1C     5490       0
+                text3284                            1FF      1FF        1        2       0
+                text3283                           2E51     2E51       4E     5CA2       0
+                text3282                           2F47     2F47       5B     5E8E       0
+                text3281                           2BC0     2BC0       2D     5780       0
+                text3280                           227E     227E       6C     44FC       0
+                text3279                           2C76     2C76       2F     58EC       0
+                text3278                           1000     1000       53     167A       0
+                text3277                           2994     2994       16     5328       0
+                text3276                           29DC     29DC       1A     53B8       0
+                text3275                           2000     2000       25     3D18       0
+                text3274                           2DC2     2DC2       47     5B84       0
+                text3273                           2D83     2D83       3F     5B06       0
+                text3272                           2D13     2D13       38     5A26       0
+                text3271                           20E4     20E4       63     41C8       0
+                text3270                             53       53       A0        8       0
+                text3269                           19FF     19FF       C7     33FE       0
+                text3268                           14A0     14A0      360     2940       0
+                text3267                           235B     235B       74     46B6       0
+                text3266                           2943     2943       13     5286       0
+                text3265                           2956     2956       13     52AC       0
+                text3264                           2147     2147       65     428E       0
+                text3263                           28DD     28DD       10     51BA       0
+                text3262                           23CF     23CF       77     479E       0
+                text3261                           2E9F     2E9F       4E     5D3E       0
+                text3260                           2A64     2A64       1D     54C8       0
+                text3259                           2859     2859        E     50B2       0
+                text3258                           2084     2084       60     4108       0
+                text3257                           2BED     2BED       2D     57DA       0
+                text3256                           2537     2537       7C     4A6E       0
+                text3255                           26BE     26BE       90     4D7C       0
+                text3254                           2969     2969       15     52D2       0
+                text3253                           2892     2892        F     5124       0
+                text3252                           28A1     28A1        F     5142       0
+                text3251                           28B0     28B0        F     5160       0
+                text3250                           28BF     28BF        F     517E       0
+                text3249                           28CE     28CE        F     519C       0
+                text3248                           2025     2025       5F     404A       0
+                text3247                           24BD     24BD       7A     497A       0
+                text3246                           2D4B     2D4B       38     5A96       0
+                text3245                            94C      94C       40     1298       0
+                text3244                           1256     1256      24A     24AC       0
+                text3243                           21AC     21AC       69     4358       0
+                text3242                           22EA     22EA       71     45D4       0
+                text3241                           2EED     2EED       5A     5DDA       0
+                swtext3                            281E     281E       14     5000       0
+                text3240                            98C      98C      1B1     1318       0
+                text3239                           1AC6     1AC6      12A     358C       0
+                text3238                           2C48     2C48       2E     5890       0
+                text3237                           25B3     25B3       7D     4B66       0
+                text3236                           1942     1942       BD     3284       0
                 swtext2                            2800     2800       1E     5000       0
-                text3248                            B3D      B3D      4C3     167A       0
+                text3235                            B3D      B3D      4C3     167A       0
+                text3234                            1DE      1DE       21        2       0
+                text3233                           2446     2446       77     488C       0
+                text3232                           29F6     29F6       1A     53EC       0
+                text3231                           2215     2215       69     442A       0
+                text3230                           188D     188D       B5     311A       0
+                text3229                           180C     180C       81     3018       0
+                text3228                           2630     2630       8E     4C60       0
+                text3227                           1D2E     1D2E      15E     3A5C       0
+                text3226                           2ABD     2ABD       1F     557A       0
                 swtext1                              F3       F3        C      1E6       0
-                text3247                           1E8C     1E8C      174     3D18       0
+                text3225                           1E8C     1E8C      174     3D18       0
+                text3224                           2867     2867        E     50CE       0
+                text3223                           2920     2920       11     5240       0
+                text3222                           2875     2875        E     50EA       0
+                text3221                           1053     1053      203     20A6       0
                 maintext                           274E     274E       B2     4E9C       0
                 cstackBANK0                          21       21       41       21       1
                 cstackCOMMON                         72       72        C       70       1
                 cstackBANK1                          A0       A0       26       A0       1
-                inittext                           3786     3786        6     6F0C       0
-                clrtext                            378C     378C        6     6F18       0
+                inittext                           37E4     37E4        6     6FC8       0
+                clrtext                            37EA     37EA        6     6FD4       0
                 dataBANK4                           220      220       37      220       1
                 dataBANK3                           1A0      1A0       2A      1A0       1
                 bssBANK3                            1CA      1CA       18      1A0       1
@@ -164,18 +163,17 @@ catgenius_16f1939.obj
                 bssBANK0                             62       62        B       21       1
                 bitbssBANK0                         368       6D        5       21       1     8
                 bitbssCOMMON                        380       70        F       70       1     8
-                cinit                              2F43     2F43       5E     5E86       0
-                stringtext                          200      200      745        4       0
-                idataBANK1                         28CE     28CE       12     519C       0
-                idataBANK4                         2C84     2C84       37     5908       0
-                idataBANK3                         2B3E     2B3E       2A     567C       0
-                idataBANK2                         2947     2947       18     528E       0
+                cinit                              2FA2     2FA2       5E     5F44       0
+                stringtext                          200      200      74B        4       0
+                idataBANK1                         2931     2931       12     5262       0
+                idataBANK4                         2CDC     2CDC       37     59B8       0
+                idataBANK3                         2B96     2B96       2A     572C       0
+                idataBANK2                         29AA     29AA       18     5354       0
                 idataBANK0                            2        2        2        0       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CONST          
-                swtext4                            281E     281E       14         0
-                swtext3                            1800     1800        C         0
+                swtext3                            281E     281E       14         0
                 swtext2                            2800     2800       1E         0
                 swtext1                              F3       F3        C         0
 
@@ -185,116 +183,116 @@ TOTAL           Name                               Link     Load   Length     Sp
                 functab                             100      100        D         0
                 intentry                              4        4       4A         0
                 reset_vec                             0        0        2         0
-                text3345                           2AEF     2AEF       27         0
-                text3344                           2993     2993       1C         0
-                text3343                           2832     2832        C         0
-                text3342                            10D      10D       D1         0
-                text3341                             FF       FF        1         0
-                text3339                           37A2     37A2        B         0
-                text3338                           37E2     37E2        F         0
-                text3337                           2B16     2B16       28         0
-                text3336                           3799     3799        9         0
-                text3335                           2C4D     2C4D       37         0
-                text3334                           2A5F     2A5F       23         0
-                text3333                           377A     377A        6         0
-                text3332                           3780     3780        6         0
-                text3331                           3766     3766        5         0
-                text3330                           29AF     29AF       1C         0
-                text3329                           288A     288A       11         0
-                text3328                           3792     3792        7         0
-                text3327                           2A04     2A04       1E         0
-                text3326                           2A82     2A82       24         0
-                text3325                           2A22     2A22       1E         0
-                text3324                           2AA6     2AA6       24         0
-                text3323                           291B     291B       16         0
-                text3322                           376B     376B        5         0
-                text3321                           289B     289B       11         0
-                text3320                           3770     3770        5         0
-                text3319                           28AC     28AC       11         0
-                text3318                           2DAA     2DAA       48         0
-                text3317                           1BF0     1BF0      13E         0
-                text3316                           3775     3775        5         0
-                text3315                           37AD     37AD        B         0
-                text3314                           295F     295F       1A         0
-                text3313                           2BC2     2BC2       2E         0
-                text3312                           29CB     29CB       1C         0
-                text3311                            1FF      1FF        1         0
-                text3310                           2DF2     2DF2       4E         0
-                text3309                           2EE8     2EE8       5B         0
-                text3308                           2B68     2B68       2D         0
-                text3307                           227E     227E       6C         0
-                text3306                           2C1E     2C1E       2F         0
-                text3305                           1000     1000       53         0
-                text3304                           2931     2931       16         0
-                text3303                           2979     2979       1A         0
-                text3302                           2ACA     2ACA       25         0
-                text3301                            945      945       47         0
-                text3300                           2D2B     2D2B       3F         0
-                text3299                           2CBB     2CBB       38         0
-                text3298                           207B     207B       63         0
-                text3297                             53       53       A0         0
-                text3296                           19FF     19FF       C7         0
-                text3295                           14A0     14A0      360         0
-                text3294                           235B     235B       74         0
-                text3293                           28E0     28E0       13         0
-                text3292                           28F3     28F3       13         0
-                text3291                           20DE     20DE       65         0
-                text3290                           287A     287A       10         0
-                text3289                           23CF     23CF       77         0
-                text3288                           2E40     2E40       4E         0
-                text3287                           29E7     29E7       1D         0
-                text3286                           37B8     37B8        E         0
-                text3285                           201B     201B       60         0
-                text3284                           2B95     2B95       2D         0
-                text3283                           2537     2537       7C         0
-                text3282                           26BE     26BE       90         0
-                text3281                           2906     2906       15         0
-                text3280                           37F1     37F1        F         0
-                text3279                           283E     283E        F         0
-                text3278                           284D     284D        F         0
-                text3277                           285C     285C        F         0
-                text3276                           286B     286B        F         0
-                text3275                           2FA1     2FA1       5F         0
-                text3274                           24BD     24BD       7A         0
-                text3273                           2CF3     2CF3       38         0
-                text3272                           2D6A     2D6A       40         0
-                text3271                           2E8E     2E8E       5A         0
-                text3270                            98C      98C      1B1         0
-                text3269                           1AC6     1AC6      12A         0
-                text3268                           2BF0     2BF0       2E         0
-                text3267                           25B3     25B3       7D         0
-                text3266                           2446     2446       77         0
-                text3265                           2143     2143       69         0
-                text3264                           188D     188D       B5         0
-                text3263                           180C     180C       81         0
-                text3262                           2630     2630       8E         0
-                text3261                           2A40     2A40       1F         0
-                text3260                           1256     1256      24A         0
-                text3259                           22EA     22EA       71         0
-                text3258                           37C6     37C6        E         0
-                text3257                           28BD     28BD       11         0
-                text3256                           37D4     37D4        E         0
-                text3255                           1942     1942       BD         0
-                text3254                           1053     1053      203         0
-                text3253                            1DE      1DE       21         0
-                text3252                           2001     2001       1A         0
-                text3251                           1D2E     1D2E      15E         0
-                text3250                           21AC     21AC       69         0
-                text3249                           2215     2215       69         0
-                text3248                            B3D      B3D      4C3         0
-                text3247                           1E8C     1E8C      174         0
+                text3319                           2B47     2B47       27         0
+                text3318                           2A10     2A10       1C         0
+                text3317                           284D     284D        C         0
+                text3316                            10D      10D       D1         0
+                text3315                             FF       FF        1         0
+                text3313                           2837     2837        B         0
+                text3312                           2883     2883        F         0
+                text3311                           2B6E     2B6E       28         0
+                text3310                           37F7     37F7        9         0
+                text3309                           2CA5     2CA5       37         0
+                text3308                           2ADC     2ADC       23         0
+                text3307                           37D8     37D8        6         0
+                text3306                           37DE     37DE        6         0
+                text3305                           1800     1800        C         0
+                text3304                           37C9     37C9        5         0
+                text3303                           2A2C     2A2C       1C         0
+                text3302                           28ED     28ED       11         0
+                text3301                           37F0     37F0        7         0
+                text3300                           2A81     2A81       1E         0
+                text3299                           2AFF     2AFF       24         0
+                text3298                           2A9F     2A9F       1E         0
+                text3297                           2B23     2B23       24         0
+                text3296                           297E     297E       16         0
+                text3295                           37CE     37CE        5         0
+                text3294                           28FE     28FE       11         0
+                text3293                           37D3     37D3        5         0
+                text3292                           290F     290F       11         0
+                text3291                           2E09     2E09       48         0
+                text3290                           1BF0     1BF0      13E         0
+                text3289                           2832     2832        5         0
+                text3288                           2842     2842        B         0
+                text3287                           29C2     29C2       1A         0
+                text3286                           2C1A     2C1A       2E         0
+                text3285                           2A48     2A48       1C         0
+                text3284                            1FF      1FF        1         0
+                text3283                           2E51     2E51       4E         0
+                text3282                           2F47     2F47       5B         0
+                text3281                           2BC0     2BC0       2D         0
+                text3280                           227E     227E       6C         0
+                text3279                           2C76     2C76       2F         0
+                text3278                           1000     1000       53         0
+                text3277                           2994     2994       16         0
+                text3276                           29DC     29DC       1A         0
+                text3275                           2000     2000       25         0
+                text3274                           2DC2     2DC2       47         0
+                text3273                           2D83     2D83       3F         0
+                text3272                           2D13     2D13       38         0
+                text3271                           20E4     20E4       63         0
+                text3270                             53       53       A0         0
+                text3269                           19FF     19FF       C7         0
+                text3268                           14A0     14A0      360         0
+                text3267                           235B     235B       74         0
+                text3266                           2943     2943       13         0
+                text3265                           2956     2956       13         0
+                text3264                           2147     2147       65         0
+                text3263                           28DD     28DD       10         0
+                text3262                           23CF     23CF       77         0
+                text3261                           2E9F     2E9F       4E         0
+                text3260                           2A64     2A64       1D         0
+                text3259                           2859     2859        E         0
+                text3258                           2084     2084       60         0
+                text3257                           2BED     2BED       2D         0
+                text3256                           2537     2537       7C         0
+                text3255                           26BE     26BE       90         0
+                text3254                           2969     2969       15         0
+                text3253                           2892     2892        F         0
+                text3252                           28A1     28A1        F         0
+                text3251                           28B0     28B0        F         0
+                text3250                           28BF     28BF        F         0
+                text3249                           28CE     28CE        F         0
+                text3248                           2025     2025       5F         0
+                text3247                           24BD     24BD       7A         0
+                text3246                           2D4B     2D4B       38         0
+                text3245                            94C      94C       40         0
+                text3244                           1256     1256      24A         0
+                text3243                           21AC     21AC       69         0
+                text3242                           22EA     22EA       71         0
+                text3241                           2EED     2EED       5A         0
+                text3240                            98C      98C      1B1         0
+                text3239                           1AC6     1AC6      12A         0
+                text3238                           2C48     2C48       2E         0
+                text3237                           25B3     25B3       7D         0
+                text3236                           1942     1942       BD         0
+                text3235                            B3D      B3D      4C3         0
+                text3234                            1DE      1DE       21         0
+                text3233                           2446     2446       77         0
+                text3232                           29F6     29F6       1A         0
+                text3231                           2215     2215       69         0
+                text3230                           188D     188D       B5         0
+                text3229                           180C     180C       81         0
+                text3228                           2630     2630       8E         0
+                text3227                           1D2E     1D2E      15E         0
+                text3226                           2ABD     2ABD       1F         0
+                text3225                           1E8C     1E8C      174         0
+                text3224                           2867     2867        E         0
+                text3223                           2920     2920       11         0
+                text3222                           2875     2875        E         0
+                text3221                           1053     1053      203         0
                 maintext                           274E     274E       B2         0
-                inittext                           3786     3786        6         0
-                clrtext                            378C     378C        6         0
-                cinit                              2F43     2F43       5E         0
-                idataBANK1                         28CE     28CE       12         0
-                idataBANK4                         2C84     2C84       37         0
-                idataBANK3                         2B3E     2B3E       2A         0
-                idataBANK2                         2947     2947       18         0
+                inittext                           37E4     37E4        6         0
+                clrtext                            37EA     37EA        6         0
+                cinit                              2FA2     2FA2       5E         0
+                idataBANK1                         2931     2931       12         0
+                idataBANK4                         2CDC     2CDC       37         0
+                idataBANK3                         2B96     2B96       2A         0
+                idataBANK2                         29AA     29AA       18         0
                 idataBANK0                            2        2        2         0
 
         CLASS   STRCODE        
-                stringtext                          200      200      745         0
+                stringtext                          200      200      74B         0
 
         CLASS   ENTRY          
 
@@ -471,112 +469,109 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 bssBANK2                       000120  000050  000170       120       1  BANK2       1
                 dataBANK3                      0001A0  000042  0001E2       1A0       1  BANK3       1
                 swtext1                        0000F3  00000C  0000FF       1E6       0  CONST       2
-                text3341                       0000FF  000001  000100       1FE       0  CODE        2
+                text3315                       0000FF  000001  000100       1FE       0  CODE        2
                 functab                        000100  000100  000200         2       0  CODE        2
                 dataBANK4                      000220  000037  000257       220       1  BANK4       1
-                stringtext                     000200  000745  000945         4       0  STRCODE     2
-                text3301                       000945  000047  00098C      128A       0  CODE        2
-                text3270                       00098C  0001B1  000B3D      1318       0  CODE        2
-                text3248                       000B3D  000516  001053      167A       0  CODE        2
-                text3254                       001053  000203  001256      20A6       0  CODE        2
-                text3260                       001256  00024A  0014A0      24AC       0  CODE        2
-                text3295                       0014A0  000360  001800      2940       0  CODE        2
-                swtext3                        001800  00000C  00180C      3000       0  CONST       2
-                text3263                       00180C  000081  00188D      3018       0  CODE        2
-                text3264                       00188D  0000B5  001942      311A       0  CODE        2
-                text3255                       001942  0000BD  0019FF      3284       0  CODE        2
-                text3296                       0019FF  0000C7  001AC6      33FE       0  CODE        2
-                text3269                       001AC6  00012A  001BF0      358C       0  CODE        2
-                text3317                       001BF0  00013E  001D2E      37E0       0  CODE        2
-                text3251                       001D2E  00015E  001E8C      3A5C       0  CODE        2
-                text3247                       001E8C  000174  002000      3D18       0  CODE        2
-                text3252                       002001  00001A  00201B      4002       0  CODE        2
-                text3285                       00201B  000060  00207B      4036       0  CODE        2
-                text3298                       00207B  000063  0020DE      40F6       0  CODE        2
-                text3291                       0020DE  000065  002143      41BC       0  CODE        2
-                text3265                       002143  000069  0021AC      4286       0  CODE        2
-                text3250                       0021AC  000069  002215      4358       0  CODE        2
-                text3249                       002215  000069  00227E      442A       0  CODE        2
-                text3307                       00227E  00006C  0022EA      44FC       0  CODE        2
-                text3259                       0022EA  000071  00235B      45D4       0  CODE        2
-                text3294                       00235B  000074  0023CF      46B6       0  CODE        2
-                text3289                       0023CF  000077  002446      479E       0  CODE        2
-                text3266                       002446  000077  0024BD      488C       0  CODE        2
-                text3274                       0024BD  00007A  002537      497A       0  CODE        2
-                text3283                       002537  00007C  0025B3      4A6E       0  CODE        2
-                text3267                       0025B3  00007D  002630      4B66       0  CODE        2
-                text3262                       002630  00008E  0026BE      4C60       0  CODE        2
-                text3282                       0026BE  000090  00274E      4D7C       0  CODE        2
+                stringtext                     000200  00074B  00094B         4       0  STRCODE     2
+                text3245                       00094C  000040  00098C      1298       0  CODE        2
+                text3240                       00098C  0001B1  000B3D      1318       0  CODE        2
+                text3235                       000B3D  000516  001053      167A       0  CODE        2
+                text3221                       001053  000203  001256      20A6       0  CODE        2
+                text3244                       001256  00024A  0014A0      24AC       0  CODE        2
+                text3268                       0014A0  00036C  00180C      2940       0  CODE        2
+                text3229                       00180C  000081  00188D      3018       0  CODE        2
+                text3230                       00188D  0000B5  001942      311A       0  CODE        2
+                text3236                       001942  0000BD  0019FF      3284       0  CODE        2
+                text3269                       0019FF  0000C7  001AC6      33FE       0  CODE        2
+                text3239                       001AC6  00012A  001BF0      358C       0  CODE        2
+                text3290                       001BF0  00013E  001D2E      37E0       0  CODE        2
+                text3227                       001D2E  00015E  001E8C      3A5C       0  CODE        2
+                text3225                       001E8C  000199  002025      3D18       0  CODE        2
+                text3248                       002025  00005F  002084      404A       0  CODE        2
+                text3258                       002084  000060  0020E4      4108       0  CODE        2
+                text3271                       0020E4  000063  002147      41C8       0  CODE        2
+                text3264                       002147  000065  0021AC      428E       0  CODE        2
+                text3243                       0021AC  000069  002215      4358       0  CODE        2
+                text3231                       002215  000069  00227E      442A       0  CODE        2
+                text3280                       00227E  00006C  0022EA      44FC       0  CODE        2
+                text3242                       0022EA  000071  00235B      45D4       0  CODE        2
+                text3267                       00235B  000074  0023CF      46B6       0  CODE        2
+                text3262                       0023CF  000077  002446      479E       0  CODE        2
+                text3233                       002446  000077  0024BD      488C       0  CODE        2
+                text3247                       0024BD  00007A  002537      497A       0  CODE        2
+                text3256                       002537  00007C  0025B3      4A6E       0  CODE        2
+                text3237                       0025B3  00007D  002630      4B66       0  CODE        2
+                text3228                       002630  00008E  0026BE      4C60       0  CODE        2
+                text3255                       0026BE  000090  00274E      4D7C       0  CODE        2
                 maintext                       00274E  0000B2  002800      4E9C       0  CODE        2
                 swtext2                        002800  000032  002832      5000       0  CONST       2
-                text3343                       002832  00000C  00283E      5064       0  CODE        2
-                text3279                       00283E  00000F  00284D      507C       0  CODE        2
-                text3278                       00284D  00000F  00285C      509A       0  CODE        2
-                text3277                       00285C  00000F  00286B      50B8       0  CODE        2
-                text3276                       00286B  00000F  00287A      50D6       0  CODE        2
-                text3290                       00287A  000010  00288A      50F4       0  CODE        2
-                text3329                       00288A  000011  00289B      5114       0  CODE        2
-                text3321                       00289B  000011  0028AC      5136       0  CODE        2
-                text3319                       0028AC  000011  0028BD      5158       0  CODE        2
-                text3257                       0028BD  000011  0028CE      517A       0  CODE        2
-                idataBANK1                     0028CE  000012  0028E0      519C       0  CODE        2
-                text3293                       0028E0  000013  0028F3      51C0       0  CODE        2
-                text3292                       0028F3  000013  002906      51E6       0  CODE        2
-                text3281                       002906  000015  00291B      520C       0  CODE        2
-                text3323                       00291B  000016  002931      5236       0  CODE        2
-                text3304                       002931  000016  002947      5262       0  CODE        2
-                idataBANK2                     002947  000018  00295F      528E       0  CODE        2
-                text3314                       00295F  00001A  002979      52BE       0  CODE        2
-                text3303                       002979  00001A  002993      52F2       0  CODE        2
-                text3344                       002993  00001C  0029AF      5326       0  CODE        2
-                text3330                       0029AF  00001C  0029CB      535E       0  CODE        2
-                text3312                       0029CB  00001C  0029E7      5396       0  CODE        2
-                text3287                       0029E7  00001D  002A04      53CE       0  CODE        2
-                text3327                       002A04  00001E  002A22      5408       0  CODE        2
-                text3325                       002A22  00001E  002A40      5444       0  CODE        2
-                text3261                       002A40  00001F  002A5F      5480       0  CODE        2
-                text3334                       002A5F  000023  002A82      54BE       0  CODE        2
-                text3326                       002A82  000024  002AA6      5504       0  CODE        2
-                text3324                       002AA6  000024  002ACA      554C       0  CODE        2
-                text3302                       002ACA  000025  002AEF      5594       0  CODE        2
-                text3345                       002AEF  000027  002B16      55DE       0  CODE        2
-                text3337                       002B16  000028  002B3E      562C       0  CODE        2
-                idataBANK3                     002B3E  00002A  002B68      567C       0  CODE        2
-                text3308                       002B68  00002D  002B95      56D0       0  CODE        2
-                text3284                       002B95  00002D  002BC2      572A       0  CODE        2
-                text3313                       002BC2  00002E  002BF0      5784       0  CODE        2
-                text3268                       002BF0  00002E  002C1E      57E0       0  CODE        2
-                text3306                       002C1E  00002F  002C4D      583C       0  CODE        2
-                text3335                       002C4D  000037  002C84      589A       0  CODE        2
-                idataBANK4                     002C84  000037  002CBB      5908       0  CODE        2
-                text3299                       002CBB  000038  002CF3      5976       0  CODE        2
-                text3273                       002CF3  000038  002D2B      59E6       0  CODE        2
-                text3300                       002D2B  00003F  002D6A      5A56       0  CODE        2
-                text3272                       002D6A  000040  002DAA      5AD4       0  CODE        2
-                text3318                       002DAA  000048  002DF2      5B54       0  CODE        2
-                text3310                       002DF2  00004E  002E40      5BE4       0  CODE        2
-                text3288                       002E40  00004E  002E8E      5C80       0  CODE        2
-                text3271                       002E8E  00005A  002EE8      5D1C       0  CODE        2
-                text3309                       002EE8  00005B  002F43      5DD0       0  CODE        2
-                cinit                          002F43  00005E  002FA1      5E86       0  CODE        2
-                text3275                       002FA1  00005F  003000      5F42       0  CODE        2
-                text3331                       003766  000005  00376B      6ECC       0  CODE        2
-                text3322                       00376B  000005  003770      6ED6       0  CODE        2
-                text3320                       003770  000005  003775      6EE0       0  CODE        2
-                text3316                       003775  000005  00377A      6EEA       0  CODE        2
-                text3333                       00377A  000006  003780      6EF4       0  CODE        2
-                text3332                       003780  000006  003786      6F00       0  CODE        2
-                inittext                       003786  000006  00378C      6F0C       0  CODE        2
-                clrtext                        00378C  000006  003792      6F18       0  CODE        2
-                text3328                       003792  000007  003799      6F24       0  CODE        2
-                text3336                       003799  000009  0037A2      6F32       0  CODE        2
-                text3339                       0037A2  00000B  0037AD      6F44       0  CODE        2
-                text3315                       0037AD  00000B  0037B8      6F5A       0  CODE        2
-                text3286                       0037B8  00000E  0037C6      6F70       0  CODE        2
-                text3258                       0037C6  00000E  0037D4      6F8C       0  CODE        2
-                text3256                       0037D4  00000E  0037E2      6FA8       0  CODE        2
-                text3338                       0037E2  00000F  0037F1      6FC4       0  CODE        2
-                text3280                       0037F1  00000F  003800      6FE2       0  CODE        2
+                text3289                       002832  000005  002837      5064       0  CODE        2
+                text3313                       002837  00000B  002842      506E       0  CODE        2
+                text3288                       002842  00000B  00284D      5084       0  CODE        2
+                text3317                       00284D  00000C  002859      509A       0  CODE        2
+                text3259                       002859  00000E  002867      50B2       0  CODE        2
+                text3224                       002867  00000E  002875      50CE       0  CODE        2
+                text3222                       002875  00000E  002883      50EA       0  CODE        2
+                text3312                       002883  00000F  002892      5106       0  CODE        2
+                text3253                       002892  00000F  0028A1      5124       0  CODE        2
+                text3252                       0028A1  00000F  0028B0      5142       0  CODE        2
+                text3251                       0028B0  00000F  0028BF      5160       0  CODE        2
+                text3250                       0028BF  00000F  0028CE      517E       0  CODE        2
+                text3249                       0028CE  00000F  0028DD      519C       0  CODE        2
+                text3263                       0028DD  000010  0028ED      51BA       0  CODE        2
+                text3302                       0028ED  000011  0028FE      51DA       0  CODE        2
+                text3294                       0028FE  000011  00290F      51FC       0  CODE        2
+                text3292                       00290F  000011  002920      521E       0  CODE        2
+                text3223                       002920  000011  002931      5240       0  CODE        2
+                idataBANK1                     002931  000012  002943      5262       0  CODE        2
+                text3266                       002943  000013  002956      5286       0  CODE        2
+                text3265                       002956  000013  002969      52AC       0  CODE        2
+                text3254                       002969  000015  00297E      52D2       0  CODE        2
+                text3296                       00297E  000016  002994      52FC       0  CODE        2
+                text3277                       002994  000016  0029AA      5328       0  CODE        2
+                idataBANK2                     0029AA  000018  0029C2      5354       0  CODE        2
+                text3287                       0029C2  00001A  0029DC      5384       0  CODE        2
+                text3276                       0029DC  00001A  0029F6      53B8       0  CODE        2
+                text3232                       0029F6  00001A  002A10      53EC       0  CODE        2
+                text3318                       002A10  00001C  002A2C      5420       0  CODE        2
+                text3303                       002A2C  00001C  002A48      5458       0  CODE        2
+                text3285                       002A48  00001C  002A64      5490       0  CODE        2
+                text3260                       002A64  00001D  002A81      54C8       0  CODE        2
+                text3300                       002A81  00001E  002A9F      5502       0  CODE        2
+                text3298                       002A9F  00001E  002ABD      553E       0  CODE        2
+                text3226                       002ABD  00001F  002ADC      557A       0  CODE        2
+                text3308                       002ADC  000023  002AFF      55B8       0  CODE        2
+                text3299                       002AFF  000024  002B23      55FE       0  CODE        2
+                text3297                       002B23  000024  002B47      5646       0  CODE        2
+                text3319                       002B47  000027  002B6E      568E       0  CODE        2
+                text3311                       002B6E  000028  002B96      56DC       0  CODE        2
+                idataBANK3                     002B96  00002A  002BC0      572C       0  CODE        2
+                text3281                       002BC0  00002D  002BED      5780       0  CODE        2
+                text3257                       002BED  00002D  002C1A      57DA       0  CODE        2
+                text3286                       002C1A  00002E  002C48      5834       0  CODE        2
+                text3238                       002C48  00002E  002C76      5890       0  CODE        2
+                text3279                       002C76  00002F  002CA5      58EC       0  CODE        2
+                text3309                       002CA5  000037  002CDC      594A       0  CODE        2
+                idataBANK4                     002CDC  000037  002D13      59B8       0  CODE        2
+                text3272                       002D13  000038  002D4B      5A26       0  CODE        2
+                text3246                       002D4B  000038  002D83      5A96       0  CODE        2
+                text3273                       002D83  00003F  002DC2      5B06       0  CODE        2
+                text3274                       002DC2  000047  002E09      5B84       0  CODE        2
+                text3291                       002E09  000048  002E51      5C12       0  CODE        2
+                text3283                       002E51  00004E  002E9F      5CA2       0  CODE        2
+                text3261                       002E9F  00004E  002EED      5D3E       0  CODE        2
+                text3241                       002EED  00005A  002F47      5DDA       0  CODE        2
+                text3282                       002F47  00005B  002FA2      5E8E       0  CODE        2
+                cinit                          002FA2  00005E  003000      5F44       0  CODE        2
+                text3304                       0037C9  000005  0037CE      6F92       0  CODE        2
+                text3295                       0037CE  000005  0037D3      6F9C       0  CODE        2
+                text3293                       0037D3  000005  0037D8      6FA6       0  CODE        2
+                text3307                       0037D8  000006  0037DE      6FB0       0  CODE        2
+                text3306                       0037DE  000006  0037E4      6FBC       0  CODE        2
+                inittext                       0037E4  000006  0037EA      6FC8       0  CODE        2
+                clrtext                        0037EA  000006  0037F0      6FD4       0  CODE        2
+                text3301                       0037F0  000007  0037F7      6FE0       0  CODE        2
+                text3310                       0037F7  000009  003800      6FEE       0  CODE        2
                 config                         008007  000002  008009     1000E       0  CONFIG      2
 
 
@@ -595,15 +590,15 @@ UNUSED ADDRESS RANGES
         BANK8            00420-0046F              50           1
         BANK9            004A0-004EF              50           1
         BIGRAM           02000-023EF             3F0           1
-        CODE             02000-02000               1           2
-                         03000-03765             766
+        CODE             0094B-0094B               1           2
+                         03000-037C8             7C9
                          03800-03FFF             800
-        CONST            02000-02000               1           2
-                         03000-03765             100
+        CONST            0094B-0094B               1           2
+                         03000-037C8             100
                          03800-03FFF             100
         EEDATA           0F000-0F0FF             100           2
-        ENTRY            02000-02000               1           2
-                         03000-03765             100
+        ENTRY            0094B-0094B               1           2
+                         03000-037C8             100
                          03800-03FFF             100
         IDLOC            08000-08003               4           2
         RAM              000EF-000EF               1           1
@@ -649,11 +644,11 @@ UNUSED ADDRESS RANGES
         SFR7             00380-0039F              20           1
         SFR8             00400-0041F              20           1
         SFR9             00480-0049F              20           1
-        STRCODE          02000-02000               1           2
-                         03000-03765             766
+        STRCODE          0094B-0094B               1           2
+                         03000-037C8             7C9
                          03800-03FFF             800
-        STRING           02000-02000               1           2
-                         03000-03765             100
+        STRING           0094B-0094B               1           2
+                         03000-037C8             100
                          03800-03FFF             100
 
                                   Symbol Table
@@ -679,7 +674,7 @@ UNUSED ADDRESS RANGES
 ??_echo                           cstackBANK0  0004A
 ??_eeprom_read                    cstackBANK0  00021
 ??_eeprom_write                   cstackBANK0  00022
-??_exe_instruction                cstackBANK0  00059
+??_exe_instruction                cstackBANK0  00050
 ??_get_Arm                        cstackBANK0  00021
 ??_get_Bowl                       cstackBANK0  00021
 ??_get_Dosage                     cstackBANK0  00021
@@ -693,14 +688,14 @@ UNUSED ADDRESS RANGES
 ??_isdigit                        cstackBANK0  00021
 ??_isr                            cstackCOMMON 0007B
 ??_litterlanguage_cleanup         cstackBANK0  0004F
-??_litterlanguage_event           cstackBANK0  00058
+??_litterlanguage_event           cstackBANK0  00022
 ??_litterlanguage_init            cstackBANK0  00052
 ??_litterlanguage_pause           cstackBANK0  0004F
 ??_litterlanguage_paused          cstackBANK0  00021
 ??_litterlanguage_running         cstackBANK0  00021
 ??_litterlanguage_start           cstackBANK0  0004F
 ??_litterlanguage_stop            cstackBANK0  0004F
-??_litterlanguage_work            cstackBANK0  0005A
+??_litterlanguage_work            cstackBANK0  00051
 ??_main                           cstackBANK0  00060
 ??_memcpy                         cstackBANK0  00024
 ??_postponetimeout                cstackBANK0  00027
@@ -791,7 +786,7 @@ UNUSED ADDRESS RANGES
 ?_isdigit                         cstackCOMMON 00072
 ?_isr                             cstackCOMMON 00072
 ?_litterlanguage_cleanup          cstackCOMMON 00072
-?_litterlanguage_event            cstackBANK0  00057
+?_litterlanguage_event            cstackBANK0  00021
 ?_litterlanguage_init             cstackCOMMON 00072
 ?_litterlanguage_pause            cstackCOMMON 00072
 ?_litterlanguage_paused           cstackCOMMON 00072
@@ -1142,135 +1137,135 @@ __Ltext                           text         00000
 __S0                              (abs)        08009
 __S1                              (abs)        00257
 __S2                              (abs)        00000
-___bmul                           text3303     02979
+___bmul                           text3276     029DC
 ___bmul@multiplicand              cstackBANK0  00021
 ___bmul@multiplier                cstackBANK0  00024
 ___bmul@product                   cstackBANK0  00023
-___lldiv                          text3298     0207B
+___lldiv                          text3271     020E4
 ___lldiv@counter                  cstackBANK0  0002E
 ___lldiv@dividend                 cstackBANK0  00025
 ___lldiv@divisor                  cstackBANK0  00021
 ___lldiv@quotient                 cstackBANK0  0002A
-___lmul                           text3299     02CBB
+___lmul                           text3272     02D13
 ___lmul@multiplicand              cstackBANK0  00025
 ___lmul@multiplier                cstackBANK0  00021
 ___lmul@product                   cstackBANK0  00029
-___lwdiv                          text3301     00945
+___lwdiv                          text3274     02DC2
 ___lwdiv@counter                  cstackBANK0  00026
 ___lwdiv@dividend                 cstackBANK0  00023
 ___lwdiv@divisor                  cstackBANK0  00021
 ___lwdiv@quotient                 cstackBANK0  00027
-___lwmod                          text3300     02D2B
+___lwmod                          text3273     02D83
 ___lwmod@counter                  cstackBANK0  0002E
 ___lwmod@dividend                 cstackBANK0  0002B
 ___lwmod@divisor                  cstackBANK0  00029
 ___powerdown                      (abs)        00103
 ___resetbits                      (abs)        00020
 ___timeout                        (abs)        00104
-___wmul                           text3302     02ACA
+___wmul                           text3275     02000
 ___wmul@multiplicand              cstackBANK0  00023
 ___wmul@multiplier                cstackBANK0  00021
 ___wmul@product                   cstackBANK0  00025
-__end_of___bmul                   text3303     02993
-__end_of___lldiv                  text3298     020DE
-__end_of___lmul                   text3299     02CF3
-__end_of___lwdiv                  text3301     0098C
-__end_of___lwmod                  text3300     02D6A
-__end_of___wmul                   text3302     02AEF
-__end_of_both_long                text3290     0288A
-__end_of_both_short               text3281     0291B
-__end_of_catgenie_init            text3297     000F3
-__end_of_catgenie_work            text3254     01256
-__end_of_catsensor_event          text3264     01942
-__end_of_catsensor_init           text3338     037F1
-__end_of_catsensor_isr_input      text3343     0283E
-__end_of_catsensor_isr_timer      text3344     029AF
-__end_of_catsensor_work           text3262     026BE
-__end_of_cmd2index                text3288     02E8E
-__end_of_cmdline_init             text3286     037C6
-__end_of_cmdline_work             text3261     02A5F
-__end_of_echo                     text3274     02537
-__end_of_eeprom_read              text3334     02A82
-__end_of_eeprom_write             text3335     02C84
-__end_of_exe_instruction          text3248     01000
-__end_of_get_Arm                  text3325     02A40
-__end_of_get_Bowl                 text3327     02A22
-__end_of_get_Dosage               text3322     03770
-__end_of_get_Dryer                text3320     03775
-__end_of_get_Pump                 text3331     0376B
-__end_of_get_instruction          text3292     02906
-__end_of_gettimestamp             text3318     02DF2
-__end_of_heatsensor_event         text3257     028CE
-__end_of_help                     text3275     03000
-__end_of_interrupt_init           text3336     037A2
-__end_of_isdigit                  text3304     02947
+__end_of___bmul                   text3276     029F6
+__end_of___lldiv                  text3271     02147
+__end_of___lmul                   text3272     02D4B
+__end_of___lwdiv                  text3274     02E09
+__end_of___lwmod                  text3273     02DC2
+__end_of___wmul                   text3275     02025
+__end_of_both_long                text3263     028ED
+__end_of_both_short               text3254     0297E
+__end_of_catgenie_init            text3270     000F3
+__end_of_catgenie_work            text3221     01256
+__end_of_catsensor_event          text3230     01942
+__end_of_catsensor_init           text3312     02892
+__end_of_catsensor_isr_input      text3317     02859
+__end_of_catsensor_isr_timer      text3318     02A2C
+__end_of_catsensor_work           text3228     026BE
+__end_of_cmd2index                text3261     02EED
+__end_of_cmdline_init             text3259     02867
+__end_of_cmdline_work             text3226     02ADC
+__end_of_echo                     text3247     02537
+__end_of_eeprom_read              text3308     02AFF
+__end_of_eeprom_write             text3309     02CDC
+__end_of_exe_instruction          text3235     01000
+__end_of_get_Arm                  text3298     02ABD
+__end_of_get_Bowl                 text3300     02A9F
+__end_of_get_Dosage               text3295     037D3
+__end_of_get_Dryer                text3293     037D8
+__end_of_get_Pump                 text3304     037CE
+__end_of_get_instruction          text3265     02969
+__end_of_gettimestamp             text3291     02E51
+__end_of_heatsensor_event         text3223     02931
+__end_of_help                     text3248     02084
+__end_of_interrupt_init           text3310     03800
+__end_of_isdigit                  text3277     029AA
 __end_of_isr                      intentry     0004E
-__end_of_litterlanguage_cleanup   text3273     02D2B
-__end_of_litterlanguage_event     text3249     0227E
-__end_of_litterlanguage_init      text3267     02630
-__end_of_litterlanguage_pause     text3260     014A0
-__end_of_litterlanguage_paused    text3316     0377A
-__end_of_litterlanguage_running   text3328     03799
-__end_of_litterlanguage_start     text3272     02DAA
-__end_of_litterlanguage_stop      text3250     02215
-__end_of_litterlanguage_work      text3247     02000
+__end_of_litterlanguage_cleanup   text3246     02D83
+__end_of_litterlanguage_event     text3305     0180C
+__end_of_litterlanguage_init      text3237     02630
+__end_of_litterlanguage_pause     text3244     014A0
+__end_of_litterlanguage_paused    text3289     02837
+__end_of_litterlanguage_running   text3301     037F7
+__end_of_litterlanguage_start     text3245     0098C
+__end_of_litterlanguage_stop      text3243     02215
+__end_of_litterlanguage_work      text3225     02000
 __end_of_main                     maintext     02800
-__end_of_memcpy                   text3313     02BF0
-__end_of_postponetimeout          text3309     02F43
-__end_of_printf                   text3295     01800
-__end_of_printtime                text3284     02BC2
-__end_of_proc_char                text3263     0188D
-__end_of_proc_line                text3269     01BF0
-__end_of_process_button           text3265     021AC
-__end_of_putch                    text3308     02B95
-__end_of_readch                   text3307     022EA
-__end_of_req_instruction          text3293     028F3
-__end_of_romwashprogram_getins    text3314     02979
-__end_of_romwashprogram_reqins    text3315     037B8
-__end_of_rtc_init                 text3287     02A04
-__end_of_rtc_work                 text3285     0207B
-__end_of_serial_init              text3296     01AC6
-__end_of_serial_rx_isr            text3342     001DE
-__end_of_serial_tx_isr            text3341     00100
-__end_of_set_Arm                  text3324     02ACA
-__end_of_set_Beeper               text3280     03800
-__end_of_set_Bowl                 text3326     02AA6
-__end_of_set_Dosage               text3329     0289B
-__end_of_set_Dryer                text3319     028BD
-__end_of_set_LED                  text3310     02E40
-__end_of_set_LED_Cartridge        text3278     0285C
-__end_of_set_LED_Cat              text3277     0286B
-__end_of_set_LED_Error            text3279     0284D
-__end_of_set_LED_Locked           text3276     0287A
-__end_of_set_Pump                 text3321     028AC
-__end_of_set_mode                 text3271     02EE8
-__end_of_set_pacer                text3289     02446
-__end_of_settimeout               text3291     02143
-__end_of_setup_long               text3311     00200
-__end_of_setup_short              text3266     024BD
-__end_of_setupbutton_event        text3258     037D4
-__end_of_start_long               text3252     0201B
-__end_of_start_short              text3253     001FF
-__end_of_startbutton_event        text3256     037E2
-__end_of_strlen                   text3306     02C4D
-__end_of_strncmp                  text3305     01053
-__end_of_timeoutexpired           text3294     023CF
-__end_of_timeoutnever             text3330     029CB
-__end_of_timeoutnow               text3312     029E7
-__end_of_timer_init               text3339     037AD
-__end_of_timer_isr                text3345     02B16
-__end_of_timestampdiff            text3317     01D2E
-__end_of_update_autotimer         text3282     0274E
-__end_of_update_display           text3270     00B3D
-__end_of_userinterface_init       text3268     02C1E
-__end_of_userinterface_work       text3251     01E8C
-__end_of_wait_instruction         text3283     025B3
-__end_of_water_detected           text3333     03780
-__end_of_water_fill               text3323     02931
-__end_of_water_filling            text3332     03786
-__end_of_water_init               text3337     02B3E
-__end_of_water_work               text3255     019FF
-__end_of_watersensor_event        text3259     0235B
+__end_of_memcpy                   text3286     02C48
+__end_of_postponetimeout          text3282     02FA2
+__end_of_printf                   text3268     01800
+__end_of_printtime                text3257     02C1A
+__end_of_proc_char                text3229     0188D
+__end_of_proc_line                text3239     01BF0
+__end_of_process_button           text3231     0227E
+__end_of_putch                    text3281     02BED
+__end_of_readch                   text3280     022EA
+__end_of_req_instruction          text3266     02956
+__end_of_romwashprogram_getins    text3287     029DC
+__end_of_romwashprogram_reqins    text3288     0284D
+__end_of_rtc_init                 text3260     02A81
+__end_of_rtc_work                 text3258     020E4
+__end_of_serial_init              text3269     01AC6
+__end_of_serial_rx_isr            text3316     001DE
+__end_of_serial_tx_isr            text3315     00100
+__end_of_set_Arm                  text3297     02B47
+__end_of_set_Beeper               text3253     028A1
+__end_of_set_Bowl                 text3299     02B23
+__end_of_set_Dosage               text3302     028FE
+__end_of_set_Dryer                text3292     02920
+__end_of_set_LED                  text3283     02E9F
+__end_of_set_LED_Cartridge        text3251     028BF
+__end_of_set_LED_Cat              text3250     028CE
+__end_of_set_LED_Error            text3252     028B0
+__end_of_set_LED_Locked           text3249     028DD
+__end_of_set_Pump                 text3294     0290F
+__end_of_set_mode                 text3241     02F47
+__end_of_set_pacer                text3262     02446
+__end_of_settimeout               text3264     021AC
+__end_of_setup_long               text3284     00200
+__end_of_setup_short              text3233     024BD
+__end_of_setupbutton_event        text3224     02875
+__end_of_start_long               text3232     02A10
+__end_of_start_short              text3234     001FF
+__end_of_startbutton_event        text3222     02883
+__end_of_strlen                   text3279     02CA5
+__end_of_strncmp                  text3278     01053
+__end_of_timeoutexpired           text3267     023CF
+__end_of_timeoutnever             text3303     02A48
+__end_of_timeoutnow               text3285     02A64
+__end_of_timer_init               text3313     02842
+__end_of_timer_isr                text3319     02B6E
+__end_of_timestampdiff            text3290     01D2E
+__end_of_update_autotimer         text3255     0274E
+__end_of_update_display           text3240     00B3D
+__end_of_userinterface_init       text3238     02C76
+__end_of_userinterface_work       text3227     01E8C
+__end_of_wait_instruction         text3256     025B3
+__end_of_water_detected           text3307     037DE
+__end_of_water_fill               text3296     02994
+__end_of_water_filling            text3306     037E4
+__end_of_water_init               text3311     02B96
+__end_of_water_work               text3236     019FF
+__end_of_watersensor_event        text3242     0235B
 __pbitbssBANK0                    bitbssBANK0  00368
 __pbitbssCOMMON                   bitbssCOMMON 00380
 __pbssBANK0                       bssBANK0     00062
@@ -1287,115 +1282,114 @@ __pdataBANK3                      dataBANK3    001A0
 __pdataBANK4                      dataBANK4    00220
 __pfunctab                        functab      00100
 __pidataBANK0                     idataBANK0   00002
-__pidataBANK1                     idataBANK1   028CE
-__pidataBANK2                     idataBANK2   02947
-__pidataBANK3                     idataBANK3   02B3E
-__pidataBANK4                     idataBANK4   02C84
+__pidataBANK1                     idataBANK1   02931
+__pidataBANK2                     idataBANK2   029AA
+__pidataBANK3                     idataBANK3   02B96
+__pidataBANK4                     idataBANK4   02CDC
 __pintentry                       intentry     00004
 __pmaintext                       maintext     0274E
 __pstringtext                     stringtext   00200
 __pswtext1                        swtext1      000F3
 __pswtext2                        swtext2      02800
-__pswtext3                        swtext3      01800
-__pswtext4                        swtext4      0281E
-__ptext3247                       text3247     01E8C
-__ptext3248                       text3248     00B3D
-__ptext3249                       text3249     02215
-__ptext3250                       text3250     021AC
-__ptext3251                       text3251     01D2E
-__ptext3252                       text3252     02001
-__ptext3253                       text3253     001DE
-__ptext3254                       text3254     01053
-__ptext3255                       text3255     01942
-__ptext3256                       text3256     037D4
-__ptext3257                       text3257     028BD
-__ptext3258                       text3258     037C6
-__ptext3259                       text3259     022EA
-__ptext3260                       text3260     01256
-__ptext3261                       text3261     02A40
-__ptext3262                       text3262     02630
-__ptext3263                       text3263     0180C
-__ptext3264                       text3264     0188D
-__ptext3265                       text3265     02143
-__ptext3266                       text3266     02446
-__ptext3267                       text3267     025B3
-__ptext3268                       text3268     02BF0
-__ptext3269                       text3269     01AC6
-__ptext3270                       text3270     0098C
-__ptext3271                       text3271     02E8E
-__ptext3272                       text3272     02D6A
-__ptext3273                       text3273     02CF3
-__ptext3274                       text3274     024BD
-__ptext3275                       text3275     02FA1
-__ptext3276                       text3276     0286B
-__ptext3277                       text3277     0285C
-__ptext3278                       text3278     0284D
-__ptext3279                       text3279     0283E
-__ptext3280                       text3280     037F1
-__ptext3281                       text3281     02906
-__ptext3282                       text3282     026BE
-__ptext3283                       text3283     02537
-__ptext3284                       text3284     02B95
-__ptext3285                       text3285     0201B
-__ptext3286                       text3286     037B8
-__ptext3287                       text3287     029E7
-__ptext3288                       text3288     02E40
-__ptext3289                       text3289     023CF
-__ptext3290                       text3290     0287A
-__ptext3291                       text3291     020DE
-__ptext3292                       text3292     028F3
-__ptext3293                       text3293     028E0
-__ptext3294                       text3294     0235B
-__ptext3295                       text3295     014A0
-__ptext3296                       text3296     019FF
-__ptext3297                       text3297     00053
-__ptext3298                       text3298     0207B
-__ptext3299                       text3299     02CBB
-__ptext3300                       text3300     02D2B
-__ptext3301                       text3301     00945
-__ptext3302                       text3302     02ACA
-__ptext3303                       text3303     02979
-__ptext3304                       text3304     02931
-__ptext3305                       text3305     01000
-__ptext3306                       text3306     02C1E
-__ptext3307                       text3307     0227E
-__ptext3308                       text3308     02B68
-__ptext3309                       text3309     02EE8
-__ptext3310                       text3310     02DF2
-__ptext3311                       text3311     001FF
-__ptext3312                       text3312     029CB
-__ptext3313                       text3313     02BC2
-__ptext3314                       text3314     0295F
-__ptext3315                       text3315     037AD
-__ptext3316                       text3316     03775
-__ptext3317                       text3317     01BF0
-__ptext3318                       text3318     02DAA
-__ptext3319                       text3319     028AC
-__ptext3320                       text3320     03770
-__ptext3321                       text3321     0289B
-__ptext3322                       text3322     0376B
-__ptext3323                       text3323     0291B
-__ptext3324                       text3324     02AA6
-__ptext3325                       text3325     02A22
-__ptext3326                       text3326     02A82
-__ptext3327                       text3327     02A04
-__ptext3328                       text3328     03792
-__ptext3329                       text3329     0288A
-__ptext3330                       text3330     029AF
-__ptext3331                       text3331     03766
-__ptext3332                       text3332     03780
-__ptext3333                       text3333     0377A
-__ptext3334                       text3334     02A5F
-__ptext3335                       text3335     02C4D
-__ptext3336                       text3336     03799
-__ptext3337                       text3337     02B16
-__ptext3338                       text3338     037E2
-__ptext3339                       text3339     037A2
-__ptext3341                       text3341     000FF
-__ptext3342                       text3342     0010D
-__ptext3343                       text3343     02832
-__ptext3344                       text3344     02993
-__ptext3345                       text3345     02AEF
+__pswtext3                        swtext3      0281E
+__ptext3221                       text3221     01053
+__ptext3222                       text3222     02875
+__ptext3223                       text3223     02920
+__ptext3224                       text3224     02867
+__ptext3225                       text3225     01E8C
+__ptext3226                       text3226     02ABD
+__ptext3227                       text3227     01D2E
+__ptext3228                       text3228     02630
+__ptext3229                       text3229     0180C
+__ptext3230                       text3230     0188D
+__ptext3231                       text3231     02215
+__ptext3232                       text3232     029F6
+__ptext3233                       text3233     02446
+__ptext3234                       text3234     001DE
+__ptext3235                       text3235     00B3D
+__ptext3236                       text3236     01942
+__ptext3237                       text3237     025B3
+__ptext3238                       text3238     02C48
+__ptext3239                       text3239     01AC6
+__ptext3240                       text3240     0098C
+__ptext3241                       text3241     02EED
+__ptext3242                       text3242     022EA
+__ptext3243                       text3243     021AC
+__ptext3244                       text3244     01256
+__ptext3245                       text3245     0094C
+__ptext3246                       text3246     02D4B
+__ptext3247                       text3247     024BD
+__ptext3248                       text3248     02025
+__ptext3249                       text3249     028CE
+__ptext3250                       text3250     028BF
+__ptext3251                       text3251     028B0
+__ptext3252                       text3252     028A1
+__ptext3253                       text3253     02892
+__ptext3254                       text3254     02969
+__ptext3255                       text3255     026BE
+__ptext3256                       text3256     02537
+__ptext3257                       text3257     02BED
+__ptext3258                       text3258     02084
+__ptext3259                       text3259     02859
+__ptext3260                       text3260     02A64
+__ptext3261                       text3261     02E9F
+__ptext3262                       text3262     023CF
+__ptext3263                       text3263     028DD
+__ptext3264                       text3264     02147
+__ptext3265                       text3265     02956
+__ptext3266                       text3266     02943
+__ptext3267                       text3267     0235B
+__ptext3268                       text3268     014A0
+__ptext3269                       text3269     019FF
+__ptext3270                       text3270     00053
+__ptext3271                       text3271     020E4
+__ptext3272                       text3272     02D13
+__ptext3273                       text3273     02D83
+__ptext3274                       text3274     02DC2
+__ptext3275                       text3275     02000
+__ptext3276                       text3276     029DC
+__ptext3277                       text3277     02994
+__ptext3278                       text3278     01000
+__ptext3279                       text3279     02C76
+__ptext3280                       text3280     0227E
+__ptext3281                       text3281     02BC0
+__ptext3282                       text3282     02F47
+__ptext3283                       text3283     02E51
+__ptext3284                       text3284     001FF
+__ptext3285                       text3285     02A48
+__ptext3286                       text3286     02C1A
+__ptext3287                       text3287     029C2
+__ptext3288                       text3288     02842
+__ptext3289                       text3289     02832
+__ptext3290                       text3290     01BF0
+__ptext3291                       text3291     02E09
+__ptext3292                       text3292     0290F
+__ptext3293                       text3293     037D3
+__ptext3294                       text3294     028FE
+__ptext3295                       text3295     037CE
+__ptext3296                       text3296     0297E
+__ptext3297                       text3297     02B23
+__ptext3298                       text3298     02A9F
+__ptext3299                       text3299     02AFF
+__ptext3300                       text3300     02A81
+__ptext3301                       text3301     037F0
+__ptext3302                       text3302     028ED
+__ptext3303                       text3303     02A2C
+__ptext3304                       text3304     037C9
+__ptext3305                       text3305     01800
+__ptext3306                       text3306     037DE
+__ptext3307                       text3307     037D8
+__ptext3308                       text3308     02ADC
+__ptext3309                       text3309     02CA5
+__ptext3310                       text3310     037F7
+__ptext3311                       text3311     02B6E
+__ptext3312                       text3312     02883
+__ptext3313                       text3313     02837
+__ptext3315                       text3315     000FF
+__ptext3316                       text3316     0010D
+__ptext3317                       text3317     0284D
+__ptext3318                       text3318     02A10
+__ptext3319                       text3319     02B47
 __size_of___bmul                  (abs)        00000
 __size_of___lldiv                 (abs)        00000
 __size_of___lmul                  (abs)        00000
@@ -1499,8 +1493,8 @@ __size_of_watersensor_event       (abs)        00000
 __stringtab                       stringtext   00200
 _auto_mode                        bssBANK0     00062
 _autotimer                        dataBANK1    000DD
-_both_long                        text3290     0287A
-_both_short                       text3281     02906
+_both_long                        text3263     028DD
+_both_short                       text3254     02969
 _buttonmask_cum                   bssBANK1     000D5
 _buttonmask_cur                   bssBANK1     000D6
 _buttonmask_evt                   bssBANK1     000D7
@@ -1508,21 +1502,21 @@ _cart_level                       dataBANK0    0006E
 _cartridgetimeout                 bssBANK2     0013A
 _cat_detected                     bitbssCOMMON 00380
 _cat_present                      bitbssCOMMON 00381
-_catgenie_init                    text3297     00053
-_catgenie_work                    text3254     01053
+_catgenie_init                    text3270     00053
+_catgenie_work                    text3221     01053
 _catgenie_work$30512              cstackBANK0  00045
-_catsensor_event                  text3264     0188D
+_catsensor_event                  text3230     0188D
 _catsensor_event$10723            cstackBANK0  0004F
-_catsensor_init                   text3338     037E2
-_catsensor_isr_input              text3343     02832
-_catsensor_isr_timer              text3344     02993
-_catsensor_work                   text3262     02630
+_catsensor_init                   text3312     02883
+_catsensor_isr_input              text3317     0284D
+_catsensor_isr_timer              text3318     02A10
+_catsensor_work                   text3228     02630
 _cattimer                         bssBANK2     00140
-_cleanupprogram                   stringtext   004EC
-_cmd2index                        text3288     02E40
-_cmdline_init                     text3286     037B8
-_cmdline_work                     text3261     02A40
-_commands                         stringtext   00510
+_cleanupprogram                   stringtext   004F2
+_cmd2index                        text3261     02E9F
+_cmdline_init                     text3259     02859
+_cmdline_work                     text3226     02ABD
+_commands                         stringtext   00516
 _cur_instruction                  bssBANK0     00068
 _currenttime                      bssBANK1     000C6
 _debouncer                        dataBANK2    00158
@@ -1532,20 +1526,20 @@ _detected_cur                     bitbssCOMMON 00382
 _detected_dbc                     bitbssBANK0  00369
 _detected_old                     bitbssCOMMON 00383
 _dpowers                          stringtext   00201
-_drain                            stringtext   004AD
+_drain                            stringtext   004B3
 _drain_dry                        stringtext   00342
-_echo                             text3274     024BD
+_echo                             text3247     024BD
 _echo$17754                       cstackBANK0  0004A
 _echoed                           bitbssCOMMON 00384
-_eeprom_read                      text3334     02A5F
-_eeprom_write                     text3335     02C4D
+_eeprom_read                      text3308     02ADC
+_eeprom_write                     text3309     02CA5
 _error_drain                      bitbssCOMMON 00385
 _error_execution                  bitbssCOMMON 00386
 _error_fill                       bitbssCOMMON 00387
 _error_flood                      bitbssCOMMON 00388
 _error_nr                         bssBANK0     00063
 _error_overheat                   bitbssCOMMON 00389
-_exe_instruction                  text3248     00B3D
+_exe_instruction                  text3235     00B3D
 _exe_instruction$30234            cstackBANK1  000A0
 _exe_instruction$30235            cstackBANK1  000A2
 _exe_instruction$5954             cstackBANK1  000A6
@@ -1567,15 +1561,15 @@ _exe_instruction$6010             cstackBANK1  000C4
 _exit                             init         0004E
 _filling                          bitbssBANK0  0036A
 _full_wash                        bitbssCOMMON 0038A
-_get_Arm                          text3325     02A22
-_get_Bowl                         text3327     02A04
-_get_Dosage                       text3322     0376B
-_get_Dryer                        text3320     03770
-_get_Pump                         text3331     03766
-_get_instruction                  text3292     028F3
-_gettimestamp                     text3318     02DAA
-_heatsensor_event                 text3257     028BD
-_help                             text3275     02FA1
+_get_Arm                          text3298     02A9F
+_get_Bowl                         text3300     02A81
+_get_Dosage                       text3295     037CE
+_get_Dryer                        text3293     037D3
+_get_Pump                         text3304     037C9
+_get_instruction                  text3265     02956
+_gettimestamp                     text3291     02E09
+_heatsensor_event                 text3223     02920
+_help                             text3248     02025
 _help$30523                       cstackBANK0  0004B
 _hexpowers                        stringtext   0020B
 _holdtimeout                      dataBANK2    0015E
@@ -1583,30 +1577,30 @@ _hysteresis                       bssBANK0     00064
 _ins_address                      bssBANK1     000CE
 _ins_pointer                      bssBANK0     0006B
 _ins_state                        bssBANK0     00065
-_interrupt_init                   text3336     03799
+_interrupt_init                   text3310     037F7
 _interval                         bssBANK1     000D8
-_isdigit                          text3304     02931
+_isdigit                          text3277     02994
 _isdigit$29792                    cstackBANK0  00021
 _isr                              intentry     00004
 _ledalwayson                      bitbssBANK0  0036B
 _linebuffer                       bssBANK3     001CE
-_litterlanguage_cleanup           text3273     02CF3
+_litterlanguage_cleanup           text3246     02D4B
 _litterlanguage_cleanup$5941      cstackBANK0  0004F
-_litterlanguage_event             text3249     02215
-_litterlanguage_init              text3267     025B3
-_litterlanguage_pause             text3260     01256
-_litterlanguage_paused            text3316     03775
-_litterlanguage_running           text3328     03792
-_litterlanguage_start             text3272     02D6A
+_litterlanguage_event             text3305     01800
+_litterlanguage_init              text3237     025B3
+_litterlanguage_pause             text3244     01256
+_litterlanguage_paused            text3289     02832
+_litterlanguage_running           text3301     037F0
+_litterlanguage_start             text3245     0094C
 _litterlanguage_start$5890        cstackBANK0  0004F
-_litterlanguage_stop              text3250     021AC
-_litterlanguage_work              text3247     01E8C
-_litterlanguage_work$5880         cstackBANK0  0005C
+_litterlanguage_stop              text3243     021AC
+_litterlanguage_work              text3225     01E8C
+_litterlanguage_work$5880         cstackBANK0  00053
 _localecho                        dataBANK0    0006F
 _locked                           bitbssCOMMON 0038B
 _longhandled                      bitbssCOMMON 0038C
 _main                             maintext     0274E
-_memcpy                           text3313     02BC2
+_memcpy                           text3286     02C1A
 _nBOR                             (abs)        004B0
 _nPOR                             (abs)        004B1
 _nT1SYNC                          (abs)        000C2
@@ -1617,77 +1611,77 @@ _panel_mode                       bssBANK1     000D9
 _paused                           bitbssCOMMON 0038D
 _pinging                          bitbssCOMMON 0038E
 _pingtime                         bssBANK2     00146
-_postponetimeout                  text3309     02EE8
+_postponetimeout                  text3282     02F47
 _prg_source                       bssBANK1     000DA
-_printf                           text3295     014A0
-_printtime                        text3284     02B95
-_proc_char                        text3263     0180C
-_proc_line                        text3269     01AC6
+_printf                           text3268     014A0
+_printtime                        text3257     02BED
+_proc_char                        text3229     0180C
+_proc_line                        text3239     01AC6
 _proc_line$30517                  cstackBANK0  00055
-_process_button                   text3265     02143
-_putch                            text3308     02B68
-_readch                           text3307     0227E
+_process_button                   text3231     02215
+_putch                            text3281     02BC0
+_readch                           text3280     0227E
 _reflectionquality                bssBANK1     000D0
-_req_instruction                  text3293     028E0
-_romwashprogram_getins            text3314     0295F
-_romwashprogram_reqins            text3315     037AD
-_rtc_init                         text3287     029E7
-_rtc_work                         text3285     0201B
+_req_instruction                  text3266     02943
+_romwashprogram_getins            text3287     029C2
+_romwashprogram_reqins            text3288     02842
+_rtc_init                         text3260     02A64
+_rtc_work                         text3258     02084
 _rx                               bssBANK2     00131
 _second                           bssBANK2     0014C
 _sensortimer                      bssBANK2     00152
-_serial_init                      text3296     019FF
-_serial_rx_isr                    text3342     0010D
+_serial_init                      text3269     019FF
+_serial_rx_isr                    text3316     0010D
 _serial_rx_isr$22342              cstackCOMMON 00079
-_serial_tx_isr                    text3341     000FF
-_set_Arm                          text3324     02AA6
-_set_Beeper                       text3280     037F1
-_set_Bowl                         text3326     02A82
-_set_Dosage                       text3329     0288A
-_set_Dryer                        text3319     028AC
-_set_LED                          text3310     02DF2
-_set_LED_Cartridge                text3278     0284D
-_set_LED_Cat                      text3277     0285C
-_set_LED_Error                    text3279     0283E
-_set_LED_Locked                   text3276     0286B
-_set_Pump                         text3321     0289B
-_set_mode                         text3271     02E8E
-_set_pacer                        text3289     023CF
-_settimeout                       text3291     020DE
-_setup_long                       text3311     001FF
-_setup_short                      text3266     02446
+_serial_tx_isr                    text3315     000FF
+_set_Arm                          text3297     02B23
+_set_Beeper                       text3253     02892
+_set_Bowl                         text3299     02AFF
+_set_Dosage                       text3302     028ED
+_set_Dryer                        text3292     0290F
+_set_LED                          text3283     02E51
+_set_LED_Cartridge                text3251     028B0
+_set_LED_Cat                      text3250     028BF
+_set_LED_Error                    text3252     028A1
+_set_LED_Locked                   text3249     028CE
+_set_Pump                         text3294     028FE
+_set_mode                         text3241     02EED
+_set_pacer                        text3262     023CF
+_settimeout                       text3264     02147
+_setup_long                       text3284     001FF
+_setup_short                      text3233     02446
 _setup_short$10735                cstackBANK0  0004B
-_setupbutton_event                text3258     037C6
-_start_long                       text3252     02001
-_start_short                      text3253     001DE
-_startbutton_event                text3256     037D4
+_setupbutton_event                text3224     02867
+_start_long                       text3232     029F6
+_start_short                      text3234     001DE
+_startbutton_event                text3222     02875
 _state                            bssBANK0     00066
-_strlen                           text3306     02C1E
-_strncmp                          text3305     01000
-_surface                          stringtext   00459
-_timeoutexpired                   text3294     0235B
-_timeoutnever                     text3330     029AF
-_timeoutnow                       text3312     029CB
+_strlen                           text3279     02C76
+_strncmp                          text3278     01000
+_surface                          stringtext   0045F
+_timeoutexpired                   text3267     0235B
+_timeoutnever                     text3303     02A2C
+_timeoutnow                       text3285     02A48
 _timer_autodose                   dataBANK2    00164
 _timer_drain                      dataBANK1    000E3
 _timer_fill                       dataBANK1    000E9
-_timer_init                       text3339     037A2
-_timer_isr                        text3345     02AEF
+_timer_init                       text3313     02837
+_timer_isr                        text3319     02B47
 _timer_waitins                    dataBANK2    0016A
-_timestampdiff                    text3317     01BF0
-_update_autotimer                 text3282     026BE
-_update_display                   text3270     0098C
+_timestampdiff                    text3290     01BF0
+_update_autotimer                 text3255     026BE
+_update_display                   text3240     0098C
 _uptime                           bssBANK3     001CA
-_userinterface_init               text3268     02BF0
-_userinterface_work               text3251     01D2E
-_wait_instruction                 text3283     02537
+_userinterface_init               text3238     02C48
+_userinterface_work               text3227     01D2E
+_wait_instruction                 text3256     02537
 _washprogram                      stringtext   00213
-_water_detected                   text3333     0377A
-_water_fill                       text3323     0291B
-_water_filling                    text3332     03780
-_water_init                       text3337     02B16
-_water_work                       text3255     01942
-_watersensor_event                text3259     022EA
+_water_detected                   text3307     037D8
+_water_fill                       text3296     0297E
+_water_filling                    text3306     037DE
+_water_init                       text3311     02B6E
+_water_work                       text3236     01942
+_watersensor_event                text3242     022EA
 _watersensor_event$5929           cstackBANK0  00050
 _wet_program                      bitbssBANK0  0036C
 btemp                             (abs)        0007E
@@ -1699,7 +1693,7 @@ catgenie_work@temp                cstackBANK0  00049
 catgenie_work@tempmask            cstackBANK0  00046
 catgenie_work@tempstate           cstackBANK0  00048
 catsensor_event@detected          cstackBANK0  00051
-clear_ram                         clrtext      0378C
+clear_ram                         clrtext      037EA
 cmd2index@cmd                     cstackBANK0  0002F
 cmd2index@index                   cstackBANK0  00030
 cmdline_work@rxd                  cstackBANK0  0005F
@@ -1708,7 +1702,7 @@ echo@argv                         cstackBANK0  00049
 eeprom_read@addr                  cstackBANK0  00024
 eeprom_write@addr                 cstackBANK0  00024
 eeprom_write@value                cstackBANK0  00021
-end_of_initialization             cinit        02F9E
+end_of_initialization             cinit        02FFD
 exe_instruction@ret_address       bssBANK1     000D2
 exe_instruction@temp              cstackBANK1  000A4
 fpbase                            functab      00102
@@ -1722,7 +1716,7 @@ heatsensor_event@detected         cstackBANK0  00040
 help@argc                         cstackBANK0  00047
 help@argv                         cstackBANK0  00049
 help@index                        cstackBANK0  0004D
-init_ram                          inittext     03786
+init_ram                          inittext     037E4
 intlevel0                         functab      00100
 intlevel1                         functab      00100
 intlevel2                         functab      00100
@@ -1732,8 +1726,8 @@ intlevel5                         functab      00100
 isdigit@c                         cstackBANK0  00022
 isr@temp                          cstackCOMMON 0007D
 litterlanguage_cleanup@wet        cstackBANK0  00051
-litterlanguage_event@argument     cstackBANK0  00057
-litterlanguage_event@event        cstackBANK0  00058
+litterlanguage_event@argument     cstackBANK0  00021
+litterlanguage_event@event        cstackBANK0  00022
 litterlanguage_init@flags         cstackBANK0  00054
 litterlanguage_pause@context      bssBANK2     00120
 litterlanguage_pause@pause        cstackBANK0  00050
@@ -1805,7 +1799,7 @@ settimeout@timer_p                cstackBANK0  0002D
 settimeout@timout                 cstackBANK0  0002F
 setupbutton_event@up              cstackBANK0  00040
 start                             init         0004E
-start_initialization              cinit        02F43
+start_initialization              cinit        02FA2
 startbutton_event@up              cstackBANK0  00040
 strlen@cp                         cstackBANK0  0002A
 strlen@s                          cstackBANK0  00029

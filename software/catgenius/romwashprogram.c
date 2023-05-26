@@ -107,8 +107,10 @@ const struct instruction	drain_dry[] = {
 	{INS_WAITTIME,	10380},
 	{INS_ARM,	ARM_STOP},	/* Dry + 20 */
 	{INS_BOWL,	BOWL_STOP},
-	{INS_AUTODOSE,	3},		/* 0.26 ml */
+	{INS_WATER,	1}, /* Put some water in for cat pee */
+	{INS_AUTODOSE,	11},		/* 1.07 ml */
 	{INS_WAITDOSAGE,0},
+	{INS_WATER,	0},
 	{INS_BOWL,	BOWL_CCW},	/* Dry + 21 */
 	{INS_WAITTIME,	4392},
 	{INS_ARM,	ARM_DOWN},	/* Dry + 22 */
